@@ -24,7 +24,6 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-
         parent::boot();
     }
 
@@ -35,11 +34,14 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
+
         $this->mapApiRoutes();
 
         $this->mapWebRoutes();
 
-        //
+	    //new route file
+	    $this->mapWebAdminRoutes();
+
     }
 
     /**
@@ -70,4 +72,12 @@ class RouteServiceProvider extends ServiceProvider
              ->namespace($this->namespace)
              ->group(base_path('routes/api.php'));
     }
+
+    //New Route file
+	protected function mapWebAdminRoutes()
+	{
+		Route::middleware('web')
+			->namespace($this->namespace)
+			->group(base_path('routes/admin.php'));
+	}
 }
