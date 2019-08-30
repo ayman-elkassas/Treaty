@@ -16,12 +16,14 @@ class admin
      */
     public function handle($request, Closure $next=null,$guard=null)
     {
+//    	return dd(Auth::guard($guard)->check());
 	    if (Auth::guard($guard)->check()) {
-		    return redirect('admin');
+	    	return $next($request);
 	    }
 	    else
 	    {
 	    	return redirect('admin/login');
 	    }
+
     }
 }

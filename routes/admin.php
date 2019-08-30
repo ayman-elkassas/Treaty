@@ -2,12 +2,15 @@
 
 Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 {
-//	Config::set('auth.defines','admin');
+	Config::set('auth.defines','admin');
+
 	Route::group(['middleware'=>'admin:admin'],function()
 	{
 		Route::get('/',function (){
 			return view('admin.home');
 		});
+
+		Route::any('logout','AdminAuth@logout');
 	});
 
 	Route::get('login','AdminAuth@login');

@@ -210,6 +210,8 @@
 <script>
     $.widget.bridge('uibutton', $.ui.button);
 </script>
+{{--jquery--}}
+<script src="{{url('design/adminlte/bower_components/jquery/dist/jquery.min.js"')}}"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="{{url('design/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"')}}"></script>
 <!-- Morris.js charts -->
@@ -239,5 +241,68 @@
 <script src="{{url('design/adminlte/dist/js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{url('design/adminlte/dist/js/demo.js')}}"></script>
+
+<script>
+
+
+    $(function () {
+        var toggle=0;
+
+        $('.user-menu').click(function (){
+
+            if(toggle==0)
+            {
+                toggle=1;
+                $(this).addClass('open');
+            }
+            else
+            {
+                toggle=0;
+                $(this).removeClass('open');
+            }
+        });
+        $('.messages-menu').click(function (){
+
+            if(toggle==0)
+            {
+                toggle=1;
+                $(this).addClass('open');
+            }
+            else
+            {
+                toggle=0;
+                $(this).removeClass('open');
+            }
+        });
+        $('.notifications-menu').click(function (){
+
+            if(toggle==0)
+            {
+                toggle=1;
+                $(this).addClass('open');
+            }
+            else
+            {
+                toggle=0;
+                $(this).removeClass('open');
+            }
+        });
+        $('.tasks-menu').click(function (){
+
+            if(toggle==0)
+            {
+                toggle=1;
+                $(this).addClass('open');
+            }
+            else
+            {
+                toggle=0;
+                $(this).removeClass('open');
+            }
+        });
+    });
+
+</script>
+
 </body>
 </html>

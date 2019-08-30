@@ -23,8 +23,13 @@ class AdminAuth extends Controller
 		}
 		else
 		{
-			session()->falsh('error',trans('admin.incorrect_info_login'));
+			session()->flash('error',trans('admin.incorrect_info_login'));
 			return back();
 		}
+	}
+	public function logout()
+	{
+		auth()->guard('admin')->logout();
+		return redirect('admin/login');
 	}
 }
