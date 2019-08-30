@@ -2,8 +2,8 @@
 
 Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 {
-	Config::set('auth.defines','admin');
 
+	//middleware (name of middleware : your guard)
 	Route::group(['middleware'=>'admin:admin'],function()
 	{
 		Route::get('/',function (){
@@ -15,5 +15,7 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 
 	Route::get('login','AdminAuth@login');
 	Route::post('login','AdminAuth@dologin');
+	Route::get('forget/password','AdminAuth@forget_password');
+	Route::post('forget/password','AdminAuth@forget_password_post');
 
 });

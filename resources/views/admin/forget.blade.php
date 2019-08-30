@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{trans('admin.login')}}</title>
+    <title>{{trans('admin.forget')}}</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -34,29 +34,31 @@
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your session</p>
+        <p class="login-box-msg">{{trans('admin.forget')}}</p>
 
-        <form action="{{aurl('login')}}" method="post">
+        @if(session()->has('success'))
+
+            <div class="alert alert-success">
+                <h3>{{session('success')}}</h3>
+            </div>
+
+        @endif
+
+
+        <form method="post">
             {!! csrf_field() !!}
             <div class="form-group has-feedback">
                 <input type="email" name="email" class="form-control" placeholder="Email">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
-            <div class="form-group has-feedback">
-                <input type="password" name="password" class="form-control" placeholder="Password">
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-            </div>
+
             <div class="row">
                 <div class="col-xs-8">
-                    <div class="checkbox icheck">
-                        <label>
-                            <input type="checkbox" name="rememberme" value="1"> Remember Me
-                        </label>
-                    </div>
+
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Reset</button>
                 </div>
                 <!-- /.col -->
             </div>
@@ -71,8 +73,7 @@
 {{--        </div>--}}
 {{--        <!-- /.social-auth-links -->--}}
 
-        <a href="{{aurl('forget/password')}}">I forgot my password</a><br>
-        <a href="register.html" class="text-center">Register a new membership</a>
+        <a href="{{aurl('login')}}" class="text-center">Sign In</a>
 
     </div>
     <!-- /.login-box-body -->
