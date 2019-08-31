@@ -242,6 +242,10 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{url('design/adminlte/dist/js/demo.js')}}"></script>
 
+<!-- DataTables -->
+<script src="{{url('design/adminlte')}}/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="{{url('design/adminlte')}}/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
 <script>
 
 
@@ -303,6 +307,9 @@
     });
 
 </script>
+
+@stack('js')
+@stack('css')
 
 </body>
 </html>

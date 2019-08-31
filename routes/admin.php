@@ -11,6 +11,9 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 		});
 
 		Route::any('logout','AdminAuth@logout');
+
+		//Route datatable
+		Route::resource('admin','AdminController');
 	});
 
 	//login

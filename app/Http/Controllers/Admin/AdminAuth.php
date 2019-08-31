@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Middleware\admin;
 use App\Mail\AdminResetPassword;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
@@ -53,7 +51,7 @@ class AdminAuth extends Controller
 		{
 			$token=app('auth.password.broker')->createToken($admin);
 
-			$data=DB::table('password_resets')->insert([
+			DB::table('password_resets')->insert([
 				'email'=>$admin->email,
 				'token'=>$token,
 				'created_at'=>Carbon::now()
@@ -99,7 +97,7 @@ class AdminAuth extends Controller
 
 		if(!empty($check_token))
 		{
-			$admin=\App\Admin::where('email',$check_token->email)
+			\App\Admin::where('email',$check_token->email)
 				->update(['email'=>$check_token->email,
 					'password'=>bcrypt(\request('password'))]);
 
