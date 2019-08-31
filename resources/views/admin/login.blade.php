@@ -36,6 +36,13 @@
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
 
+        @if(session()->has('error'))
+            <div class="alert alert-danger">
+                <center>{{session('error')}}</center>
+            </div>
+
+        @endif
+
         <form action="{{aurl('login')}}" method="post">
             {!! csrf_field() !!}
             <div class="form-group has-feedback">

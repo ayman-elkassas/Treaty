@@ -39,7 +39,16 @@
         @if(session()->has('success'))
 
             <div class="alert alert-success">
-                <center>{{session('success')}}</center>
+                <h3>{{session('success')}}</h3>
+            </div>
+
+        @endif
+
+        @if($errors->all())
+            <div class="alert alert-danger">
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
             </div>
 
         @endif
@@ -48,8 +57,18 @@
         <form method="post">
             {!! csrf_field() !!}
             <div class="form-group has-feedback">
-                <input type="email" name="email" class="form-control" placeholder="Email">
+                <input type="email" name="email" value="{{$data->email}}" class="form-control" placeholder="Email">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+                <input type="password" name="password" class="form-control" placeholder="Password">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+
+            <div class="form-group has-feedback">
+                <input type="password" name="confirm_password" class="form-control" placeholder="Confirmation Password">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
 
             <div class="row">
