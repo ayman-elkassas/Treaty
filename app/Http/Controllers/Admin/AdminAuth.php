@@ -21,6 +21,10 @@ class AdminAuth extends Controller
 	public function dologin()
 	{
 		$rememberme=\request('rememberme') == 1 ? true:false;
+
+//        return dd(admin()->attempt(['email'=>\request('email'),
+//            'password'=>\request('password')],$rememberme));
+
 		if(admin()->attempt(['email'=>\request('email'),
 			'password'=>\request('password')],$rememberme))
 		{
