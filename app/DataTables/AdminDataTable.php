@@ -16,11 +16,13 @@ class AdminDataTable extends DataTable
     public function dataTable($query)
     {
         return datatables($query)
+            ->addColumn('checkbox', 'admin.admins.btn.checkbox')
             ->addColumn('edit', 'admin.admins.btn.edit')
             ->addColumn('delete', 'admin.admins.btn.delete')
 	        ->rawColumns([
 	        	'edit',
-		        'delete'
+		        'delete',
+		        'checkbox',
 	        ]);
     }
 
@@ -102,6 +104,11 @@ class AdminDataTable extends DataTable
 				                'className'=>'btn btn-success',
 				                'text'=>'<i class="fa fa-file"></i>Export Excel'
 			                ],
+                            [
+                                'extend'=>'pdf',
+                                'className'=>'btn btn-primary',
+                                'text'=>'<i class="fa fa-file"></i>Export Pdf'
+                            ],
 			                [
 				                'extend'=>'reload',
 				                'className'=>'btn btn-info',
@@ -109,7 +116,7 @@ class AdminDataTable extends DataTable
 			                ],
 		                ],
 		                'initComplete'=>"function () {
-				            this.api().columns([0,1,2,3,4]).every(function () {
+				            this.api().columns([1,2,3,4,5]).every(function () {
 				                var column = this;
 				                var input = document.createElement(\"input\");
 				                $(input).appendTo($(column.footer()).empty())
@@ -131,6 +138,15 @@ class AdminDataTable extends DataTable
     protected function getColumns()
     {
         return [
+            [
+                'name'=>'checkbox',
+                'data'=>'checkbox',
+                'title'=>'<input type="checkbox"/>',
+                'exportable'=>false,
+                'printable'=>false,
+                'orderable'=>false,
+                'searchable'=>false
+            ],
             [
             	'name'=>'id',
 	            'data'=>'id',
