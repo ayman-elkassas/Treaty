@@ -15,7 +15,7 @@ class Lang
      */
     public function handle($request, Closure $next)
     {
-        session()->has('lang')?app()->setLocale(session('lang')):app()->setLocale('ar');
+        app()->setLocale(lang());
         
         return $next($request);
     }
