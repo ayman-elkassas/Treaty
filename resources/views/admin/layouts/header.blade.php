@@ -16,14 +16,27 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{url('design/adminlte/bower_components/Ionicons/css/ionicons.min.css')}}">
 
+
     <!-- Theme style -->
 {{--    direction condition--}}
     @if(direction()=='ltr')
+
     <link rel="stylesheet" href="{{url('design/adminlte/dist/css/AdminLTE.min.css')}}">
+
     @else
+
     <link rel="stylesheet" href="{{url('design/adminlte/dist/css/rtl/AdminLTE.min.css')}}">
     <link rel="stylesheet" href="{{url('design/adminlte/dist/css/rtl/bootstrap-rtl.min.css')}}">
     <link rel="stylesheet" href="{{url('design/adminlte/dist/css/rtl/rtl.css')}}">
+
+    {{--    arabic font--}}
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <style type="text/css">
+        html,body{
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+
     @endif
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->

@@ -6,7 +6,7 @@ return [
 	'forget'=>'نسيت كلمه المرور',
 	'the_link_reset_sent'=>'رابط استعاده كلمه المرور تم ارساله',
 	'admin'=>'عضويه اساسيه',
-	'dashboard'=>'Dashboard',
+	'dashboard'=>'الرئيسيه',
 	'sProcessing'=>'تحميل',
 	'sLengthMenu'=>'بيان _MENU_ Record ',
 	'sZeroRecords'=>'Zero Records',
