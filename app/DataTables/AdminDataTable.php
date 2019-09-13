@@ -86,7 +86,7 @@ class AdminDataTable extends DataTable
 		                'lengthMenu'=>[[10,25,50,100,-1],[10,25,50,'All Record']],
 		                'buttons'=>[
 			                [
-				                'text'=>'<i class="fa fa-plus"></i>Add New Admin',
+				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Admin',
 				                'className'=>'btn btn-info'
 			                ],
 
@@ -98,21 +98,21 @@ class AdminDataTable extends DataTable
 			                [
 				                'extend'=>'csv',
 				                'className'=>'btn btn-info',
-				                'text'=>'<i class="fa fa-file"></i>Export CSV'
+				                'text'=>'<i class="fa fa-file"></i>&nbsp;&nbsp;CSV'
 			                ],
 			                [
 				                'extend'=>'excel',
 				                'className'=>'btn btn-success',
-				                'text'=>'<i class="fa fa-file"></i>Export Excel'
+				                'text'=>'<i class="fa fa-file"></i>&nbsp;&nbsp;xcl'
 			                ],
                             [
                                 'extend'=>'pdf',
                                 'className'=>'btn btn-primary',
-                                'text'=>'<i class="fa fa-file"></i>Export Pdf'
+                                'text'=>'<i class="fa fa-file"></i>&nbsp;&nbsp;Pdf'
                             ],
 			                [
 				                'extend'=>'reload',
-				                'className'=>'btn btn-info',
+				                'className'=>'btn btn-default',
 				                'text'=>'<i class="fa fa-refresh"></i>'
 			                ],
 			                [
