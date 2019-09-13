@@ -184,6 +184,9 @@ return [
 	    //Pdf
 	    Barryvdh\Snappy\ServiceProvider::class,
 
+	    //Html Builder
+	    Collective\Html\HtmlServiceProvider::class,
+
     ],
 
     /*
@@ -235,6 +238,9 @@ return [
 	    //pdf
 	    'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
 	    'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
+	    //Html Builder
+	    'Form' => Collective\Html\FormFacade::class,
+	    'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

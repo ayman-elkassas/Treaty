@@ -16,9 +16,9 @@ class AdminDataTable extends DataTable
     public function dataTable($query)
     {
         return datatables($query)
-            ->addColumn('checkbox', 'admin.admins.btn.checkbox')
             ->addColumn('edit', 'admin.admins.btn.edit')
             ->addColumn('delete', 'admin.admins.btn.delete')
+	        ->addColumn('checkbox', 'admin.admins.btn.checkbox')
 	        ->rawColumns([
 	        	'edit',
 		        'delete',
@@ -79,7 +79,7 @@ class AdminDataTable extends DataTable
         return $this->builder()
                     ->columns($this->getColumns())
                     ->minifiedAjax()
-//                    ->addAction(['width' => '80px'])
+//                    ->addAction(['width' => '20px'])
 //                    ->parameters($this->getBuilderParameters());
                     ->parameters([
                     	'dom'=>'Blfrtip',
@@ -89,6 +89,7 @@ class AdminDataTable extends DataTable
 				                'text'=>'<i class="fa fa-plus"></i>Add New Admin',
 				                'className'=>'btn btn-info'
 			                ],
+
 		                    [
 		                    	'extend'=>'print',
 			                    'className'=>'btn btn-primary',
@@ -113,6 +114,10 @@ class AdminDataTable extends DataTable
 				                'extend'=>'reload',
 				                'className'=>'btn btn-info',
 				                'text'=>'<i class="fa fa-refresh"></i>'
+			                ],
+			                [
+				                'text'=>'<i class="fa fa-trash"></i>',
+				                'className'=>'btn btn-danger delBtn'
 			                ],
 		                ],
 		                'initComplete'=>"function () {
@@ -141,7 +146,7 @@ class AdminDataTable extends DataTable
             [
                 'name'=>'checkbox',
                 'data'=>'checkbox',
-                'title'=>'<input type="checkbox"/>',
+                'title'=>'<input type="checkbox" class="check_all" onclick="check_all()"/>',
                 'exportable'=>false,
                 'printable'=>false,
                 'orderable'=>false,

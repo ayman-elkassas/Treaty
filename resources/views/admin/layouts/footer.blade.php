@@ -248,67 +248,8 @@
 <script src="{{url('design/adminlte')}}/bower_components/datatables.net-bs/js/dataTables.buttons.min.js"></script>
 <script src="{{url('')}}/vendor/datatables/buttons.server-side.js"></script>
 
-<script>
-
-
-    $(function () {
-        var toggle=0;
-
-        $('.user-menu').click(function (){
-
-            if(toggle==0)
-            {
-                toggle=1;
-                $(this).addClass('open');
-            }
-            else
-            {
-                toggle=0;
-                $(this).removeClass('open');
-            }
-        });
-        $('.messages-menu').click(function (){
-
-            if(toggle==0)
-            {
-                toggle=1;
-                $(this).addClass('open');
-            }
-            else
-            {
-                toggle=0;
-                $(this).removeClass('open');
-            }
-        });
-        $('.notifications-menu').click(function (){
-
-            if(toggle==0)
-            {
-                toggle=1;
-                $(this).addClass('open');
-            }
-            else
-            {
-                toggle=0;
-                $(this).removeClass('open');
-            }
-        });
-        $('.tasks-menu').click(function (){
-
-            if(toggle==0)
-            {
-                toggle=1;
-                $(this).addClass('open');
-            }
-            else
-            {
-                toggle=0;
-                $(this).removeClass('open');
-            }
-        });
-    });
-
-</script>
+{{--My scripts--}}
+<script src="{{url('design/adminlte/dist/js/scripts.js')}}"></script>
 
 @stack('js')
 @stack('css')

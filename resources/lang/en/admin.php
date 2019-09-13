@@ -25,4 +25,7 @@ return [
 	'sPrevious'=>'Previous',
 	'sSortAscending'=>'Sort Ascending',
 	'sSortDescending'=>'Sort Descending',
+	'ask_delete_item'=>'make sure delete theses records count',
+	'please_check_some_records'=>'please_check_some_records',
+	'delete'=>'Delete Items'
 ];
