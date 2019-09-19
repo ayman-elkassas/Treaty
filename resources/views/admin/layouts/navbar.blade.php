@@ -52,15 +52,30 @@
                 </a>
             </li>
 
-            <li class="active treeview">
+            <li class="treeview {{active_menu('admin')[0]}}">
                 <a href="#">
                     <i class="fa fa-users"></i> <span>{{trans('admin.admin')}}</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
-                <ul class="treeview-menu">
-                    <li class="active"><a href="{{aurl('admin')}}"><i class="fa fa-users"></i> {{trans('admin.admin')}}</a></li>
+                <ul class="treeview-menu" style="{{active_menu('admin')[1]}}">
+                    <li class=""><a href="{{aurl('admin')}}"><i class="fa fa-users"></i> {{trans('admin.admin')}}</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview {{active_menu('users')[0]}}">
+                <a href="#">
+                    <i class="fa fa-users"></i> <span>{{trans('admin.user')}}</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('users')[1]}}">
+{{--                    <li class=""><a href="{{aurl('users')}}"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>--}}
+                    <li class=""><a href="{{aurl('users')}}?level=user"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>
+                    <li class=""><a href="{{aurl('users')}}?level=vendor"><i class="fa fa-users"></i> {{trans('admin.vendor')}}</a></li>
+                    <li class=""><a href="{{aurl('users')}}?level=company"><i class="fa fa-users"></i> {{trans('admin.company')}}</a></li>
                 </ul>
             </li>
 

@@ -17,6 +17,12 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 
 		//Route destroy all
 		Route::delete('admin/destroy/all','AdminController@multi_delete');
+
+		//Route datatable
+		Route::resource('users','UsersController');
+
+		//Route destroy all
+		Route::delete('users/destroy/all','UsersController@multi_delete');
 	});
 
 	//login

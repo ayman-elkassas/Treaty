@@ -11,7 +11,7 @@
 
 {{--            {!! Form::open(['route'=>'admin.store'])!!}--}}
 {{--            ORRRRRRRRRRRR--}}
-            {!! Form::open(['url'=>aurl('admin')])!!}
+            {!! Form::open(['url'=>aurl('users')])!!}
 
                 <div class="form-group">
                     {!! Form::label('name',trans('admin.name')) !!}
@@ -26,6 +26,12 @@
                 <div class="form-group">
                     {!! Form::label('password',trans('admin.password')) !!}
                     {!! Form::password('password',['class'=>'form-control']) !!}
+                </div>
+
+                <div class="form-group">
+                    {!! Form::label('level',trans('admin.level')) !!}
+                    {!! Form::select('level',['user'=>'user','vendor'=>'vendor','company'=>'company'],
+                    old('level'),['class'=>'form-control','placeholder'=>'.....']) !!}
                 </div>
 
                 {!! Form::submit('Save',['class'=>'btn btn-primary']) !!}

@@ -36,5 +36,11 @@ return [
 	'edit'=>'Edit Account',
 	'recorded_updated'=>'Account Information Updated',
 	'deleted_record'=>'Admin Account Deleted Successfully',
-	'delete_this'=>'Did you want to delete this account ?'
+	'delete_this'=>'Did you want to delete this account ?',
+	'user'=>'User',
+	'vendor'=>'Vendor',
+	'company'=>'Company',
+	'user_record_added'=>'New User Account Added Successfully',
+	'user_deleted_record'=>'User Account Deleted Successfully',
+	'level'=>'Level',
 ];

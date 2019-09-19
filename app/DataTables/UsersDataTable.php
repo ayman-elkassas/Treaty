@@ -2,11 +2,12 @@
 
 namespace App\DataTables;
 
-use App\Admin;
+use App\User;
+use function foo\func;
 use Illuminate\Support\Facades\URL;
 use Yajra\DataTables\Services\DataTable;
 
-class AdminDataTable extends DataTable
+class UsersDataTable extends DataTable
 {
     /**
      * Build DataTable class.
@@ -17,13 +18,15 @@ class AdminDataTable extends DataTable
     public function dataTable($query)
     {
         return datatables($query)
-            ->addColumn('edit', 'admin.admins.btn.edit')
-            ->addColumn('delete', 'admin.admins.btn.delete')
-	        ->addColumn('checkbox', 'admin.admins.btn.checkbox')
+            ->addColumn('edit', 'admin.users.btn.edit')
+            ->addColumn('delete', 'admin.users.btn.delete')
+	        ->addColumn('checkbox', 'admin.users.btn.checkbox')
+	        ->addColumn('level', 'admin.users.btn.level')
 	        ->rawColumns([
 	        	'edit',
 		        'delete',
 		        'checkbox',
+		        'level',
 	        ]);
     }
 
@@ -35,7 +38,13 @@ class AdminDataTable extends DataTable
      */
     public function query()
     {
-        return Admin::query();
+        return User::query()->where(function ($query){
+        	if(request()->has('level'))
+	        {
+	        	//return all records that level column equal level request
+	        	return $query->where('level',request('level'));
+	        }
+        });
     }
 
     //lang
@@ -80,14 +89,13 @@ class AdminDataTable extends DataTable
         return $this->builder()
                     ->columns($this->getColumns())
                     ->minifiedAjax()
-//                    ->addAction(['width' => '20px'])
 //                    ->parameters($this->getBuilderParameters());
                     ->parameters([
                     	'dom'=>'Blfrtip',
 		                'lengthMenu'=>[[10,25,50,100,-1],[10,25,50,'All Record']],
 		                'buttons'=>[
 			                [
-				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Admin',
+				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New User',
 				                'className'=>'btn btn-info',
 				                'action'=>'function(){
 				                    window.location.href="'.URL::current().'/create";
@@ -124,7 +132,7 @@ class AdminDataTable extends DataTable
 			                ],
 		                ],
 		                'initComplete'=>"function () {
-				            this.api().columns([2,3]).every(function () {
+				            this.api().columns([2,3,4]).every(function () {
 				                var column = this;
 				                var input = document.createElement(\"input\");
 				                $(input).appendTo($(column.footer()).empty())
@@ -163,12 +171,17 @@ class AdminDataTable extends DataTable
 	        [
 		        'name'=>'name',
 		        'data'=>'name',
-		        'title'=>'Admin Name'
+		        'title'=>'User Name'
+	        ],
+	        [
+		        'name'=>'level',
+		        'data'=>'level',
+		        'title'=>'Level'
 	        ],
 	        [
 		        'name'=>'email',
 		        'data'=>'email',
-		        'title'=>'Admin Email'
+		        'title'=>'User Email'
 	        ],
 	        [
 		        'name'=>'created_at',
@@ -208,6 +221,6 @@ class AdminDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Admin_' . date('YmdHis');
+        return 'Users_' . date('YmdHis');
     }
 }

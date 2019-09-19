@@ -14,7 +14,7 @@
 
 {{--            should determine method because there are many url with--}}
 {{--            the same format difer in method --}}
-            {!! Form::open(['url'=>aurl('admin/'.$admin->id),'method'=>'put'])!!}
+            {!! Form::open(['url'=>aurl('users/'.$admin->id),'method'=>'put'])!!}
 
                 <div class="form-group">
                     {!! Form::label('name',trans('admin.name')) !!}
@@ -29,6 +29,12 @@
                 <div class="form-group">
                     {!! Form::label('password',trans('admin.password')) !!}
                     {!! Form::password('password',['class'=>'form-control']) !!}
+                </div>
+
+                <div class="form-group">
+                    {!! Form::label('level',trans('admin.level')) !!}
+                    {!! Form::select('level',['user'=>'user','vendor'=>'vendor','company'=>'company'],
+                    $admin->level,['class'=>'form-control','placeholder'=>'.....']) !!}
                 </div>
 
                 {!! Form::submit('Edit',['class'=>'btn btn-primary']) !!}
