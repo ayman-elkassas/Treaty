@@ -66,7 +66,7 @@
 
             <li class="treeview {{active_menu('users')[0]}}">
                 <a href="#">
-                    <i class="fa fa-users"></i> <span>{{trans('admin.user')}}</span>
+                    <i class="fa fa-users"></i> <span>Users Accounts</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>

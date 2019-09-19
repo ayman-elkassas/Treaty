@@ -60,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/app/DataTables/UsersDataTable.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="91" column="46" lean-forward="true" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
+              <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
               <folding>
                 <element signature="e#34#47#0#PHP" expanded="true" />
                 <element signature="e#26#32#0" expanded="true" />
@@ -364,7 +364,7 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="y" value="10" />
     <option name="width" value="1318" />
@@ -591,7 +591,7 @@
       <workItem from="1567769945846" duration="13714000" />
       <workItem from="1568360121453" duration="4059000" />
       <workItem from="1568366959887" duration="15128000" />
-      <workItem from="1568882034695" duration="33390000" />
+      <workItem from="1568882034695" duration="33697000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1566580426161</created>
@@ -632,7 +632,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163752000" />
+    <option name="totallyTimeSpent" value="164059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1051,7 +1051,7 @@
     <entry file="file://$PROJECT_DIR$/app/DataTables/UsersDataTable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="91" column="46" lean-forward="true" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
+          <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
           <folding>
             <element signature="e#34#47#0#PHP" expanded="true" />
             <element signature="e#26#32#0" expanded="true" />
