@@ -3,6 +3,7 @@
 namespace App\DataTables;
 
 use App\Admin;
+use Illuminate\Support\Facades\URL;
 use Yajra\DataTables\Services\DataTable;
 
 class AdminDataTable extends DataTable
@@ -87,9 +88,11 @@ class AdminDataTable extends DataTable
 		                'buttons'=>[
 			                [
 				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Admin',
-				                'className'=>'btn btn-info'
+				                'className'=>'btn btn-info',
+				                'action'=>'function(){
+				                    window.location.href="'.URL::current().'/create";
+				                }'
 			                ],
-
 		                    [
 		                    	'extend'=>'print',
 			                    'className'=>'btn btn-primary',

@@ -27,5 +27,14 @@ return [
 	'sSortDescending'=>'Sort Descending',
 	'ask_delete_item'=>'make sure delete theses records count',
 	'please_check_some_records'=>'please_check_some_records',
-	'delete'=>'Delete Items'
+	'delete'=>'Delete Items',
+	'create_admin'=>'Create New Admin',
+	'name'=>'Name',
+	'email'=>'Email Address',
+	'password'=>'Password',
+	'record_added'=>'New Admin Account Added Successfully',
+	'edit'=>'Edit Account',
+	'recorded_updated'=>'Account Information Updated',
+	'deleted_record'=>'Admin Account Deleted Successfully',
+	'delete_this'=>'Did you want to delete this account ?'
 ];

@@ -46,11 +46,9 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="active treeview">
+            <li class="active">
                 <a href="{{aurl('')}}">
                     <i class="fa fa-dashboard"></i> <span>{{trans('admin.dashboard')}}</span>
-                    <span class="pull-right-container">
-                    </span>
                 </a>
             </li>
 

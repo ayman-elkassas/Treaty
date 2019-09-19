@@ -33,13 +33,13 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="empty_record hidden">
-                        <div class="alert alert-danger"><h1>{{trans('admin.please_check_some_records')}}
-                                <span class="record_count"></span> ? </h1></div>
+                        <div class="alert alert-danger"><h4>{{trans('admin.please_check_some_records')}}
+                                <span class="record_count"></span> ? </h4></div>
                     </div>
 
                     <div class="not_empty_record hidden">
-                        <div class="alert alert-danger"><h1>{{trans('admin.ask_delete_item')}}
-                                <span class="record_count"></span> ? </h1></div>
+                        <div class="alert alert-danger"><h4>{{trans('admin.ask_delete_item')}}
+                                <span class="record_count"></span> ? </h4></div>
                     </div>
 
                 </div>
