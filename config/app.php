@@ -241,6 +241,8 @@ return [
 	    //Html Builder
 	    'Form' => Collective\Html\FormFacade::class,
 	    'Html' => Collective\Html\HtmlFacade::class,
+	    //Upload Controller
+	    'Up'=>\App\Http\Controllers\Upload::class,
 
     ],
 

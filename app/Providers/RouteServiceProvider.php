@@ -35,6 +35,8 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
 
+    	\Config::set('filesystems.disks.public.url',url('storage'));
+
         $this->mapApiRoutes();
 
         $this->mapWebRoutes();

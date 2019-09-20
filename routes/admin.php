@@ -23,6 +23,11 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 
 		//Route destroy all
 		Route::delete('users/destroy/all','UsersController@multi_delete');
+
+		//Settings
+		Route::get('settings','Settings@setting');
+		Route::post('settings','Settings@settings_save');
+
 	});
 
 	//login

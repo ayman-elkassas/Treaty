@@ -22,11 +22,13 @@ class UsersDataTable extends DataTable
             ->addColumn('delete', 'admin.users.btn.delete')
 	        ->addColumn('checkbox', 'admin.users.btn.checkbox')
 	        ->addColumn('level', 'admin.users.btn.level')
+	        ->addColumn('email', 'admin.users.btn.email')
 	        ->rawColumns([
 	        	'edit',
 		        'delete',
 		        'checkbox',
 		        'level',
+		        'email',
 	        ]);
     }
 

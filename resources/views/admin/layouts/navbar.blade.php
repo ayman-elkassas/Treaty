@@ -46,10 +46,17 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="active">
+            <li class="treeview">
                 <a href="{{aurl('')}}">
                     <i class="fa fa-dashboard"></i> <span>{{trans('admin.dashboard')}}</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+
                 </a>
+
+                <ul class="treeview-menu">
+                    <li class=""><a href="{{aurl('settings')}}"><i class="fa fa-gears"></i> {{trans('admin.setting')}}</a></li>
+                </ul>
+
             </li>
 
             <li class="treeview {{active_menu('admin')[0]}}">
@@ -79,10 +86,10 @@
                 </ul>
             </li>
 
-{{--            <li class="header">LABELS</li>--}}
-{{--            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>--}}
-{{--            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>--}}
-{{--            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>--}}
+            <li class="header">LABELS</li>
+            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
 
         </ul>
     </section>
