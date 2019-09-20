@@ -31,8 +31,8 @@ class Settings extends Controller
 			$data['logo']=up()->upload([
 				'file'=>'logo',
 				'path'=>'settings',
-				'upload_type'=>'single',
 				'deleted_file'=>\setting()->logo,
+				'upload_type'=>'single',
 			]);
 		}
 
@@ -41,8 +41,8 @@ class Settings extends Controller
 			$data['icon']=up()->upload([
 				'file'=>'icon',
 				'path'=>'settings',
-				'upload_type'=>'single',
 				'deleted_file'=>\setting()->icon,
+				'upload_type'=>'single',
 			]);
 		}
 

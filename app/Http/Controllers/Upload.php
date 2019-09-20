@@ -20,10 +20,8 @@ class Upload extends Controller
 
 		if(\request()->hasFile($data['file']) and $data['upload_type']=='single')
 		{
-			in_array('deleted_file',$data) and !empty($data['deleted_file'] ) ?
-				Storage::delete($data['delete_file']) : '';
+			!empty($data['deleted_file'] ) ? Storage::delete($data['deleted_file']) : '';
 			return \request()->file($data['file'])->store('public/'.$data['path']);
 		}
-
 	}
 }
