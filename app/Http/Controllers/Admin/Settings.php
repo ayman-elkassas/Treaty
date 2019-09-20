@@ -11,7 +11,7 @@ class Settings extends Controller
 
 	public function setting()
 	{
-		return view('admin.settings',['title'=>trans('admins.settings')]);
+		return view('admin.settings',['title'=>trans('admin.settings')]);
 	}
 
 	public function settings_save()

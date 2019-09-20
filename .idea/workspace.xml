@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a826355f-f913-4eef-95fd-c6d36d98a3ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/storage/settings/bJ8MMVSnOZBFHnx4Exs0ViBCcGlNNbL8LAGQl7MW.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/storage/settings/gN7sV7AWTontHzQbgJbf5SXMJXeHqoEG5bhabBV0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/storage/settings/pK35TmASF0FzVI54Fo9ga25LXGIv533gQDF1Nydt.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/settings/bJ8MMVSnOZBFHnx4Exs0ViBCcGlNNbL8LAGQl7MW.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/settings/gN7sV7AWTontHzQbgJbf5SXMJXeHqoEG5bhabBV0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/settings/pK35TmASF0FzVI54Fo9ga25LXGIv533gQDF1Nydt.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Settings.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="339">
-              <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
               <folding>
                 <element signature="e#46#68#0#PHP" expanded="true" />
               </folding>
@@ -94,19 +87,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/File.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="10" selection-start-line="10" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="336">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/menu.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-420" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="87" column="116" lean-forward="true" selection-start-line="87" selection-start-column="116" selection-end-line="87" selection-end-column="116" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#4;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#li#4;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#li#4;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#li#4;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Upload.php">
+        <entry file="file://$PROJECT_DIR$/resources/lang/en/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            <state relative-caret-position="367">
+              <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -229,14 +247,12 @@
         <option value="$PROJECT_DIR$/resources/views/admin/admins/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/DataTables/AdminDataTable.php" />
-        <option value="$PROJECT_DIR$/resources/lang/en/admin.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/btn/level.blade.php" />
         <option value="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/btn/email.blade.php" />
         <option value="$PROJECT_DIR$/routes/admin.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_20_102546_create_settings_table.php" />
         <option value="$PROJECT_DIR$/app/model/Setting.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/console.sql" />
         <option value="$PROJECT_DIR$/resources/views/admin/settings.blade.php" />
@@ -249,6 +265,8 @@
         <option value="$PROJECT_DIR$/app/Http/helper.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Settings.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Upload.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/admin.php" />
       </list>
     </option>
   </component>
@@ -408,6 +426,45 @@
             <path>
               <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lang" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lang" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="en" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layouts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="storage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -422,6 +479,14 @@
               <item name="storage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="storage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="settings" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -499,7 +564,7 @@
       <workItem from="1568366959887" duration="15128000" />
       <workItem from="1568882034695" duration="34657000" />
       <workItem from="1568974012074" duration="12054000" />
-      <workItem from="1568988063624" duration="13469000" />
+      <workItem from="1568988063624" duration="15532000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1566580426161</created>
@@ -540,7 +605,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190542000" />
+    <option name="totallyTimeSpent" value="192605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,7 +617,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
@@ -631,15 +696,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/settings/vl23yftTYZwTj48nCvV7ciw2VI4tDvfBWX5e1iwJ.png" />
-    <entry file="file://$PROJECT_DIR$/storage/app/public/7JNHggTfVdESBTpFL584ptfuIiteP5QgJGhSdjIW.png" />
     <entry file="file://$PROJECT_DIR$/public/storage/7JNHggTfVdESBTpFL584ptfuIiteP5QgJGhSdjIW.png" />
     <entry file="file://$PROJECT_DIR$/storage/app/public/settings/7JNHggTfVdESBTpFL584ptfuIiteP5QgJGhSdjIW.png" />
     <entry file="file://$PROJECT_DIR$/storage/app/settings/KgQsqM448bHd3xeOPKXn2zRVsO23jl7QPIiODsUA.jpeg" />
@@ -840,7 +896,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
-          <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
           <folding>
             <element signature="e#46#68#0#PHP" expanded="true" />
           </folding>
@@ -852,8 +908,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="336">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="87" column="116" lean-forward="true" selection-start-line="87" selection-start-column="116" selection-end-line="87" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#4;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#li#4;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#li#4;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#li#4;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
         </state>
       </provider>
     </entry>

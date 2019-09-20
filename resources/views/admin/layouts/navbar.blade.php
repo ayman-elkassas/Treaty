@@ -46,9 +46,15 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
+            <li class="">
+                <a href="{{aurl('')}}">
+                    <i style="color: #00b1e9;" class="fa fa-archive"></i> <span>Admin Panel</span>
+
+                </a>
+            </li>
             <li class="treeview">
                 <a href="{{aurl('')}}">
-                    <i class="fa fa-dashboard"></i> <span>{{trans('admin.dashboard')}}</span>
+                    <i style="color: #e96f00;" class="fa fa-dashboard"></i> <span>{{trans('admin.dashboard')}}</span>
                     <i class="fa fa-angle-left pull-right"></i>
 
                 </a>
@@ -56,33 +62,32 @@
                 <ul class="treeview-menu">
                     <li class=""><a href="{{aurl('settings')}}"><i class="fa fa-gears"></i> {{trans('admin.setting')}}</a></li>
                 </ul>
-
             </li>
 
             <li class="treeview {{active_menu('admin')[0]}}">
                 <a href="#">
-                    <i class="fa fa-users"></i> <span>{{trans('admin.admin')}}</span>
+                    <i style="color: #e9e800;" class="fa fa-user-secret"></i> <span>{{trans('admin.admin')}}</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu" style="{{active_menu('admin')[1]}}">
-                    <li class=""><a href="{{aurl('admin')}}"><i class="fa fa-users"></i> {{trans('admin.admin')}}</a></li>
+                    <li class=""><a href="{{aurl('admin')}}"><i class="fa fa-user-secret"></i> {{trans('admin.admin')}}</a></li>
                 </ul>
             </li>
 
             <li class="treeview {{active_menu('users')[0]}}">
                 <a href="#">
-                    <i class="fa fa-users"></i> <span>Users Accounts</span>
+                    <i style="color: #6a6f25;" class="fa fa-users"></i> <span>Users Accounts</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu" style="{{active_menu('users')[1]}}">
 {{--                    <li class=""><a href="{{aurl('users')}}"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>--}}
-                    <li class=""><a href="{{aurl('users')}}?level=user"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>
-                    <li class=""><a href="{{aurl('users')}}?level=vendor"><i class="fa fa-users"></i> {{trans('admin.vendor')}}</a></li>
-                    <li class=""><a href="{{aurl('users')}}?level=company"><i class="fa fa-users"></i> {{trans('admin.company')}}</a></li>
+                    <li class=""><a href="{{aurl('users')}}?level=user"><i style="color: #e9e800;" class="fa fa-user"></i> {{trans('admin.user')}}</a></li>
+                    <li class=""><a href="{{aurl('users')}}?level=vendor"><i style="color: #e96f00;" class="fa fa-venus-mars"></i> {{trans('admin.vendor')}}</a></li>
+                    <li class=""><a href="{{aurl('users')}}?level=company"><i style="color: #00b1e9;" class="fa fa-building"></i> {{trans('admin.company')}}</a></li>
                 </ul>
             </li>
 
