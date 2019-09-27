@@ -28,6 +28,10 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 		Route::get('settings','Settings@setting');
 		Route::post('settings','Settings@settings_save');
 
+		//Route countries
+		Route::resource('countries','CountriesController');
+		Route::delete('countries/destroy/all','CountriesController@multi_delete');
+
 	});
 
 	//login

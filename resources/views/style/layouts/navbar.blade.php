@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="logo">
-                    <h1><a href="{{url('/')}}"><img src="{{url('design/style')}}/img/logo.png"></a></h1>
+                    <h1><a href="{{url('/')}}"><img src="{{Storage::url(setting()->logo)}}"></a></h1>
                 </div>
             </div>
 

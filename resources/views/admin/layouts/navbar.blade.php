@@ -91,6 +91,20 @@
                 </ul>
             </li>
 
+            <li class="treeview {{active_menu('countries')[0]}}">
+                <a href="#">
+                    <i style="color: #6a6f25;" class="fa fa-flag"></i> <span>Countries</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('countries')[1]}}">
+{{--                    <li class=""><a href="{{aurl('users')}}"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>--}}
+                    <li class=""><a href="{{aurl('countries')}}"><i style="color: #e9e800;" class="fa fa-flag"></i> Countries</a></li>
+                    <li class=""><a href="{{aurl('countries/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
+                </ul>
+            </li>
+
             <li class="header">LABELS</li>
             <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>

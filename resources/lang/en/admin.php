@@ -54,4 +54,9 @@ return [
 	'main_lang'=>'Main Language',
 	'status'=>'Status',
 	'message_maintenance'=>'Message Maintenance',
+	'updated_record'=>'Update Done',
+	'open'=>'open',
+	'close'=>'close',
+	'en'=>'en',
+	'ar'=>'ar',
 ];
