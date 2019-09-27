@@ -24,6 +24,8 @@ class Settings extends Controller
 			'icon'=>'Icon'
 		]);
 
+		$data=\request()->except('_token');
+
 		if(\request()->hasFile('logo'))
 		{
 //			!empty(\setting()->logo)?Storage::delete(\setting()->logo):'';
