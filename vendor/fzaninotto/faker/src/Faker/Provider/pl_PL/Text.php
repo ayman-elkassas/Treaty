@@ -2730,9 +2730,9 @@ EOT;
     This PROJECT GUTENBERG-tm eBook, like most PROJECT GUTENBERG-tm eBooks,
     is a "public domain" work distributed by Professor Michael S. Hart
     through the Project Gutenberg Association (the "Project").
-    Among other things, this means that no one owns a United States copyright
+    Among other things, this means that no one owns a United State copyright
     on or for this work, so the Project (and you!) can copy and
-    distribute it in the United States without permission and
+    distribute it in the United State without permission and
     without paying copyright royalties. Special rules, set forth
     below, apply if you wish to copy and distribute this eBook
     under the "PROJECT GUTENBERG" trademark.

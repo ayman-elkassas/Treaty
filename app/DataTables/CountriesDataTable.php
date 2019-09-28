@@ -127,7 +127,7 @@ class CountriesDataTable extends DataTable
 			                ],
 		                ],
 		                'initComplete'=>"function () {
-				            this.api().columns([2,3]).every(function () {
+				            this.api().columns([2,3,5,6]).every(function () {
 				                var column = this;
 				                var input = document.createElement(\"input\");
 				                $(input).appendTo($(column.footer()).empty())

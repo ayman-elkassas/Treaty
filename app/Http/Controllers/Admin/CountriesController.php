@@ -18,10 +18,10 @@ class CountriesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(CountriesDataTable $admin)
+    public function index(CountriesDataTable $country)
     {
         //
-	    return $admin->render('admin.countries.index',['title'=>'Countries Control']);
+	    return $country->render('admin.countries.index',['title'=>'Countries Control']);
     }
 
     /**
@@ -58,19 +58,19 @@ class CountriesController extends Controller
 	    	'logo'=>'Logo',
 	    ]);
 
-	    $data['logo']=up()->upload([
-		    'file'=>'logo',
-		    'path'=>'settings',
-//		    'deleted_file'=>\setting()->logo,
-		    'upload_type'=>'single',
-	    ]);
+	    if(\request()->hasFile('logo'))
+	    {
+		    $data['logo']=up()->upload([
+			    'file'=>'logo',
+			    'path'=>'settings',
+			    'upload_type'=>'single',
+		    ]);
+	    }
 
 	    Country::create($data);
 
 	    session()->flash('success',trans('admin.record_added'));
-
 	    return redirect(aurl('countries'));
-
     }
 
     /**
@@ -114,7 +114,7 @@ class CountriesController extends Controller
 		    'country_name_ar'=>'required',
 		    'mob'=>'required',
 		    'code'=>'required',
-		    'logo'=>'sometimes|nullable|'.v_image(),
+		    'logo'=>'required',
 	    ],[],[
 		    'country_name_en'=>'Country name Arabic',
 		    'country_name_ar'=>'Country name Arabic',
@@ -123,14 +123,17 @@ class CountriesController extends Controller
 		    'logo'=>'Logo',
 	    ]);
 
-	    $data['logo']=up()->upload([
-		    'file'=>'logo',
-		    'path'=>'settings',
-		    'deleted_file'=>Country::find($id)->logo,
-		    'upload_type'=>'single',
-	    ]);
+	    if(\request()->hasFile('logo'))
+	    {
+		    $data['logo']=up()->upload([
+			    'file'=>'logo',
+			    'path'=>'settings',
+			    'deleted_file'=>Country::find($id)->logo,
+			    'upload_type'=>'single',
+		    ]);
+	    }
 
-//	    return dd($data);
+//	    return dd(\request('logo'));
 
 	    Country::where('id',$id)->update($data);
 

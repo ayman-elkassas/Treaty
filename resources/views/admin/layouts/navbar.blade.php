@@ -93,7 +93,7 @@
 
             <li class="treeview {{active_menu('countries')[0]}}">
                 <a href="#">
-                    <i style="color: #6a6f25;" class="fa fa-flag"></i> <span>Countries</span>
+                    <i style="color: #e96f00;" class="fa fa-flag"></i> <span>Countries</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -102,6 +102,32 @@
 {{--                    <li class=""><a href="{{aurl('users')}}"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>--}}
                     <li class=""><a href="{{aurl('countries')}}"><i style="color: #e9e800;" class="fa fa-flag"></i> Countries</a></li>
                     <li class=""><a href="{{aurl('countries/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
+                </ul>
+            </li>
+            <li class="treeview {{active_menu('cities')[0]}}">
+                <a href="#">
+                    <i style="color: #005ee9;" class="fa fa-building"></i> <span>Cities</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('cities')[1]}}">
+{{--                    <li class=""><a href="{{aurl('users')}}"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>--}}
+                    <li class=""><a href="{{aurl('cities')}}"><i style="color: #e9e800;" class="fa fa-flag"></i> Cities</a></li>
+                    <li class=""><a href="{{aurl('cities/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
+                </ul>
+            </li>
+            <li class="treeview {{active_menu('states')[0]}}">
+                <a href="#">
+                    <i style="color: #66e906;" class="fa fa-angellist"></i> <span>States</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('states')[1]}}">
+{{--                    <li class=""><a href="{{aurl('users')}}"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>--}}
+                    <li class=""><a href="{{aurl('states')}}"><i style="color: #e9e800;" class="fa fa-flag"></i> States</a></li>
+                    <li class=""><a href="{{aurl('states/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
                 </ul>
             </li>
 

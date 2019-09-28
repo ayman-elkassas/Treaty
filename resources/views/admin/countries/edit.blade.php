@@ -14,7 +14,7 @@
 
 {{--            should determine method because there are many url with--}}
 {{--            the same format difer in method --}}
-            {!! Form::open(['url'=>aurl('countries/'.$country->id),'method'=>'put'])!!}
+            {!! Form::open(['url'=>aurl('countries/'.$country->id),'files'=>true,'method'=>'put'])!!}
 
                 <div class="form-group">
                     {!! Form::label('country_name_en','Country En') !!}

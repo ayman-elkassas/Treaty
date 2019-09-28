@@ -217,7 +217,7 @@ $(function () {
       { latLng: [7.35, 134.46], name: 'Palau' },
       { latLng: [42.5, 1.51], name: 'Andorra' },
       { latLng: [14.01, -60.98], name: 'Saint Lucia' },
-      { latLng: [6.91, 158.18], name: 'Federated States of Micronesia' },
+      { latLng: [6.91, 158.18], name: 'Federated State of Micronesia' },
       { latLng: [1.3, 103.8], name: 'Singapore' },
       { latLng: [1.46, 173.03], name: 'Kiribati' },
       { latLng: [-21.13, -175.2], name: 'Tonga' },

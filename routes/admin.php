@@ -12,25 +12,34 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 
 		Route::any('logout','AdminAuth@logout');
 
-		//Route datatable
+		//Route admin datatable
 		Route::resource('admin','AdminController');
-
-		//Route destroy all
+		//Route admin destroy all
 		Route::delete('admin/destroy/all','AdminController@multi_delete');
 
-		//Route datatable
+		//Route users datatable
 		Route::resource('users','UsersController');
-
-		//Route destroy all
+		//Route users destroy all
 		Route::delete('users/destroy/all','UsersController@multi_delete');
+
+		//Route countries datatable
+		Route::resource('countries','CountriesController');
+		//Route countries destroy all
+		Route::delete('countries/destroy/all','CountriesController@multi_delete');
+
+		//Route countries datatable
+		Route::resource('cities','CitiesController');
+		//Route countries destroy all
+		Route::delete('cities/destroy/all','CitiesController@multi_delete');
+
+		//Route countries datatable
+		Route::resource('states','StatesController');
+		//Route countries destroy all
+		Route::delete('states/destroy/all','StatesController@multi_delete');
 
 		//Settings
 		Route::get('settings','Settings@setting');
 		Route::post('settings','Settings@settings_save');
-
-		//Route countries
-		Route::resource('countries','CountriesController');
-		Route::delete('countries/destroy/all','CountriesController@multi_delete');
 
 	});
 

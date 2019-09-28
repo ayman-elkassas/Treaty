@@ -1693,8 +1693,8 @@ EOT;
     will be renamed.
 
     Creating the works from public domain print editions means that no
-    one owns a United States copyright in these works, so the Foundation
-    (and you!) can copy and distribute it in the United States without
+    one owns a United State copyright in these works, so the Foundation
+    (and you!) can copy and distribute it in the United State without
     permission and without paying copyright royalties.  Special rules,
     set forth in the General Terms of Use part of this license, apply to
     copying and distributing Project Gutenberg-tm electronic works to
@@ -1748,9 +1748,9 @@ EOT;
     1.C.  The Project Gutenberg Literary Archive Foundation ("the Foundation"
     or PGLAF), owns a compilation copyright in the collection of Project
     Gutenberg-tm electronic works.  Nearly all the individual works in the
-    collection are in the public domain in the United States.  If an
-    individual work is in the public domain in the United States and you are
-    located in the United States, we do not claim a right to prevent you from
+    collection are in the public domain in the United State.  If an
+    individual work is in the public domain in the United State and you are
+    located in the United State, we do not claim a right to prevent you from
     copying, distributing, performing, displaying or creating derivative
     works based on the work as long as all references to Project Gutenberg
     are removed.  Of course, we hope that you will support the Project
@@ -1763,13 +1763,13 @@ EOT;
 
     1.D.  The copyright laws of the place where you are located also govern
     what you can do with this work.  Copyright laws in most countries are in
-    a constant state of change.  If you are outside the United States, check
+    a constant state of change.  If you are outside the United State, check
     the laws of your country in addition to the terms of this agreement
     before downloading, copying, displaying, performing, distributing or
     creating derivative works based on this work or any other Project
     Gutenberg-tm work.  The Foundation makes no representations concerning
     the copyright status of any work in any country outside the United
-    States.
+    State.
 
     1.E.  Unless you have removed all references to Project Gutenberg:
 
@@ -1788,7 +1788,7 @@ EOT;
     1.E.2.  If an individual Project Gutenberg-tm electronic work is derived
     from the public domain (does not contain a notice indicating that it is
     posted with permission of the copyright holder), the work can be copied
-    and distributed to anyone in the United States without paying any fees
+    and distributed to anyone in the United State without paying any fees
     or charges.  If you are redistributing or providing access to a work
     with the phrase "Project Gutenberg" associated with or appearing on the
     work, you must comply either with the requirements of paragraphs 1.E.1
@@ -1990,7 +1990,7 @@ EOT;
 
     The Foundation is committed to complying with the laws regulating
     charities and charitable donations in all 50 states of the United
-    States.  Compliance requirements are not uniform and it takes a
+    State.  Compliance requirements are not uniform and it takes a
     considerable effort, much paperwork and many fees to meet and keep up
     with these requirements.  We do not solicit donations in locations
     where we have not received written confirmation of compliance.  To
@@ -2004,7 +2004,7 @@ EOT;
 
     International donations are gratefully accepted, but we cannot make
     any statements concerning tax treatment of donations received from
-    outside the United States.  U.S. laws alone swamp our small staff.
+    outside the United State.  U.S. laws alone swamp our small staff.
 
     Please check the Project Gutenberg Web pages for current donation
     methods and addresses.  Donations are accepted in a number of other
