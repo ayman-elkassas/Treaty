@@ -2,68 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a826355f-f913-4eef-95fd-c6d36d98a3ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/DataTables/CitiesDataTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/DataTables/StatesDataTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CitiesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StatesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/model/City.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/model/State.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/cities/btn/checkbox.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/cities/btn/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/cities/btn/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/cities/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/cities/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/cities/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/states/btn/checkbox.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/states/btn/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/states/btn/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/states/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/states/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/states/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DepartmentsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/departments/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/departments/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/departments/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/CountriesDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/CountriesDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CountriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CountriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_27_182705_create_countries_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/settings/php307E.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/settings/php7529.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/src/locale/es-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/src/locale/es-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/dist/js/pages/dashboard2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/dist/js/pages/dashboard2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/src/locale/es-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/src/locale/es-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/dist/js/pages/dashboard2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/dist/js/pages/dashboard2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/storage/settings/36PkWrwtIRXggMd9lNPRPLZyg27v8MxLzBYWUtVg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/storage/settings/AbYK7BVueLVwONoouKXuRnsIKFph9pm6QoGGby7I.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/storage/settings/VdgrIIjjG97OE9qpJkYld2DwAfSDa5dRghEGRhCk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/storage/settings/saKQE0fBmBBwj02XBepKSCjcrDa9NHgyIJeaPL90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/storage/settings/zeDThcu6mqR2rpjSb623wpIB8cqSapSAn4cc4UWM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/countries/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/countries/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/settings/36PkWrwtIRXggMd9lNPRPLZyg27v8MxLzBYWUtVg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/settings/AbYK7BVueLVwONoouKXuRnsIKFph9pm6QoGGby7I.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/settings/VdgrIIjjG97OE9qpJkYld2DwAfSDa5dRghEGRhCk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/settings/saKQE0fBmBBwj02XBepKSCjcrDa9NHgyIJeaPL90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/settings/zeDThcu6mqR2rpjSb623wpIB8cqSapSAn4cc4UWM.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_CH/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_CH/Text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_DE/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_DE/Text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_GB/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_GB/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_IN/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_IN/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_NG/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_NG/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/Text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/it_IT/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/it_IT/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ne_NP/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ne_NP/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pl_PL/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pl_PL/Text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/vi_VN/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/vi_VN/Address.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,29 +66,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/DataTables/StatesDataTable.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="336">
+              <caret line="39" column="76" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
               <folding>
-                <element signature="e#34#54#0#PHP" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
+                <element signature="e#1377#1403#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/states">
+        <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/departments">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="02355f1d-9757-4559-abab-86c8a4bcea21">
+            <state projectRestartId="aeac2ac9-94f9-4cb9-9305-2dff01a0c819">
               <filtering>
                 <filter text="" />
               </filtering>
@@ -146,85 +89,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="813">
+              <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/edit.blade.php">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="31" column="86" selection-start-line="31" selection-start-column="86" selection-end-line="31" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/states/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="68" column="97" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="97" />
+            <state relative-caret-position="120">
+              <caret line="1013" selection-start-line="1013" selection-end-line="1013" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/states/edit.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DepartmentsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/countries">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="02355f1d-9757-4559-abab-86c8a4bcea21">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CitiesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2044">
-              <caret line="143" selection-start-line="143" selection-end-line="144" />
+            <state relative-caret-position="18">
+              <caret line="179" column="17" lean-forward="true" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
               <folding>
-                <element signature="e#46#60#0#PHP" expanded="true" />
+                <element signature="e#46#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/StatesController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="1081">
+              <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="121" column="69" selection-start-line="121" selection-start-column="69" selection-end-line="121" selection-end-column="69" />
-              <folding>
-                <element signature="n#li#6;n#ul#0;n#section#0;n#aside#0;n#!!top" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="28">
+              <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/btn/delete.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-683">
+              <caret selection-end-line="54" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="252" column="33" selection-start-line="252" selection-start-column="33" selection-end-line="252" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -264,6 +198,8 @@
       <find>countries</find>
       <find>country</find>
       <find>city</find>
+      <find>City</find>
+      <find>dept</find>
     </findStrings>
     <replaceStrings>
       <replace>{{url('/')}}/design/adminlte/plugins</replace>
@@ -274,6 +210,9 @@
       <replace>city</replace>
       <replace>Cities</replace>
       <replace>state</replace>
+      <replace>departments</replace>
+      <replace>Department</replace>
+      <replace>dep</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -298,16 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/config/filesystems.php" />
-        <option value="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_09_20_160050_create_files_table.php" />
-        <option value="$PROJECT_DIR$/app/File.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Settings.php" />
-        <option value="$PROJECT_DIR$/resources/views/style/layouts/header.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/helper.php" />
-        <option value="$PROJECT_DIR$/resources/views/style/layouts/navbar.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/resources/views/style/maintenance.blade.php" />
         <option value="$PROJECT_DIR$/resources/lang/en/admin.php" />
@@ -322,7 +251,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/cities/btn/delete.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/cities/btn/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/cities/index.blade.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Upload.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CountriesController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/countries/create.blade.php" />
@@ -334,21 +262,32 @@
         <option value="$PROJECT_DIR$/app/model/City.php" />
         <option value="$PROJECT_DIR$/app/DataTables/CountriesDataTable.php" />
         <option value="$PROJECT_DIR$/app/model/States.php" />
-        <option value="$PROJECT_DIR$/app/DataTables/CitiesDataTable.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CitiesController.php" />
         <option value="$PROJECT_DIR$/app/model/State.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_28_171206_create_states_table.php" />
-        <option value="$PROJECT_DIR$/routes/admin.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/states/btn/delete.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/states/btn/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/states/index.blade.php" />
         <option value="$PROJECT_DIR$/app/DataTables/StatesDataTable.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/cities/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/cities/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/StatesController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/states/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/states/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/model/Department.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/CitiesDataTable.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/DepartmentsDataTable.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_10_04_094853_create_departments_table.php" />
+        <option value="$PROJECT_DIR$/routes/admin.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/resources/views/admin/departments/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/helper.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/departments/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/departments/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DepartmentsController.php" />
       </list>
     </option>
   </component>
@@ -514,6 +453,55 @@
             <path>
               <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="migrations" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="backupStaticDesign" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="design" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="design" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="jstree" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="design" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="jstree" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dist" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -535,7 +523,37 @@
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="states" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="countries" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="countries" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="btn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="departments" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layouts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="routes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -550,7 +568,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/storage/app/public/settings/1tek1VWCmdMIseMt0QK4jpzQQx6BrPJWUfjs4y75.png&#10;E:/xampp/htdocs/Treaty/storage/app/public/settings/7JNHggTfVdESBTpFL584ptfuIiteP5QgJGhSdjIW.png&#10;true&#10;E:/xampp/htdocs/Treaty/storage/app/settings/3hk5QgNjH3lvOgRl9PfsQHmZeH8oGAwkYJRyLCoi.jpeg&#10;E:/xampp/htdocs/Treaty/storage/app/settings/vl23yftTYZwTj48nCvV7ciw2VI4tDvfBWX5e1iwJ.png" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/departments" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -565,12 +583,19 @@
       <recent name="E:\xampp\htdocs\Treaty\public\design\adminlte\bower_components\datatables.net-bs\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\Treaty\resources\views\admin\departments" />
       <recent name="E:\xampp\htdocs\Treaty\resources\views\admin" />
-      <recent name="E:\xampp\htdocs\Treaty\app\model" />
-      <recent name="E:\xampp\htdocs\Treaty\app\Http\Controllers\Admin" />
       <recent name="E:\xampp\htdocs\Treaty\app\DataTables" />
-      <recent name="E:\xampp\htdocs\Treaty\resources\views\admin\countries\btn" />
+      <recent name="E:\xampp\htdocs\Treaty\app\Http\Controllers\Admin" />
+      <recent name="E:\xampp\htdocs\Treaty\app\model" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="php artisan list" />
+      <command value="npm run" />
+      <command value="?" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -616,7 +641,9 @@
       <workItem from="1568988063624" duration="18217000" />
       <workItem from="1569522883804" duration="4107000" />
       <workItem from="1569603696379" duration="19757000" />
-      <workItem from="1569666905355" duration="21178000" />
+      <workItem from="1569666905355" duration="22421000" />
+      <workItem from="1570182017649" duration="5384000" />
+      <workItem from="1570279275091" duration="25476000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1566580426161</created>
@@ -657,7 +684,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240332000" />
+    <option name="totallyTimeSpent" value="272435000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,14 +698,14 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2912254" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2859304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.32980332" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922536" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32922536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3996479" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -687,7 +714,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4969743" weight="0.32922536" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32922536" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.494705" weight="0.79577464" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.494705" visible="true" weight="0.79577464" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.505295" side_tool="true" weight="0.79577464" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.50352114" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -747,202 +774,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/public/settings/saKQE0fBmBBwj02XBepKSCjcrDa9NHgyIJeaPL90.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/settings/36PkWrwtIRXggMd9lNPRPLZyg27v8MxLzBYWUtVg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2436">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#46#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="29" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="e#46#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CountriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
-          <folding>
-            <element signature="e#46#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/admins/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/admins/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/settings.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-          <folding>
-            <element signature="e#1753#1782#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/admins/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_27_182705_create_countries_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="11" column="14" lean-forward="true" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/cities">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="02355f1d-9757-4559-abab-86c8a4bcea21">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.cities">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.cities</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="78.5" y="69.5" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_133739_create_countries_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_105153_create_cities_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="21" lean-forward="true" selection-end-line="39" />
-          <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Country.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_134554_create_cities_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_134527_create_countries_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/City.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.SCHEMA:treaty">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -965,12 +796,13 @@
               <point x="0.0" y="103.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.6050420168067226" x="-38.15972222222223" y="337.6666666666667" />
+          <settings layout="Hierarchic Group" zoom="0.6050420168067226" x="-38.0" y="338.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1012,31 +844,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/State.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_134834_create_cities_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="24" column="73" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="24" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_171206_create_states_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1064,84 +875,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/CitiesDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="128" selection-start-line="128" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/DataTables/StatesDataTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="532">
           <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
           <folding>
             <element signature="e#34#54#0#PHP" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="121" column="69" selection-start-line="121" selection-start-column="69" selection-end-line="121" selection-end-column="69" />
-          <folding>
-            <element signature="n#li#6;n#ul#0;n#section#0;n#aside#0;n#!!top" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#li#7;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/countries">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="02355f1d-9757-4559-abab-86c8a4bcea21">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/states">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="02355f1d-9757-4559-abab-86c8a4bcea21">
-          <filtering>
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="868">
           <caret line="31" column="86" selection-start-line="31" selection-start-column="86" selection-end-line="31" selection-end-column="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CitiesController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/states/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2044">
-          <caret line="143" selection-start-line="143" selection-end-line="144" />
-          <folding>
-            <element signature="e#46#60#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="1904">
+          <caret line="68" column="97" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/countries">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="432047fc-ce96-4319-a05c-3a46ea5bfa26">
+          <filtering />
         </state>
       </provider>
     </entry>
@@ -1152,17 +913,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/states/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/states/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="68" column="97" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="97" />
+        <state relative-caret-position="18">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/states/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+        <state relative-caret-position="196">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/states">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="432047fc-ce96-4319-a05c-3a46ea5bfa26">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/State.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="25" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_171206_create_states_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="25" column="73" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="25" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/DepartmentsDataTable.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_04_094853_create_departments_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1148">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/btn/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3948">
+          <caret line="141" column="111" selection-start-line="141" selection-start-column="111" selection-end-line="141" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/CitiesDataTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3472">
+          <caret line="128" selection-start-line="128" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/content.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-389" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1428" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/message.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13927" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/settings.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1943" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/reset_password.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2856" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/admins/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="69" column="12" selection-start-line="64" selection-start-column="4" selection-end-line="69" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/forget.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Department.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CountriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="133" column="9" selection-start-line="125" selection-start-column="8" selection-end-line="133" selection-end-column="9" />
+          <folding>
+            <element signature="e#46#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CitiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
+          <folding>
+            <element signature="e#46#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/departments/8kI3Ly4MCjsw3l7Qo7ER56GQto8AlT9AwVNiRWKK.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="252" column="33" selection-start-line="252" selection-start-column="33" selection-end-line="252" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="1013" selection-start-line="1013" selection-end-line="1013" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/departments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="aeac2ac9-94f9-4cb9-9305-2dff01a0c819">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/btn/delete.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-683">
+          <caret selection-end-line="54" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="39" column="76" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
+          <folding>
+            <element signature="e#1377#1403#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DepartmentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="179" column="17" lean-forward="true" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
+          <folding>
+            <element signature="e#46#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

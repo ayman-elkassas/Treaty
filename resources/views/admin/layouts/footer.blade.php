@@ -250,6 +250,7 @@
 
 {{--My scripts--}}
 <script src="{{url('design/adminlte/dist/js/scripts.js')}}"></script>
+<script src="{{url('design/jstree')}}/dist/jstree.min.js"></script>
 
 @stack('js')
 @stack('css')

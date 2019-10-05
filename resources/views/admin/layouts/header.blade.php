@@ -66,4 +66,6 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="{{url('design/adminlte')}}/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 
+{{--    jstree--}}
+    <link rel="stylesheet" href="{{url('design/jstree')}}/dist/themes/default/style.min.css" />
 </head>

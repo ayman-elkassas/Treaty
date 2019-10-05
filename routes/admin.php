@@ -37,6 +37,9 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 		//Route countries destroy all
 		Route::delete('states/destroy/all','StatesController@multi_delete');
 
+		//Route deps datatable
+		Route::resource('departments','DepartmentsController');
+
 		//Settings
 		Route::get('settings','Settings@setting');
 		Route::post('settings','Settings@settings_save');
