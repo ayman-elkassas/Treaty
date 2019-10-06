@@ -41,6 +41,11 @@
                 <div class="form-group">
                     {!! Form::label('icon','Icon') !!}
                     {!! Form::file('icon',['class'=>'form-control']) !!}
+
+                    @if(!empty($dep->icon) and Storage::has($dep->icon))
+                        <img src="{{Storage::url($dep->icon)}}" style="width: 100px;height: 100px;">
+                    @endif
+
                 </div>
 
                 {!! Form::submit('Save',['class'=>'btn btn-primary']) !!}

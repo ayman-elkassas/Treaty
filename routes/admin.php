@@ -40,6 +40,11 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 		//Route deps datatable
 		Route::resource('departments','DepartmentsController');
 
+		//Route trademarks datatable
+		Route::resource('trademarks','TradeMarkController');
+		//Route countries destroy all
+		Route::delete('trademarks/destroy/all','TradeMarkController@multi_delete');
+
 		//Settings
 		Route::get('settings','Settings@setting');
 		Route::post('settings','Settings@settings_save');
