@@ -42,8 +42,13 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 
 		//Route trademarks datatable
 		Route::resource('trademarks','TradeMarkController');
-		//Route countries destroy all
+		//Route trademarks destroy all
 		Route::delete('trademarks/destroy/all','TradeMarkController@multi_delete');
+
+		//Route manufacts datatable
+		Route::resource('manufacts','ManufactController');
+		//Route countries destroy all
+		Route::delete('manufacts/destroy/all','ManufactController@multi_delete');
 
 		//Settings
 		Route::get('settings','Settings@setting');

@@ -1,0 +1,1 @@
+<img src="{{Storage::url(\App\model\Manufacts::find($id)->logo)}}" class="center-block" style="width: 50px;height: 50px;"/>
