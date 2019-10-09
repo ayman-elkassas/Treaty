@@ -19,44 +19,44 @@
 
 {{--            should determine method because there are many url with--}}
 {{--            the same format difer in method --}}
-            {!! Form::open(['url'=>aurl('manufacts/'.$manufacts->id),'files'=>true,'method'=>'put'])!!}
+            {!! Form::open(['url'=>aurl('malls/'.$malls->id),'files'=>true,'method'=>'put'])!!}
 
                 <input type="hidden" id="lat" name="lat" value="{{$lat}}">
                 <input type="hidden" id="lng" name="lng" value="{{$lng}}">
 
                 <div class="form-group">
                     {!! Form::label('name_en','Malls En') !!}
-                    {!! Form::text('name_en',$manufacts->name_en,['class'=>'form-control']) !!}
+                    {!! Form::text('name_en',$malls->name_en,['class'=>'form-control']) !!}
                 </div>
 
                 <div class="form-group">
                     {!! Form::label('name_ar','Malls Ar') !!}
-                    {!! Form::text('name_ar',$manufacts->name_ar,['class'=>'form-control']) !!}
+                    {!! Form::text('name_ar',$malls->name_ar,['class'=>'form-control']) !!}
                 </div>
 
             <div class="form-group">
                 {!! Form::label('country_id','Country name') !!}
-                {!! Form::select('country_id',\App\User::pluck('name','id'),$malls->country_id,['class'=>'form-control']) !!}
+                {!! Form::select('country_id',\App\model\Country::pluck('country_name_'.session('lang'),'id'),$malls->country_id,['class'=>'form-control']) !!}
             </div>
 
             <div class="form-group">
                 {!! Form::label('contact_name','contact_name') !!}
-                {!! Form::text('contact_name',$manufacts->contact_name,['class'=>'form-control']) !!}
+                {!! Form::text('contact_name',$malls->contact_name,['class'=>'form-control']) !!}
             </div>
 
             <div class="form-group">
                 {!! Form::label('email','Email') !!}
-                {!! Form::email('email',$manufacts->email,['class'=>'form-control']) !!}
+                {!! Form::email('email',$malls->email,['class'=>'form-control']) !!}
             </div>
 
             <div class="form-group">
                 {!! Form::label('mobile','Mobile') !!}
-                {!! Form::text('mobile',$manufacts->mobile,['class'=>'form-control']) !!}
+                {!! Form::text('mobile',$malls->mobile,['class'=>'form-control']) !!}
             </div>
 
             <div class="form-group">
                 {!! Form::label('address','Address') !!}
-                {!! Form::text('address',$manufacts->address,['class'=>'form-control','id'=>'address']) !!}
+                {!! Form::text('address',$malls->address,['class'=>'form-control','id'=>'address']) !!}
             </div>
 
             {{--                map--}}
@@ -66,17 +66,17 @@
 
             <div class="form-group">
                 {!! Form::label('facebook','facebook') !!}
-                {!! Form::text('facebook',$manufacts->facebook,['class'=>'form-control']) !!}
+                {!! Form::text('facebook',$malls->facebook,['class'=>'form-control']) !!}
             </div>
 
             <div class="form-group">
                 {!! Form::label('twitter','twitter') !!}
-                {!! Form::text('twitter',$manufacts->twitter,['class'=>'form-control']) !!}
+                {!! Form::text('twitter',$malls->twitter,['class'=>'form-control']) !!}
             </div>
 
             <div class="form-group">
                 {!! Form::label('website','Website') !!}
-                {!! Form::text('website',$manufacts->website,['class'=>'form-control']) !!}
+                {!! Form::text('website',$malls->website,['class'=>'form-control']) !!}
             </div>
 
                 <div class="form-group">
@@ -84,8 +84,8 @@
                     {!! Form::file('logo',['class'=>'form-control']) !!}
                 </div>
 
-                @if(!empty($manufacts->logo))
-                    <img src="{{Storage::url($manufacts->logo)}}" style="width: 5%;height: 5%;"/>
+                @if(!empty($malls->logo))
+                    <img src="{{Storage::url($malls->logo)}}" style="width: 5%;height: 5%;"/>
                 @endif
 
                 <br>

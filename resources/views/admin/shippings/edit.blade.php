@@ -2,11 +2,6 @@
 
 @section('content')
 
-	<?php
-        $lat=!empty(old('lat'))?old('lat'):27.004305008230943;
-        $lng=!empty(old('lng'))?old('lng'):29.9931640625;
-	?>
-
     <div class="box">
         <div class="box-header">
             <h3 class="box-title">{{$title}}</h3>
@@ -19,73 +14,30 @@
 
 {{--            should determine method because there are many url with--}}
 {{--            the same format difer in method --}}
-            {!! Form::open(['url'=>aurl('manufacts/'.$manufacts->id),'files'=>true,'method'=>'put'])!!}
-
-                <input type="hidden" id="lat" name="lat" value="{{$lat}}">
-                <input type="hidden" id="lng" name="lng" value="{{$lng}}">
+            {!! Form::open(['url'=>aurl('shippings/'.$shippings->id),'files'=>true,'method'=>'put'])!!}
 
                 <div class="form-group">
-                    {!! Form::label('name_en','Malls En') !!}
-                    {!! Form::text('name_en',$manufacts->name_en,['class'=>'form-control']) !!}
+                    {!! Form::label('name_en','Shippings En') !!}
+                    {!! Form::text('name_en',$shippings->name_en,['class'=>'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('name_ar','Malls Ar') !!}
-                    {!! Form::text('name_ar',$manufacts->name_ar,['class'=>'form-control']) !!}
+                    {!! Form::label('name_ar','Shippings Ar') !!}
+                    {!! Form::text('name_ar',$shippings->name_ar,['class'=>'form-control']) !!}
                 </div>
 
-            <div class="form-group">
-                {!! Form::label('country_id','Country name') !!}
-                {!! Form::select('country_id',\App\User::pluck('name','id'),$malls->country_id,['class'=>'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('contact_name','contact_name') !!}
-                {!! Form::text('contact_name',$manufacts->contact_name,['class'=>'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('email','Email') !!}
-                {!! Form::email('email',$manufacts->email,['class'=>'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('mobile','Mobile') !!}
-                {!! Form::text('mobile',$manufacts->mobile,['class'=>'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('address','Address') !!}
-                {!! Form::text('address',$manufacts->address,['class'=>'form-control','id'=>'address']) !!}
-            </div>
-
-            {{--                map--}}
-            <div class="form-group">
-                <div id="us1" style="width:100%;height: 400px;"></div>
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('facebook','facebook') !!}
-                {!! Form::text('facebook',$manufacts->facebook,['class'=>'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('twitter','twitter') !!}
-                {!! Form::text('twitter',$manufacts->twitter,['class'=>'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('website','Website') !!}
-                {!! Form::text('website',$manufacts->website,['class'=>'form-control']) !!}
-            </div>
+                <div class="form-group">
+                    {!! Form::label('user_id','User name') !!}
+                    {!! Form::select('user_id',\App\User::where('level','company')->pluck('name','id'),$shippings->user_id,['class'=>'form-control']) !!}
+                </div>
 
                 <div class="form-group">
-                    {!! Form::label('logo','Malls Logo') !!}
+                    {!! Form::label('logo','Shippings Logo') !!}
                     {!! Form::file('logo',['class'=>'form-control']) !!}
                 </div>
 
-                @if(!empty($manufacts->logo))
-                    <img src="{{Storage::url($manufacts->logo)}}" style="width: 5%;height: 5%;"/>
+                @if(!empty($shippings->logo))
+                    <img src="{{Storage::url($shippings->logo)}}" style="width: 5%;height: 5%;"/>
                 @endif
 
                 <br>
@@ -99,33 +51,6 @@
         <!-- /.box-body -->
     </div>
     <!-- /.box -->
-
-    @push('js')
-        {{--        <script async defer--}}
-        {{--                src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB6d764357eLB6Ox79IWkelWVeYxRkwV-Q&callback=initMap'>--}}
-        {{--        </script>--}}
-        <script type="text/javascript"
-                src='https://maps.google.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyCcaWv2Qaj-wZ0QihtoWG4P6LK10455B9E'></script>
-
-        <script type="text/javascript" src='{{url('design/jquery-locationpicker/locationpicker.jquery.js')}}'></script>
-
-        <script type="text/javascript">
-            $('#us1').locationpicker({
-                location: {
-                    latitude: {{$lat}}
-                    , longitude: {{$lng}}
-                },
-                radius: 300,
-                markerIcon: '{{url('image/map-marker-2-xl.png')}}',
-                inputBinding: {
-                    latitudeInput: $('#lat'),
-                    longitudeInput: $('#lng')
-                },
-                //radiusInput: $('#us2-radius'),
-                locationNameInput: $('#address'),
-            });
-        </script>
-    @endpush
 
 @endsection
 

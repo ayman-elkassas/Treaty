@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\DataTables\ManufactsDataTable;
+use App\DataTables\MallsDataTable;
+use App\model\malls;
 use App\model\Manufacts;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -10,17 +11,17 @@ use App\Http\Controllers\Controller;
 //Data table
 use Illuminate\Support\Facades\Storage;
 
-class ManufactController extends Controller
+class MallsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(ManufactsDataTable $manufacts)
+    public function index(MallsDataTable $malls)
     {
         //
-	    return $manufacts->render('admin.manufacts.index',['title'=>'Manufacts Control']);
+	    return $malls->render('admin.malls.index',['title'=>'Malls Control']);
     }
 
     /**
@@ -31,7 +32,7 @@ class ManufactController extends Controller
     public function create()
     {
         //
-	    return view('admin.manufacts.create',['title'=>'Add Manufacts']);
+	    return view('admin.malls.create',['title'=>'Add Malls']);
     }
 
     /**
@@ -46,6 +47,7 @@ class ManufactController extends Controller
 	    $data=$this->validate($request,[
 	    	'name_en'=>'required',
 	    	'name_ar'=>'required',
+	    	'country_id'=>'required',
 	    	'email'=>'required|email',
 	    	'mobile'=>'required|numeric',
 	    	'facebook'=>'sometimes|nullable|url',
@@ -58,6 +60,7 @@ class ManufactController extends Controller
 	    ],[],[
 		    'name_en'=>'Name En',
 		    'name_ar'=>'Name Ar',
+		    'country_id'=>'Country Name',
 		    'email'=>'Email',
 		    'mobile'=>'Mobile',
 		    'facebook'=>'Facebook link',
@@ -73,15 +76,15 @@ class ManufactController extends Controller
 	    {
 		    $data['logo']=up()->upload([
 			    'file'=>'logo',
-			    'path'=>'manufacts',
+			    'path'=>'malls',
 			    'upload_type'=>'single',
 		    ]);
 	    }
 
-	    Manufacts::create($data);
+	    Malls::create($data);
 
 	    session()->flash('success',trans('admin.record_added'));
-	    return redirect(aurl('manufacts'));
+	    return redirect(aurl('malls'));
     }
 
     /**
@@ -104,10 +107,10 @@ class ManufactController extends Controller
     public function edit($id)
     {
         //
-	    $manufacts=Manufacts::find($id);
+	    $malls=Malls::find($id);
 	    $title=trans('admin.edit');
 
-	    return view('admin.manufacts.edit',compact('manufacts','title'));
+	    return view('admin.malls.edit',compact('malls','title'));
     }
 
     /**
@@ -123,6 +126,7 @@ class ManufactController extends Controller
 	    $data=$this->validate($request,[
 		    'name_en'=>'required',
 		    'name_ar'=>'required',
+		    'country_id'=>'required',
 		    'email'=>'required|email',
 		    'mobile'=>'required|numeric',
 		    'facebook'=>'sometimes|nullable|url',
@@ -135,6 +139,7 @@ class ManufactController extends Controller
 	    ],[],[
 		    'name_en'=>'Name En',
 		    'name_ar'=>'Name Ar',
+		    'country_id'=>'Country Name',
 		    'email'=>'Email',
 		    'mobile'=>'Mobile',
 		    'facebook'=>'Facebook link',
@@ -150,18 +155,18 @@ class ManufactController extends Controller
 	    {
 		    $data['logo']=up()->upload([
 			    'file'=>'logo',
-			    'path'=>'manufacts',
-			    'deleted_file'=>Manufacts::find($id)->logo,
+			    'path'=>'malls',
+			    'deleted_file'=>malls::find($id)->logo,
 			    'upload_type'=>'single',
 		    ]);
 	    }
 
 //	    return dd(\request('logo'));
 
-	    Manufacts::where('id',$id)->update($data);
+	    malls::where('id',$id)->update($data);
 
 	    session()->flash('success',trans('admin.recorded_updated'));
-	    return redirect(aurl('manufacts'));
+	    return redirect(aurl('malls'));
     }
 
     /**
@@ -173,13 +178,13 @@ class ManufactController extends Controller
     public function destroy($id)
     {
         //
-	    $manufacts=Manufacts::find($id);
+	    $malls=malls::find($id);
 
-	    Storage::delete($manufacts->logo);
-	    $manufacts->delete();
+	    Storage::delete($malls->logo);
+	    $malls->delete();
 
 	    session()->flash('success',trans('admin.deleted_record'));
-	    return redirect(aurl('manufacts'));
+	    return redirect(aurl('malls'));
 
     }
 
@@ -188,18 +193,18 @@ class ManufactController extends Controller
     	if(is_array(\request('item')))
 	    {
 		    foreach (\request('item') as $id) {
-			    $manufacts=Manufacts::find($id);
-			    Storage::delete($manufacts->logo);
-			    $manufacts->delete();
+			    $malls=malls::find($id);
+			    Storage::delete($malls->logo);
+			    $malls->delete();
 	    	}
 	    }
     	else{
-		    $manufacts=Manufacts::find(\request('item'));
-		    Storage::delete($manufacts->logo);
-		    $manufacts->delete();
+		    $malls=malls::find(\request('item'));
+		    Storage::delete($malls->logo);
+		    $malls->delete();
 	    }
 
     	session()->flash('success',trans('admin.deleted_record'));
-    	return redirect(aurl('manufacts'));
+    	return redirect(aurl('malls'));
     }
 }

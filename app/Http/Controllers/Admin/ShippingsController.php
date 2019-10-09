@@ -2,25 +2,25 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\DataTables\ManufactsDataTable;
-use App\model\Manufacts;
+use App\DataTables\ShippingsDataTable;
+use App\model\Shipping;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 //Data table
 use Illuminate\Support\Facades\Storage;
 
-class ManufactController extends Controller
+class ShippingsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(ManufactsDataTable $manufacts)
+    public function index(ShippingsDataTable $shippings)
     {
         //
-	    return $manufacts->render('admin.manufacts.index',['title'=>'Manufacts Control']);
+	    return $shippings->render('admin.shippings.index',['title'=>'Shippings Control']);
     }
 
     /**
@@ -31,7 +31,7 @@ class ManufactController extends Controller
     public function create()
     {
         //
-	    return view('admin.manufacts.create',['title'=>'Add Manufacts']);
+	    return view('admin.shippings.create',['title'=>'Add Shippings']);
     }
 
     /**
@@ -46,24 +46,14 @@ class ManufactController extends Controller
 	    $data=$this->validate($request,[
 	    	'name_en'=>'required',
 	    	'name_ar'=>'required',
-	    	'email'=>'required|email',
-	    	'mobile'=>'required|numeric',
-	    	'facebook'=>'sometimes|nullable|url',
-	    	'twitter'=>'sometimes|nullable|url',
-	    	'website'=>'sometimes|nullable|url',
-	    	'contact_name'=>'sometimes|nullable|string',
+	    	'user_id'=>'required',
 	    	'lat'=>'sometimes|nullable',
 	    	'lng'=>'sometimes|nullable',
 	    	'logo'=>'sometimes|nullable|'.v_image(),
 	    ],[],[
 		    'name_en'=>'Name En',
 		    'name_ar'=>'Name Ar',
-		    'email'=>'Email',
-		    'mobile'=>'Mobile',
-		    'facebook'=>'Facebook link',
-		    'twitter'=>'Twitter link',
-		    'website'=>'Website link',
-		    'contact_name'=>'Contact name',
+		    'user_id'=>'User Name',
 		    'lat'=>'Lat',
 		    'lng'=>'Lang',
 		    'logo'=>'Logo',
@@ -73,15 +63,15 @@ class ManufactController extends Controller
 	    {
 		    $data['logo']=up()->upload([
 			    'file'=>'logo',
-			    'path'=>'manufacts',
+			    'path'=>'shippings',
 			    'upload_type'=>'single',
 		    ]);
 	    }
 
-	    Manufacts::create($data);
+	    Shipping::create($data);
 
 	    session()->flash('success',trans('admin.record_added'));
-	    return redirect(aurl('manufacts'));
+	    return redirect(aurl('shippings'));
     }
 
     /**
@@ -104,10 +94,10 @@ class ManufactController extends Controller
     public function edit($id)
     {
         //
-	    $manufacts=Manufacts::find($id);
+	    $shippings=Shipping::find($id);
 	    $title=trans('admin.edit');
 
-	    return view('admin.manufacts.edit',compact('manufacts','title'));
+	    return view('admin.shippings.edit',compact('shippings','title'));
     }
 
     /**
@@ -123,24 +113,14 @@ class ManufactController extends Controller
 	    $data=$this->validate($request,[
 		    'name_en'=>'required',
 		    'name_ar'=>'required',
-		    'email'=>'required|email',
-		    'mobile'=>'required|numeric',
-		    'facebook'=>'sometimes|nullable|url',
-		    'twitter'=>'sometimes|nullable|url',
-		    'website'=>'sometimes|nullable|url',
-		    'contact_name'=>'sometimes|nullable|string',
+		    'user_id'=>'required',
 		    'lat'=>'sometimes|nullable',
 		    'lng'=>'sometimes|nullable',
 		    'logo'=>'sometimes|nullable|'.v_image(),
 	    ],[],[
 		    'name_en'=>'Name En',
 		    'name_ar'=>'Name Ar',
-		    'email'=>'Email',
-		    'mobile'=>'Mobile',
-		    'facebook'=>'Facebook link',
-		    'twitter'=>'Twitter link',
-		    'website'=>'Website link',
-		    'contact_name'=>'Contact name',
+		    'user_id'=>'User Name',
 		    'lat'=>'Lat',
 		    'lng'=>'Lang',
 		    'logo'=>'Logo',
@@ -150,18 +130,18 @@ class ManufactController extends Controller
 	    {
 		    $data['logo']=up()->upload([
 			    'file'=>'logo',
-			    'path'=>'manufacts',
-			    'deleted_file'=>Manufacts::find($id)->logo,
+			    'path'=>'shippings',
+			    'deleted_file'=>Shipping::find($id)->logo,
 			    'upload_type'=>'single',
 		    ]);
 	    }
 
 //	    return dd(\request('logo'));
 
-	    Manufacts::where('id',$id)->update($data);
+	    Shipping::where('id',$id)->update($data);
 
 	    session()->flash('success',trans('admin.recorded_updated'));
-	    return redirect(aurl('manufacts'));
+	    return redirect(aurl('shippings'));
     }
 
     /**
@@ -173,13 +153,13 @@ class ManufactController extends Controller
     public function destroy($id)
     {
         //
-	    $manufacts=Manufacts::find($id);
+	    $shippings=Shipping::find($id);
 
-	    Storage::delete($manufacts->logo);
-	    $manufacts->delete();
+	    Storage::delete($shippings->logo);
+	    $shippings->delete();
 
 	    session()->flash('success',trans('admin.deleted_record'));
-	    return redirect(aurl('manufacts'));
+	    return redirect(aurl('shippings'));
 
     }
 
@@ -188,18 +168,18 @@ class ManufactController extends Controller
     	if(is_array(\request('item')))
 	    {
 		    foreach (\request('item') as $id) {
-			    $manufacts=Manufacts::find($id);
-			    Storage::delete($manufacts->logo);
-			    $manufacts->delete();
+			    $shippings=Shipping::find($id);
+			    Storage::delete($shippings->logo);
+			    $shippings->delete();
 	    	}
 	    }
     	else{
-		    $manufacts=Manufacts::find(\request('item'));
-		    Storage::delete($manufacts->logo);
-		    $manufacts->delete();
+		    $shippings=Shipping::find(\request('item'));
+		    Storage::delete($shippings->logo);
+		    $shippings->delete();
 	    }
 
     	session()->flash('success',trans('admin.deleted_record'));
-    	return redirect(aurl('manufacts'));
+    	return redirect(aurl('$shippings'));
     }
 }

@@ -50,6 +50,18 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 		//Route countries destroy all
 		Route::delete('manufacts/destroy/all','ManufactController@multi_delete');
 
+		//Route shippings datatable
+		Route::resource('shippings','ShippingsController');
+		//Route countries destroy all
+		Route::delete('shippings/destroy/all','ShippingsController@multi_delete');
+
+		//Route malls datatable
+		Route::resource('malls','MallsController');
+		//Route countries destroy all
+		Route::delete('malls/destroy/all','MallsController@multi_delete');
+
+
+
 		//Settings
 		Route::get('settings','Settings@setting');
 		Route::post('settings','Settings@settings_save');

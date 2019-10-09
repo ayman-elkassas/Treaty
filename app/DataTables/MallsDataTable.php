@@ -4,12 +4,13 @@ namespace App\DataTables;
 
 use App\Admin;
 use App\model\Country;
+use App\model\malls;
 use App\model\Manufacts;
 use App\model\TradeMark;
 use Illuminate\Support\Facades\URL;
 use Yajra\DataTables\Services\DataTable;
 
-class ManufactsDataTable extends DataTable
+class MallsDataTable extends DataTable
 {
     /**
      * Build DataTable class.
@@ -20,10 +21,10 @@ class ManufactsDataTable extends DataTable
     public function dataTable($query)
     {
         return datatables($query)
-            ->addColumn('edit', 'admin.manufacts.btn.edit')
-            ->addColumn('delete', 'admin.manufacts.btn.delete')
-	        ->addColumn('checkbox', 'admin.manufacts.btn.checkbox')
-	        ->addColumn('logo', 'admin.manufacts.btn.logo')
+            ->addColumn('edit', 'admin.malls.btn.edit')
+            ->addColumn('delete', 'admin.malls.btn.delete')
+	        ->addColumn('checkbox', 'admin.malls.btn.checkbox')
+	        ->addColumn('logo', 'admin.malls.btn.logo')
 	        ->rawColumns([
 	        	'edit',
 		        'delete',
@@ -40,7 +41,7 @@ class ManufactsDataTable extends DataTable
      */
     public function query()
     {
-        return Manufacts::query();
+        return malls::query()->with('country_id')->select('malls.*');
     }
 
     //lang
@@ -92,7 +93,7 @@ class ManufactsDataTable extends DataTable
 		                'lengthMenu'=>[[10,25,50,100,-1],[10,25,50,'All Record']],
 		                'buttons'=>[
 			                [
-				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Manufact',
+				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Mall',
 				                'className'=>'btn btn-info',
 				                'action'=>'function(){
 				                    window.location.href="'.URL::current().'/create";
@@ -176,14 +177,9 @@ class ManufactsDataTable extends DataTable
 		        'title'=>'Manufacts name En'
 	        ],
 	        [
-		        'name'=>'email',
-		        'data'=>'email',
-		        'title'=>'Email'
-	        ],
-	        [
-		        'name'=>'mobile',
-		        'data'=>'mobile',
-		        'title'=>'Mobile'
+		        'name'=>'country_id.country_name_'.session('lang'),
+		        'data'=>'country_id.country_name_'.session('lang'),
+		        'title'=>'Country name'
 	        ],
 	        [
 		        'name'=>'logo',
@@ -232,6 +228,6 @@ class ManufactsDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'manufacts_' . date('YmdHis');
+        return 'malls_' . date('YmdHis');
     }
 }

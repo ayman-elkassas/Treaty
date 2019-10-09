@@ -5,11 +5,12 @@ namespace App\DataTables;
 use App\Admin;
 use App\model\Country;
 use App\model\Manufacts;
+use App\model\Shipping;
 use App\model\TradeMark;
 use Illuminate\Support\Facades\URL;
 use Yajra\DataTables\Services\DataTable;
 
-class ManufactsDataTable extends DataTable
+class ShippingsDataTable extends DataTable
 {
     /**
      * Build DataTable class.
@@ -20,10 +21,10 @@ class ManufactsDataTable extends DataTable
     public function dataTable($query)
     {
         return datatables($query)
-            ->addColumn('edit', 'admin.manufacts.btn.edit')
-            ->addColumn('delete', 'admin.manufacts.btn.delete')
-	        ->addColumn('checkbox', 'admin.manufacts.btn.checkbox')
-	        ->addColumn('logo', 'admin.manufacts.btn.logo')
+            ->addColumn('edit', 'admin.shippings.btn.edit')
+            ->addColumn('delete', 'admin.shippings.btn.delete')
+	        ->addColumn('checkbox', 'admin.shippings.btn.checkbox')
+	        ->addColumn('logo', 'admin.shippings.btn.logo')
 	        ->rawColumns([
 	        	'edit',
 		        'delete',
@@ -40,7 +41,7 @@ class ManufactsDataTable extends DataTable
      */
     public function query()
     {
-        return Manufacts::query();
+        return Shipping::query()->with('user_id')->select('shippings.*');
     }
 
     //lang
@@ -92,7 +93,7 @@ class ManufactsDataTable extends DataTable
 		                'lengthMenu'=>[[10,25,50,100,-1],[10,25,50,'All Record']],
 		                'buttons'=>[
 			                [
-				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Manufact',
+				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Shipping',
 				                'className'=>'btn btn-info',
 				                'action'=>'function(){
 				                    window.location.href="'.URL::current().'/create";
@@ -168,22 +169,17 @@ class ManufactsDataTable extends DataTable
 	        [
 		        'name'=>'name_en',
 		        'data'=>'name_en',
-		        'title'=>'Manufacts name En'
+		        'title'=>'Shippings name En'
 	        ],
 	        [
 		        'name'=>'name_ar',
 		        'data'=>'name_ar',
-		        'title'=>'Manufacts name En'
+		        'title'=>'Shippings name Ar'
 	        ],
 	        [
-		        'name'=>'email',
-		        'data'=>'email',
-		        'title'=>'Email'
-	        ],
-	        [
-		        'name'=>'mobile',
-		        'data'=>'mobile',
-		        'title'=>'Mobile'
+		        'name'=>'user_id.name',
+		        'data'=>'user_id.name',
+		        'title'=>'User name'
 	        ],
 	        [
 		        'name'=>'logo',
@@ -232,6 +228,6 @@ class ManufactsDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'manufacts_' . date('YmdHis');
+        return 'shippings_' . date('YmdHis');
     }
 }

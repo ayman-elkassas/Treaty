@@ -17,19 +17,24 @@
 
 {{--            {!! Form::open(['route'=>'admin.store'])!!}--}}
 {{--            ORRRRRRRRRRRR--}}
-            {!! Form::open(['url'=>aurl('manufacts'),'files'=>true])!!}
+            {!! Form::open(['url'=>aurl('malls'),'files'=>true])!!}
 
                 <input type="hidden" id="lat" name="lat" value="{{$lat}}">
                 <input type="hidden" id="lng" name="lng" value="{{$lng}}">
 
                 <div class="form-group">
-                    {!! Form::label('name_en','Manufacts name En') !!}
+                    {!! Form::label('name_en','Malls name En') !!}
                     {!! Form::text('name_en',old('name_en'),['class'=>'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('name_ar','Manufacts name Ar') !!}
+                    {!! Form::label('name_ar','Malls name Ar') !!}
                     {!! Form::text('name_ar',old('name_ar'),['class'=>'form-control']) !!}
+                </div>
+
+                <div class="form-group">
+                    {!! Form::label('country_id','Country name') !!}
+                    {!! Form::select('country_id',\App\model\Country::pluck('country_name_'.session('lang'),'id'),old('country_id'),['class'=>'form-control']) !!}
                 </div>
 
                 <div class="form-group">
@@ -73,7 +78,7 @@
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('logo','Manufacts Logo') !!}
+                    {!! Form::label('logo','Malls Logo') !!}
                     {!! Form::file('logo',old('logo'),['class'=>'form-control']) !!}
                 </div>
 

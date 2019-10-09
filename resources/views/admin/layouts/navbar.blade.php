@@ -172,6 +172,35 @@
                 </ul>
             </li>
 
+            <li class="treeview {{active_menu('shippings')[0]}}">
+                <a href="#">
+                    <i style="color: #e98f00;" class="fa fa-digg"></i> <span>Shippings</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('shippings')[1]}}">
+                    {{--                    <li class=""><a href="{{aurl('users')}}"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>--}}
+                    <li class=""><a href="{{aurl('shippings')}}"><i style="color: #e9e800;" class="fa fa-flag"></i> Shippings</a></li>
+                    <li class=""><a href="{{aurl('shippings/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview {{active_menu('malls')[0]}}">
+                <a href="#">
+                    <i style="color: #3ae9e7;" class="fa fa-digg"></i> <span>Malls</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('malls')[1]}}">
+                    {{--                    <li class=""><a href="{{aurl('users')}}"><i class="fa fa-users"></i> {{trans('admin.user')}}</a></li>--}}
+                    <li class=""><a href="{{aurl('malls')}}"><i style="color: #e9e800;" class="fa fa-flag"></i> Malls</a></li>
+                    <li class=""><a href="{{aurl('malls/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
+                </ul>
+            </li>
+
+
 
             <li class="header">LABELS</li>
             <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
