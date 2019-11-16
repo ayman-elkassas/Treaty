@@ -29,3 +29,8 @@ Route::get('maintenance',function()
 });
 
 
+
+
+Route::group(['prefix' => 'voyager'], function () {
+    Voyager::routes();
+});

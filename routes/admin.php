@@ -47,18 +47,28 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 
 		//Route manufacts datatable
 		Route::resource('manufacts','ManufactController');
-		//Route countries destroy all
+		//Route manufacts destroy all
 		Route::delete('manufacts/destroy/all','ManufactController@multi_delete');
 
 		//Route shippings datatable
 		Route::resource('shippings','ShippingsController');
-		//Route countries destroy all
+		//Route shippings destroy all
 		Route::delete('shippings/destroy/all','ShippingsController@multi_delete');
 
 		//Route malls datatable
 		Route::resource('malls','MallsController');
-		//Route countries destroy all
+		//Route malls destroy all
 		Route::delete('malls/destroy/all','MallsController@multi_delete');
+
+        //Route colors datatable
+        Route::resource('colors','ColorsController');
+        //Route colors destroy all
+        Route::delete('colors/destroy/all','ColorsController@multi_delete');
+
+        //Route sizes datatable
+        Route::resource('sizes','SizesController');
+        //Route sizes destroy all
+        Route::delete('sizes/destroy/all','SizesController@multi_delete');
 
 
 

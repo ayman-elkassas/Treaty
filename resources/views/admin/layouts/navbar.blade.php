@@ -200,6 +200,19 @@
                 </ul>
             </li>
 
+            <li class="treeview {{active_menu('colors')[0]}}">
+                <a href="#">
+                    <i style="color: #e96e00;" class="fa fa-digg"></i> <span>Colors</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('colors')[1]}}">
+                    <li class=""><a href="{{aurl('colors')}}"><i style="color: #009ee9;" class="fa fa-car"></i> Colors</a></li>
+                    <li class=""><a href="{{aurl('colors/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
+                </ul>
+            </li>
+
 
 
             <li class="header">LABELS</li>

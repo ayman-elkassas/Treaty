@@ -2,35 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a826355f-f913-4eef-95fd-c6d36d98a3ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/DataTables/MallsDataTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/DataTables/ShippingsDataTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MallsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ShippingsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/malls/btn/checkbox.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/malls/btn/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/malls/btn/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/malls/btn/logo.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/malls/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/malls/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/malls/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/shippings/btn/checkbox.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/shippings/btn/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/shippings/btn/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/shippings/btn/logo.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/shippings/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/shippings/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/shippings/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DataTables/ColorsDataTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DataTables/SizesDataTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ColorsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SizesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/pages/November2019/YN9BGyox6K1BLly83uYE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/pages/page1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post1-cropped.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post1-medium.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post1-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post2-cropped.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post2-medium.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post2-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post3-cropped.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post3-medium.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post3-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post4-cropped.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post4-medium.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post4-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/posts/post4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/departments/oYTCyGXliHYSnGOsBht1KVRhSTWXbA2yOuSoWV6I.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/departments/xcncG9noA5Tv4osN9W7h5HU64EjewPKgnjB4HEZ7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/0r0GMir2mSWjgCBzcg2O1EqeHnXUTUzyToe4fgn2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/7BNDrgYIZh7sTbIbkQYiv5ukFgAhlZqpr7rks4fO.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/8YmfwPyEINXdDltYxOM7ZukUupIECSfMgu3eSwHf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/CayIe3Dzuj1bOVB7LTpvCfNpJ1ATAPXMaBTqpYFx.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/KMl0cpy6fn80p7a6Ll99F7VGlV5Ck4YuOoLNXco9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/TptOTg9G0Ai8PvtZnDwPT7urckWSbpALbZsDxrqH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/brqWhEQvolANSHc6K4M4gmD5RPmrh3nHYn5siiHj.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/buyq0XDZ3UTKb56ynaZ2H49gZfAEOK3HyxitVOgb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/fINbusGms7QnbbwiWYLNwUrFsukLXcw6vnlQ2KYa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/settings/r74AvaCgukPpQrUeqHa976sr8N8N7lkrflWNOm0J.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/shippings/gUmfSkxjOvjRelHzeXOJ6AQHxCBbanEG3MiohwzQ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/public/trademarks/xcncG9noA5Tv4osN9W7h5HU64EjewPKgnjB4HEZ7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/users/November2019/JnlfeskwxsiP6LFuRaVe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/storage/users/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/colors/btn/checkbox.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/colors/btn/delete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/colors/btn/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/colors/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/colors/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/colors/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sizes/btn/checkbox.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sizes/btn/delete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sizes/btn/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sizes/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sizes/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sizes/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Treaty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Treaty.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/ManufactsDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/ManufactsDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ManufactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ManufactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-colorpicker/src/js/colorpicker-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-colorpicker/src/js/colorpicker-component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/effect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/minified/effect.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/minified/effect.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/jQueryUI/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/jQueryUI/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/jQueryUI/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/jQueryUI/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-colorpicker/src/js/colorpicker-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-colorpicker/src/js/colorpicker-component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/effect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/minified/effect.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/minified/effect.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/design/adminlte/plugins/jQueryUI/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/plugins/jQueryUI/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/design/adminlte/plugins/jQueryUI/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/plugins/jQueryUI/jquery-ui.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/manufacts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/manufacts/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/manufacts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/manufacts/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/manufacts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/manufacts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,128 +136,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/manufacts/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="8" column="6" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="6" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/public/storage/public/settings/7BNDrgYIZh7sTbIbkQYiv5ukFgAhlZqpr7rks4fO.jpeg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/malls/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="37" column="22" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="37" selection-end-column="22" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/public/storage/public/settings/buyq0XDZ3UTKb56ynaZ2H49gZfAEOK3HyxitVOgb.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/storage/settings/0r0GMir2mSWjgCBzcg2O1EqeHnXUTUzyToe4fgn2.jpeg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/storage/trademarks/xcncG9noA5Tv4osN9W7h5HU64EjewPKgnjB4HEZ7.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/storage/public/departments/xcncG9noA5Tv4osN9W7h5HU64EjewPKgnjB4HEZ7.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/storage/public/trademarks/xcncG9noA5Tv4osN9W7h5HU64EjewPKgnjB4HEZ7.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/storage/public/shippings/gUmfSkxjOvjRelHzeXOJ6AQHxCBbanEG3MiohwzQ.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/storage/pages/page1.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/malls/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="38" column="128" selection-start-line="38" selection-start-column="128" selection-end-line="38" selection-end-column="128" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/public/storage/pages/November2019/YN9BGyox6K1BLly83uYE.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/manufacts/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="31" column="22" selection-start-line="28" selection-start-column="16" selection-end-line="31" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/countries">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="be028def-440a-4ad5-be00-81a5e0550e92">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/DataTables/MallsDataTable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1036">
-              <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-              <folding>
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/MallsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5012">
-              <caret line="197" column="16" selection-start-line="197" selection-start-column="16" selection-end-line="197" selection-end-column="16" />
-              <folding>
-                <element signature="e#46#80#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/DataTables/ManufactsDataTable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4338">
-              <caret line="186" column="14" selection-start-line="186" selection-start-column="14" selection-end-line="186" selection-end-column="14" />
-              <folding>
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/DataTables/ShippingsDataTable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4170">
-              <caret line="180" column="37" selection-start-line="180" selection-start-column="37" selection-end-line="180" selection-end-column="37" />
-              <folding>
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-                <element signature="e#26#32#0" expanded="true" />
-                <element signature="e#32#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/public/storage/public/departments/oYTCyGXliHYSnGOsBht1KVRhSTWXbA2yOuSoWV6I.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -243,6 +222,7 @@
       <find>city</find>
       <find>City</find>
       <find>dept</find>
+      <find>malls</find>
     </findStrings>
     <replaceStrings>
       <replace>{{url('/')}}/design/adminlte/plugins</replace>
@@ -256,6 +236,7 @@
       <replace>departments</replace>
       <replace>Department</replace>
       <replace>dep</replace>
+      <replace>colors</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -280,58 +261,37 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/app/Http/helper.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/departments/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DepartmentsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/departments/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/departments/edit.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_10_06_100916_create_trade_marks_table.php" />
-        <option value="$PROJECT_DIR$/app/model/TradeMark.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/tademarks/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/tademarks/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/tademarks/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/TradeMarkController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/trademarks/btn/delete.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/trademarks/btn/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/trademarks/btn/logo.blade.php" />
-        <option value="$PROJECT_DIR$/app/DataTables/TradeMarkDataTable.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/TradeMarksController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/manufacts/btn/delete.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/manufacts/btn/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/manufacts/btn/logo.blade.php" />
-        <option value="$PROJECT_DIR$/app/model/Manufacts.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/manufacts/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/DataTables/ManufactsDataTable.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ManufactController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_10_06_130614_create_manufacts_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_04_074008_create_colors_table.php" />
+        <option value="$PROJECT_DIR$/app/model/Color.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_10_04_094853_create_departments_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_10_09_110949_create_shippings_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/shippings/btn/delete.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/shippings/btn/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/shippings/btn/logo.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ShippingsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/shippings/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/shippings/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/model/Shipping.php" />
-        <option value="$PROJECT_DIR$/app/DataTables/ShippingsDataTable.php" />
-        <option value="$PROJECT_DIR$/app/model/malls.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_10_09_124140_create_malls_table.php" />
-        <option value="$PROJECT_DIR$/routes/admin.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/MallsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/colors/btn/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/colors/btn/delete.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/colors/edit.blade.php" />
+        <option value="L:/treaty_data.sql" />
         <option value="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/malls/btn/delete.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/malls/btn/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/malls/btn/logo.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/shippings/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/manufacts/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/manufacts/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/DataTables/MallsDataTable.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/malls/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/malls/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/colors/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/ColorsDataTable.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_05_214034_create_sizes_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ColorsController.php" />
+        <option value="$PROJECT_DIR$/app/model/Size.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/SizesDataTable.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SizesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sizes/btn/delete.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sizes/btn/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/sizes/create.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_09_20_102546_create_settings_table.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/routes/admin.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/admin.php" />
       </list>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="H:\Treaty\.idea" />
+      </set>
     </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -437,6 +397,24 @@
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-buttons" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-snappy" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/larapack/hooks" />
+      <path value="$PROJECT_DIR$/vendor/larapack/voyager-hooks" />
+      <path value="$PROJECT_DIR$/vendor/arrilot/laravel-widgets" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/larapack/doctrine-support" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/tcg/voyager" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -445,149 +423,146 @@
     <option name="width" value="1318" />
     <option name="height" value="735" />
   </component>
+  <component name="ProjectId" id="1SU6GfToUxX4QhzleH92OjUmPMl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+      <pane id="ProjectPane">
+        <subPane>
           <expand>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="DataTables" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="migrations" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="November2019" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="malls" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="November2019" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="malls" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="btn" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="manufacts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="shippings" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="routes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="storage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="November2019" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="storage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\xampp\htdocs\Treaty" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="storage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -597,26 +572,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/storage/app/public/settings/1tek1VWCmdMIseMt0QK4jpzQQx6BrPJWUfjs4y75.png&#10;E:/xampp/htdocs/Treaty/storage/app/public/settings/7JNHggTfVdESBTpFL584ptfuIiteP5QgJGhSdjIW.png&#10;true&#10;E:/xampp/htdocs/Treaty/storage/app/settings/3hk5QgNjH3lvOgRl9PfsQHmZeH8oGAwkYJRyLCoi.jpeg&#10;E:/xampp/htdocs/Treaty/storage/app/settings/vl23yftTYZwTj48nCvV7ciw2VI4tDvfBWX5e1iwJ.png&#10;E:/xampp/htdocs/Treaty/public/design/jquery-locationpicker/locationpicker.jquery.js" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/storage/pages" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\Treaty\public\storage\pages" />
+      <recent name="E:\xampp\htdocs\Treaty\public\storage\public" />
+      <recent name="E:\xampp\htdocs\Treaty\public\storage\public\departments" />
+      <recent name="E:\xampp\htdocs\Treaty\public\storage\public\settings" />
+      <recent name="E:\xampp\htdocs\Treaty\public\storage" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Treaty\app\model" />
       <recent name="E:\xampp\htdocs\Treaty\app\model" />
       <recent name="E:\xampp\htdocs\Treaty\storage\app\public" />
       <recent name="E:\xampp\htdocs\Treaty\storage\app\public\settings" />
       <recent name="E:\xampp\htdocs\Treaty\app\Http\Controllers\Admin" />
-      <recent name="E:\xampp\htdocs\Treaty\public\design\adminlte\bower_components\datatables.net-bs\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\xampp\htdocs\Treaty\resources\views\admin" />
-      <recent name="E:\xampp\htdocs\Treaty\app\Http\Controllers\Admin" />
-      <recent name="E:\xampp\htdocs\Treaty\app\DataTables" />
-      <recent name="E:\xampp\htdocs\Treaty\public\image" />
-      <recent name="E:\xampp\htdocs\Treaty\public\design\jquery-locationpicker" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -676,7 +651,18 @@
       <workItem from="1570351899121" duration="20083000" />
       <workItem from="1570391914950" duration="3592000" />
       <workItem from="1570544311527" duration="198000" />
-      <workItem from="1570615247968" duration="12229000" />
+      <workItem from="1570615247968" duration="12370000" />
+      <workItem from="1571320480395" duration="548000" />
+      <workItem from="1571605764327" duration="508000" />
+      <workItem from="1572210923650" duration="466000" />
+      <workItem from="1572211548110" duration="1033000" />
+      <workItem from="1572212722568" duration="157000" />
+      <workItem from="1572212916697" duration="1310000" />
+      <workItem from="1572507336925" duration="3000" />
+      <workItem from="1572779190108" duration="731000" />
+      <workItem from="1572780749079" duration="12613000" />
+      <workItem from="1573820169324" duration="1134000" />
+      <workItem from="1573918892474" duration="9927000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1566580426161</created>
@@ -717,7 +703,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309244000" />
+    <option name="totallyTimeSpent" value="27374000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -730,31 +716,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30408472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Repositories" order="3" weight="0.32980332" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32922536" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32922536" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996479" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32922536" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4969743" weight="0.32922536" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32922536" />
-      <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.494705" weight="0.79577464" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.505295" side_tool="true" weight="0.79577464" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.50352114" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286908" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993573" weight="0.5633803" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50064266" side_tool="true" weight="0.32729805" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32922536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3290469" />
+      <window_info anchor="right" id="PHP Inspections" order="4" weight="0.32969153" />
+      <window_info anchor="right" id="R Graphics" order="5" weight="0.32969153" />
+      <window_info anchor="right" id="R Packages" order="6" weight="0.32969153" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,14 +757,7 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -808,181 +786,284 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/manufacts/btn/logo.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_04_11_000000_alter_post_nullable_fields_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" selection-start-column="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/settings/8YmfwPyEINXdDltYxOM7ZukUupIECSfMgu3eSwHf.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_06_100916_create_trade_marks_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_04_094853_create_departments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="75" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="32" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Department.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="17" column="6" selection-start-line="9" selection-start-column="4" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/message.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/btn/logo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/btn/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/btn/delete.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/btn/checkbox.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/trademarks/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/trademarks/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/CountriesDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-672">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/CitiesDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="176" column="37" selection-start-line="176" selection-start-column="37" selection-end-line="176" selection-end-column="37" />
-          <folding>
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/UsersDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/TradeMarkDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="97" column="34" selection-start-line="97" selection-start-column="34" selection-end-line="97" selection-end-column="34" />
-          <folding>
-            <element signature="e#34#48#0#PHP" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ShippingsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#46#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Country.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
+        <state relative-caret-position="-560">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_09_110949_create_shippings_table.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        <state relative-caret-position="255">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/shippings">
+    <entry file="file://$PROJECT_DIR$/routes/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/roles">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="be028def-440a-4ad5-be00-81a5e0550e92">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.SCHEMA:treaty">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.SCHEMA:treaty</OriginalElement>
+          <nodes>
+            <node x="1133.0" y="898.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.admins</node>
+            <node x="1049.25" y="411.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.data_rows</node>
+            <node x="1364.0" y="898.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.trade_marks</node>
+            <node x="54.5" y="898.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.departments</node>
+            <node x="445.99999999999994" y="514.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.shippings</node>
+            <node x="655.75" y="0.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.roles</node>
+            <node x="1033.75" y="0.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.data_types</node>
+            <node x="707.0" y="898.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.translations</node>
+            <node x="1287.75" y="169.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.menu_items</node>
+            <node x="0.0" y="1407.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.colors</node>
+            <node x="462.99999999999994" y="191.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.users</node>
+            <node x="614.0" y="591.5">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.user_roles</node>
+            <node x="1294.75" y="0.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.menus</node>
+            <node x="512.0" y="898.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.files</node>
+            <node x="99.0" y="1177.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.sizes</node>
+            <node x="927.0" y="898.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.settings</node>
+            <node x="301.0" y="898.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.manufacts</node>
+            <node x="0.0" y="356.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.cities</node>
+            <node x="170.75000000000003" y="0.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries</node>
+            <node x="187.00000000000003" y="257.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.malls</node>
+            <node x="374.0" y="1407.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.password_resets</node>
+            <node x="836.75" y="0.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permissions</node>
+            <node x="762.0" y="290.5">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permission_role</node>
+            <node x="147.8" y="668.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.states</node>
+            <node x="187.0" y="1407.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.migrations</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.malls" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries">
+              <point x="0.0" y="-180.5" />
+              <point x="270.5" y="232.0" />
+              <point x="263.75" y="232.0" />
+              <point x="0.0" y="103.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.data_rows" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.data_types">
+              <point x="0.0" y="-158.5" />
+              <point x="0.0" y="180.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.states" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries">
+              <point x="42.75" y="-92.5" />
+              <point x="276.05" y="643.0" />
+              <point x="364.5" y="643.0" />
+              <point x="364.5" y="232.0" />
+              <point x="325.75" y="232.0" />
+              <point x="62.0" y="103.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.user_roles" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.users">
+              <point x="-40.75" y="-37.0" />
+              <point x="654.75" y="489.0" />
+              <point x="634.0" y="489.0" />
+              <point x="57.0" y="136.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.states" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.cities">
+              <point x="-42.75" y="-92.5" />
+              <point x="190.55" y="643.0" />
+              <point x="83.5" y="643.0" />
+              <point x="0.0" y="81.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permission_role" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permissions">
+              <point x="50.25" y="-37.0" />
+              <point x="0.0" y="70.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.departments" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.departments">
+              <point x="-41.0" y="114.5" />
+              <point x="95.5" y="1147.0" />
+              <point x="34.5" y="1147.0" />
+              <point x="34.5" y="1012.5" />
+              <point x="-82.0" y="-0.0" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.cities" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries">
+              <point x="0.0" y="-81.5" />
+              <point x="83.5" y="232.0" />
+              <point x="201.75000000000003" y="232.0" />
+              <point x="-62.0" y="103.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permission_role" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.roles">
+              <point x="-50.25" y="-37.0" />
+              <point x="812.25" y="166.0" />
+              <point x="789.9166666666665" y="166.0" />
+              <point x="53.66666666666663" y="70.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.users" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.roles">
+              <point x="0.0" y="-136.5" />
+              <point x="577.0" y="166.0" />
+              <point x="682.5833333333333" y="166.0" />
+              <point x="-53.66666666666663" y="70.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.sizes" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.departments">
+              <point x="0.0" y="-92.5" />
+              <point x="41.0" y="114.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.shippings" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.users">
+              <point x="0.0" y="-114.5" />
+              <point x="-57.0" y="136.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.menu_items" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.menus">
+              <point x="0.0" y="-158.5" />
+              <point x="0.0" y="59.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.user_roles" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.roles">
+              <point x="40.75" y="-37.0" />
+              <point x="0.0" y="70.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.3169811320754717" x="676.2738095238095" y="757.1428571428572" />
+          <SelectedNodes>
+            <node>8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.admins</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/posts/post1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/posts/post1-cropped.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/posts/post2-small.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/settings/brqWhEQvolANSHc6K4M4gmD5RPmrh3nHYn5siiHj.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/settings/CayIe3Dzuj1bOVB7LTpvCfNpJ1ATAPXMaBTqpYFx.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/trademarks/xcncG9noA5Tv4osN9W7h5HU64EjewPKgnjB4HEZ7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/settings">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/users/default.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/users/November2019/JnlfeskwxsiP6LFuRaVe.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/public/departments/oYTCyGXliHYSnGOsBht1KVRhSTWXbA2yOuSoWV6I.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/public/settings/7BNDrgYIZh7sTbIbkQYiv5ukFgAhlZqpr7rks4fO.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/public/settings/buyq0XDZ3UTKb56ynaZ2H49gZfAEOK3HyxitVOgb.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/settings/0r0GMir2mSWjgCBzcg2O1EqeHnXUTUzyToe4fgn2.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/settings/8YmfwPyEINXdDltYxOM7ZukUupIECSfMgu3eSwHf.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/settings/fINbusGms7QnbbwiWYLNwUrFsukLXcw6vnlQ2KYa.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/pages/page1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/shippings/gUmfSkxjOvjRelHzeXOJ6AQHxCBbanEG3MiohwzQ.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/posts/post1-small.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/admins">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/colors">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/countries">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/malls/sz4CXQFeoC7Adt2s4wr1n4dFWihjrm1KdhD2ZSQn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/malls">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/cities">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/translations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/user_roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
           <filtering>
             <filter text="" />
           </filtering>
@@ -991,259 +1072,78 @@
     </entry>
     <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="be028def-440a-4ad5-be00-81a5e0550e92">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Shipping.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_06_130614_create_manufacts_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="27" column="47" selection-start-line="16" selection-start-column="12" selection-end-line="27" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Setting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Manufacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="22" column="6" selection-start-line="9" selection-start-column="4" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_134834_create_cities_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="24" column="73" selection-start-line="19" selection-start-column="12" selection-end-line="24" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/City.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="19" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/malls.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/malls">
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/states">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="be028def-440a-4ad5-be00-81a5e0550e92">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ManufactController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="152" column="34" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
-          <folding>
-            <element signature="e#46#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_09_124140_create_malls_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="197" column="113" selection-start-line="197" selection-start-column="113" selection-end-line="197" selection-end-column="113" />
-          <folding>
-            <element signature="n#li#11;n#ul#0;n#section#0;n#aside#0;n#!!top" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#12;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#li#12;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/malls/btn/checkbox.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/malls/btn/delete.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/malls/btn/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/malls/btn/logo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" selection-start-column="41" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="28" column="22" selection-start-line="25" selection-start-column="16" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/manufacts/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1316">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/countries">
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/trade_marks">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="be028def-440a-4ad5-be00-81a5e0550e92">
+        <state projectRestartId="0182e3ed-1851-4ba8-b2df-84898e37e368">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/ManufactsDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4338">
-          <caret line="186" column="14" selection-start-line="186" selection-start-column="14" selection-end-line="186" selection-end-column="14" />
-          <folding>
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/storage/departments/ClxAYrF2psOrJqRzd4WBAv1RjjUXVzB3GflEGd1x.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/ShippingsDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4170">
-          <caret line="180" column="37" selection-start-line="180" selection-start-column="37" selection-end-line="180" selection-end-column="37" />
-          <folding>
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/storage/settings/TptOTg9G0Ai8PvtZnDwPT7urckWSbpALbZsDxrqH.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/MallsDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-          <folding>
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/storage/settings/r74AvaCgukPpQrUeqHa976sr8N8N7lkrflWNOm0J.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/MallsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5012">
-          <caret line="197" column="16" selection-start-line="197" selection-start-column="16" selection-end-line="197" selection-end-column="16" />
-          <folding>
-            <element signature="e#46#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/storage/settings/KMl0cpy6fn80p7a6Ll99F7VGlV5Ck4YuOoLNXco9.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="31" column="22" selection-start-line="28" selection-start-column="16" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/storage/settings/CayIe3Dzuj1bOVB7LTpvCfNpJ1ATAPXMaBTqpYFx.jpeg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/manufacts/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/storage/settings/fINbusGms7QnbbwiWYLNwUrFsukLXcw6vnlQ2KYa.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/manufacts/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="8" column="6" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/storage/public/settings/buyq0XDZ3UTKb56ynaZ2H49gZfAEOK3HyxitVOgb.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/malls/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="37" column="22" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="37" selection-end-column="22" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/storage/public/settings/7BNDrgYIZh7sTbIbkQYiv5ukFgAhlZqpr7rks4fO.jpeg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/malls/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="38" column="128" selection-start-line="38" selection-start-column="128" selection-end-line="38" selection-end-column="128" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/public/storage/settings/0r0GMir2mSWjgCBzcg2O1EqeHnXUTUzyToe4fgn2.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/storage/trademarks/xcncG9noA5Tv4osN9W7h5HU64EjewPKgnjB4HEZ7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/storage/public/departments/oYTCyGXliHYSnGOsBht1KVRhSTWXbA2yOuSoWV6I.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/storage/public/departments/xcncG9noA5Tv4osN9W7h5HU64EjewPKgnjB4HEZ7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/storage/public/trademarks/xcncG9noA5Tv4osN9W7h5HU64EjewPKgnjB4HEZ7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/storage/public/shippings/gUmfSkxjOvjRelHzeXOJ6AQHxCBbanEG3MiohwzQ.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/storage/pages/page1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/storage/pages/November2019/YN9BGyox6K1BLly83uYE.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

@@ -317,7 +317,7 @@ Colorpicker.prototype = {
    * Creates a new color using the instance options
    * @protected
    * @param {String} val
-   * @returns {Color}
+   * @returns {model.Color}
    */
   createColor: function(val) {
     return new Color(

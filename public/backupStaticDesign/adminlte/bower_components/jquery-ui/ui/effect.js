@@ -657,7 +657,7 @@ jQuery.cssHooks.borderColor = {
 		var expanded = {};
 
 		each( [ "Top", "Right", "Bottom", "Left" ], function( i, part ) {
-			expanded[ "border" + part + "Color" ] = value;
+			expanded[ "border" + part + "model.Color" ] = value;
 		});
 		return expanded;
 	}
