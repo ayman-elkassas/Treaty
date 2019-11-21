@@ -30,7 +30,7 @@ use SebastianBergmann\ResourceOperations\ResourceOperations;
 use Throwable;
 
 /**
- * A TestResult collects the results of executing a test case.
+ * A TestResult collects the results of executing a migrateSpec case.
  */
 class TestResult implements Countable
 {
@@ -382,7 +382,7 @@ class TestResult implements Countable
     }
 
     /**
-     * Informs the result that a test will be started.
+     * Informs the result that a migrateSpec will be started.
      *
      * @param Test $test
      */
@@ -397,7 +397,7 @@ class TestResult implements Countable
     }
 
     /**
-     * Informs the result that a test was completed.
+     * Informs the result that a migrateSpec was completed.
      *
      * @param Test  $test
      * @param float $time
@@ -425,7 +425,7 @@ class TestResult implements Countable
     }
 
     /**
-     * Returns true if no risky test occurred.
+     * Returns true if no risky migrateSpec occurred.
      *
      * @return bool
      */
@@ -445,7 +445,7 @@ class TestResult implements Countable
     }
 
     /**
-     * Returns true if no incomplete test occurred.
+     * Returns true if no incomplete migrateSpec occurred.
      *
      * @return bool
      */
@@ -485,7 +485,7 @@ class TestResult implements Countable
     }
 
     /**
-     * Returns true if no test has been skipped.
+     * Returns true if no migrateSpec has been skipped.
      *
      * @return bool
      */
@@ -585,7 +585,7 @@ class TestResult implements Countable
     }
 
     /**
-     * Returns the (top) test suite.
+     * Returns the (top) migrateSpec suite.
      *
      * @return TestSuite
      */
@@ -814,7 +814,7 @@ class TestResult implements Countable
                 $this->addFailure(
                     $test,
                     new UnintentionallyCoveredCodeError(
-                        'This test executed code that is not listed as code to be covered or used:' .
+                        'This migrateSpec executed code that is not listed as code to be covered or used:' .
                         PHP_EOL . $cce->getMessage()
                     ),
                     $time
@@ -823,7 +823,7 @@ class TestResult implements Countable
                 $this->addFailure(
                     $test,
                     new CoveredCodeNotExecutedException(
-                        'This test did not execute all the code that is listed as code to be covered:' .
+                        'This migrateSpec did not execute all the code that is listed as code to be covered:' .
                         PHP_EOL . $cce->getMessage()
                     ),
                     $time
@@ -833,7 +833,7 @@ class TestResult implements Countable
                     $this->addFailure(
                         $test,
                         new MissingCoversAnnotationException(
-                            'This test does not have a @covers annotation but is expected to have one'
+                            'This migrateSpec does not have a @covers annotation but is expected to have one'
                         ),
                         $time
                     );
@@ -863,7 +863,7 @@ class TestResult implements Countable
             $this->addFailure(
                 $test,
                 new RiskyTestError(
-                    'This test did not perform any assertions'
+                    'This migrateSpec did not perform any assertions'
                 ),
                 $time
             );
@@ -872,7 +872,7 @@ class TestResult implements Countable
                 $test,
                 new OutputError(
                     \sprintf(
-                        'This test printed output: %s',
+                        'This migrateSpec printed output: %s',
                         $test->getActualOutput()
                     )
                 ),
@@ -906,7 +906,7 @@ class TestResult implements Countable
     }
 
     /**
-     * Checks whether the test run should stop.
+     * Checks whether the migrateSpec run should stop.
      *
      * @return bool
      */
@@ -916,7 +916,7 @@ class TestResult implements Countable
     }
 
     /**
-     * Marks that the test run should stop.
+     * Marks that the migrateSpec run should stop.
      */
     public function stop()
     {
@@ -1186,7 +1186,7 @@ class TestResult implements Countable
     }
 
     /**
-     * Returns whether the entire test was successful or not.
+     * Returns whether the entire migrateSpec was successful or not.
      *
      * @return bool
      */

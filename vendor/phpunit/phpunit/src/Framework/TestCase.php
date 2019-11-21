@@ -61,10 +61,10 @@ use Throwable;
  *   1) Implement a subclass of PHPUnit\Framework\TestCase.
  *   2) Define instance variables that store the state of the fixture.
  *   3) Initialize the fixture state by overriding setUp().
- *   4) Clean-up after a test by overriding tearDown().
+ *   4) Clean-up after a migrateSpec by overriding tearDown().
  *
- * Each test runs in its own fixture so there can be no side effects
- * among test runs.
+ * Each migrateSpec runs in its own fixture so there can be no side effects
+ * among migrateSpec runs.
  *
  * Here is an example:
  *
@@ -84,7 +84,7 @@ use Throwable;
  * ?>
  * </code>
  *
- * For each test implement a method which interacts with the fixture.
+ * For each migrateSpec implement a method which interacts with the fixture.
  * Verify the expected results with assertions specified by calling
  * assert with a boolean.
  *
@@ -128,7 +128,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     protected $backupStaticAttributesBlacklist = [];
 
     /**
-     * Whether or not this test is to be run in a separate PHP process.
+     * Whether or not this migrateSpec is to be run in a separate PHP process.
      *
      * @var bool
      */
@@ -142,7 +142,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     private $runClassInSeparateProcess;
 
     /**
-     * Whether or not this test should preserve the global state when
+     * Whether or not this migrateSpec should preserve the global state when
      * running in a separate PHP process.
      *
      * @var bool
@@ -150,7 +150,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     protected $preserveGlobalState = true;
 
     /**
-     * Whether or not this test is running in a separate PHP process.
+     * Whether or not this migrateSpec is running in a separate PHP process.
      *
      * @var bool
      */
@@ -200,7 +200,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     private $expectedExceptionCode;
 
     /**
-     * The name of the test case.
+     * The name of the migrateSpec case.
      *
      * @var string
      */
@@ -332,7 +332,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     private $customComparators = [];
 
     /**
-     * Constructs a test case with the given name.
+     * Constructs a migrateSpec case with the given name.
      *
      * @param string $name
      * @param array  $data
@@ -349,7 +349,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns a string representation of the test case.
+     * Returns a string representation of the migrateSpec case.
      *
      * @return string
      */
@@ -367,7 +367,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Counts the number of test cases executed by run(TestResult result).
+     * Counts the number of migrateSpec cases executed by run(TestResult result).
      *
      * @return int
      */
@@ -390,7 +390,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns the annotations for this test.
+     * Returns the annotations for this migrateSpec.
      *
      * @return array
      */
@@ -419,7 +419,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns the size of the test.
+     * Returns the size of the migrateSpec.
      *
      * @return int
      */
@@ -624,7 +624,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Sets up an expectation for an exception to be raised by the code under test.
+     * Sets up an expectation for an exception to be raised by the code under migrateSpec.
      * Information for expected exception class, expected exception message, and
      * expected exception code are retrieved from a given Exception object.
      */
@@ -712,7 +712,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns the status of this test.
+     * Returns the status of this migrateSpec.
      *
      * @return int
      */
@@ -727,7 +727,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns the status message of this test.
+     * Returns the status message of this migrateSpec.
      *
      * @return string
      */
@@ -737,7 +737,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns whether or not this test has failed.
+     * Returns whether or not this migrateSpec has failed.
      *
      * @return bool
      */
@@ -750,7 +750,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Runs the test case and collects the results in a TestResult object.
+     * Runs the migrateSpec case and collects the results in a TestResult object.
      * If no TestResult object is passed a new one will be created.
      *
      * @param TestResult $result
@@ -904,7 +904,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Runs the bare test sequence.
+     * Runs the bare migrateSpec sequence.
      */
     public function runBare()
     {
@@ -1041,7 +1041,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Override to run the test and assert its state.
+     * Override to run the migrateSpec and assert its state.
      *
      * @return mixed
      *
@@ -1390,7 +1390,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     /**
      * This method is a wrapper for the ini_set() function that automatically
      * resets the modified php.ini setting to its original value after the
-     * test is run.
+     * migrateSpec is run.
      *
      * @param string $varName
      * @param string $newValue
@@ -1420,7 +1420,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
 
     /**
      * This method is a wrapper for the setlocale() function that automatically
-     * resets the locale to its original value after the test is run.
+     * resets the locale to its original value after the migrateSpec is run.
      *
      * @param int    $category
      * @param string $locale
@@ -1479,7 +1479,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns a test double for the specified class.
+     * Returns a migrateSpec double for the specified class.
      *
      * @param string $originalClassName
      *
@@ -1498,7 +1498,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns a configured test double for the specified class.
+     * Returns a configured migrateSpec double for the specified class.
      *
      * @param string $originalClassName
      * @param array  $configuration
@@ -1519,7 +1519,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns a partial test double for the specified class.
+     * Returns a partial migrateSpec double for the specified class.
      *
      * @param string   $originalClassName
      * @param string[] $methods
@@ -1540,7 +1540,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns a test proxy for the specified class.
+     * Returns a migrateSpec proxy for the specified class.
      *
      * @param string $originalClassName
      * @param array  $constructorArguments
@@ -1755,7 +1755,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Returns the number of assertions performed by this test.
+     * Returns the number of assertions performed by this migrateSpec.
      *
      * @return int
      */
@@ -2060,7 +2060,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
                         $this,
                         new SkippedTestError(
                             \sprintf(
-                                'This test depends on "%s" to pass.',
+                                'This migrateSpec depends on "%s" to pass.',
                                 $dependency
                             )
                         ),
@@ -2078,7 +2078,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
                         $this->result->addError(
                             $this,
                             new SkippedTestError(
-                                'This test depends on a test that is larger than itself.'
+                                'This migrateSpec depends on a migrateSpec that is larger than itself.'
                             ),
                             0
                         );
@@ -2106,7 +2106,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * This method is called before the first test of this test class is run.
+     * This method is called before the first migrateSpec of this migrateSpec class is run.
      */
     public static function setUpBeforeClass()
     {
@@ -2114,16 +2114,16 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
 
     /**
      * Sets up the fixture, for example, open a network connection.
-     * This method is called before a test is executed.
+     * This method is called before a migrateSpec is executed.
      */
     protected function setUp()
     {
     }
 
     /**
-     * Performs assertions shared by all tests of a test case.
+     * Performs assertions shared by all tests of a migrateSpec case.
      *
-     * This method is called before the execution of a test starts
+     * This method is called before the execution of a migrateSpec starts
      * and after setUp() is called.
      */
     protected function assertPreConditions()
@@ -2131,9 +2131,9 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
     }
 
     /**
-     * Performs assertions shared by all tests of a test case.
+     * Performs assertions shared by all tests of a migrateSpec case.
      *
-     * This method is called after the execution of a test ends
+     * This method is called after the execution of a migrateSpec ends
      * and before tearDown() is called.
      */
     protected function assertPostConditions()
@@ -2142,21 +2142,21 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
 
     /**
      * Tears down the fixture, for example, close a network connection.
-     * This method is called after a test is executed.
+     * This method is called after a migrateSpec is executed.
      */
     protected function tearDown()
     {
     }
 
     /**
-     * This method is called after the last test of this test class is run.
+     * This method is called after the last migrateSpec of this migrateSpec class is run.
      */
     public static function tearDownAfterClass()
     {
     }
 
     /**
-     * This method is called when a test method did not execute successfully.
+     * This method is called when a migrateSpec method did not execute successfully.
      *
      * @param Throwable $t
      *
@@ -2332,13 +2332,13 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
             $this->compareGlobalStateSnapshotPart(
                 $before->globalVariables(),
                 $after->globalVariables(),
-                "--- Global variables before the test\n+++ Global variables after the test\n"
+                "--- Global variables before the migrateSpec\n+++ Global variables after the migrateSpec\n"
             );
 
             $this->compareGlobalStateSnapshotPart(
                 $before->superGlobalVariables(),
                 $after->superGlobalVariables(),
-                "--- Super-global variables before the test\n+++ Super-global variables after the test\n"
+                "--- Super-global variables before the migrateSpec\n+++ Super-global variables after the migrateSpec\n"
             );
         }
 
@@ -2346,7 +2346,7 @@ abstract class TestCase extends Assert implements Test, SelfDescribing
             $this->compareGlobalStateSnapshotPart(
                 $before->staticAttributes(),
                 $after->staticAttributes(),
-                "--- Static attributes before the test\n+++ Static attributes after the test\n"
+                "--- Static attributes before the migrateSpec\n+++ Static attributes after the migrateSpec\n"
             );
         }
     }

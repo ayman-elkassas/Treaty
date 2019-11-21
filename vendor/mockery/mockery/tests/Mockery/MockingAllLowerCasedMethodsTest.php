@@ -25,7 +25,7 @@ use Mockery\Adapter\Phpunit\MockeryTestCase;
 
 class MockingAllLowerCasedMethodsTest extends MockeryTestCase
 {
-    /** @test */
+    /** @migrateSpec */
     public function itShouldAllowToCallAllLowerCasedMethodAsCamelCased()
     {
         require __DIR__."/Fixtures/ClassWithAllLowerCaseMethod.php";

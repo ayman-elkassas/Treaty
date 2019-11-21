@@ -13,7 +13,7 @@ use PHPUnit\Framework\Error\Error;
 use Throwable;
 
 /**
- * A TestFailure collects a failed test together with the caught exception.
+ * A TestFailure collects a failed migrateSpec together with the caught exception.
  */
 class TestFailure
 {
@@ -33,7 +33,7 @@ class TestFailure
     protected $thrownException;
 
     /**
-     * Constructs a TestFailure with the given test and exception.
+     * Constructs a TestFailure with the given migrateSpec and exception.
      *
      * @param Test      $failedTest
      * @param Throwable $t
@@ -112,7 +112,7 @@ class TestFailure
     }
 
     /**
-     * Returns the name of the failing test (including data set, if any).
+     * Returns the name of the failing migrateSpec (including data set, if any).
      *
      * @return string
      */
@@ -122,9 +122,9 @@ class TestFailure
     }
 
     /**
-     * Returns the failing test.
+     * Returns the failing migrateSpec.
      *
-     * Note: The test object is not set when the test is executed in process
+     * Note: The migrateSpec object is not set when the migrateSpec is executed in process
      * isolation.
      *
      * @see Exception

@@ -21,7 +21,7 @@ class TextTest extends TestCase
         return $method;
     }
 
-    /** @test */
+    /** @migrateSpec */
     function testItShouldAppendEndPunctToTheEndOfString()
     {
         $this->assertSame(

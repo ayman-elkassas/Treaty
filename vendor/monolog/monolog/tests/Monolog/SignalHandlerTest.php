@@ -90,7 +90,7 @@ class SignalHandlerTest extends TestCase
     {
         // SIGCONT and SIGURG should be ignored by default.
         if (!defined('SIGCONT') || !defined('SIGURG')) {
-            $this->markTestSkipped('This test requires the SIGCONT and SIGURG pcntl constants.');
+            $this->markTestSkipped('This migrateSpec requires the SIGCONT and SIGURG pcntl constants.');
         }
 
         $this->setSignalHandler(SIGCONT, SIG_IGN);

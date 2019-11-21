@@ -155,10 +155,10 @@ if (!doc.addEventListener) {
 function toggle(a, recursive) {
     var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass;
 
-    if (/\bsf-dump-compact\b/.test(oldClass)) {
+    if (/\bsf-dump-compact\b/.migrateSpec(oldClass)) {
         arrow = '▼';
         newClass = 'sf-dump-expanded';
-    } else if (/\bsf-dump-expanded\b/.test(oldClass)) {
+    } else if (/\bsf-dump-expanded\b/.migrateSpec(oldClass)) {
         arrow = '▶';
         newClass = 'sf-dump-compact';
     } else {
@@ -194,7 +194,7 @@ function toggle(a, recursive) {
 function collapse(a, recursive) {
     var s = a.nextSibling || {}, oldClass = s.className;
 
-    if (/\bsf-dump-expanded\b/.test(oldClass)) {
+    if (/\bsf-dump-expanded\b/.migrateSpec(oldClass)) {
         toggle(a, recursive);
 
         return true;
@@ -206,7 +206,7 @@ function collapse(a, recursive) {
 function expand(a, recursive) {
     var s = a.nextSibling || {}, oldClass = s.className;
 
-    if (/\bsf-dump-compact\b/.test(oldClass)) {
+    if (/\bsf-dump-compact\b/.migrateSpec(oldClass)) {
         toggle(a, recursive);
 
         return true;
@@ -249,12 +249,12 @@ function highlight(root, activeNode, nodes) {
     resetHighlightedNodes(root);
 
     Array.from(nodes||[]).forEach(function (node) {
-        if (!/\bsf-dump-highlight\b/.test(node.className)) {
+        if (!/\bsf-dump-highlight\b/.migrateSpec(node.className)) {
             node.className = node.className + ' sf-dump-highlight';
         }
     });
 
-    if (!/\bsf-dump-highlight-active\b/.test(activeNode.className)) {
+    if (!/\bsf-dump-highlight-active\b/.migrateSpec(activeNode.className)) {
         activeNode.className = activeNode.className + ' sf-dump-highlight-active';
     }
 }
@@ -329,7 +329,7 @@ return function (root, x) {
         }
     });
     a('click', function (a, e, c) {
-        if (/\bsf-dump-toggle\b/.test(a.className)) {
+        if (/\bsf-dump-toggle\b/.migrateSpec(a.className)) {
             e.preventDefault();
             if (!toggle(a, isCtrlKey(e))) {
                 var r = doc.getElementById(a.getAttribute('href').substr(1)),
@@ -344,7 +344,7 @@ return function (root, x) {
                 if (f && t && f[0] !== t[0]) {
                     r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]);
                 }
-                if (/\bsf-dump-compact\b/.test(r.className)) {
+                if (/\bsf-dump-compact\b/.migrateSpec(r.className)) {
                     toggle(s, isCtrlKey(e));
                 }
             }
@@ -359,7 +359,7 @@ return function (root, x) {
             } else {
                 doc.selection.empty();
             }
-        } else if (/\bsf-dump-str-toggle\b/.test(a.className)) {
+        } else if (/\bsf-dump-str-toggle\b/.migrateSpec(a.className)) {
             e.preventDefault();
             e = a.parentNode.parentNode;
             e.className = e.className.replace(/\bsf-dump-str-(expand|collapse)\b/, a.parentNode.className);
@@ -398,17 +398,17 @@ return function (root, x) {
             if (className ? 'sf-dump-expanded' !== className : (x > options.maxDepth)) {
                 toggle(a);
             }
-        } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) {
+        } else if (/\bsf-dump-ref\b/.migrateSpec(elt.className) && (a = elt.getAttribute('href'))) {
             a = a.substr(1);
             elt.className += ' '+a;
 
-            if (/[\[{]$/.test(elt.previousSibling.nodeValue)) {
+            if (/[\[{]$/.migrateSpec(elt.previousSibling.nodeValue)) {
                 a = a != elt.nextSibling.id && doc.getElementById(a);
                 try {
                     s = a.nextSibling;
                     elt.appendChild(a);
                     s.parentNode.insertBefore(a, s);
-                    if (/^[@#]/.test(elt.innerHTML)) {
+                    if (/^[@#]/.migrateSpec(elt.innerHTML)) {
                         elt.innerHTML += ' <span>▶</span>';
                     } else {
                         elt.innerHTML = '<span>▶</span>';
@@ -542,7 +542,7 @@ return function (root, x) {
         });
 
         addEventListener(root, 'keydown', function (e) {
-            var isSearchActive = !/\bsf-dump-search-hidden\b/.test(search.className);
+            var isSearchActive = !/\bsf-dump-search-hidden\b/.migrateSpec(search.className);
             if ((114 === e.keyCode && !isSearchActive) || (isCtrlKey(e) && 70 === e.keyCode)) {
                 /* F3 or CMD/CTRL + F */
                 e.preventDefault();

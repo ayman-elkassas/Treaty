@@ -37,12 +37,12 @@ class NumberComparator extends Comparator
     /**
      * @param string|int $test A comparison string or an integer
      *
-     * @throws \InvalidArgumentException If the test is not understood
+     * @throws \InvalidArgumentException If the migrateSpec is not understood
      */
     public function __construct($test)
     {
         if (!preg_match('#^\s*(==|!=|[<>]=?)?\s*([0-9\.]+)\s*([kmg]i?)?\s*$#i', $test, $matches)) {
-            throw new \InvalidArgumentException(sprintf('Don\'t understand "%s" as a number test.', $test));
+            throw new \InvalidArgumentException(sprintf('Don\'t understand "%s" as a number migrateSpec.', $test));
         }
 
         $target = $matches[2];

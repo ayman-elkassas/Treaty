@@ -15,7 +15,7 @@ class BusFake implements Dispatcher
     protected $commands = [];
 
     /**
-     * Assert if a job was dispatched based on a truth-test callback.
+     * Assert if a job was dispatched based on a truth-migrateSpec callback.
      *
      * @param  string  $command
      * @param  callable|int|null  $callback
@@ -49,7 +49,7 @@ class BusFake implements Dispatcher
     }
 
     /**
-     * Determine if a job was dispatched based on a truth-test callback.
+     * Determine if a job was dispatched based on a truth-migrateSpec callback.
      *
      * @param  string  $command
      * @param  callable|null  $callback
@@ -64,7 +64,7 @@ class BusFake implements Dispatcher
     }
 
     /**
-     * Get all of the jobs matching a truth-test callback.
+     * Get all of the jobs matching a truth-migrateSpec callback.
      *
      * @param  string  $command
      * @param  callable|null  $callback

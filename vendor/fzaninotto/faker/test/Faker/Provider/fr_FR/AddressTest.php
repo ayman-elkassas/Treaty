@@ -22,7 +22,7 @@ class AddressTest extends TestCase
   }
 
   /**
-   * @test
+   * @migrateSpec
    */
   public function testSecondaryAddress()
   {

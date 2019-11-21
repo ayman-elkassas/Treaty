@@ -20,7 +20,7 @@ class SizesController extends Controller
     public function index(SizesDataTable $sizes)
     {
         //
-	    return $sizes->render('admin.sizes.index',['title'=>'Colors Control']);
+	    return $sizes->render('admin.sizes.index',['title'=>'Size Control']);
     }
 
     /**
@@ -46,15 +46,16 @@ class SizesController extends Controller
 	    $data=$this->validate($request,[
 	    	'name_en'=>'required',
 	    	'name_ar'=>'required',
-	    	'is_public'=>'required|string',
+	    	'is_public'=>'required|in:yes,no',
 	    	'dept_id'=>'required|string',
 	    ],[],[
 		    'name_en'=>'Name En',
 		    'name_ar'=>'Name Ar',
+		    'is_public'=>'Is Public',
 		    'Size'=>'Size',
 	    ]);
 
-	    Color::create($data);
+	    Size::create($data);
 
 	    session()->flash('success',trans('admin.record_added'));
 	    return redirect(aurl('sizes'));
@@ -99,19 +100,21 @@ class SizesController extends Controller
         $data=$this->validate($request,[
             'name_en'=>'required',
             'name_ar'=>'required',
-            'color'=>'required|string',
+            'is_public'=>'required|in:yes,no',
+            'dept_id'=>'required|string',
         ],[],[
             'name_en'=>'Name En',
             'name_ar'=>'Name Ar',
-            'color'=>'Color',
+            'is_public'=>'Is Public',
+            'Size'=>'Size',
         ]);
 
 //	    return dd(\request('logo'));
 
-	    Color::where('id',$id)->update($data);
+	    Size::where('id',$id)->update($data);
 
 	    session()->flash('success',trans('admin.recorded_updated'));
-	    return redirect(aurl('colors'));
+	    return redirect(aurl('sizes'));
     }
 
     /**
@@ -123,13 +126,12 @@ class SizesController extends Controller
     public function destroy($id)
     {
         //
-	    $color=Color::find($id);
+        $size=Size::find($id);
 
-	    Storage::delete($color->logo);
-        $color->delete();
+        $size->delete();
 
 	    session()->flash('success',trans('admin.deleted_record'));
-	    return redirect(aurl('colors'));
+	    return redirect(aurl('sizes'));
 
     }
 
@@ -138,16 +140,16 @@ class SizesController extends Controller
     	if(is_array(\request('item')))
 	    {
 		    foreach (\request('item') as $id) {
-			    $colors=Color::find($id);
-                $colors->delete();
+			    $sizes=Size::find($id);
+                $sizes->delete();
 	    	}
 	    }
     	else{
-            $colors=Color::find(\request('item'));
-            $colors->delete();
+            $sizes=Size::find(\request('item'));
+            $sizes->delete();
 	    }
 
     	session()->flash('success',trans('admin.deleted_record'));
-    	return redirect(aurl('colors'));
+    	return redirect(aurl('sizes'));
     }
 }

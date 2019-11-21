@@ -13,8 +13,8 @@ use PHPUnit\Framework\TestCase;
  *
  * @package Faker\Test\Provider
  *
- * This class tests a large portion of all locale specific providers. It does not test the entire stack, because each
- * locale specific provider (can) has specific implementations. The goal of this test is to test the common denominator
+ * This class tests a large portion of all locale specific providers. It does not migrateSpec the entire stack, because each
+ * locale specific provider (can) has specific implementations. The goal of this migrateSpec is to migrateSpec the common denominator
  * and to try to catch possible invalid multi-byte sequences.
  */
 class ProviderOverrideTest extends TestCase
@@ -23,7 +23,7 @@ class ProviderOverrideTest extends TestCase
      * Constants with regular expression patterns for testing the output.
      *
      * Regular expressions are sensitive for malformed strings (e.g.: strings with incorrect encodings) so by using
-     * PCRE for the tests, even though they seem fairly pointless, we test for incorrect encodings also.
+     * PCRE for the tests, even though they seem fairly pointless, we migrateSpec for incorrect encodings also.
      */
     const TEST_STRING_REGEX = '/.+/u';
 

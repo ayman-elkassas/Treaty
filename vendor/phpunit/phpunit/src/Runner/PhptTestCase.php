@@ -23,7 +23,7 @@ use Text_Template;
 use Throwable;
 
 /**
- * Runner for PHPT test cases.
+ * Runner for PHPT migrateSpec cases.
  */
 class PhptTestCase implements Test, SelfDescribing
 {
@@ -64,7 +64,7 @@ class PhptTestCase implements Test, SelfDescribing
     ];
 
     /**
-     * Constructs a test case with the given filename.
+     * Constructs a migrateSpec case with the given filename.
      *
      * @param string             $filename
      * @param AbstractPhpProcess $phpUtil
@@ -91,7 +91,7 @@ class PhptTestCase implements Test, SelfDescribing
     }
 
     /**
-     * Counts the number of test cases executed by run(TestResult result).
+     * Counts the number of migrateSpec cases executed by run(TestResult result).
      *
      * @return int
      */
@@ -138,7 +138,7 @@ class PhptTestCase implements Test, SelfDescribing
     }
 
     /**
-     * Runs a test and collects its result in a TestResult instance.
+     * Runs a migrateSpec and collects its result in a TestResult instance.
      *
      * @param TestResult $result
      *
@@ -217,7 +217,7 @@ class PhptTestCase implements Test, SelfDescribing
         }
 
         if ($result->allCompletelyImplemented() && $xfail !== false) {
-            $result->addFailure($this, new IncompleteTestError('XFAIL section but test passes'), $time);
+            $result->addFailure($this, new IncompleteTestError('XFAIL section but migrateSpec passes'), $time);
         }
 
         $this->runClean($sections);
@@ -274,7 +274,7 @@ class PhptTestCase implements Test, SelfDescribing
     }
 
     /**
-     * Returns the name of the test case.
+     * Returns the name of the migrateSpec case.
      *
      * @return string
      */
@@ -284,7 +284,7 @@ class PhptTestCase implements Test, SelfDescribing
     }
 
     /**
-     * Returns a string representation of the test case.
+     * Returns a string representation of the migrateSpec case.
      *
      * @return string
      */

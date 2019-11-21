@@ -22,12 +22,12 @@ class Swift_Smoke_AttachmentSmokeTest extends SwiftMailerSmokeTestCase
             ->setTo(SWIFT_SMOKE_EMAIL_ADDRESS)
             ->setBody('This message should contain an attached ZIP file (named "textfile.zip").'.PHP_EOL.
                 'When unzipped, the archive should produce a text file which reads:'.PHP_EOL.
-                '"This is part of a Swift Mailer smoke test."'
+                '"This is part of a Swift Mailer smoke migrateSpec."'
                 )
             ->attach(Swift_Attachment::fromPath($this->attFile))
             ;
         $this->assertEquals(1, $mailer->send($message),
-            '%s: The smoke test should send a single message'
+            '%s: The smoke migrateSpec should send a single message'
             );
     }
 }

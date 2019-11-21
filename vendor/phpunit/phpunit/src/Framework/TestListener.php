@@ -10,7 +10,7 @@
 namespace PHPUnit\Framework;
 
 /**
- * A Listener for test progress.
+ * A Listener for migrateSpec progress.
  */
 interface TestListener
 {
@@ -42,7 +42,7 @@ interface TestListener
     public function addFailure(Test $test, AssertionFailedError $e, $time);
 
     /**
-     * Incomplete test.
+     * Incomplete migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -51,7 +51,7 @@ interface TestListener
     public function addIncompleteTest(Test $test, \Exception $e, $time);
 
     /**
-     * Risky test.
+     * Risky migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -60,7 +60,7 @@ interface TestListener
     public function addRiskyTest(Test $test, \Exception $e, $time);
 
     /**
-     * Skipped test.
+     * Skipped migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -69,28 +69,28 @@ interface TestListener
     public function addSkippedTest(Test $test, \Exception $e, $time);
 
     /**
-     * A test suite started.
+     * A migrateSpec suite started.
      *
      * @param TestSuite $suite
      */
     public function startTestSuite(TestSuite $suite);
 
     /**
-     * A test suite ended.
+     * A migrateSpec suite ended.
      *
      * @param TestSuite $suite
      */
     public function endTestSuite(TestSuite $suite);
 
     /**
-     * A test started.
+     * A migrateSpec started.
      *
      * @param Test $test
      */
     public function startTest(Test $test);
 
     /**
-     * A test ended.
+     * A migrateSpec ended.
      *
      * @param Test  $test
      * @param float $time

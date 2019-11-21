@@ -1,7 +1,7 @@
 /*
  Script for serving index.html and other static content with Node.
  Run it using `node serve` from your terminal and navigate to http://localhost:5000
- in order to test your changes in the browser.
+ in order to migrateSpec your changes in the browser.
  */
 
 var http = require('http'), fs = require('fs'), mimeTypes = {

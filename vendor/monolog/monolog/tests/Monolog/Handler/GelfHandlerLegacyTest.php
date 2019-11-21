@@ -53,7 +53,7 @@ class GelfHandlerLegacyTest extends TestCase
         $messagePublisher = $this->getMessagePublisher();
         $handler = $this->getHandler($messagePublisher);
 
-        $record = $this->getRecord(Logger::DEBUG, "A test debug message");
+        $record = $this->getRecord(Logger::DEBUG, "A migrateSpec debug message");
         $handler->handle($record);
 
         $this->assertEquals(7, $messagePublisher->lastMessage->getLevel());
@@ -67,7 +67,7 @@ class GelfHandlerLegacyTest extends TestCase
         $messagePublisher = $this->getMessagePublisher();
         $handler = $this->getHandler($messagePublisher);
 
-        $record = $this->getRecord(Logger::WARNING, "A test warning message");
+        $record = $this->getRecord(Logger::WARNING, "A migrateSpec warning message");
         $handler->handle($record);
 
         $this->assertEquals(4, $messagePublisher->lastMessage->getLevel());
@@ -83,7 +83,7 @@ class GelfHandlerLegacyTest extends TestCase
 
         $handler->setFormatter(new GelfMessageFormatter('mysystem', 'EXT', 'CTX'));
 
-        $record = $this->getRecord(Logger::WARNING, "A test warning message");
+        $record = $this->getRecord(Logger::WARNING, "A migrateSpec warning message");
         $record['extra']['blarg'] = 'yep';
         $record['context']['from'] = 'logger';
         $handler->handle($record);

@@ -32,12 +32,12 @@ class LogEntriesHandlerTest extends TestCase
     public function testWriteContent()
     {
         $this->createHandler();
-        $this->handler->handle($this->getRecord(Logger::CRITICAL, 'Critical write test'));
+        $this->handler->handle($this->getRecord(Logger::CRITICAL, 'Critical write migrateSpec'));
 
         fseek($this->res, 0);
         $content = fread($this->res, 1024);
 
-        $this->assertRegexp('/testToken \[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\] test.CRITICAL: Critical write test/', $content);
+        $this->assertRegexp('/testToken \[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\] migrateSpec.CRITICAL: Critical write migrateSpec/', $content);
     }
 
     public function testWriteBatchContent()

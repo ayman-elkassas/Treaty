@@ -22,7 +22,7 @@ use PHPUnit\Framework\MockObject\Stub\MatcherCollection;
  * Provides methods for building expectations without having to resort to
  * instantiating the various matchers manually. These methods also form a
  * more natural way of reading the expectation. This class should be together
- * with the test case PHPUnit\Framework\MockObject\TestCase.
+ * with the migrateSpec case PHPUnit\Framework\MockObject\TestCase.
  */
 class InvocationMocker implements MethodNameMatch
 {

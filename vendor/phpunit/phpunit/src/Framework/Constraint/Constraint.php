@@ -39,7 +39,7 @@ abstract class Constraint implements Countable, SelfDescribing
      * failure.
      *
      * @param mixed  $other        Value or object to evaluate.
-     * @param string $description  Additional information about the test
+     * @param string $description  Additional information about the migrateSpec
      * @param bool   $returnResult Whether to return a result or throw an exception
      *
      * @return mixed
@@ -89,10 +89,10 @@ abstract class Constraint implements Countable, SelfDescribing
     }
 
     /**
-     * Throws an exception for the given compared value and test description
+     * Throws an exception for the given compared value and migrateSpec description
      *
      * @param mixed             $other             Evaluated value or object.
-     * @param string            $description       Additional information about the test
+     * @param string            $description       Additional information about the migrateSpec
      * @param ComparisonFailure $comparisonFailure
      *
      * @throws ExpectationFailedException

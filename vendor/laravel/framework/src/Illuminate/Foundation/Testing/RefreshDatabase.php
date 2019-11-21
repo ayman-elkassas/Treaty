@@ -7,7 +7,7 @@ use Illuminate\Contracts\Console\Kernel;
 trait RefreshDatabase
 {
     /**
-     * Define hooks to migrate the database before and after each test.
+     * Define hooks to migrate the database before and after each migrateSpec.
      *
      * @return void
      */
@@ -43,7 +43,7 @@ trait RefreshDatabase
     }
 
     /**
-     * Refresh a conventional test database.
+     * Refresh a conventional migrateSpec database.
      *
      * @return void
      */

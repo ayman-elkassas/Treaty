@@ -48,11 +48,11 @@ class GelfHandlerTest extends TestCase
 
     public function testDebug()
     {
-        $record = $this->getRecord(Logger::DEBUG, "A test debug message");
+        $record = $this->getRecord(Logger::DEBUG, "A migrateSpec debug message");
         $expectedMessage = new Message();
         $expectedMessage
             ->setLevel(7)
-            ->setFacility("test")
+            ->setFacility("migrateSpec")
             ->setShortMessage($record['message'])
             ->setTimestamp($record['datetime'])
         ;
@@ -69,11 +69,11 @@ class GelfHandlerTest extends TestCase
 
     public function testWarning()
     {
-        $record = $this->getRecord(Logger::WARNING, "A test warning message");
+        $record = $this->getRecord(Logger::WARNING, "A migrateSpec warning message");
         $expectedMessage = new Message();
         $expectedMessage
             ->setLevel(4)
-            ->setFacility("test")
+            ->setFacility("migrateSpec")
             ->setShortMessage($record['message'])
             ->setTimestamp($record['datetime'])
         ;
@@ -90,14 +90,14 @@ class GelfHandlerTest extends TestCase
 
     public function testInjectedGelfMessageFormatter()
     {
-        $record = $this->getRecord(Logger::WARNING, "A test warning message");
+        $record = $this->getRecord(Logger::WARNING, "A migrateSpec warning message");
         $record['extra']['blarg'] = 'yep';
         $record['context']['from'] = 'logger';
 
         $expectedMessage = new Message();
         $expectedMessage
             ->setLevel(4)
-            ->setFacility("test")
+            ->setFacility("migrateSpec")
             ->setHost("mysystem")
             ->setShortMessage($record['message'])
             ->setTimestamp($record['datetime'])

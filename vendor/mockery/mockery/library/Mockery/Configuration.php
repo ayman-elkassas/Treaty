@@ -34,7 +34,7 @@ class Configuration
      * Boolean assertion of whether we ignore unnecessary mocking of methods,
      * i.e. when method expectations are made, set using a zeroOrMoreTimes()
      * constraint, and then never called. Essentially such expectations are
-     * not required and are just taking up test space.
+     * not required and are just taking up migrateSpec space.
      *
      * @var bool
      */

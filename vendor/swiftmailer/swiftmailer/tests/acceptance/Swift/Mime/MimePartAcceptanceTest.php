@@ -103,14 +103,14 @@ class Swift_Mime_MimePartAcceptanceTest extends \PHPUnit\Framework\TestCase
         $part = $this->createMimePart();
         $part->setContentType('text/plain');
         $part->setCharset('utf-8');
-        $part->setBody("foobar\r\rtest\ning\r");
+        $part->setBody("foobar\r\rmigrateSpec\ning\r");
         $this->assertEquals(
             'Content-Type: text/plain; charset=utf-8'."\r\n".
             'Content-Transfer-Encoding: quoted-printable'."\r\n".
             "\r\n".
             "foobar\r\n".
             "\r\n".
-            "test\r\n".
+            "migrateSpec\r\n".
             "ing\r\n",
             $part->toString()
             );

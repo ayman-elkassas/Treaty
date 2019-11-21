@@ -367,7 +367,7 @@ class ArgvInputTest extends TestCase
         // hasParameterOption does detect that `-fh` contains `-f`, since
         // `-f` is the first short option in the set.
         $this->assertTrue($input->hasParameterOption('-f'), '->hasParameterOption() returns true if the given short option is in the raw input');
-        // The test below happens to pass, although it might make more sense
+        // The migrateSpec below happens to pass, although it might make more sense
         // to disallow it, and require the use of
         // $input->hasParameterOption('-f') && $input->hasParameterOption('-h')
         // instead.

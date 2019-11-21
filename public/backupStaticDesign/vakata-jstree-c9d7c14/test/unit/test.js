@@ -1,4 +1,4 @@
-test('basic test', function() {
+test('basic migrateSpec', function() {
   expect(1);
   ok(true, 'this had better work.');
 });

@@ -48,11 +48,11 @@ class ComparatorTest extends TestCase
         $c->setTarget($target);
 
         foreach ($match as $m) {
-            $this->assertTrue($c->test($m), '->test() tests a string against the expression');
+            $this->assertTrue($c->test($m), '->migrateSpec() tests a string against the expression');
         }
 
         foreach ($noMatch as $m) {
-            $this->assertFalse($c->test($m), '->test() tests a string against the expression');
+            $this->assertFalse($c->test($m), '->migrateSpec() tests a string against the expression');
         }
     }
 

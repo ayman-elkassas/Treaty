@@ -29,7 +29,7 @@ use PHPUnit\Framework\TestCase;
 class InstanceMockPassTest extends TestCase
 {
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldAppendConstructorAndPropertyForInstanceMock()
     {

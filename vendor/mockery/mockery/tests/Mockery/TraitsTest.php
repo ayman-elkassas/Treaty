@@ -25,7 +25,7 @@ use Mockery\Loader\RequireLoader;
 
 class TraitTest extends MockeryTestCase
 {
-    /** @test */
+    /** @migrateSpec */
     public function it_can_create_an_object_for_a_simple_trait()
     {
         $trait = mock(SimpleTrait::class);
@@ -33,7 +33,7 @@ class TraitTest extends MockeryTestCase
         $this->assertEquals('bar', $trait->foo());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_creates_abstract_methods_as_necessary()
     {
         $trait = mock(TraitWithAbstractMethod::class, ['doBaz' => 'baz']);
@@ -41,7 +41,7 @@ class TraitTest extends MockeryTestCase
         $this->assertEquals('baz', $trait->baz());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_can_create_an_object_using_multiple_traits()
     {
         $trait = mock(SimpleTrait::class, TraitWithAbstractMethod::class, [

@@ -26,7 +26,7 @@ use PHPUnit\Framework\TestCase;
 class MockConfigurationTest extends TestCase
 {
     /**
-     * @test
+     * @migrateSpec
      */
     public function blackListedMethodsShouldNotBeInListToBeMocked()
     {
@@ -38,7 +38,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function blackListsAreCaseInsensitive()
     {
@@ -51,7 +51,7 @@ class MockConfigurationTest extends TestCase
 
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function onlyWhiteListedMethodsShouldBeInListToBeMocked()
     {
@@ -63,7 +63,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function whitelistOverRulesBlackList()
     {
@@ -75,7 +75,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function whiteListsAreCaseInsensitive()
     {
@@ -87,7 +87,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function finalMethodsAreExcluded()
     {
@@ -99,7 +99,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldIncludeMethodsFromAllTargets()
     {
@@ -109,7 +109,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldThrowIfTargetClassIsFinal()
     {
@@ -119,7 +119,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldTargetIteratorAggregateIfTryingToMockTraversable()
     {
@@ -132,7 +132,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldTargetIteratorAggregateIfTraversableInTargetsTree()
     {
@@ -145,7 +145,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldBringIteratorToHeadOfTargetListIfTraversablePresent()
     {
@@ -158,7 +158,7 @@ class MockConfigurationTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldBringIteratorAggregateToHeadOfTargetListIfTraversablePresent()
     {

@@ -660,7 +660,7 @@ class Uuid implements UuidInterface
     /**
      * Check if a string is a valid UUID.
      *
-     * @param string $uuid The string UUID to test
+     * @param string $uuid The string UUID to migrateSpec
      * @return boolean
      */
     public static function isValid($uuid)

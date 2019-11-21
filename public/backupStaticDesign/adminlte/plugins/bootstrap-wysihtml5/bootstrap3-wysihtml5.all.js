@@ -539,7 +539,7 @@ var wysihtml5 = {
         /*----------------------------------------------------------------------------------------------------------------*/
 
         // Removed use of indexOf because of a bizarre bug in Opera that is thrown in one of the Acid3 tests. I haven't been
-        // able to replicate it outside of the test. The bug is that indexOf returns -1 when called on an Array that
+        // able to replicate it outside of the migrateSpec. The bug is that indexOf returns -1 when called on an Array that
         // contains just the document as a single element and the value searched for is the document.
         var arrayContains = /*Array.prototype.indexOf ?
             function(arr, val) {
@@ -2269,7 +2269,7 @@ var wysihtml5 = {
                     return this.nativeRange.toString();
                 };
 
-                // Create test range and node for feature detection
+                // Create migrateSpec range and node for feature detection
 
                 var testTextNode = document.createTextNode("test");
                 getBody(document).appendChild(testTextNode);
@@ -2929,7 +2929,7 @@ var wysihtml5 = {
                         originalSelectionRanges[i] = sel.getRangeAt(i);
                     }
                     
-                    // Create some test elements
+                    // Create some migrateSpec elements
                     var body = getBody(document);
                     var testEl = body.appendChild( document.createElement("div") );
                     testEl.contentEditable = "false";
@@ -2946,9 +2946,9 @@ var wysihtml5 = {
 
                     // Test whether the native selection is capable of supporting multiple ranges.
                     if (!selectionHasMultipleRanges) {
-                        // Doing the original feature test here in Chrome 36 (and presumably later versions) prints a
+                        // Doing the original feature migrateSpec here in Chrome 36 (and presumably later versions) prints a
                         // console error of "Discontiguous selection is not supported." that cannot be suppressed. There's
-                        // nothing we can do about this while retaining the feature test so we have to resort to a browser
+                        // nothing we can do about this while retaining the feature migrateSpec so we have to resort to a browser
                         // sniff. I'm not happy about it. See
                         // https://code.google.com/p/chromium/issues/detail?id=399791
                         var chromeMatch = window.navigator.appVersion.match(/Chrome\/(.*?) /);
@@ -3068,7 +3068,7 @@ var wysihtml5 = {
             return nodes[0];
         }
 
-        // Simple, quick test which only needs to distinguish between a TextRange and a ControlRange
+        // Simple, quick migrateSpec which only needs to distinguish between a TextRange and a ControlRange
         function isTextRange(range) {
             return !!range && typeof range.text != "undefined";
         }
@@ -6174,7 +6174,7 @@ wysihtml5.dom.parse = function(elementOrHtml_current, config_current) {
         nodeStyles =  oldNode.getAttribute("style"),
         classesLength, s, s_corrected, a, attr, currentClass, styleProp;
 
-    // test for methods
+    // migrateSpec for methods
     if (definition.methods) {
       for (var m in definition.methods) {
         if (definition.methods.hasOwnProperty(m) && typeCeckMethods[m]) {
@@ -6186,7 +6186,7 @@ wysihtml5.dom.parse = function(elementOrHtml_current, config_current) {
       }
     }
 
-    // test for classes, if one found return true
+    // migrateSpec for classes, if one found return true
     if (nodeClasses && definition.classes) {
       nodeClasses = nodeClasses.replace(/^\s+/g, '').replace(/\s+$/g, '').split(WHITE_SPACE_REG_EXP);
       classesLength = nodeClasses.length;
@@ -6197,7 +6197,7 @@ wysihtml5.dom.parse = function(elementOrHtml_current, config_current) {
       }
     }
 
-    // test for styles, if one found return true
+    // migrateSpec for styles, if one found return true
     if (nodeStyles && definition.styles) {
 
       nodeStyles = nodeStyles.split(';');
@@ -6216,7 +6216,7 @@ wysihtml5.dom.parse = function(elementOrHtml_current, config_current) {
       }
     }
 
-    // test for attributes in general against regex match
+    // migrateSpec for attributes in general against regex match
     if (definition.attrs) {
         for (a in definition.attrs) {
             if (definition.attrs.hasOwnProperty(a)) {
@@ -11968,7 +11968,7 @@ wysihtml5.commands.formatCode = {
   });
 })(wysihtml5);
 ;/**
- * TODO: the following methods still need unit test coverage
+ * TODO: the following methods still need unit migrateSpec coverage
  */
 wysihtml5.views.View = Base.extend(
   /** @scope wysihtml5.views.View.prototype */ {

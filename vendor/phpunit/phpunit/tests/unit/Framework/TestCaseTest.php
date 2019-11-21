@@ -97,7 +97,7 @@ class TestCaseTest extends TestCase
         $result = $test->run();
 
         $this->assertEquals(BaseTestRunner::STATUS_SKIPPED, $test->getStatus());
-        $this->assertEquals('Skipped test', $test->getStatusMessage());
+        $this->assertEquals('Skipped migrateSpec', $test->getStatusMessage());
         $this->assertEquals(0, $result->errorCount());
         $this->assertEquals(0, $result->failureCount());
         $this->assertEquals(1, $result->skippedCount());
@@ -110,7 +110,7 @@ class TestCaseTest extends TestCase
         $result = $test->run();
 
         $this->assertEquals(BaseTestRunner::STATUS_INCOMPLETE, $test->getStatus());
-        $this->assertEquals('Incomplete test', $test->getStatusMessage());
+        $this->assertEquals('Incomplete migrateSpec', $test->getStatusMessage());
         $this->assertEquals(0, $result->errorCount());
         $this->assertEquals(0, $result->failureCount());
         $this->assertEquals(0, $result->skippedCount());

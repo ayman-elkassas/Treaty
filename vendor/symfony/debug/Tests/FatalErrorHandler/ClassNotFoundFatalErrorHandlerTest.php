@@ -45,7 +45,7 @@ class ClassNotFoundFatalErrorHandlerTest extends TestCase
     {
         if ($autoloader) {
             // Unregister all autoloaders to ensure the custom provided
-            // autoloader is the only one to be used during the test run.
+            // autoloader is the only one to be used during the migrateSpec run.
             $autoloaders = spl_autoload_functions();
             array_map('spl_autoload_unregister', $autoloaders);
             spl_autoload_register($autoloader);

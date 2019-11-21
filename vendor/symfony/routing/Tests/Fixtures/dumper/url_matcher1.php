@@ -68,32 +68,32 @@ class ProjectUrlMatcher extends Symfony\Component\Routing\Matcher\UrlMatcher
 
         }
 
-        elseif (0 === strpos($pathinfo, '/test')) {
-            if (0 === strpos($pathinfo, '/test/baz')) {
+        elseif (0 === strpos($pathinfo, '/migrateSpec')) {
+            if (0 === strpos($pathinfo, '/migrateSpec/baz')) {
                 // baz
-                if ('/test/baz' === $pathinfo) {
+                if ('/migrateSpec/baz' === $pathinfo) {
                     return ['_route' => 'baz'];
                 }
 
                 // baz2
-                if ('/test/baz.html' === $pathinfo) {
+                if ('/migrateSpec/baz.html' === $pathinfo) {
                     return ['_route' => 'baz2'];
                 }
 
                 // baz3
-                if ('/test/baz3/' === $pathinfo) {
+                if ('/migrateSpec/baz3/' === $pathinfo) {
                     return ['_route' => 'baz3'];
                 }
 
             }
 
             // baz4
-            if (preg_match('#^/test/(?P<foo>[^/]++)/$#sD', $pathinfo, $matches)) {
+            if (preg_match('#^/migrateSpec/(?P<foo>[^/]++)/$#sD', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, ['_route' => 'baz4']), array ());
             }
 
             // baz5
-            if (preg_match('#^/test/(?P<foo>[^/]++)/$#sD', $pathinfo, $matches)) {
+            if (preg_match('#^/migrateSpec/(?P<foo>[^/]++)/$#sD', $pathinfo, $matches)) {
                 $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'baz5']), array ());
                 if (!in_array($requestMethod, ['POST'])) {
                     $allow = array_merge($allow, ['POST']);
@@ -105,7 +105,7 @@ class ProjectUrlMatcher extends Symfony\Component\Routing\Matcher\UrlMatcher
             not_baz5:
 
             // baz.baz6
-            if (preg_match('#^/test/(?P<foo>[^/]++)/$#sD', $pathinfo, $matches)) {
+            if (preg_match('#^/migrateSpec/(?P<foo>[^/]++)/$#sD', $pathinfo, $matches)) {
                 $ret = $this->mergeDefaults(array_replace($matches, ['_route' => 'baz.baz6']), array ());
                 if (!in_array($requestMethod, ['PUT'])) {
                     $allow = array_merge($allow, ['PUT']);

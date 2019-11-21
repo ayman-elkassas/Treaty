@@ -18,7 +18,7 @@ use Countable;
 interface Test extends Countable
 {
     /**
-     * Runs a test and collects its result in a TestResult instance.
+     * Runs a migrateSpec and collects its result in a TestResult instance.
      *
      * @param TestResult $result
      *

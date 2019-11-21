@@ -323,7 +323,7 @@ EOF;
             $pathCode = $this->getPathCode($filesystem, $basePath, $vendorPath, $path).",\n";
             if (!isset($classMap[$class])) {
                 $classMap[$class] = $pathCode;
-            } elseif ($this->io && $classMap[$class] !== $pathCode && !preg_match('{/(test|fixture|example|stub)s?/}i', strtr($classMap[$class].' '.$path, '\\', '/'))) {
+            } elseif ($this->io && $classMap[$class] !== $pathCode && !preg_match('{/(migrateSpec|fixture|example|stub)s?/}i', strtr($classMap[$class].' '.$path, '\\', '/'))) {
                 $this->io->writeError(
                     '<warning>Warning: Ambiguous class resolution, "'.$class.'"'.
                     ' was found in both "'.str_replace(array('$vendorDir . \'', "',\n"), array($vendorPath, ''), $classMap[$class]).'" and "'.$path.'", the first will be used.</warning>'

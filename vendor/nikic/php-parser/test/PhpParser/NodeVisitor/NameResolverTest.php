@@ -422,7 +422,7 @@ EOC;
 <?php
 namespace Foo;
 use Bar\Baz;
-$test = new baz();
+$migrateSpec = new baz();
 EOC;
 
         $parser = new PhpParser\Parser\Php7(new PhpParser\Lexer\Emulative);

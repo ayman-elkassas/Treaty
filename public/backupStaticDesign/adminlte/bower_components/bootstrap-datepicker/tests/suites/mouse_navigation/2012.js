@@ -84,7 +84,7 @@ test('Navigating to/from year view', function(){
     datesEqual(this.dp.viewDate, UTCDate(2012, 2, 31));
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
 
-    // Change months to test internal state
+    // Change months to migrateSpec internal state
     target = this.picker.find('.datepicker-months tbody span:contains(Apr)');
     target.click();
     equal(this.dp.viewMode, 0);
@@ -117,7 +117,7 @@ test('Navigating to/from decade view', function(){
     datesEqual(this.dp.viewDate, UTCDate(2012, 2, 31));
     datesEqual(this.dp.dates.get(-1), UTCDate(2012, 2, 31));
 
-    // Change years to test internal state changes
+    // Change years to migrateSpec internal state changes
     target = this.picker.find('.datepicker-years tbody span:contains(2011)');
     target.click();
     equal(this.dp.viewMode, 1);

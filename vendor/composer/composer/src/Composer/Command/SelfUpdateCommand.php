@@ -342,7 +342,7 @@ TAGSPUBKEY
         try {
             @chmod($newFilename, fileperms($localFilename));
             if (!ini_get('phar.readonly')) {
-                // test the phar validity
+                // migrateSpec the phar validity
                 $phar = new \Phar($newFilename);
                 // free the variable to unlock the file
                 unset($phar);

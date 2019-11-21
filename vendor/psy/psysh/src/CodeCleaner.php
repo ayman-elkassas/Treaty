@@ -311,7 +311,7 @@ class CodeCleaner
     }
 
     /**
-     * A special test for unclosed single-quoted strings.
+     * A special migrateSpec for unclosed single-quoted strings.
      *
      * Unlike (all?) other unclosed statements, single quoted strings have
      * their own special beautiful snowflake syntax error just for

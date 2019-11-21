@@ -13,7 +13,7 @@ namespace SebastianBergmann\CodeCoverage;
 use SebastianBergmann\CodeCoverage\Driver\Xdebug;
 
 /**
- * Abstract base class for test case classes.
+ * Abstract base class for migrateSpec case classes.
  *
  * @since Class available since Release 1.0.0
  */

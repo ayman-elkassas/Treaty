@@ -28,7 +28,7 @@ use PHPUnit\Framework\TestCase;
 class MockConfigurationBuilderTest extends TestCase
 {
     /**
-     * @test
+     * @migrateSpec
      */
     public function reservedWordsAreBlackListedByDefault()
     {
@@ -40,7 +40,7 @@ class MockConfigurationBuilderTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function magicMethodsAreBlackListedByDefault()
     {
@@ -51,7 +51,7 @@ class MockConfigurationBuilderTest extends TestCase
         $this->assertEquals("foo", $methods[0]->getName());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function xdebugs_debug_info_is_black_listed_by_default()
     {
         $builder = new MockConfigurationBuilder;

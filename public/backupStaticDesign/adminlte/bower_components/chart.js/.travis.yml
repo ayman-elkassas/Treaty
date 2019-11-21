@@ -7,7 +7,7 @@ before_script:
   - npm install
 
 script:
-  - gulp test
+  - gulp migrateSpec
 
 notifications:
   slack: chartjs:pcfCZR6ugg5TEcaLtmIfQYuA

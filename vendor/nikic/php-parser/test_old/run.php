@@ -14,7 +14,7 @@ This script has to be called with the following signature:
 
     php run.php [--no-progress] testType pathToTestFiles
 
-The test type must be one of: PHP5, PHP7 or Symfony.
+The migrateSpec type must be one of: PHP5, PHP7 or Symfony.
 
 The following options are available:
 
@@ -99,7 +99,7 @@ switch ($testType) {
 | Zend.tests.multibyte.multibyte_encoding_004
 | Zend.tests.multibyte.multibyte_encoding_005
 # invalid code due to missing WS after opening tag
-| tests.run-test.bug75042-3
+| tests.run-migrateSpec.bug75042-3
 # pretty print difference due to INF vs 1e1000
 | ext.standard.tests.general_functions.bug27678
 | tests.lang.bug24640
@@ -111,7 +111,7 @@ switch ($testType) {
 | ext.mbstring.tests.htmlent
 | ext.standard.tests.file.fread_basic
 # its too hard to emulate these on old PHP versions
-| Zend.tests.flexible-heredoc-complex-test[1-4]
+| Zend.tests.flexible-heredoc-complex-migrateSpec[1-4]
 )\.phpt$~x', $file)) {
                 return null;
             }

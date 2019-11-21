@@ -23,7 +23,7 @@ use BadMethodCallException;
 use Serializable;
 
 /**
- * Base serializable test asset
+ * Base serializable migrateSpec asset
  *
  * @author Marco Pivetta <ocramius@gmail.com>
  */

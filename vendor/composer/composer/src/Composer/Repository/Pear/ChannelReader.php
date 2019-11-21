@@ -23,7 +23,7 @@ use Composer\Util\RemoteFilesystem;
  */
 class ChannelReader extends BaseChannelReader
 {
-    /** @var array of ('xpath test' => 'rest implementation') */
+    /** @var array of ('xpath migrateSpec' => 'rest implementation') */
     private $readerMap;
 
     public function __construct(RemoteFilesystem $rfs)

@@ -45,7 +45,7 @@ class ClassWithExpectsMethod
 
 class AllowsExpectsSyntaxTest extends TestCase
 {
-    /** @test */
+    /** @migrateSpec */
     public function allowsSetsUpMethodStub()
     {
         $stub = m::mock();
@@ -54,7 +54,7 @@ class AllowsExpectsSyntaxTest extends TestCase
         $this->assertEquals(456, $stub->foo(123));
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function allowsCanTakeAnArrayOfCalls()
     {
         $stub = m::mock();
@@ -67,7 +67,7 @@ class AllowsExpectsSyntaxTest extends TestCase
         $this->assertEquals("baz", $stub->bar());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function allowsCanTakeAString()
     {
         $stub = m::mock();
@@ -75,7 +75,7 @@ class AllowsExpectsSyntaxTest extends TestCase
         $this->assertEquals("bar", $stub->foo());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function expects_can_optionally_match_on_any_arguments()
     {
         $mock = m::mock();
@@ -84,7 +84,7 @@ class AllowsExpectsSyntaxTest extends TestCase
         $this->assertEquals(123, $mock->foo(456, 789));
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function expects_can_take_a_string()
     {
         $mock = m::mock();
@@ -93,7 +93,7 @@ class AllowsExpectsSyntaxTest extends TestCase
         $this->assertEquals(123, $mock->foo(456, 789));
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function expectsSetsUpExpectationOfOneCall()
     {
         $mock = m::mock();
@@ -103,7 +103,7 @@ class AllowsExpectsSyntaxTest extends TestCase
         m::close();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function callVerificationCountCanBeOverridenAfterExpectsThrowsExceptionWhenIncorrectNumberOfCalls()
     {
         $mock = m::mock();
@@ -114,7 +114,7 @@ class AllowsExpectsSyntaxTest extends TestCase
         m::close();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function callVerificationCountCanBeOverridenAfterExpects()
     {
         $mock = m::mock();
@@ -126,20 +126,20 @@ class AllowsExpectsSyntaxTest extends TestCase
         m::close();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function generateSkipsAllowsMethodIfAlreadyExists()
     {
-        $stub = m::mock("test\Mockery\ClassWithAllowsMethod");
+        $stub = m::mock("migrateSpec\Mockery\ClassWithAllowsMethod");
     
         $stub->shouldReceive('allows')->andReturn(123);
     
         $this->assertEquals(123, $stub->allows());
     }
     
-    /** @test */
+    /** @migrateSpec */
     public function generateSkipsExpectsMethodIfAlreadyExists()
     {
-        $stub = m::mock("test\Mockery\ClassWithExpectsMethod");
+        $stub = m::mock("migrateSpec\Mockery\ClassWithExpectsMethod");
     
         $stub->shouldReceive('expects')->andReturn(123);
     

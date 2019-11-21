@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 class Issue498Test extends TestCase
 {
     /**
-     * @test
+     * @migrateSpec
      * @dataProvider shouldBeTrueDataProvider
      * @group falseOnly
      */
@@ -15,7 +15,7 @@ class Issue498Test extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      * @dataProvider shouldBeFalseDataProvider
      * @group trueOnly
      */

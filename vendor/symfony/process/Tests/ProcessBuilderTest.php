@@ -214,7 +214,7 @@ class ProcessBuilderTest extends TestCase
     public function testDoesNotPrefixExec()
     {
         if ('\\' === \DIRECTORY_SEPARATOR) {
-            $this->markTestSkipped('This test cannot run on Windows.');
+            $this->markTestSkipped('This migrateSpec cannot run on Windows.');
         }
 
         $builder = ProcessBuilder::create(['command', '-v', 'ls']);

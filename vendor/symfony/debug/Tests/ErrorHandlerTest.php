@@ -100,7 +100,7 @@ class ErrorHandlerTest extends TestCase
             self::triggerNotice($this);
             $this->fail('ErrorException expected');
         } catch (\ErrorException $exception) {
-            // if an exception is thrown, the test passed
+            // if an exception is thrown, the migrateSpec passed
             $this->assertEquals(E_NOTICE, $exception->getSeverity());
             $this->assertEquals(__FILE__, $exception->getFile());
             $this->assertRegExp('/^Notice: Undefined variable: (foo|bar)/', $exception->getMessage());
@@ -122,7 +122,7 @@ class ErrorHandlerTest extends TestCase
         }
     }
 
-    // dummy function to test trace in error handler.
+    // dummy function to migrateSpec trace in error handler.
     private static function triggerNotice($that)
     {
         $that->assertSame('', $foo.$foo.$bar);

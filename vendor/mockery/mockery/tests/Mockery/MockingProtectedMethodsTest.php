@@ -26,40 +26,40 @@ use Mockery\Adapter\Phpunit\MockeryTestCase;
 class MockingProtectedMethodsTest extends MockeryTestCase
 {
     /**
-     * @test
+     * @migrateSpec
      *
-     * This is a regression test, basically we don't want the mock handling
+     * This is a regression migrateSpec, basically we don't want the mock handling
      * interfering with calling protected methods partials
      */
     public function shouldAutomaticallyDeferCallsToProtectedMethodsForPartials()
     {
-        $mock = mock("test\Mockery\TestWithProtectedMethods[foo]");
+        $mock = mock("migrateSpec\Mockery\TestWithProtectedMethods[foo]");
         $this->assertEquals("bar", $mock->bar());
     }
 
     /**
-     * @test
+     * @migrateSpec
      *
-     * This is a regression test, basically we don't want the mock handling
+     * This is a regression migrateSpec, basically we don't want the mock handling
      * interfering with calling protected methods partials
      */
     public function shouldAutomaticallyDeferCallsToProtectedMethodsForRuntimePartials()
     {
-        $mock = mock("test\Mockery\TestWithProtectedMethods")->makePartial();
+        $mock = mock("migrateSpec\Mockery\TestWithProtectedMethods")->makePartial();
         $this->assertEquals("bar", $mock->bar());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function shouldAutomaticallyIgnoreAbstractProtectedMethods()
     {
-        $mock = mock("test\Mockery\TestWithProtectedMethods")->makePartial();
+        $mock = mock("migrateSpec\Mockery\TestWithProtectedMethods")->makePartial();
         $this->assertNull($mock->foo());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function shouldAllowMockingProtectedMethods()
     {
-        $mock = mock("test\Mockery\TestWithProtectedMethods")
+        $mock = mock("migrateSpec\Mockery\TestWithProtectedMethods")
             ->makePartial()
             ->shouldAllowMockingProtectedMethods();
 
@@ -67,20 +67,20 @@ class MockingProtectedMethodsTest extends MockeryTestCase
         $this->assertEquals("notbar", $mock->bar());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function shouldAllowMockingProtectedMethodOnDefinitionTimePartial()
     {
-        $mock = mock("test\Mockery\TestWithProtectedMethods[protectedBar]")
+        $mock = mock("migrateSpec\Mockery\TestWithProtectedMethods[protectedBar]")
             ->shouldAllowMockingProtectedMethods();
 
         $mock->shouldReceive("protectedBar")->andReturn("notbar");
         $this->assertEquals("notbar", $mock->bar());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function shouldAllowMockingAbstractProtectedMethods()
     {
-        $mock = mock("test\Mockery\TestWithProtectedMethods")
+        $mock = mock("migrateSpec\Mockery\TestWithProtectedMethods")
             ->makePartial()
             ->shouldAllowMockingProtectedMethods();
 
@@ -88,10 +88,10 @@ class MockingProtectedMethodsTest extends MockeryTestCase
         $this->assertEquals("abstractProtected", $mock->foo());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function shouldAllowMockingIncreasedVisabilityMethods()
     {
-        $mock = mock("test\Mockery\TestIncreasedVisibilityChild");
+        $mock = mock("migrateSpec\Mockery\TestIncreasedVisibilityChild");
         $mock->shouldReceive('foobar')->andReturn("foobar");
         $this->assertEquals('foobar', $mock->foobar());
     }

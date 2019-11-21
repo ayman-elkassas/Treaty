@@ -64,7 +64,7 @@ class MimeTypeTest extends TestCase
         }
 
         if (!getenv('USER') || 'root' === getenv('USER')) {
-            $this->markTestSkipped('This test will fail if run under superuser');
+            $this->markTestSkipped('This migrateSpec will fail if run under superuser');
         }
 
         $path = __DIR__.'/../Fixtures/to_delete';

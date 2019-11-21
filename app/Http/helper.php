@@ -25,9 +25,13 @@ if(!function_exists('lang'))
         }
         else
         {
-        	session()->put('lang',setting()->main_lang);
+        	if(setting()!=null)
+	        {
+		        session()->put('lang',setting()->main_lang);
+		        return setting()->main_lang;
+	        }
+        	return 'en';
 
-	        return setting()->main_lang;
         }
     }
 }

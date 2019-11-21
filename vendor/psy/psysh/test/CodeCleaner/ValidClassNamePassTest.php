@@ -305,7 +305,7 @@ class ValidClassNamePassTest extends CodeCleanerTestCase
             '],
         ];
 
-        // Ugh. There's gotta be a better way to test for this.
+        // Ugh. There's gotta be a better way to migrateSpec for this.
         if (\class_exists('PhpParser\ParserFactory')) {
             // PHP 7.0 anonymous classes, only supported by PHP Parser v2.x
             $valid[] = ['$obj = new class() {}'];

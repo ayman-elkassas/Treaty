@@ -607,7 +607,7 @@ Example:
 ```json
 {
     "autoload": {
-        "exclude-from-classmap": ["/Tests/", "/test/", "/tests/"]
+        "exclude-from-classmap": ["/Tests/", migrateSpec, "/tests/"]
     }
 }
 ```
@@ -860,7 +860,7 @@ Example:
 ```json
 {
     "archive": {
-        "exclude": ["/foo/bar", "baz", "/*.test", "!/foo/bar/baz"]
+        "exclude": ["/foo/bar", "baz", migrateSpec, "!/foo/bar/baz"]
     }
 }
 ```

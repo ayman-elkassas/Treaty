@@ -27,14 +27,14 @@ use test\Mockery\Stubs\Habitat;
 
 class NamedMockTest extends MockeryTestCase
 {
-    /** @test */
+    /** @migrateSpec */
     public function itCreatesANamedMock()
     {
         $mock = Mockery::namedMock("Mockery\Dave123");
         $this->assertInstanceOf("Mockery\Dave123", $mock);
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function itCreatesPassesFurtherArgumentsJustLikeMock()
     {
         $mock = Mockery::namedMock("Mockery\Dave456", "DateTime", array(
@@ -46,7 +46,7 @@ class NamedMockTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldThrowIfAttemptingToRedefineNamedMock()
     {
@@ -56,7 +56,7 @@ class NamedMockTest extends MockeryTestCase
         $mock = Mockery::namedMock("Mockery\Dave7", "DateTime");
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function itCreatesConcreteMethodImplementationWithReturnType()
     {
         $cactus = new \Nature\Plant();
@@ -69,7 +69,7 @@ class NamedMockTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      * @requires PHP 7.0.0
      */
     public function it_gracefully_handles_namespacing()

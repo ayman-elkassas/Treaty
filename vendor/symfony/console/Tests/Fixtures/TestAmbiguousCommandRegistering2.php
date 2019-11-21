@@ -9,13 +9,13 @@ class TestAmbiguousCommandRegistering2 extends Command
     protected function configure()
     {
         $this
-            ->setName('test-ambiguous2')
-            ->setDescription('The test-ambiguous2 command')
+            ->setName('migrateSpec-ambiguous2')
+            ->setDescription('The migrateSpec-ambiguous2 command')
         ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->write('test-ambiguous2');
+        $output->write('migrateSpec-ambiguous2');
     }
 }

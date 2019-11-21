@@ -250,7 +250,7 @@
 
         noop: function() {},
 
-        // See test/unit/core.js for details concerning isFunction.
+        // See migrateSpec/unit/core.js for details concerning isFunction.
         // Since version 1.3, DOM methods and functions like alert
         // aren't supported. They return false on IE (#2968).
         isFunction: function( obj ) {
@@ -1072,7 +1072,7 @@
                 // Support: IE<10
                 // Check if getElementById returns elements by name
                 // The broken getElementById methods don't pick up programatically-set names,
-                // so use a roundabout getElementsByName test
+                // so use a roundabout getElementsByName migrateSpec
                 support.getById = assert(function( div ) {
                     docElem.appendChild( div ).id = expando;
                     return !doc.getElementsByName || !doc.getElementsByName( expando ).length;
@@ -1161,7 +1161,7 @@
                     // Regex strategy adopted from Diego Perini
                     assert(function( div ) {
                         // Select is set to empty string on purpose
-                        // This is to test IE's treatment of not explicitly
+                        // This is to migrateSpec IE's treatment of not explicitly
                         // setting a boolean content attribute,
                         // since its presence should be enough
                         // http://bugs.jquery.com/ticket/12359
@@ -5532,7 +5532,7 @@
                     return;
                 }
 
-                // Hook needed; redefine it so that the support test is not executed again.
+                // Hook needed; redefine it so that the support migrateSpec is not executed again.
 
                 return (this.get = hookFn).apply( this, arguments );
             }
@@ -5577,9 +5577,9 @@
         if ( window.getComputedStyle ) {
             jQuery.extend(support, {
                 pixelPosition: function() {
-                    // This test is executed only once but we still do memoizing
+                    // This migrateSpec is executed only once but we still do memoizing
                     // since we can use the boxSizingReliable pre-computing.
-                    // No need to check if the test was already performed, though.
+                    // No need to check if the migrateSpec was already performed, though.
                     computePixelPositionAndBoxSizingReliable();
                     return pixelPositionVal;
                 },

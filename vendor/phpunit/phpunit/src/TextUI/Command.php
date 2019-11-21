@@ -79,7 +79,7 @@ class Command
         'coverage-text=='           => null,
         'coverage-xml='             => null,
         'debug'                     => null,
-        'disallow-test-output'      => null,
+        'disallow-migrateSpec-output'      => null,
         'disallow-resource-usage'   => null,
         'disallow-todo-tests'       => null,
         'enforce-time-limit'        => null,
@@ -126,7 +126,7 @@ class Command
         'testdox-html='             => null,
         'testdox-text='             => null,
         'testdox-xml='              => null,
-        'test-suffix='              => null,
+        'migrateSpec-suffix='              => null,
         'testsuite='                => null,
         'verbose'                   => null,
         'version'                   => null,
@@ -434,7 +434,7 @@ class Command
 
                     break;
 
-                case '--test-suffix':
+                case '--migrateSpec-suffix':
                     $this->arguments['testSuffixes'] = \explode(
                         ',',
                         $option[1]
@@ -654,7 +654,7 @@ class Command
 
                     break;
 
-                case '--disallow-test-output':
+                case '--disallow-migrateSpec-output':
                     $this->arguments['disallowTestOutput'] = true;
 
                     break;
@@ -1040,8 +1040,8 @@ Code Coverage Options:
 
 Logging Options:
 
-  --log-junit <file>          Log test execution in JUnit XML format to file.
-  --log-teamcity <file>       Log test execution in TeamCity format to file.
+  --log-junit <file>          Log migrateSpec execution in JUnit XML format to file.
+  --log-teamcity <file>       Log migrateSpec execution in TeamCity format to file.
   --testdox-html <file>       Write agile documentation in HTML format to file.
   --testdox-text <file>       Write agile documentation in Text format to file.
   --testdox-xml <file>        Write agile documentation in XML format to file.
@@ -1053,26 +1053,26 @@ Test Selection Options:
   --testsuite <name,...>      Filter which testsuite to run.
   --group ...                 Only runs tests from the specified group(s).
   --exclude-group ...         Exclude tests from the specified group(s).
-  --list-groups               List available test groups.
-  --list-suites               List available test suites.
+  --list-groups               List available migrateSpec groups.
+  --list-suites               List available migrateSpec suites.
   --list-tests                List available tests.
   --list-tests-xml <file>     List available tests in XML format.
-  --test-suffix ...           Only search for test in files with specified
+  --migrateSpec-suffix ...           Only search for migrateSpec in files with specified
                               suffix(es). Default: Test.php,.phpt
 
 Test Execution Options:
 
-  --dont-report-useless-tests Do not report tests that do not test anything.
+  --dont-report-useless-tests Do not report tests that do not migrateSpec anything.
   --strict-coverage           Be strict about @covers annotation usage.
   --strict-global-state       Be strict about changes to global state
-  --disallow-test-output      Be strict about output during tests.
+  --disallow-migrateSpec-output      Be strict about output during tests.
   --disallow-resource-usage   Be strict about resource usage during small tests.
-  --enforce-time-limit        Enforce time limit based on test size.
+  --enforce-time-limit        Enforce time limit based on migrateSpec size.
   --disallow-todo-tests       Disallow @todo-annotated tests.
 
-  --process-isolation         Run each test in a separate PHP process.
-  --globals-backup            Backup and restore \$GLOBALS for each test.
-  --static-backup             Backup and restore static attributes for each test.
+  --process-isolation         Run each migrateSpec in a separate PHP process.
+  --globals-backup            Backup and restore \$GLOBALS for each migrateSpec.
+  --static-backup             Backup and restore static attributes for each migrateSpec.
 
   --colors=<flag>             Use colors in output ("never", "auto" or "always").
   --columns <n>               Number of columns to use for progress output.
@@ -1081,18 +1081,18 @@ Test Execution Options:
   --stop-on-error             Stop execution upon first error.
   --stop-on-failure           Stop execution upon first error or failure.
   --stop-on-warning           Stop execution upon first warning.
-  --stop-on-risky             Stop execution upon first risky test.
-  --stop-on-skipped           Stop execution upon first skipped test.
-  --stop-on-incomplete        Stop execution upon first incomplete test.
+  --stop-on-risky             Stop execution upon first risky migrateSpec.
+  --stop-on-skipped           Stop execution upon first skipped migrateSpec.
+  --stop-on-incomplete        Stop execution upon first incomplete migrateSpec.
   --fail-on-warning           Treat tests with warnings as failures.
   --fail-on-risky             Treat risky tests as failures.
   -v|--verbose                Output more verbose information.
   --debug                     Display debugging information.
 
   --loader <loader>           TestSuiteLoader implementation to use.
-  --repeat <times>            Runs the test(s) repeatedly.
-  --teamcity                  Report test execution progress in TeamCity format.
-  --testdox                   Report test execution progress in TestDox format.
+  --repeat <times>            Runs the migrateSpec(s) repeatedly.
+  --teamcity                  Report migrateSpec execution progress in TeamCity format.
+  --testdox                   Report migrateSpec execution progress in TestDox format.
   --testdox-group             Only include tests from the specified group(s).
   --testdox-exclude-group     Exclude tests from the specified group(s).
   --printer <printer>         TestListener implementation to use.
@@ -1119,7 +1119,7 @@ EOT;
     }
 
     /**
-     * Custom callback for test suite discovery.
+     * Custom callback for migrateSpec suite discovery.
      */
     protected function handleCustomTestSuite()
     {
@@ -1194,7 +1194,7 @@ EOT;
     {
         $this->printVersionString();
 
-        print 'Available test group(s):' . PHP_EOL;
+        print 'Available migrateSpec group(s):' . PHP_EOL;
 
         $groups = $suite->getGroups();
         \sort($groups);
@@ -1217,7 +1217,7 @@ EOT;
     {
         $this->printVersionString();
 
-        print 'Available test suite(s):' . PHP_EOL;
+        print 'Available migrateSpec suite(s):' . PHP_EOL;
 
         $configuration = Configuration::getInstance(
             $this->arguments['configuration']

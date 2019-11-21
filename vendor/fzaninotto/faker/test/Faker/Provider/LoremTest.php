@@ -22,12 +22,12 @@ class LoremTest extends TestCase
 
     public function testTextReturnsSentencesWhenAskedSizeLessThan100()
     {
-        $this->assertEquals('This is a test sentence. This is a test sentence. This is a test sentence.', TestableLorem::text(99));
+        $this->assertEquals('This is a migrateSpec sentence. This is a migrateSpec sentence. This is a migrateSpec sentence.', TestableLorem::text(99));
     }
 
     public function testTextReturnsParagraphsWhenAskedSizeGreaterOrEqualThanThan100()
     {
-        $this->assertEquals('This is a test paragraph. It has three sentences. Exactly three.', TestableLorem::text(100));
+        $this->assertEquals('This is a migrateSpec paragraph. It has three sentences. Exactly three.', TestableLorem::text(100));
     }
 
     public function testSentenceWithZeroNbWordsReturnsEmptyString()
@@ -77,14 +77,14 @@ class LoremTest extends TestCase
     {
         $sentences = TestableLorem::sentences(2, true);
 
-        $this->assertEquals('This is a test sentence. This is a test sentence.', $sentences);
+        $this->assertEquals('This is a migrateSpec sentence. This is a migrateSpec sentence.', $sentences);
     }
 
     public function testParagraphsAsText()
     {
         $paragraphs = TestableLorem::paragraphs(2, true);
 
-        $expected = "This is a test paragraph. It has three sentences. Exactly three.\n\nThis is a test paragraph. It has three sentences. Exactly three.";
+        $expected = "This is a migrateSpec paragraph. It has three sentences. Exactly three.\n\nThis is a migrateSpec paragraph. It has three sentences. Exactly three.";
         $this->assertEquals($expected, $paragraphs);
     }
 }
@@ -99,11 +99,11 @@ class TestableLorem extends Lorem
 
     public static function sentence($nbWords = 5, $variableNbWords = true)
     {
-        return 'This is a test sentence.';
+        return 'This is a migrateSpec sentence.';
     }
 
     public static function paragraph($nbSentences = 3, $variableNbSentences = true)
     {
-        return 'This is a test paragraph. It has three sentences. Exactly three.';
+        return 'This is a migrateSpec paragraph. It has three sentences. Exactly three.';
     }
 }

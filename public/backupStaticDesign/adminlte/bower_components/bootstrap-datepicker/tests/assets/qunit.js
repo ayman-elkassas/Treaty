@@ -13,7 +13,7 @@
 var defined = {
 	setTimeout: typeof window.setTimeout !== "undefined",
 	sessionStorage: (function() {
-		var x = "qunit-test-string";
+		var x = "qunit-migrateSpec-string";
 		try {
 			sessionStorage.setItem(x, x);
 			sessionStorage.removeItem(x);
@@ -45,7 +45,7 @@ Test.prototype = {
 			var li = document.createElement("li");
 				li.appendChild( b );
 				li.className = "running";
-				li.id = this.id = "test-output" + testId++;
+				li.id = this.id = "migrateSpec-output" + testId++;
 			tests.appendChild( li );
 		}
 	},
@@ -81,7 +81,7 @@ Test.prototype = {
 			module: this.module
 		});
 
-		// allow utility functions to access the current test environment
+		// allow utility functions to access the current migrateSpec environment
 		// TODO why??
 		QUnit.current_testEnvironment = this.testEnvironment;
 
@@ -118,8 +118,8 @@ Test.prototype = {
 		try {
 			this.callback.call(this.testEnvironment);
 		} catch(e) {
-			QUnit.pushFailure( "Died on test #" + (this.assertions.length + 1) + ": " + e.message, extractStacktrace( e, 1 ) );
-			// else next test will carry the responsibility
+			QUnit.pushFailure( "Died on migrateSpec #" + (this.assertions.length + 1) + ": " + e.message, extractStacktrace( e, 1 ) );
+			// else next migrateSpec will carry the responsibility
 			saveGlobal();
 
 			// Restart the tests if they're blocking
@@ -180,9 +180,9 @@ Test.prototype = {
 			// store result when possible
 			if ( QUnit.config.reorder && defined.sessionStorage ) {
 				if (bad) {
-					sessionStorage.setItem("qunit-test-" + this.module + "-" + this.testName, bad);
+					sessionStorage.setItem("qunit-migrateSpec-" + this.module + "-" + this.testName, bad);
 				} else {
-					sessionStorage.removeItem("qunit-test-" + this.module + "-" + this.testName);
+					sessionStorage.removeItem("qunit-migrateSpec-" + this.module + "-" + this.testName);
 				}
 			}
 
@@ -261,8 +261,8 @@ Test.prototype = {
 				test.finish();
 			});
 		}
-		// defer when previous test run passed, if storage is available
-		var bad = QUnit.config.reorder && defined.sessionStorage && +sessionStorage.getItem("qunit-test-" + this.module + "-" + this.testName);
+		// defer when previous migrateSpec run passed, if storage is available
+		var bad = QUnit.config.reorder && defined.sessionStorage && +sessionStorage.getItem("qunit-migrateSpec-" + this.module + "-" + this.testName);
 		if (bad) {
 			run();
 		} else {
@@ -274,7 +274,7 @@ Test.prototype = {
 
 var QUnit = {
 
-	// call on start of module test to prepend name to all tests
+	// call on start of module migrateSpec to prepend name to all tests
 	module: function(name, testEnvironment) {
 		config.currentModule = name;
 		config.currentModuleTestEnviroment = testEnvironment;
@@ -290,7 +290,7 @@ var QUnit = {
 	},
 
 	test: function(testName, expected, callback, async) {
-		var name = '<span class="test-name">' + escapeInnerText(testName) + '</span>';
+		var name = '<span class="migrateSpec-name">' + escapeInnerText(testName) + '</span>';
 
 		if ( arguments.length === 2 ) {
 			callback = expected;
@@ -311,7 +311,7 @@ var QUnit = {
 		test.queue();
 	},
 
-	// Specify the number of expected assertions to gurantee that failed test (no assertions are run at all) don't slip through.
+	// Specify the number of expected assertions to gurantee that failed migrateSpec (no assertions are run at all) don't slip through.
 	expect: function(asserts) {
 		config.current.expected = asserts;
 	},
@@ -320,7 +320,7 @@ var QUnit = {
 	// @example ok( "asdfasdf".length > 5, "There must be at least 5 chars" );
 	ok: function(result, msg) {
 		if (!config.current) {
-			throw new Error("ok() assertion outside test context, was " + sourceFromStacktrace(2));
+			throw new Error("ok() assertion outside migrateSpec context, was " + sourceFromStacktrace(2));
 		}
 		result = !!result;
 		var details = {
@@ -332,7 +332,7 @@ var QUnit = {
 			var source = sourceFromStacktrace(2);
 			if (source) {
 				details.source = source;
-				msg += '<table><tr class="test-source"><th>Source: </th><td><pre>' + escapeInnerText(source) + '</pre></td></tr></table>';
+				msg += '<table><tr class="migrateSpec-source"><th>Source: </th><td><pre>' + escapeInnerText(source) + '</pre></td></tr></table>';
 			}
 		}
 		runLoggingCallbacks( 'log', QUnit, details );
@@ -506,7 +506,7 @@ var config = {
 		for ( var i = 0; i < length; i++ ) {
 			current = params[ i ].split( "=" );
 			current[ 0 ] = decodeURIComponent( current[ 0 ] );
-			// allow just a key to turn on a flag, e.g., test.html?noglobals
+			// allow just a key to turn on a flag, e.g., migrateSpec.html?noglobals
 			current[ 1 ] = current[ 1 ] ? decodeURIComponent( current[ 1 ] ) : true;
 			urlParams[ current[ 0 ] ] = current[ 1 ];
 		}
@@ -580,7 +580,7 @@ extend(QUnit, {
 		}
 	},
 
-	// Resets the test setup. Useful for tests that modify the DOM.
+	// Resets the migrateSpec setup. Useful for tests that modify the DOM.
 	// If jQuery is available, uses jQuery's html(), otherwise just innerHTML.
 	reset: function() {
 		if ( window.jQuery ) {
@@ -646,7 +646,7 @@ extend(QUnit, {
 
 	push: function(result, actual, expected, message) {
 		if (!config.current) {
-			throw new Error("assertion outside test context, was " + sourceFromStacktrace());
+			throw new Error("assertion outside migrateSpec context, was " + sourceFromStacktrace());
 		}
 		var details = {
 			result: result,
@@ -656,20 +656,20 @@ extend(QUnit, {
 		};
 
 		message = escapeInnerText(message) || (result ? "okay" : "failed");
-		message = '<span class="test-message">' + message + "</span>";
+		message = '<span class="migrateSpec-message">' + message + "</span>";
 		var output = message;
 		if (!result) {
 			expected = escapeInnerText(QUnit.jsDump.parse(expected));
 			actual = escapeInnerText(QUnit.jsDump.parse(actual));
-			output += '<table><tr class="test-expected"><th>Expected: </th><td><pre>' + expected + '</pre></td></tr>';
+			output += '<table><tr class="migrateSpec-expected"><th>Expected: </th><td><pre>' + expected + '</pre></td></tr>';
 			if (actual != expected) {
-				output += '<tr class="test-actual"><th>Result: </th><td><pre>' + actual + '</pre></td></tr>';
-				output += '<tr class="test-diff"><th>Diff: </th><td><pre>' + QUnit.diff(expected, actual) +'</pre></td></tr>';
+				output += '<tr class="migrateSpec-actual"><th>Result: </th><td><pre>' + actual + '</pre></td></tr>';
+				output += '<tr class="migrateSpec-diff"><th>Diff: </th><td><pre>' + QUnit.diff(expected, actual) +'</pre></td></tr>';
 			}
 			var source = sourceFromStacktrace();
 			if (source) {
 				details.source = source;
-				output += '<tr class="test-source"><th>Source: </th><td><pre>' + escapeInnerText(source) + '</pre></td></tr>';
+				output += '<tr class="migrateSpec-source"><th>Source: </th><td><pre>' + escapeInnerText(source) + '</pre></td></tr>';
 			}
 			output += "</table>";
 		}
@@ -690,7 +690,7 @@ extend(QUnit, {
 		var output = escapeInnerText(message);
 		if (source) {
 			details.source = source;
-			output += '<table><tr class="test-source"><th>Source: </th><td><pre>' + escapeInnerText(source) + '</pre></td></tr></table>';
+			output += '<table><tr class="migrateSpec-source"><th>Source: </th><td><pre>' + escapeInnerText(source) + '</pre></td></tr></table>';
 		}
 		runLoggingCallbacks( 'log', QUnit, details );
 		config.current.assertions.push({
@@ -723,7 +723,7 @@ extend(QUnit, {
 //QUnit object, which is a deprecated way of using the callbacks.
 extend(QUnit.constructor.prototype, {
 	// Logging callbacks; all receive a single argument with the listed properties
-	// run test/logs.html for any related changes
+	// run migrateSpec/logs.html for any related changes
 	begin: registerLoggingCallback('begin'),
 	// done: { failed, passed, total, runtime }
 	done: registerLoggingCallback('done'),
@@ -883,7 +883,7 @@ function done() {
 		var key;
 		for ( var i = 0; i < sessionStorage.length; i++ ) {
 			key = sessionStorage.key( i++ );
-			if ( key.indexOf("qunit-test-") === 0 ) {
+			if ( key.indexOf("qunit-migrateSpec-") === 0 ) {
 				sessionStorage.removeItem( key );
 			}
 		}

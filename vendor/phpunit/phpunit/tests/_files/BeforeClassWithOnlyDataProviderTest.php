@@ -30,7 +30,7 @@ class BeforeClassWithOnlyDataProviderTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @dataProvider dummyProvider
-     * delete annotation to fail test case
+     * delete annotation to fail migrateSpec case
      */
     public function testDummy()
     {

@@ -27,7 +27,7 @@ class TestResponse
     public $baseResponse;
 
     /**
-     * Create a new test response instance.
+     * Create a new migrateSpec response instance.
      *
      * @param  \Illuminate\Http\Response  $response
      * @return void

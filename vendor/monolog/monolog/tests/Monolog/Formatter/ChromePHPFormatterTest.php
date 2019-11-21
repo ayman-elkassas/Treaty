@@ -74,7 +74,7 @@ class ChromePHPFormatterTest extends \PHPUnit_Framework_TestCase
                     'context' => array('from' => 'logger'),
                     'extra' => array('ip' => '127.0.0.1'),
                 ),
-                'test : 14',
+                'migrateSpec : 14',
                 'error',
             ),
             $message

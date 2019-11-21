@@ -211,7 +211,7 @@ export function localeWeekdaysParse (weekdayName, format, strict) {
             regex = '^' + this.weekdays(mom, '') + '|^' + this.weekdaysShort(mom, '') + '|^' + this.weekdaysMin(mom, '');
             this._weekdaysParse[i] = new RegExp(regex.replace('.', ''), 'i');
         }
-        // test the regex
+        // migrateSpec the regex
         if (strict && format === 'dddd' && this._fullWeekdaysParse[i].test(weekdayName)) {
             return i;
         } else if (strict && format === 'ddd' && this._shortWeekdaysParse[i].test(weekdayName)) {

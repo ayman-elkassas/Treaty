@@ -123,7 +123,7 @@ class CodeCoverage
     private $isInitialized = false;
 
     /**
-     * Determine whether we need to check for dead and unused code on each test
+     * Determine whether we need to check for dead and unused code on each migrateSpec
      *
      * @var bool
      */
@@ -225,7 +225,7 @@ class CodeCoverage
     }
 
     /**
-     * Returns the test data.
+     * Returns the migrateSpec data.
      *
      * @return array
      */
@@ -235,7 +235,7 @@ class CodeCoverage
     }
 
     /**
-     * Sets the test data.
+     * Sets the migrateSpec data.
      *
      * @param array $tests
      */

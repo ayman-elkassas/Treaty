@@ -32,9 +32,9 @@ class DataProviderFilterTest extends TestCase
     public static function falseProvider()
     {
         return [
-          'false test'       => [false],
-          'false test 2'     => [false],
-          'other false test' => [false],
+          'false migrateSpec'       => [false],
+          'false migrateSpec 2'     => [false],
+          'other false migrateSpec' => [false],
           'other false test2'=> [false]
         ];
     }

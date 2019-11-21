@@ -26,10 +26,10 @@ abstract class RealIteratorTestCase extends IteratorTestCase
             '.foo/.bar',
             '.foo/bar',
             '.bar',
-            'test.py',
+            'migrateSpec.py',
             'foo/',
             'foo/bar.tmp',
-            'test.php',
+            'migrateSpec.php',
             'toto/',
             'toto/.git/',
             'foo bar',
@@ -51,11 +51,11 @@ abstract class RealIteratorTestCase extends IteratorTestCase
             }
         }
 
-        file_put_contents(self::toAbsolute('test.php'), str_repeat(' ', 800));
-        file_put_contents(self::toAbsolute('test.py'), str_repeat(' ', 2000));
+        file_put_contents(self::toAbsolute('migrateSpec.php'), str_repeat(' ', 800));
+        file_put_contents(self::toAbsolute('migrateSpec.py'), str_repeat(' ', 2000));
 
         touch(self::toAbsolute('foo/bar.tmp'), strtotime('2005-10-15'));
-        touch(self::toAbsolute('test.php'), strtotime('2005-10-15'));
+        touch(self::toAbsolute('migrateSpec.php'), strtotime('2005-10-15'));
     }
 
     public static function tearDownAfterClass()

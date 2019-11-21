@@ -892,7 +892,7 @@ class Configuration
     }
 
     /**
-     * Returns the test suite configuration.
+     * Returns the migrateSpec suite configuration.
      *
      * @param string|null $testSuiteFilter
      *
@@ -923,7 +923,7 @@ class Configuration
     }
 
     /**
-     * Returns the test suite names from the configuration.
+     * Returns the migrateSpec suite names from the configuration.
      *
      * @return array
      */

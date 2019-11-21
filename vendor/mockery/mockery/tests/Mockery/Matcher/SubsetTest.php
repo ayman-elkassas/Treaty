@@ -25,7 +25,7 @@ use Mockery\Matcher\Subset;
 
 class SubsetTest extends MockeryTestCase
 {
-    /** @test */
+    /** @migrateSpec */
     public function it_matches_a_shallow_subset()
     {
         $matcher = Subset::strict(['dave' => 123]);
@@ -39,7 +39,7 @@ class SubsetTest extends MockeryTestCase
         $this->assertTrue($matcher->match($actual));
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_recursively_matches()
     {
         $matcher = Subset::strict(['foo' => ['bar' => ['baz' => 123]]]);
@@ -57,7 +57,7 @@ class SubsetTest extends MockeryTestCase
         $this->assertTrue($matcher->match($actual));
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_is_strict_by_default()
     {
         $matcher = new Subset(['dave' => 123]);
@@ -71,7 +71,7 @@ class SubsetTest extends MockeryTestCase
         $this->assertFalse($matcher->match($actual));
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_can_run_a_loose_comparison()
     {
         $matcher = Subset::loose(['dave' => 123]);
@@ -85,7 +85,7 @@ class SubsetTest extends MockeryTestCase
         $this->assertTrue($matcher->match($actual));
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_returns_false_if_actual_is_not_an_array()
     {
         $matcher = new Subset(['dave' => 123]);

@@ -173,7 +173,7 @@ class PaymentTest extends TestCase
         try {
             $iban = $this->faker->bankAccountNumber;
         } catch (\InvalidArgumentException $e) {
-            // Not implemented, nothing to test
+            // Not implemented, nothing to migrateSpec
             $this->markTestSkipped("bankAccountNumber not implemented for $locale");
             return;
         }

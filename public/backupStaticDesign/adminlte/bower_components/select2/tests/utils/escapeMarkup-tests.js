@@ -28,7 +28,7 @@ test('quotes are killed as well', function (assert) {
 
 test('DocumentFragment options pass through', function (assert) {
   var frag = document.createDocumentFragment();
-  frag.innerHTML = '<strong>test</strong>';
+  frag.innerHTML = '<strong>migrateSpec</strong>';
 
   var escaped = Utils.escapeMarkup(frag);
 

@@ -21,7 +21,7 @@ use ReflectionMethod;
 use Throwable;
 
 /**
- * A TestSuite is a composite of Tests. It runs a collection of test cases.
+ * A TestSuite is a composite of Tests. It runs a collection of migrateSpec cases.
  */
 class TestSuite implements Test, SelfDescribing, IteratorAggregate
 {
@@ -57,28 +57,28 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     protected $runTestInSeparateProcess = false;
 
     /**
-     * The name of the test suite.
+     * The name of the migrateSpec suite.
      *
      * @var string
      */
     protected $name = '';
 
     /**
-     * The test groups of the test suite.
+     * The migrateSpec groups of the migrateSpec suite.
      *
      * @var array
      */
     protected $groups = [];
 
     /**
-     * The tests in the test suite.
+     * The tests in the migrateSpec suite.
      *
      * @var TestCase[]
      */
     protected $tests = [];
 
     /**
-     * The number of tests in the test suite.
+     * The number of tests in the migrateSpec suite.
      *
      * @var int
      */
@@ -202,7 +202,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Returns a string representation of the test suite.
+     * Returns a string representation of the migrateSpec suite.
      *
      * @return string
      */
@@ -212,7 +212,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Adds a test to the suite.
+     * Adds a migrateSpec to the suite.
      *
      * @param Test  $test
      * @param array $groups
@@ -300,7 +300,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
      *
      * If the named file cannot be read or there are no new tests that can be
      * added, a <code>PHPUnit\Framework\WarningTestCase</code> will be created instead,
-     * leaving the current test run untouched.
+     * leaving the current migrateSpec run untouched.
      *
      * @param string $filename
      *
@@ -321,23 +321,23 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
         }
 
         // The given file may contain further stub classes in addition to the
-        // test class itself. Figure out the actual test class.
+        // migrateSpec class itself. Figure out the actual migrateSpec class.
         $filename   = Fileloader::checkAndLoad($filename);
         $newClasses = \array_diff(\get_declared_classes(), $this->declaredClasses);
 
-        // The diff is empty in case a parent class (with test methods) is added
+        // The diff is empty in case a parent class (with migrateSpec methods) is added
         // AFTER a child class that inherited from it. To account for that case,
         // accumulate all discovered classes, so the parent class may be found in
         // a later invocation.
         if (!empty($newClasses)) {
-            // On the assumption that test classes are defined first in files,
+            // On the assumption that migrateSpec classes are defined first in files,
             // process discovered classes in approximate LIFO order, so as to
             // avoid unnecessary reflection.
             $this->foundClasses    = \array_merge($newClasses, $this->foundClasses);
             $this->declaredClasses = \get_declared_classes();
         }
 
-        // The test class's name must match the filename, either in full, or as
+        // The migrateSpec class's name must match the filename, either in full, or as
         // a PEAR/PSR-0 prefixed shortname ('NameSpace_ShortName'), or as a
         // PSR-1 local shortname ('NameSpace\ShortName'). The comparison must be
         // anchored to prevent false-positive matches (e.g., 'OtherShortName').
@@ -383,7 +383,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Wrapper for addTestFile() that adds multiple test files.
+     * Wrapper for addTestFile() that adds multiple migrateSpec files.
      *
      * @param array|Iterator $filenames
      *
@@ -405,7 +405,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Counts the number of test cases that will be run by this test.
+     * Counts the number of migrateSpec cases that will be run by this migrateSpec.
      *
      * @param bool $preferCache Indicates if cache is preferred.
      *
@@ -594,7 +594,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
         }
 
         if (!isset($test)) {
-            throw new Exception('No valid test provided.');
+            throw new Exception('No valid migrateSpec provided.');
         }
 
         if ($test instanceof TestCase) {
@@ -643,7 +643,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Returns the test groups of the suite.
+     * Returns the migrateSpec groups of the suite.
      *
      * @return array
      */
@@ -658,7 +658,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Set tests groups of the test case
+     * Set tests groups of the migrateSpec case
      *
      * @param array $groups
      */
@@ -783,7 +783,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Runs a test.
+     * Runs a migrateSpec.
      *
      * @deprecated
      *
@@ -806,7 +806,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Returns the test at the given index.
+     * Returns the migrateSpec at the given index.
      *
      * @param  int|false
      *
@@ -832,7 +832,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Set tests of the test suite
+     * Set tests of the migrateSpec suite
      *
      * @param array $tests
      */
@@ -842,7 +842,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Mark the test suite as skipped.
+     * Mark the migrateSpec suite as skipped.
      *
      * @param string $message
      *
@@ -869,7 +869,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
             $this->addTest(
                 self::warning(
                     \sprintf(
-                        'Test method "%s" in test class "%s" is not public.',
+                        'Test method "%s" in migrateSpec class "%s" is not public.',
                         $name,
                         $class->getName()
                     )
@@ -905,10 +905,10 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
         }
 
         // @scenario on TestCase::testMethod()
-        // @test     on TestCase::testMethod()
+        // @migrateSpec     on TestCase::testMethod()
         $docComment = $method->getDocComment();
 
-        return \strpos($docComment, '@test') !== false ||
+        return \strpos($docComment, '@migrateSpec') !== false ||
             \strpos($docComment, '@scenario') !== false;
     }
 
@@ -977,7 +977,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
     }
 
     /**
-     * Returns an iterator for this test suite.
+     * Returns an iterator for this migrateSpec suite.
      *
      * @return TestSuiteIterator
      */
@@ -1004,7 +1004,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
 
     /**
      * Template Method that is called before the tests
-     * of this test suite are run.
+     * of this migrateSpec suite are run.
      */
     protected function setUp()
     {
@@ -1012,7 +1012,7 @@ class TestSuite implements Test, SelfDescribing, IteratorAggregate
 
     /**
      * Template Method that is called after the tests
-     * of this test suite have finished running.
+     * of this migrateSpec suite have finished running.
      */
     protected function tearDown()
     {

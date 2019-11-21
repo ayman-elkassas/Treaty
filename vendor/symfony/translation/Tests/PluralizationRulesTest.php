@@ -23,14 +23,14 @@ use Symfony\Component\Translation\PluralizationRules;
  *
  * As mentioned by chx http://drupal.org/node/1273968 we can cover all by testing number from 0 to 199
  *
- * The goal to cover all languages is to far fetched so this test case is smaller.
+ * The goal to cover all languages is to far fetched so this migrateSpec case is smaller.
  *
  * @author Clemens Tolboom clemens@build2be.nl
  */
 class PluralizationRulesTest extends TestCase
 {
     /**
-     * We test failed langcode here.
+     * We migrateSpec failed langcode here.
      *
      * TODO: The languages mentioned in the data provide need to get fixed somehow within PluralizationRules.
      *

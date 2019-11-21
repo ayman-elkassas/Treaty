@@ -153,7 +153,7 @@ class ElasticSearchHandlerTest extends TestCase
     }
 
     /**
-     * Integration test using localhost Elastic Search server
+     * Integration migrateSpec using localhost Elastic Search server
      *
      * @covers Monolog\Handler\ElasticSearchHandler::__construct
      * @covers Monolog\Handler\ElasticSearchHandler::handleBatch
@@ -201,7 +201,7 @@ class ElasticSearchHandlerTest extends TestCase
         );
         $this->assertEquals($expected, $document);
 
-        // remove test index from ES
+        // remove migrateSpec index from ES
         $client->request("/{$this->options['index']}", Request::DELETE);
     }
 

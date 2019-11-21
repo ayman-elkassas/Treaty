@@ -5215,7 +5215,7 @@ var Model = /** @class */ (function (_super) {
             args[_i - 1] = arguments[_i];
         }
         // subclasses should make a masked-copy of the superclass's map
-        // TODO: write test
+        // TODO: write migrateSpec
         if (!this.prototype.hasOwnProperty('_globalWatchArgs')) {
             this.prototype._globalWatchArgs = Object.create(this.prototype._globalWatchArgs);
         }
@@ -9828,7 +9828,7 @@ var TaskQueue = /** @class */ (function () {
         } while (this.canRunNext());
         this.trigger('stop'); // not really a 'stop' ... more of a 'drained'
         this.isRunning = false;
-        // if 'stop' handler added more tasks.... TODO: write test for this
+        // if 'stop' handler added more tasks.... TODO: write migrateSpec for this
         this.tryStart();
     };
     TaskQueue.prototype.runTask = function (task) {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Base test for smoke tests.
+ * Base migrateSpec for smoke tests.
  *
  * @author Rouven Weßling
  */

@@ -93,7 +93,7 @@ trait InteractsWithRedis
     }
 
     /**
-     * Run test if redis is available.
+     * Run migrateSpec if redis is available.
      *
      * @param  callable  $callback
      * @return void

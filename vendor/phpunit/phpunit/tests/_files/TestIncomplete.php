@@ -5,6 +5,6 @@ class TestIncomplete extends TestCase
 {
     protected function runTest()
     {
-        $this->markTestIncomplete('Incomplete test');
+        $this->markTestIncomplete('Incomplete migrateSpec');
     }
 }

@@ -780,7 +780,7 @@ Context.prototype.runnable = function(runnable){
 };
 
 /**
- * Set test timeout `ms`.
+ * Set migrateSpec timeout `ms`.
  *
  * @param {Number} ms
  * @return {Context} self
@@ -793,7 +793,7 @@ Context.prototype.timeout = function(ms){
 };
 
 /**
- * Set test slowness threshold `ms`.
+ * Set migrateSpec slowness threshold `ms`.
  *
  * @param {Number} ms
  * @return {Context} self
@@ -860,7 +860,7 @@ Hook.prototype.constructor = Hook;
 
 
 /**
- * Get or set the test `err`.
+ * Get or set the migrateSpec `err`.
  *
  * @param {Error} err
  * @return {Error}
@@ -886,7 +886,7 @@ require.register("interfaces/bdd.js", function(module, exports, require){
  */
 
 var Suite = require('../suite')
-  , Test = require('../test')
+  , Test = require('../migrateSpec')
   , utils = require('../utils');
 
 /**
@@ -928,7 +928,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Execute before each test case.
+     * Execute before each migrateSpec case.
      */
 
     context.beforeEach = function(fn){
@@ -936,7 +936,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Execute after each test case.
+     * Execute after each migrateSpec case.
      */
 
     context.afterEach = function(fn){
@@ -982,7 +982,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Describe a specification or test-case
+     * Describe a specification or migrateSpec-case
      * with the given `title` and callback `fn`
      * acting as a thunk.
      */
@@ -996,7 +996,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Exclusive test-case.
+     * Exclusive migrateSpec-case.
      */
 
     context.it.only = function(title, fn){
@@ -1007,7 +1007,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Pending test case.
+     * Pending migrateSpec case.
      */
 
     context.xit =
@@ -1027,7 +1027,7 @@ require.register("interfaces/exports.js", function(module, exports, require){
  */
 
 var Suite = require('../suite')
-  , Test = require('../test');
+  , Test = require('../migrateSpec');
 
 /**
  * TDD-style interface:
@@ -1100,7 +1100,7 @@ require.register("interfaces/qunit.js", function(module, exports, require){
  */
 
 var Suite = require('../suite')
-  , Test = require('../test')
+  , Test = require('../migrateSpec')
   , utils = require('../utils');
 
 /**
@@ -1108,12 +1108,12 @@ var Suite = require('../suite')
  *
  *     suite('Array');
  *
- *     test('#length', function(){
+ *     migrateSpec('#length', function(){
  *       var arr = [1,2,3];
  *       ok(arr.length == 3);
  *     });
  *
- *     test('#indexOf()', function(){
+ *     migrateSpec('#indexOf()', function(){
  *       var arr = [1,2,3];
  *       ok(arr.indexOf(1) == 0);
  *       ok(arr.indexOf(2) == 1);
@@ -1122,7 +1122,7 @@ var Suite = require('../suite')
  *
  *     suite('String');
  *
- *     test('#length', function(){
+ *     migrateSpec('#length', function(){
  *       ok('foo'.length == 3);
  *     });
  *
@@ -1150,7 +1150,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Execute before each test case.
+     * Execute before each migrateSpec case.
      */
 
     context.beforeEach = function(fn){
@@ -1158,7 +1158,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Execute after each test case.
+     * Execute after each migrateSpec case.
      */
 
     context.afterEach = function(fn){
@@ -1177,7 +1177,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Exclusive test-case.
+     * Exclusive migrateSpec-case.
      */
 
     context.suite.only = function(title, fn){
@@ -1186,7 +1186,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Describe a specification or test-case
+     * Describe a specification or migrateSpec-case
      * with the given `title` and callback `fn`
      * acting as a thunk.
      */
@@ -1198,7 +1198,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Exclusive test-case.
+     * Exclusive migrateSpec-case.
      */
 
     context.test.only = function(title, fn){
@@ -1208,7 +1208,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Pending test case.
+     * Pending migrateSpec case.
      */
 
     context.test.skip = function(title){
@@ -1226,7 +1226,7 @@ require.register("interfaces/tdd.js", function(module, exports, require){
  */
 
 var Suite = require('../suite')
-  , Test = require('../test')
+  , Test = require('../migrateSpec')
   , utils = require('../utils');;
 
 /**
@@ -1238,11 +1238,11 @@ var Suite = require('../suite')
  *
  *          });
  *
- *          test('should return -1 when not present', function(){
+ *          migrateSpec('should return -1 when not present', function(){
  *
  *          });
  *
- *          test('should return the index when present', function(){
+ *          migrateSpec('should return the index when present', function(){
  *
  *          });
  *
@@ -1260,7 +1260,7 @@ module.exports = function(suite){
   suite.on('pre-require', function(context, file, mocha){
 
     /**
-     * Execute before each test case.
+     * Execute before each migrateSpec case.
      */
 
     context.setup = function(fn){
@@ -1268,7 +1268,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Execute after each test case.
+     * Execute after each migrateSpec case.
      */
 
     context.teardown = function(fn){
@@ -1317,7 +1317,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Exclusive test-case.
+     * Exclusive migrateSpec-case.
      */
 
     context.suite.only = function(title, fn){
@@ -1326,7 +1326,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Describe a specification or test-case
+     * Describe a specification or migrateSpec-case
      * with the given `title` and callback `fn`
      * acting as a thunk.
      */
@@ -1340,7 +1340,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Exclusive test-case.
+     * Exclusive migrateSpec-case.
      */
 
     context.test.only = function(title, fn){
@@ -1350,7 +1350,7 @@ module.exports = function(suite){
     };
 
     /**
-     * Pending test case.
+     * Pending migrateSpec case.
      */
 
     context.test.skip = function(title){
@@ -1393,7 +1393,7 @@ exports.Context = require('./context');
 exports.Runner = require('./runner');
 exports.Suite = require('./suite');
 exports.Hook = require('./hook');
-exports.Test = require('./test');
+exports.Test = require('./migrateSpec');
 
 /**
  * Return image `name` path.
@@ -1416,8 +1416,8 @@ function image(name) {
  *   - `reporter` reporter instance, defaults to `mocha.reporters.Dot`
  *   - `globals` array of accepted globals
  *   - `timeout` timeout in milliseconds
- *   - `bail` bail on the first test failure
- *   - `slow` milliseconds to wait before considering a test slow
+ *   - `bail` bail on the first migrateSpec failure
+ *   - `slow` milliseconds to wait before considering a migrateSpec slow
  *   - `ignoreLeaks` ignore global leaks
  *   - `grep` string or regexp to filter tests with
  *
@@ -1468,7 +1468,7 @@ Mocha.prototype.bail = function(bail){
 };
 
 /**
- * Add test `file`.
+ * Add migrateSpec `file`.
  *
  * @param {String} file
  * @api public
@@ -1505,7 +1505,7 @@ Mocha.prototype.reporter = function(reporter){
 };
 
 /**
- * Set test UI `name`, defaults to "bdd".
+ * Set migrateSpec UI `name`, defaults to "bdd".
  *
  * @param {String} bdd
  * @api public
@@ -2060,7 +2060,7 @@ exports.list = function(failures){
  *
  * All other reporters generally
  * inherit from this reporter, providing
- * stats such as test duration, number
+ * stats such as migrateSpec duration, number
  * of tests passed / failed etc.
  *
  * @param {Runner} runner
@@ -2086,7 +2086,7 @@ function Base(runner) {
     suite.root || stats.suites++;
   });
 
-  runner.on('test end', function(test){
+  runner.on('migrateSpec end', function(test){
     stats.tests = stats.tests || 0;
     stats.tests++;
   });
@@ -2434,7 +2434,7 @@ var Base = require('./base')
 exports = module.exports = Dot;
 
 /**
- * Initialize a new `Dot` matrix test reporter.
+ * Initialize a new `Dot` matrix migrateSpec reporter.
  *
  * @param {Runner} runner
  * @api public
@@ -2625,7 +2625,7 @@ function HTML(runner, root) {
     unhide();
     var name = /pass/.test(report.className) ? '' : ' pass';
     report.className = report.className.replace(/fail|pass/g, '') + name;
-    if (report.className.trim()) hideSuitesWithout('test pass');
+    if (report.className.trim()) hideSuitesWithout('migrateSpec pass');
   });
 
   // failure toggle
@@ -2633,7 +2633,7 @@ function HTML(runner, root) {
     unhide();
     var name = /fail/.test(report.className) ? '' : ' fail';
     report.className = report.className.replace(/fail|pass/g, '') + name;
-    if (report.className.trim()) hideSuitesWithout('test fail');
+    if (report.className.trim()) hideSuitesWithout('migrateSpec fail');
   });
 
   root.appendChild(stat);
@@ -2660,10 +2660,10 @@ function HTML(runner, root) {
   });
 
   runner.on('fail', function(test, err){
-    if ('hook' == test.type) runner.emit('test end', test);
+    if ('hook' == test.type) runner.emit('migrateSpec end', test);
   });
 
-  runner.on('test end', function(test){
+  runner.on('migrateSpec end', function(test){
     // TODO: add to stats
     var percent = stats.tests / this.total * 100 | 0;
     if (progress) progress.update(percent).draw(ctx);
@@ -2674,14 +2674,14 @@ function HTML(runner, root) {
     text(failures, stats.failures);
     text(duration, (ms / 1000).toFixed(2));
 
-    // test
+    // migrateSpec
     if ('passed' == test.state) {
       var url = self.testURL(test);
-      var el = fragment('<li class="test pass %e"><h2>%e<span class="duration">%ems</span> <a href="%s" class="replay">‣</a></h2></li>', test.speed, test.title, test.duration, url);
+      var el = fragment('<li class="migrateSpec pass %e"><h2>%e<span class="duration">%ems</span> <a href="%s" class="replay">‣</a></h2></li>', test.speed, test.title, test.duration, url);
     } else if (test.pending) {
-      var el = fragment('<li class="test pass pending"><h2>%e</h2></li>', test.title);
+      var el = fragment('<li class="migrateSpec pass pending"><h2>%e</h2></li>', test.title);
     } else {
-      var el = fragment('<li class="test fail"><h2>%e <a href="?grep=%e" class="replay">‣</a></h2></li>', test.title, encodeURIComponent(test.fullTitle()));
+      var el = fragment('<li class="migrateSpec fail"><h2>%e <a href="?grep=%e" class="replay">‣</a></h2></li>', test.title, encodeURIComponent(test.fullTitle()));
       var str = test.err.stack || test.err.toString();
 
       // FF / Opera do not add the message
@@ -2733,7 +2733,7 @@ HTML.prototype.suiteURL = function(suite){
 };
 
 /**
- * Provide test URL
+ * Provide migrateSpec URL
  *
  * @param {Object} [test]
  */
@@ -2873,7 +2873,7 @@ function JSONCov(runner, output) {
     , failures = []
     , passes = [];
 
-  runner.on('test end', function(test){
+  runner.on('migrateSpec end', function(test){
     tests.push(test);
   });
 
@@ -2980,7 +2980,7 @@ function coverage(filename, data) {
 }
 
 /**
- * Return a plain-object representation of `test`
+ * Return a plain-object representation of `migrateSpec`
  * free of cyclic properties etc.
  *
  * @param {Object} test
@@ -3014,7 +3014,7 @@ var Base = require('./base')
 exports = module.exports = List;
 
 /**
- * Initialize a new `List` test reporter.
+ * Initialize a new `List` migrateSpec reporter.
  *
  * @param {Runner} runner
  * @api public
@@ -3045,7 +3045,7 @@ function List(runner) {
 }
 
 /**
- * Return a plain-object representation of `test`
+ * Return a plain-object representation of `migrateSpec`
  * free of cyclic properties etc.
  *
  * @param {Object} test
@@ -3093,7 +3093,7 @@ function JSONReporter(runner) {
     , failures = []
     , passes = [];
 
-  runner.on('test end', function(test){
+  runner.on('migrateSpec end', function(test){
     tests.push(test);
   });
 
@@ -3118,7 +3118,7 @@ function JSONReporter(runner) {
 }
 
 /**
- * Return a plain-object representation of `test`
+ * Return a plain-object representation of `migrateSpec`
  * free of cyclic properties etc.
  *
  * @param {Object} test
@@ -3198,7 +3198,7 @@ function Landing(runner) {
     cursor.hide();
   });
 
-  runner.on('test end', function(test){
+  runner.on('migrateSpec end', function(test){
     // check if the plane crashed
     var col = -1 == crashed
       ? width * ++n / total | 0
@@ -3256,7 +3256,7 @@ var Base = require('./base')
 exports = module.exports = List;
 
 /**
- * Initialize a new `List` test reporter.
+ * Initialize a new `List` migrateSpec reporter.
  *
  * @param {Runner} runner
  * @api public
@@ -3420,7 +3420,7 @@ var Base = require('./base');
 exports = module.exports = Min;
 
 /**
- * Initialize a new `Min` minimal test reporter (best used with --watch).
+ * Initialize a new `Min` minimal migrateSpec reporter (best used with --watch).
  *
  * @param {Runner} runner
  * @api public
@@ -3466,7 +3466,7 @@ var Base = require('./base')
 exports = module.exports = NyanCat;
 
 /**
- * Initialize a new `Dot` matrix test reporter.
+ * Initialize a new `Dot` matrix migrateSpec reporter.
  *
  * @param {Runner} runner
  * @api public
@@ -3742,7 +3742,7 @@ exports = module.exports = Progress;
 Base.colors.progress = 90;
 
 /**
- * Initialize a new `Progress` bar test reporter.
+ * Initialize a new `Progress` bar migrateSpec reporter.
  *
  * @param {Runner} runner
  * @param {Object} options
@@ -3774,7 +3774,7 @@ function Progress(runner, options) {
   });
 
   // tests complete
-  runner.on('test end', function(){
+  runner.on('migrateSpec end', function(){
     complete++;
     var incomplete = total - complete
       , percent = complete / total
@@ -3830,7 +3830,7 @@ var Base = require('./base')
 exports = module.exports = Spec;
 
 /**
- * Initialize a new `Spec` test reporter.
+ * Initialize a new `Spec` migrateSpec reporter.
  *
  * @param {Runner} runner
  * @api public
@@ -3941,7 +3941,7 @@ function TAP(runner) {
     console.log('%d..%d', 1, total);
   });
 
-  runner.on('test end', function(){
+  runner.on('migrateSpec end', function(){
     ++n;
   });
 
@@ -3968,7 +3968,7 @@ function TAP(runner) {
 }
 
 /**
- * Return a TAP-safe title of `test`
+ * Return a TAP-safe title of `migrateSpec`
  *
  * @param {Object} test
  * @return {String}
@@ -4059,7 +4059,7 @@ XUnit.prototype.constructor = XUnit;
 
 
 /**
- * Output tag for the given `test.`
+ * Output tag for the given `migrateSpec.`
  */
 
 function test(test) {
@@ -4257,7 +4257,7 @@ Runnable.prototype.resetTimeout = function(){
 };
 
 /**
- * Whitelist these globals for this test run
+ * Whitelist these globals for this migrateSpec run
  *
  * @api private
  */
@@ -4267,7 +4267,7 @@ Runnable.prototype.globals = function(arr){
 };
 
 /**
- * Run the test and invoke `fn(err)`.
+ * Run the migrateSpec and invoke `fn(err)`.
  *
  * @param {Function} fn
  * @api private
@@ -4350,7 +4350,7 @@ require.register("runner.js", function(module, exports, require){
 
 var EventEmitter = require('browser/events').EventEmitter
   , debug = require('browser/debug')('mocha:runner')
-  , Test = require('./test')
+  , Test = require('./migrateSpec')
   , utils = require('./utils')
   , filter = utils.filter
   , keys = utils.keys;
@@ -4381,15 +4381,15 @@ module.exports = Runner;
  *
  *   - `start`  execution started
  *   - `end`  execution complete
- *   - `suite`  (suite) test suite execution started
+ *   - `suite`  (suite) migrateSpec suite execution started
  *   - `suite end`  (suite) all tests (and sub-suites) have finished
- *   - `test`  (test) test execution started
- *   - `test end`  (test) test completed
+ *   - `migrateSpec`  (migrateSpec) migrateSpec execution started
+ *   - `migrateSpec end`  (migrateSpec) migrateSpec completed
  *   - `hook`  (hook) hook execution started
  *   - `hook end`  (hook) hook complete
- *   - `pass`  (test) test passed
- *   - `fail`  (test, err) test failed
- *   - `pending`  (test) test pending
+ *   - `pass`  (migrateSpec) migrateSpec passed
+ *   - `fail`  (migrateSpec, err) migrateSpec failed
+ *   - `pending`  (migrateSpec) migrateSpec pending
  *
  * @api public
  */
@@ -4401,7 +4401,7 @@ function Runner(suite) {
   this.suite = suite;
   this.total = suite.total();
   this.failures = 0;
-  this.on('test end', function(test){ self.checkGlobals(test); });
+  this.on('migrateSpec end', function(test){ self.checkGlobals(test); });
   this.on('hook end', function(hook){ self.checkGlobals(hook); });
   this.grep(/.*/);
   this.globals(this.globalProps().concat(extraGlobals()));
@@ -4532,7 +4532,7 @@ Runner.prototype.checkGlobals = function(test){
 };
 
 /**
- * Fail the given `test`.
+ * Fail the given `migrateSpec`.
  *
  * @param {Test} test
  * @param {Error} err
@@ -4705,7 +4705,7 @@ Runner.prototype.parents = function(){
 };
 
 /**
- * Run the current test and callback `fn(err)`.
+ * Run the current migrateSpec and callback `fn(err)`.
  *
  * @param {Function} fn
  * @api private
@@ -4774,7 +4774,7 @@ Runner.prototype.runTests = function(suite, fn){
 
     if (err) return hookErr(err, errSuite, true);
 
-    // next test
+    // next migrateSpec
     test = tests.shift();
 
     // all done
@@ -4788,11 +4788,11 @@ Runner.prototype.runTests = function(suite, fn){
     // pending
     if (test.pending) {
       self.emit('pending', test);
-      self.emit('test end', test);
+      self.emit('migrateSpec end', test);
       return next();
     }
 
-    // execute test and hook(s)
+    // execute migrateSpec and hook(s)
     self.emit('test', self.test = test);
     self.hookDown('beforeEach', function(err, errSuite){
 
@@ -4804,13 +4804,13 @@ Runner.prototype.runTests = function(suite, fn){
 
         if (err) {
           self.fail(test, err);
-          self.emit('test end', test);
+          self.emit('migrateSpec end', test);
           return self.hookUp('afterEach', next);
         }
 
         test.state = 'passed';
         self.emit('pass', test);
-        self.emit('test end', test);
+        self.emit('migrateSpec end', test);
         self.hookUp('afterEach', next);
       });
     });
@@ -4890,9 +4890,9 @@ Runner.prototype.uncaught = function(err){
   err.uncaught = true;
   this.fail(runnable, err);
 
-  // recover from test
+  // recover from migrateSpec
   if ('test' == runnable.type) {
-    this.emit('test end', runnable);
+    this.emit('migrateSpec end', runnable);
     this.hookUp('afterEach', this.next);
     return;
   }
@@ -5152,7 +5152,7 @@ Suite.prototype.bail = function(bail){
 };
 
 /**
- * Run `fn(test[, done])` before running tests.
+ * Run `fn(migrateSpec[, done])` before running tests.
  *
  * @param {Function} fn
  * @return {Suite} for chaining
@@ -5172,7 +5172,7 @@ Suite.prototype.beforeAll = function(fn){
 };
 
 /**
- * Run `fn(test[, done])` after running tests.
+ * Run `fn(migrateSpec[, done])` after running tests.
  *
  * @param {Function} fn
  * @return {Suite} for chaining
@@ -5192,7 +5192,7 @@ Suite.prototype.afterAll = function(fn){
 };
 
 /**
- * Run `fn(test[, done])` before each test case.
+ * Run `fn(migrateSpec[, done])` before each migrateSpec case.
  *
  * @param {Function} fn
  * @return {Suite} for chaining
@@ -5212,7 +5212,7 @@ Suite.prototype.beforeEach = function(fn){
 };
 
 /**
- * Run `fn(test[, done])` after each test case.
+ * Run `fn(migrateSpec[, done])` after each migrateSpec case.
  *
  * @param {Function} fn
  * @return {Suite} for chaining
@@ -5232,7 +5232,7 @@ Suite.prototype.afterEach = function(fn){
 };
 
 /**
- * Add a test `suite`.
+ * Add a migrateSpec `suite`.
  *
  * @param {Suite} suite
  * @return {Suite} for chaining
@@ -5250,7 +5250,7 @@ Suite.prototype.addSuite = function(suite){
 };
 
 /**
- * Add a `test` to this suite.
+ * Add a `migrateSpec` to this suite.
  *
  * @param {Test} test
  * @return {Suite} for chaining
@@ -5299,7 +5299,7 @@ Suite.prototype.total = function(){
 /**
  * Iterates through each suite recursively to find
  * all tests. Applies a function in the format
- * `fn(test)`.
+ * `fn(migrateSpec)`.
  *
  * @param {Function} fn
  * @return {Suite}
@@ -5354,7 +5354,7 @@ Test.prototype = new F;
 Test.prototype.constructor = Test;
 
 
-}); // module: test.js
+}); // module: migrateSpec.js
 
 require.register("utils.js", function(module, exports, require){
 /**

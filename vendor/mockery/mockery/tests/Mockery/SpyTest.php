@@ -27,7 +27,7 @@ use Mockery\Adapter\Phpunit\MockeryTestCase;
 
 class SpyTest extends MockeryTestCase
 {
-    /** @test */
+    /** @migrateSpec */
     public function itVerifiesAMethodWasCalled()
     {
         $spy = m::spy();
@@ -38,7 +38,7 @@ class SpyTest extends MockeryTestCase
         $spy->shouldHaveReceived("someMethodThatWasNotCalled");
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function itVerifiesAMethodWasNotCalled()
     {
         $spy = m::spy();
@@ -49,7 +49,7 @@ class SpyTest extends MockeryTestCase
         $spy->shouldNotHaveReceived("myMethod");
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function itVerifiesAMethodWasNotCalledWithParticularArguments()
     {
         $spy = m::spy();
@@ -61,7 +61,7 @@ class SpyTest extends MockeryTestCase
         $spy->shouldNotHaveReceived("myMethod", array(123, 456));
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function itVerifiesAMethodWasCalledASpecificNumberOfTimes()
     {
         $spy = m::spy();
@@ -74,7 +74,7 @@ class SpyTest extends MockeryTestCase
         $spy->shouldHaveReceived("myMethod")->twice();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function itVerifiesAMethodWasCalledWithSpecificArguments()
     {
         $spy = m::spy();
@@ -86,7 +86,7 @@ class SpyTest extends MockeryTestCase
         $spy->shouldHaveReceived("myMethod")->with(123);
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function itIncrementsExpectationCountWhenShouldHaveReceivedIsUsed()
     {
         $spy = m::spy();
@@ -95,7 +95,7 @@ class SpyTest extends MockeryTestCase
         $this->assertEquals(1, $spy->mockery_getExpectationCount());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function itIncrementsExpectationCountWhenShouldNotHaveReceivedIsUsed()
     {
         $spy = m::spy();
@@ -103,7 +103,7 @@ class SpyTest extends MockeryTestCase
         $this->assertEquals(1, $spy->mockery_getExpectationCount());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function any_args_can_be_used_with_alternative_syntax()
     {
         $spy = m::spy();
@@ -112,7 +112,7 @@ class SpyTest extends MockeryTestCase
         $spy->shouldHaveReceived()->foo(anyArgs());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function should_have_received_higher_order_message_call_a_method_with_correct_arguments()
     {
         $spy = m::spy();
@@ -121,7 +121,7 @@ class SpyTest extends MockeryTestCase
         $spy->shouldHaveReceived()->foo(123);
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function should_have_received_higher_order_message_call_a_method_with_incorrect_arguments_throws_exception()
     {
         $spy = m::spy();
@@ -131,7 +131,7 @@ class SpyTest extends MockeryTestCase
         $spy->shouldHaveReceived()->foo(456);
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function should_not_have_received_higher_order_message_call_a_method_with_incorrect_arguments()
     {
         $spy = m::spy();
@@ -140,7 +140,7 @@ class SpyTest extends MockeryTestCase
         $spy->shouldNotHaveReceived()->foo(456);
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function should_not_have_received_higher_order_message_call_a_method_with_correct_arguments_throws_an_exception()
     {
         $spy = m::spy();

@@ -27,7 +27,7 @@ use ReflectionClass;
 use ReflectionException;
 
 /**
- * A TestListener that generates a logfile of the test execution in XML markup.
+ * A TestListener that generates a logfile of the migrateSpec execution in XML markup.
  *
  * The XML markup used is the same as the one that is used by the JUnit Ant task.
  */
@@ -169,7 +169,7 @@ class JUnit extends Printer implements TestListener
     }
 
     /**
-     * Incomplete test.
+     * Incomplete migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -181,7 +181,7 @@ class JUnit extends Printer implements TestListener
     }
 
     /**
-     * Risky test.
+     * Risky migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -209,7 +209,7 @@ class JUnit extends Printer implements TestListener
     }
 
     /**
-     * Skipped test.
+     * Skipped migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -305,7 +305,7 @@ class JUnit extends Printer implements TestListener
     }
 
     /**
-     * A test started.
+     * A migrateSpec started.
      *
      * @param Test $test
      */
@@ -332,7 +332,7 @@ class JUnit extends Printer implements TestListener
     }
 
     /**
-     * A test ended.
+     * A migrateSpec ended.
      *
      * @param Test  $test
      * @param float $time

@@ -44,7 +44,7 @@ class EventFake implements Dispatcher
     }
 
     /**
-     * Assert if an event was dispatched based on a truth-test callback.
+     * Assert if an event was dispatched based on a truth-migrateSpec callback.
      *
      * @param  string  $event
      * @param  callable|int|null  $callback
@@ -78,7 +78,7 @@ class EventFake implements Dispatcher
     }
 
     /**
-     * Determine if an event was dispatched based on a truth-test callback.
+     * Determine if an event was dispatched based on a truth-migrateSpec callback.
      *
      * @param  string  $event
      * @param  callable|null  $callback
@@ -93,7 +93,7 @@ class EventFake implements Dispatcher
     }
 
     /**
-     * Get all of the events matching a truth-test callback.
+     * Get all of the events matching a truth-migrateSpec callback.
      *
      * @param  string  $event
      * @param  callable|null  $callback

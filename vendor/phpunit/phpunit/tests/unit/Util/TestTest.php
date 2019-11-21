@@ -546,7 +546,7 @@ class TestTest extends TestCase
     }
 
     /**
-     * @todo   This test does not really test functionality of \PHPUnit\Util\Test
+     * @todo   This migrateSpec does not really migrateSpec functionality of \PHPUnit\Util\Test
      */
     public function testGetProvidedDataRegEx()
     {
@@ -716,7 +716,7 @@ class TestTest extends TestCase
     }
 
     /**
-     * @todo Not sure what this test tests (name is misleading at least)
+     * @todo Not sure what this migrateSpec tests (name is misleading at least)
      */
     public function testParseAnnotation()
     {
@@ -730,7 +730,7 @@ class TestTest extends TestCase
      * @depends Foo
      * @depends ほげ
      *
-     * @todo Remove fixture from test class
+     * @todo Remove fixture from migrateSpec class
      */
     public function methodForTestParseAnnotation()
     {
@@ -747,7 +747,7 @@ class TestTest extends TestCase
     /** @depends Bar */
     public function methodForTestParseAnnotationThatIsOnlyOneLine()
     {
-        // TODO Remove fixture from test class
+        // TODO Remove fixture from migrateSpec class
     }
 
     /**

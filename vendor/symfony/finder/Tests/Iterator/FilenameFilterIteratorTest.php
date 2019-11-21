@@ -20,7 +20,7 @@ class FilenameFilterIteratorTest extends IteratorTestCase
      */
     public function testAccept($matchPatterns, $noMatchPatterns, $expected)
     {
-        $inner = new InnerNameIterator(['test.php', 'test.py', 'foo.php']);
+        $inner = new InnerNameIterator(['migrateSpec.php', 'migrateSpec.py', 'foo.php']);
 
         $iterator = new FilenameFilterIterator($inner, $matchPatterns, $noMatchPatterns);
 
@@ -30,12 +30,12 @@ class FilenameFilterIteratorTest extends IteratorTestCase
     public function getAcceptData()
     {
         return [
-            [['test.*'], [], ['test.php', 'test.py']],
-            [[], ['test.*'], ['foo.php']],
-            [['*.php'], ['test.*'], ['foo.php']],
-            [['*.php', '*.py'], ['foo.*'], ['test.php', 'test.py']],
-            [['/\.php$/'], [], ['test.php', 'foo.php']],
-            [[], ['/\.php$/'], ['test.py']],
+            [['migrateSpec.*'], [], ['migrateSpec.php', 'migrateSpec.py']],
+            [[], ['migrateSpec.*'], ['foo.php']],
+            [['*.php'], ['migrateSpec.*'], ['foo.php']],
+            [['*.php', '*.py'], ['foo.*'], ['migrateSpec.php', 'migrateSpec.py']],
+            [['/\.php$/'], [], ['migrateSpec.php', 'foo.php']],
+            [[], ['/\.php$/'], ['migrateSpec.py']],
         ];
     }
 }

@@ -10,7 +10,7 @@
 namespace PHPUnit\Framework;
 
 /**
- * A skipped test case
+ * A skipped migrateSpec case
  */
 class SkippedTestCase extends TestCase
 {
@@ -70,7 +70,7 @@ class SkippedTestCase extends TestCase
     }
 
     /**
-     * Returns a string representation of the test case.
+     * Returns a string representation of the migrateSpec case.
      *
      * @return string
      */

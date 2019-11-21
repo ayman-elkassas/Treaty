@@ -85,7 +85,7 @@ trait MakesHttpRequests
     }
 
     /**
-     * Disable middleware for the test.
+     * Disable middleware for the migrateSpec.
      *
      * @param  string|array  $middleware
      * @return $this
@@ -111,7 +111,7 @@ trait MakesHttpRequests
     }
 
     /**
-     * Enable the given middleware for the test.
+     * Enable the given middleware for the migrateSpec.
      *
      * @param  string|array  $middleware
      * @return $this
@@ -448,7 +448,7 @@ trait MakesHttpRequests
     }
 
     /**
-     * Create the test response instance from the given response.
+     * Create the migrateSpec response instance from the given response.
      *
      * @param  \Illuminate\Http\Response  $response
      * @return \Illuminate\Foundation\Testing\TestResponse

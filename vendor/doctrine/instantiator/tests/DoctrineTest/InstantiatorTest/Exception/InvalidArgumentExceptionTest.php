@@ -44,7 +44,7 @@ class InvalidArgumentExceptionTest extends PHPUnit_Framework_TestCase
     public function testFromNonExistingTypeWithTrait()
     {
         if (PHP_VERSION_ID < 50400) {
-            $this->markTestSkipped('Need at least PHP 5.4.0, as this test requires traits support to run');
+            $this->markTestSkipped('Need at least PHP 5.4.0, as this migrateSpec requires traits support to run');
         }
 
         $exception = InvalidArgumentException::fromNonExistingClass(

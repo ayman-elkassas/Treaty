@@ -20,7 +20,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Tests\Fixtures\DummyOutput;
 
 /**
- * Console logger test.
+ * Console logger migrateSpec.
  *
  * @author Kévin Dunglas <dunglas@gmail.com>
  * @author Jordi Boggiano <j.boggiano@seld.be>

@@ -15,7 +15,7 @@
  */
 class Swift_Plugins_PopBeforeSmtpPlugin implements Swift_Events_TransportChangeListener, Swift_Plugins_Pop_Pop3Connection
 {
-    /** A delegate connection to use (mostly a test hook) */
+    /** A delegate connection to use (mostly a migrateSpec hook) */
     private $connection;
 
     /** Hostname of the POP3 server */

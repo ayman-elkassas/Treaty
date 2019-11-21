@@ -220,7 +220,7 @@ test('converted into dataAdapter.query automatically', function (assert) {
 module('Options - deprecated - data-ajax-url');
 
 test('converted ajax-url to ajax--url automatically', function (assert) {
-  var $test = $('<select data-ajax-url="test://url"></select>');
+  var $test = $('<select data-ajax-url="migrateSpec://url"></select>');
   var options = new Options({}, $test);
 
   assert.ok(
@@ -229,7 +229,7 @@ test('converted ajax-url to ajax--url automatically', function (assert) {
   );
   assert.equal(
     options.get('ajax').url,
-    'test://url',
+    'migrateSpec://url',
     'The `url` property for the `ajax` option was filled in correctly'
   );
 });

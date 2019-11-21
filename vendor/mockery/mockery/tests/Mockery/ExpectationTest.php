@@ -240,7 +240,7 @@ class ExpectationTest extends MockeryTestCase
         Mockery::close();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function and_throws_is_an_alias_to_and_throw()
     {
         $this->mock->shouldReceive('foo')->andThrows(new OutOfBoundsException);
@@ -250,7 +250,7 @@ class ExpectationTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      * @requires PHP 7.0.0
      */
     public function it_can_throw_a_throwable()
@@ -2018,7 +2018,7 @@ class ExpectationTest extends MockeryTestCase
         Mockery::close();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_uses_a_matchers_to_string_method_in_the_exception_output()
     {
         $mock = Mockery::mock();

@@ -34,7 +34,7 @@ class ClassPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldDeclareUnknownClass()
     {
@@ -44,7 +44,7 @@ class ClassPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldNotExtendHHVMClass()
     {

@@ -78,13 +78,13 @@ class DumpDataCollectorTest extends TestCase
     {
         $data = new Data([[123]]);
 
-        $collector = new DumpDataCollector(null, 'test://%f:%l');
+        $collector = new DumpDataCollector(null, 'migrateSpec://%f:%l');
 
         $collector->dump($data);
         $line = __LINE__ - 1;
         $file = __FILE__;
         $xOutput = <<<EOTXT
-<pre class=sf-dump id=sf-dump data-indent-pad="  "><a href="test://{$file}:{$line}" title="{$file}"><span class=sf-dump-meta>DumpDataCollectorTest.php</span></a> on line <span class=sf-dump-meta>{$line}</span>:
+<pre class=sf-dump id=sf-dump data-indent-pad="  "><a href="migrateSpec://{$file}:{$line}" title="{$file}"><span class=sf-dump-meta>DumpDataCollectorTest.php</span></a> on line <span class=sf-dump-meta>{$line}</span>:
 <span class=sf-dump-num>123</span>
 </pre>
 EOTXT;

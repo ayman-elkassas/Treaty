@@ -1013,7 +1013,7 @@
                 regex = '^' + this.months(mom, '') + '|^' + this.monthsShort(mom, '');
                 this._monthsParse[i] = new RegExp(regex.replace('.', ''), 'i');
             }
-            // test the regex
+            // migrateSpec the regex
             if (strict && format === 'MMMM' && this._longMonthsParse[i].test(monthName)) {
                 return i;
             } else if (strict && format === 'MMM' && this._shortMonthsParse[i].test(monthName)) {
@@ -1497,7 +1497,7 @@
                 regex = '^' + this.weekdays(mom, '') + '|^' + this.weekdaysShort(mom, '') + '|^' + this.weekdaysMin(mom, '');
                 this._weekdaysParse[i] = new RegExp(regex.replace('.', ''), 'i');
             }
-            // test the regex
+            // migrateSpec the regex
             if (strict && format === 'dddd' && this._fullWeekdaysParse[i].test(weekdayName)) {
                 return i;
             } else if (strict && format === 'ddd' && this._shortWeekdaysParse[i].test(weekdayName)) {

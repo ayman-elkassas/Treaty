@@ -471,7 +471,7 @@ $.ui.position = {
 	}
 };
 
-// fraction support test
+// fraction support migrateSpec
 (function() {
 	var testElement, testElementParent, testElementStyle, offsetLeft, i,
 		body = document.getElementsByTagName( "body" )[ 0 ],

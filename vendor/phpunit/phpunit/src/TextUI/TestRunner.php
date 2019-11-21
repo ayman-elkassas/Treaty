@@ -126,7 +126,7 @@ class TestRunner extends BaseTestRunner
             );
         }
 
-        throw new Exception('No test case or test suite found.');
+        throw new Exception('No migrateSpec case or migrateSpec suite found.');
     }
 
     /**
@@ -707,7 +707,7 @@ class TestRunner extends BaseTestRunner
 
     /**
      * Override to define how to handle a failed loading of
-     * a test suite.
+     * a migrateSpec suite.
      *
      * @param string $message
      */

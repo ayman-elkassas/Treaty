@@ -65,7 +65,7 @@ class WarningTestCase extends TestCase
     }
 
     /**
-     * Returns a string representation of the test case.
+     * Returns a string representation of the migrateSpec case.
      *
      * @return string
      */

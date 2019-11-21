@@ -144,7 +144,7 @@ class ParameterBagTest extends TestCase
 
         $this->assertEquals('http://example.com/foo', $bag->filter('url', '', FILTER_VALIDATE_URL, ['flags' => FILTER_FLAG_PATH_REQUIRED]), '->filter() gets a value of parameter as URL with a path');
 
-        // This test is repeated for code-coverage
+        // This migrateSpec is repeated for code-coverage
         $this->assertEquals('http://example.com/foo', $bag->filter('url', '', FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED), '->filter() gets a value of parameter as URL with a path');
 
         $this->assertFalse($bag->filter('dec', '', FILTER_VALIDATE_INT, [

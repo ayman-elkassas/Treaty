@@ -199,7 +199,7 @@ class XliffFileLoaderTest extends TestCase
         $this->assertEquals([new FileResource($resource)], $catalogue->getResources());
         $this->assertSame([], libxml_get_errors());
 
-        // test for "foo" metadata
+        // migrateSpec for "foo" metadata
         $this->assertTrue($catalogue->defines('foo', 'domain1'));
         $metadata = $catalogue->getMetadata('foo', 'domain1');
         $this->assertNotEmpty($metadata);
@@ -215,7 +215,7 @@ class XliffFileLoaderTest extends TestCase
         $this->assertEquals('1', $metadata['notes'][2]['priority']);
         $this->assertEquals('user login', $metadata['notes'][2]['content']);
 
-        // test for "baz" metadata
+        // migrateSpec for "baz" metadata
         $this->assertTrue($catalogue->defines('baz', 'domain1'));
         $metadata = $catalogue->getMetadata('baz', 'domain1');
         $this->assertNotEmpty($metadata);
@@ -239,7 +239,7 @@ class XliffFileLoaderTest extends TestCase
         $this->assertEquals([new FileResource($resource)], $catalog->getResources());
         $this->assertFalse(libxml_get_last_error());
 
-        // test for "foo" metadata
+        // migrateSpec for "foo" metadata
         $this->assertTrue($catalog->defines('foo', 'domain1'));
         $metadata = $catalog->getMetadata('foo', 'domain1');
         $this->assertNotEmpty($metadata);
@@ -248,7 +248,7 @@ class XliffFileLoaderTest extends TestCase
         $this->assertSame('processed', $metadata['notes'][0]['category']);
         $this->assertSame('true', $metadata['notes'][0]['content']);
 
-        // test for "bar" metadata
+        // migrateSpec for "bar" metadata
         $this->assertTrue($catalog->defines('bar', 'domain1'));
         $metadata = $catalog->getMetadata('bar', 'domain1');
         $this->assertNotEmpty($metadata);

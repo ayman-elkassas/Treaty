@@ -38,7 +38,7 @@ class ExecutableFinderTest extends TestCase
     public function testFind()
     {
         if (ini_get('open_basedir')) {
-            $this->markTestSkipped('Cannot test when open_basedir is set');
+            $this->markTestSkipped('Cannot migrateSpec when open_basedir is set');
         }
 
         $this->setPath(\dirname(PHP_BINARY));
@@ -52,7 +52,7 @@ class ExecutableFinderTest extends TestCase
     public function testFindWithDefault()
     {
         if (ini_get('open_basedir')) {
-            $this->markTestSkipped('Cannot test when open_basedir is set');
+            $this->markTestSkipped('Cannot migrateSpec when open_basedir is set');
         }
 
         $expected = 'defaultValue';
@@ -68,7 +68,7 @@ class ExecutableFinderTest extends TestCase
     public function testFindWithNullAsDefault()
     {
         if (ini_get('open_basedir')) {
-            $this->markTestSkipped('Cannot test when open_basedir is set');
+            $this->markTestSkipped('Cannot migrateSpec when open_basedir is set');
         }
 
         $this->setPath('');
@@ -83,7 +83,7 @@ class ExecutableFinderTest extends TestCase
     public function testFindWithExtraDirs()
     {
         if (ini_get('open_basedir')) {
-            $this->markTestSkipped('Cannot test when open_basedir is set');
+            $this->markTestSkipped('Cannot migrateSpec when open_basedir is set');
         }
 
         $this->setPath('');
@@ -99,11 +99,11 @@ class ExecutableFinderTest extends TestCase
     public function testFindWithOpenBaseDir()
     {
         if ('\\' === \DIRECTORY_SEPARATOR) {
-            $this->markTestSkipped('Cannot run test on windows');
+            $this->markTestSkipped('Cannot run migrateSpec on windows');
         }
 
         if (ini_get('open_basedir')) {
-            $this->markTestSkipped('Cannot test when open_basedir is set');
+            $this->markTestSkipped('Cannot migrateSpec when open_basedir is set');
         }
 
         $this->iniSet('open_basedir', \dirname(PHP_BINARY).(!\defined('HHVM_VERSION') || HHVM_VERSION_ID >= 30800 ? PATH_SEPARATOR.'/' : ''));
@@ -117,10 +117,10 @@ class ExecutableFinderTest extends TestCase
     public function testFindProcessInOpenBasedir()
     {
         if (ini_get('open_basedir')) {
-            $this->markTestSkipped('Cannot test when open_basedir is set');
+            $this->markTestSkipped('Cannot migrateSpec when open_basedir is set');
         }
         if ('\\' === \DIRECTORY_SEPARATOR) {
-            $this->markTestSkipped('Cannot run test on windows');
+            $this->markTestSkipped('Cannot run migrateSpec on windows');
         }
 
         $this->setPath('');
@@ -138,7 +138,7 @@ class ExecutableFinderTest extends TestCase
     public function testFindBatchExecutableOnWindows()
     {
         if (ini_get('open_basedir')) {
-            $this->markTestSkipped('Cannot test when open_basedir is set');
+            $this->markTestSkipped('Cannot migrateSpec when open_basedir is set');
         }
         if ('\\' !== \DIRECTORY_SEPARATOR) {
             $this->markTestSkipped('Can be only tested on windows');

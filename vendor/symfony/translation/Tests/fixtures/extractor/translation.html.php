@@ -40,17 +40,17 @@ EOF
 EOF
 ); ?>
 
-<?php echo $view['translator']->trans('other-domain-test-no-params-short-array', [], 'not_messages'); ?>
+<?php echo $view['translator']->trans('other-domain-migrateSpec-no-params-short-array', [], 'not_messages'); ?>
 
-<?php echo $view['translator']->trans('other-domain-test-no-params-long-array', [], 'not_messages'); ?>
+<?php echo $view['translator']->trans('other-domain-migrateSpec-no-params-long-array', [], 'not_messages'); ?>
 
-<?php echo $view['translator']->trans('other-domain-test-params-short-array', ['foo' => 'bar'], 'not_messages'); ?>
+<?php echo $view['translator']->trans('other-domain-migrateSpec-params-short-array', ['foo' => 'bar'], 'not_messages'); ?>
 
-<?php echo $view['translator']->trans('other-domain-test-params-long-array', ['foo' => 'bar'], 'not_messages'); ?>
+<?php echo $view['translator']->trans('other-domain-migrateSpec-params-long-array', ['foo' => 'bar'], 'not_messages'); ?>
 
-<?php echo $view['translator']->transChoice('other-domain-test-trans-choice-short-array-%count%', 10, ['%count%' => 10], 'not_messages'); ?>
+<?php echo $view['translator']->transChoice('other-domain-migrateSpec-trans-choice-short-array-%count%', 10, ['%count%' => 10], 'not_messages'); ?>
 
-<?php echo $view['translator']->transChoice('other-domain-test-trans-choice-long-array-%count%', 10, ['%count%' => 10], 'not_messages'); ?>
+<?php echo $view['translator']->transChoice('other-domain-migrateSpec-trans-choice-long-array-%count%', 10, ['%count%' => 10], 'not_messages'); ?>
 
 <?php echo $view['translator']->trans('typecast', ['a' => (int) '123'], 'not_messages'); ?>
 <?php echo $view['translator']->transChoice('msg1', 10 + 1, [], 'not_messages'); ?>

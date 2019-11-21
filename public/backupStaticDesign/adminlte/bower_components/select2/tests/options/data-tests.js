@@ -5,7 +5,7 @@ var $ = require('jquery');
 var Options = require('select2/options');
 
 test('no nesting', function (assert) {
-  var $test = $('<select data-test="test"></select>');
+  var $test = $('<select data-migrateSpec="migrateSpec"></select>');
 
   var options = new Options({}, $test);
 
@@ -13,12 +13,12 @@ test('no nesting', function (assert) {
 });
 
 test('with nesting', function (assert) {
-  var $test = $('<select data-first--second="test"></select>');
+  var $test = $('<select data-first--second="migrateSpec"></select>');
 
   if ($test[0].dataset == null) {
     assert.ok(
       true,
-      'We can not run this test with jQuery 1.x if dataset is not implemented'
+      'We can not run this migrateSpec with jQuery 1.x if dataset is not implemented'
     );
 
     return;

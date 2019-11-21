@@ -76,10 +76,10 @@ class ContainerTest extends MockeryTestCase
 
     public function testSimpleMockWithArrayDefsCanBeOverridden()
     {
-        // eg. In shared test setup
+        // eg. In shared migrateSpec setup
         $m = mock(array('foo' => 1, 'bar' => 2));
 
-        // and then overridden in one test
+        // and then overridden in one migrateSpec
         $m->shouldReceive('foo')->with('baz')->once()->andReturn(2);
         $m->shouldReceive('bar')->with('baz')->once()->andReturn(42);
 
@@ -101,10 +101,10 @@ class ContainerTest extends MockeryTestCase
 
     public function testNamedMockWithArrayDefsCanBeOverridden()
     {
-        // eg. In shared test setup
+        // eg. In shared migrateSpec setup
         $m = mock('Foo', array('foo' => 1));
 
-        // and then overridden in one test
+        // and then overridden in one migrateSpec
         $m->shouldReceive('foo')->with('bar')->once()->andReturn(2);
 
         $this->assertEquals(2, $m->foo('bar'));
@@ -314,7 +314,7 @@ class ContainerTest extends MockeryTestCase
         $file->shouldReceive('getExtension')->once()->andReturn('css');
         $file->shouldReceive('getMTime')->once()->andReturn(time());
 
-        // not sure what this test is for, maybe something special about
+        // not sure what this migrateSpec is for, maybe something special about
         // SplFileInfo
         $this->assertEquals('foo', $file->getFilename());
         $this->assertEquals('path/to/foo', $file->getPathname());
@@ -831,7 +831,7 @@ class ContainerTest extends MockeryTestCase
     }
 
     /**
-     * Meant to test the same logic as
+     * Meant to migrateSpec the same logic as
      * testCanOverrideExpectedParametersOfExtensionPHPClassesToPreserveRefs,
      * but:
      * - doesn't require an extension
@@ -1019,7 +1019,7 @@ class ContainerTest extends MockeryTestCase
     public function testMockingPhpredisExtensionClassWorks()
     {
         if (!class_exists('Redis')) {
-            $this->markTestSkipped('PHPRedis extension required for this test');
+            $this->markTestSkipped('PHPRedis extension required for this migrateSpec');
         }
         $m = mock('Redis');
     }
@@ -1120,7 +1120,7 @@ class ContainerTest extends MockeryTestCase
         $m->get();
         Mockery::close();
 
-        // no idea what this test does, adding this as an assertion...
+        // no idea what this migrateSpec does, adding this as an assertion...
         $this->assertTrue(true);
     }
 
@@ -1214,7 +1214,7 @@ class ContainerTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      * @group issue/294
      */
     public function testThrowsWhenNamedMockClassExistsAndIsNotMockery()
@@ -1320,7 +1320,7 @@ class ContainerTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      * @group issue/339
      */
     public function canMockClassesThatDescendFromInternalClasses()
@@ -1330,7 +1330,7 @@ class ContainerTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      * @group issue/339
      */
     public function canMockClassesThatImplementSerializable()
@@ -1340,7 +1340,7 @@ class ContainerTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      * @group issue/346
      */
     public function canMockInternalClassesThatImplementSerializable()

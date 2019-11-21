@@ -10,7 +10,7 @@ var InputData = require('select2/compat/inputData');
 
 var InputAdapter = Utils.Decorate(ArrayData, InputData);
 
-test('test that options can be selected', function (assert) {
+test('migrateSpec that options can be selected', function (assert) {
   var options = new Options({
     data: [
       {
@@ -77,7 +77,7 @@ test('options can be unselected individually', function (assert) {
     ]
   });
   var $element = $('<input />');
-  $element.val('test,test2,test3');
+  $element.val('migrateSpec,test2,test3');
 
   var adapter = new InputAdapter($element, options);
 
@@ -87,7 +87,7 @@ test('options can be unselected individually', function (assert) {
 
   assert.equal(
     $element.val(),
-    'test,test3',
+    'migrateSpec,test3',
     'The value should contain all the still selected options'
   );
 });
@@ -103,7 +103,7 @@ test('default values can be set', function (assert) {
       }
     ]
   });
-  var $element = $('<input value="test" />');
+  var $element = $('<input value="migrateSpec" />');
 
   var adapter = new InputAdapter($element, options);
 

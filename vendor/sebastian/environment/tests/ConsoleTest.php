@@ -31,7 +31,7 @@ final class ConsoleTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testCanDetectIfStdoutIsInteractiveByDefault()/*: void*/
     {
@@ -40,7 +40,7 @@ final class ConsoleTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testCanDetectIfFileDescriptorIsInteractive()/*: void*/
     {
@@ -49,7 +49,7 @@ final class ConsoleTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testCanDetectColorSupport()/*: void*/
     {
@@ -58,7 +58,7 @@ final class ConsoleTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testCanDetectNumberOfColumns()/*: void*/
     {

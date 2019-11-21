@@ -11,7 +11,7 @@ var DropdownCSS = Utils.Decorate(
 );
 
 test('all classes will be copied if :all: is used', function (assert) {
-  var $element = $('<select class="test copy works"></select>');
+  var $element = $('<select class="migrateSpec copy works"></select>');
   var options = new Options({
     dropdownCssClass: ':all:'
   });
@@ -26,7 +26,7 @@ test('all classes will be copied if :all: is used', function (assert) {
 });
 
 test(':all: can be used with other classes', function (assert) {
-  var $element = $('<select class="test copy works"></select>');
+  var $element = $('<select class="migrateSpec copy works"></select>');
   var options = new Options({
     dropdownCssClass: ':all: other'
   });
@@ -42,7 +42,7 @@ test(':all: can be used with other classes', function (assert) {
 });
 
 test('classes can be passed in as a string', function (assert) {
-  var $element = $('<select class="test copy works"></select>');
+  var $element = $('<select class="migrateSpec copy works"></select>');
   var options = new Options({
     dropdownCssClass: 'other'
   });
@@ -54,7 +54,7 @@ test('classes can be passed in as a string', function (assert) {
 });
 
 test('a function can be used based on the element', function (assert){
-  var $element = $('<select class="test"></select>');
+  var $element = $('<select class="migrateSpec"></select>');
   var options = new Options({
     dropdownCssClass: function ($element) {
       return 'function';
@@ -69,7 +69,7 @@ test('a function can be used based on the element', function (assert){
 });
 
 test(':all: works around custom adapters', function (assert) {
-  var $element = $('<select class="test"></select>');
+  var $element = $('<select class="migrateSpec"></select>');
   var options = new Options({
     dropdownCssClass: ':all: something',
     adaptDropdownCssClass: function (clazz) {
@@ -83,7 +83,7 @@ test(':all: works around custom adapters', function (assert) {
   assert.ok($dropdown.hasClass('something'));
 
   assert.ok($dropdown.hasClass('test'));
-  assert.ok($dropdown.hasClass('test-modified'));
+  assert.ok($dropdown.hasClass('migrateSpec-modified'));
 });
 
 module('Dropdown - adaptDropdownCss compatibility');

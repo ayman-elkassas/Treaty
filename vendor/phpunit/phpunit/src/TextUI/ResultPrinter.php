@@ -313,7 +313,7 @@ class ResultPrinter extends Printer implements TestListener
      */
     protected function printIncompletes(TestResult $result)
     {
-        $this->printDefects($result->notImplemented(), 'incomplete test');
+        $this->printDefects($result->notImplemented(), 'incomplete migrateSpec');
     }
 
     /**
@@ -321,7 +321,7 @@ class ResultPrinter extends Printer implements TestListener
      */
     protected function printRisky(TestResult $result)
     {
-        $this->printDefects($result->risky(), 'risky test');
+        $this->printDefects($result->risky(), 'risky migrateSpec');
     }
 
     /**
@@ -329,7 +329,7 @@ class ResultPrinter extends Printer implements TestListener
      */
     protected function printSkipped(TestResult $result)
     {
-        $this->printDefects($result->skipped(), 'skipped test');
+        $this->printDefects($result->skipped(), 'skipped migrateSpec');
     }
 
     protected function printHeader()
@@ -358,7 +358,7 @@ class ResultPrinter extends Printer implements TestListener
             $this->writeWithColor(
                 'fg-black, bg-green',
                 \sprintf(
-                    'OK (%d test%s, %d assertion%s)',
+                    'OK (%d migrateSpec%s, %d assertion%s)',
                     \count($result),
                     (\count($result) == 1) ? '' : 's',
                     $this->numAssertions,
@@ -461,7 +461,7 @@ class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Incomplete test.
+     * Incomplete migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -474,7 +474,7 @@ class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Risky test.
+     * Risky migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -487,7 +487,7 @@ class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Skipped test.
+     * Skipped migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -523,7 +523,7 @@ class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * A test started.
+     * A migrateSpec started.
      *
      * @param Test $test
      */
@@ -540,7 +540,7 @@ class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * A test ended.
+     * A migrateSpec ended.
      *
      * @param Test  $test
      * @param float $time

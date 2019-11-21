@@ -9,7 +9,7 @@ class TokenTest extends TestCase {
     private $token;
 
     protected function setUp() {
-        $this->token = new Token(1,'test-dummy', 'blank');
+        $this->token = new Token(1,'migrateSpec-dummy', 'blank');
     }
 
     public function testTokenCanBeCreated() {
@@ -21,7 +21,7 @@ class TokenTest extends TestCase {
     }
 
     public function testTokenNameCanBeRetrieved() {
-        $this->assertEquals('test-dummy', $this->token->getName());
+        $this->assertEquals('migrateSpec-dummy', $this->token->getName());
     }
 
     public function testTokenValueCanBeRetrieved() {

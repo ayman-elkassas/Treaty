@@ -29,7 +29,7 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
 {
     public function testMockingStringReturnType()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldReceive("returnString");
         $this->assertSame("", $mock->returnString());
@@ -37,7 +37,7 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
 
     public function testMockingIntegerReturnType()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldReceive("returnInteger");
         $this->assertSame(0, $mock->returnInteger());
@@ -45,7 +45,7 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
 
     public function testMockingFloatReturnType()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldReceive("returnFloat");
         $this->assertSame(0.0, $mock->returnFloat());
@@ -53,7 +53,7 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
 
     public function testMockingBooleanReturnType()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldReceive("returnBoolean");
         $this->assertFalse($mock->returnBoolean());
@@ -61,7 +61,7 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
 
     public function testMockingArrayReturnType()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldReceive("returnArray");
         $this->assertSame([], $mock->returnArray());
@@ -69,7 +69,7 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
 
     public function testMockingGeneratorReturnTyps()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldReceive("returnGenerator");
         $this->assertInstanceOf("\Generator", $mock->returnGenerator());
@@ -77,7 +77,7 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
 
     public function testMockingCallableReturnType()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldReceive("returnCallable");
         $this->assertTrue(is_callable($mock->returnCallable()));
@@ -85,15 +85,15 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
 
     public function testMockingClassReturnTypes()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldReceive("withClassReturnType");
-        $this->assertInstanceOf("test\Mockery\TestWithParameterAndReturnType", $mock->withClassReturnType());
+        $this->assertInstanceOf("migrateSpec\Mockery\TestWithParameterAndReturnType", $mock->withClassReturnType());
     }
 
     public function testMockingParameterTypes()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldReceive("withScalarParameters");
         $mock->withScalarParameters(1, 1.0, true, 'string');
@@ -101,7 +101,7 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
 
     public function testIgnoringMissingReturnsType()
     {
-        $mock = mock("test\Mockery\TestWithParameterAndReturnType");
+        $mock = mock("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
         $mock->shouldIgnoreMissing();
 
@@ -112,14 +112,14 @@ class MockingParameterAndReturnTypesTest extends MockeryTestCase
         $this->assertSame([], $mock->returnArray());
         $this->assertTrue(is_callable($mock->returnCallable()));
         $this->assertInstanceOf("\Generator", $mock->returnGenerator());
-        $this->assertInstanceOf("test\Mockery\TestWithParameterAndReturnType", $mock->withClassReturnType());
+        $this->assertInstanceOf("migrateSpec\Mockery\TestWithParameterAndReturnType", $mock->withClassReturnType());
     }
 
     public function testAutoStubbingSelf()
     {
-        $spy = \Mockery::spy("test\Mockery\TestWithParameterAndReturnType");
+        $spy = \Mockery::spy("migrateSpec\Mockery\TestWithParameterAndReturnType");
 
-        $this->assertInstanceOf("test\Mockery\TestWithParameterAndReturnType", $spy->returnSelf());
+        $this->assertInstanceOf("migrateSpec\Mockery\TestWithParameterAndReturnType", $spy->returnSelf());
     }
 
     public function testItShouldMockClassWithHintedParamsInMagicMethod()

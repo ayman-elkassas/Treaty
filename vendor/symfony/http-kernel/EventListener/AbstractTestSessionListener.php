@@ -22,7 +22,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
 /**
  * TestSessionListener.
  *
- * Saves session in test environment.
+ * Saves session in migrateSpec environment.
  *
  * @author Bulat Shakirzyanov <mallluhuct@gmail.com>
  * @author Fabien Potencier <fabien@symfony.com>
@@ -53,7 +53,7 @@ abstract class AbstractTestSessionListener implements EventSubscriberInterface
 
     /**
      * Checks if session was initialized and saves if current request is master
-     * Runs on 'kernel.response' in test environment.
+     * Runs on 'kernel.response' in migrateSpec environment.
      */
     public function onKernelResponse(FilterResponseEvent $event)
     {

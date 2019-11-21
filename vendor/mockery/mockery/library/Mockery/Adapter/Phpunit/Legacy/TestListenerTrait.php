@@ -37,8 +37,8 @@ use PHPUnit\Runner\BaseTestRunner;
 class TestListenerTrait
 {
     /**
-     * endTest is called after each test and checks if \Mockery::close() has
-     * been called, and will let the test fail if it hasn't.
+     * endTest is called after each migrateSpec and checks if \Mockery::close() has
+     * been called, and will let the migrateSpec fail if it hasn't.
      *
      * @param Test  $test
      * @param float $time
@@ -52,7 +52,7 @@ class TestListenerTrait
         }
 
         if ($test->getStatus() !== BaseTestRunner::STATUS_PASSED) {
-            // If the test didn't pass there is no guarantee that
+            // If the migrateSpec didn't pass there is no guarantee that
             // verifyMockObjects and assertPostConditions have been called.
             // And even if it did, the point here is to prevent false
             // negatives, not to make failing tests fail for more reasons.
@@ -69,7 +69,7 @@ class TestListenerTrait
 
         $e = new ExpectationFailedException(
             \sprintf(
-                "Mockery's expectations have not been verified. Make sure that \Mockery::close() is called at the end of the test. Consider using %s\MockeryPHPUnitIntegration or extending %s\MockeryTestCase.",
+                "Mockery's expectations have not been verified. Make sure that \Mockery::close() is called at the end of the migrateSpec. Consider using %s\MockeryPHPUnitIntegration or extending %s\MockeryTestCase.",
                 __NAMESPACE__,
                 __NAMESPACE__
             )

@@ -103,7 +103,7 @@ class ShellInputTest extends \PHPUnit\Framework\TestCase
 
     public function getTokenizeData()
     {
-        // Test all the cases from StringInput test, ensuring they have an appropriate $rest token.
+        // Test all the cases from StringInput migrateSpec, ensuring they have an appropriate $rest token.
         return [
             [
                 '',
@@ -150,7 +150,7 @@ class ShellInputTest extends \PHPUnit\Framework\TestCase
              * These don't play nice with unescaping input, but the end result
              * is correct, so disable the tests for now.
              *
-             * @todo Sort this out and re-enable these test cases.
+             * @todo Sort this out and re-enable these migrateSpec cases.
              */
             // [
             //     '\"quoted\"',

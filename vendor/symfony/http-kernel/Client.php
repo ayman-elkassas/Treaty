@@ -147,7 +147,7 @@ EOF;
     /**
      * Filters an array of files.
      *
-     * This method created test instances of UploadedFile so that the move()
+     * This method created migrateSpec instances of UploadedFile so that the move()
      * method can be called on those instances.
      *
      * If the size of a file is greater than the allowed size (from php.ini) then

@@ -35,7 +35,7 @@ class SlackHandlerTest extends TestCase
     public function setUp()
     {
         if (!extension_loaded('openssl')) {
-            $this->markTestSkipped('This test requires openssl to run');
+            $this->markTestSkipped('This migrateSpec requires openssl to run');
         }
     }
 

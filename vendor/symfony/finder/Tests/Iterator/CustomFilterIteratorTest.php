@@ -28,7 +28,7 @@ class CustomFilterIteratorTest extends IteratorTestCase
      */
     public function testAccept($filters, $expected)
     {
-        $inner = new Iterator(['test.php', 'test.py', 'foo.php']);
+        $inner = new Iterator(['migrateSpec.php', 'migrateSpec.py', 'foo.php']);
 
         $iterator = new CustomFilterIterator($inner, $filters);
 
@@ -39,7 +39,7 @@ class CustomFilterIteratorTest extends IteratorTestCase
     {
         return [
             [[function (\SplFileInfo $fileinfo) { return false; }], []],
-            [[function (\SplFileInfo $fileinfo) { return 0 === strpos($fileinfo, 'test'); }], ['test.php', 'test.py']],
+            [[function (\SplFileInfo $fileinfo) { return 0 === strpos($fileinfo, 'test'); }], ['migrateSpec.php', 'migrateSpec.py']],
             [['is_dir'], []],
         ];
     }

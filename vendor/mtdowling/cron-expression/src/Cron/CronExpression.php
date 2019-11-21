@@ -46,7 +46,7 @@ class CronExpression
     private $maxIterationCount = 1000;
 
     /**
-     * @var array Order in which to test of cron parts
+     * @var array Order in which to migrateSpec of cron parts
      */
     private static $order = array(self::YEAR, self::MONTH, self::DAY, self::WEEKDAY, self::HOUR, self::MINUTE);
 

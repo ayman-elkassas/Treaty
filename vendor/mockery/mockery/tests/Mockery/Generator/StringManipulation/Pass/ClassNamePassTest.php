@@ -34,7 +34,7 @@ class ClassNamePassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldRemoveNamespaceDefinition()
     {
@@ -44,7 +44,7 @@ class ClassNamePassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldReplaceNamespaceIfClassNameIsNamespaced()
     {
@@ -55,7 +55,7 @@ class ClassNamePassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldReplaceClassNameWithSpecifiedName()
     {
@@ -65,7 +65,7 @@ class ClassNamePassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function shouldRemoveLeadingBackslashesFromNamespace()
     {

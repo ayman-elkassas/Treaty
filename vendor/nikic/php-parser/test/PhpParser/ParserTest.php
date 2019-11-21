@@ -44,7 +44,7 @@ abstract class ParserTest extends \PHPUnit\Framework\TestCase
         $code = <<<'EOC'
 <?php
 /** Doc comment */
-function test($a) {
+function migrateSpec($a) {
     // Line
     // Comments
     echo $a;

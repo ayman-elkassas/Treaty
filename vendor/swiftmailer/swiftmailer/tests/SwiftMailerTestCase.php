@@ -3,7 +3,7 @@
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 
 /**
- * A base test case with some custom expectations.
+ * A base migrateSpec case with some custom expectations.
  *
  * @author Rouven Weßling
  */

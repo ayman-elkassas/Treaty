@@ -2,7 +2,7 @@
 
 namespace PhpParser;
 
-/* This test is very weak, because PHPUnit's assertEquals assertion is way too slow dealing with the
+/* This migrateSpec is very weak, because PHPUnit's assertEquals assertion is way too slow dealing with the
  * large objects involved here. So we just do some basic instanceof tests instead. */
 
 class ParserFactoryTest extends \PHPUnit\Framework\TestCase

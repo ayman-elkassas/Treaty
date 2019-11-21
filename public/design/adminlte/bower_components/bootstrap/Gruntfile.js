@@ -328,7 +328,7 @@ module.exports = function (grunt) {
       },
       test: {
         files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'exec:karma']
+        tasks: ['jshint:migrateSpec', 'exec:karma']
       },
       less: {
         files: 'less/**/*.less',
@@ -367,11 +367,11 @@ module.exports = function (grunt) {
 
   // Test task.
   var testSubtasks = [];
-  // Skip core tests if running a different subset of the test suite
+  // Skip core tests if running a different subset of the migrateSpec suite
   if (runSubset('core')) {
-    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'stylelint:dist', 'test-js', 'docs']);
+    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'stylelint:dist', 'migrateSpec-js', 'docs']);
   }
-  // Skip HTML validation if running a different subset of the test suite
+  // Skip HTML validation if running a different subset of the migrateSpec suite
   if (runSubset('validate-html') &&
       // Skip HTML5 validator on Travis when [skip validator] is in the commit message
       isUndefOrNonZero(process.env.TWBS_DO_VALIDATOR)) {
@@ -379,7 +379,7 @@ module.exports = function (grunt) {
   }
   // Only run BrowserStack tests if there's a BrowserStack access key
   if (typeof process.env.BROWSER_STACK_USERNAME !== 'undefined' &&
-      // Skip BrowserStack if running a different subset of the test suite
+      // Skip BrowserStack if running a different subset of the migrateSpec suite
       runSubset('browserstack') &&
       // Skip BrowserStack on Travis when [skip browserstack] is in the commit message
       isUndefOrNonZero(process.env.TWBS_DO_BROWSERSTACK)) {
@@ -387,7 +387,7 @@ module.exports = function (grunt) {
   }
 
   grunt.registerTask('test', testSubtasks);
-  grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt', 'exec:karma']);
+  grunt.registerTask('migrateSpec-js', ['jshint:core', 'jshint:migrateSpec', 'jshint:grunt', 'jscs:core', 'jscs:migrateSpec', 'jscs:grunt', 'exec:karma']);
 
   // JS distribution task.
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs']);

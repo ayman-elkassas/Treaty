@@ -17,7 +17,7 @@ class BuilderFactoryTest extends \PHPUnit\Framework\TestCase
      */
     public function testFactory($methodName, $className) {
         $factory = new BuilderFactory;
-        $this->assertInstanceOf($className, $factory->$methodName('test'));
+        $this->assertInstanceOf($className, $factory->$methodName('migrateSpec'));
     }
 
     public function provideTestFactory() {
@@ -294,7 +294,7 @@ abstract class SomeClass extends SomeOtherClass implements A\Few, \Interfaces
     use FirstTrait;
     use SecondTrait, ThirdTrait, AnotherTrait {
         foo as bar;
-        AnotherTrait::baz as test;
+        AnotherTrait::baz as migrateSpec;
         AnotherTrait::func insteadof SecondTrait;
     }
     protected $someProperty;
@@ -308,7 +308,7 @@ abstract class SomeClass extends SomeOtherClass implements A\Few, \Interfaces
      * @param SomeClass And takes a parameter
      */
     public abstract function someMethod(SomeClass $someParam);
-    protected function anotherMethod($someParam = 'test')
+    protected function anotherMethod($someParam = 'migrateSpec')
     {
         print $someParam;
     }

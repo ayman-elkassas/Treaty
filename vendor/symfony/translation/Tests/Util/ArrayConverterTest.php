@@ -43,13 +43,13 @@ class ArrayConverterTest extends TestCase
                 // input
                 [
                     'foo.bar' => 'value1',
-                    'foo.bar.test' => 'value2',
+                    'foo.bar.migrateSpec' => 'value2',
                 ],
                 // expected output
                 [
                     'foo' => [
                         'bar' => 'value1',
-                        'bar.test' => 'value2',
+                        'bar.migrateSpec' => 'value2',
                     ],
                 ],
             ],

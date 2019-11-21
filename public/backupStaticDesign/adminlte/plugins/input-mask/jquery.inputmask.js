@@ -69,7 +69,7 @@
 
                 return { "mask": repeatedMask, "repeat": repeat, "greedy": greedy };
             }
-            //test definition => {fn: RegExp/function, cardinality: int, optionality: bool, newBlockMarker: bool, offset: int, casing: null/upper/lower, def: definitionSymbol}
+            //migrateSpec definition => {fn: RegExp/function, cardinality: int, optionality: bool, newBlockMarker: bool, offset: int, casing: null/upper/lower, def: definitionSymbol}
             function getTestingChain(mask) {
                 if (opts.numericInput) {
                     mask = mask.split('').reverse().join('');

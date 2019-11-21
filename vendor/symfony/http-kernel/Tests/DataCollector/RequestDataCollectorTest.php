@@ -93,7 +93,7 @@ class RequestDataCollectorTest extends TestCase
         $r2 = new \ReflectionMethod($this, 'staticControllerMethod');
         $r3 = new \ReflectionClass($this);
 
-        // test name, callable, expected
+        // migrateSpec name, callable, expected
         return [
             [
                 '"Regular" callable',
@@ -248,7 +248,7 @@ class RequestDataCollectorTest extends TestCase
 
     protected function createRequest($routeParams = ['name' => 'foo'])
     {
-        $request = Request::create('http://test.com/foo?bar=baz');
+        $request = Request::create('http://migrateSpec.com/foo?bar=baz');
         $request->attributes->set('foo', 'bar');
         $request->attributes->set('_route', 'foobar');
         $request->attributes->set('_route_params', $routeParams);

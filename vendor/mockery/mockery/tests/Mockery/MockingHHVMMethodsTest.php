@@ -35,7 +35,7 @@ class MockingHHVMMethodsTest extends MockeryTestCase
     protected function mockeryTestSetUp()
     {
         if (!$this->isHHVM()) {
-            $this->markTestSkipped('For HHVM test only');
+            $this->markTestSkipped('For HHVM migrateSpec only');
         }
 
         parent::mockeryTestSetUp();
@@ -43,7 +43,7 @@ class MockingHHVMMethodsTest extends MockeryTestCase
         require_once __DIR__."/Fixtures/MethodWithHHVMReturnType.php";
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_strip_hhvm_array_return_types()
     {
         $mock = mock('test\Mockery\Fixtures\MethodWithHHVMReturnType');
@@ -52,7 +52,7 @@ class MockingHHVMMethodsTest extends MockeryTestCase
         $mock->nullableHHVMArray();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_strip_hhvm_void_return_types()
     {
         $mock = mock('test\Mockery\Fixtures\MethodWithHHVMReturnType');
@@ -61,7 +61,7 @@ class MockingHHVMMethodsTest extends MockeryTestCase
         $mock->HHVMVoid();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_strip_hhvm_mixed_return_types()
     {
         $mock = mock('test\Mockery\Fixtures\MethodWithHHVMReturnType');
@@ -70,7 +70,7 @@ class MockingHHVMMethodsTest extends MockeryTestCase
         $mock->HHVMMixed();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_strip_hhvm_this_return_types()
     {
         $mock = mock('test\Mockery\Fixtures\MethodWithHHVMReturnType');
@@ -79,7 +79,7 @@ class MockingHHVMMethodsTest extends MockeryTestCase
         $mock->HHVMThis();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_allow_hhvm_string_return_types()
     {
         $mock = mock('test\Mockery\Fixtures\MethodWithHHVMReturnType');
@@ -88,7 +88,7 @@ class MockingHHVMMethodsTest extends MockeryTestCase
         $mock->HHVMString();
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function it_allow_hhvm_imm_vector_return_types()
     {
         $mock = mock('test\Mockery\Fixtures\MethodWithHHVMReturnType');

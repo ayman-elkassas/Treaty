@@ -24,7 +24,7 @@ class PdoSessionHandlerTest extends TestCase
 
     protected function tearDown()
     {
-        // make sure the temporary database file is deleted when it has been created (even when a test fails)
+        // make sure the temporary database file is deleted when it has been created (even when a migrateSpec fails)
         if ($this->dbFile) {
             @unlink($this->dbFile);
         }
@@ -288,7 +288,7 @@ class PdoSessionHandlerTest extends TestCase
 
         $storage->open('', 'sid');
         $storage->read('gc_id');
-        ini_set('session.gc_maxlifetime', -1); // test that you can set lifetime of a session after it has been read
+        ini_set('session.gc_maxlifetime', -1); // migrateSpec that you can set lifetime of a session after it has been read
         $storage->write('gc_id', 'data');
         $storage->close();
         $this->assertEquals(2, $pdo->query('SELECT COUNT(*) FROM sessions')->fetchColumn(), 'No session pruned because gc not called');
@@ -344,19 +344,19 @@ class PdoSessionHandlerTest extends TestCase
 
     public function provideUrlDsnPairs()
     {
-        yield ['mysql://localhost/test', 'mysql:host=localhost;dbname=test;'];
-        yield ['mysql://localhost:56/test', 'mysql:host=localhost;port=56;dbname=test;'];
-        yield ['mysql2://root:pwd@localhost/test', 'mysql:host=localhost;dbname=test;', 'root', 'pwd'];
-        yield ['postgres://localhost/test', 'pgsql:host=localhost;dbname=test;'];
-        yield ['postgresql://localhost:5634/test', 'pgsql:host=localhost;port=5634;dbname=test;'];
-        yield ['postgres://root:pwd@localhost/test', 'pgsql:host=localhost;dbname=test;', 'root', 'pwd'];
-        yield 'sqlite relative path' => ['sqlite://localhost/tmp/test', 'sqlite:tmp/test'];
-        yield 'sqlite absolute path' => ['sqlite://localhost//tmp/test', 'sqlite:/tmp/test'];
-        yield 'sqlite relative path without host' => ['sqlite:///tmp/test', 'sqlite:tmp/test'];
-        yield 'sqlite absolute path without host' => ['sqlite3:////tmp/test', 'sqlite:/tmp/test'];
+        yield ['mysql://localhost/migrateSpec', 'mysql:host=localhost;dbname=migrateSpec;'];
+        yield ['mysql://localhost:56/migrateSpec', 'mysql:host=localhost;port=56;dbname=migrateSpec;'];
+        yield ['mysql2://root:pwd@localhost/migrateSpec', 'mysql:host=localhost;dbname=migrateSpec;', 'root', 'pwd'];
+        yield ['postgres://localhost/migrateSpec', 'pgsql:host=localhost;dbname=migrateSpec;'];
+        yield ['postgresql://localhost:5634/migrateSpec', 'pgsql:host=localhost;port=5634;dbname=migrateSpec;'];
+        yield ['postgres://root:pwd@localhost/migrateSpec', 'pgsql:host=localhost;dbname=migrateSpec;', 'root', 'pwd'];
+        yield 'sqlite relative path' => ['sqlite://localhost/tmp/migrateSpec', 'sqlite:tmp/migrateSpec'];
+        yield 'sqlite absolute path' => ['sqlite://localhost//tmp/migrateSpec', 'sqlite:/tmp/migrateSpec'];
+        yield 'sqlite relative path without host' => ['sqlite:///tmp/migrateSpec', 'sqlite:tmp/migrateSpec'];
+        yield 'sqlite absolute path without host' => ['sqlite3:////tmp/migrateSpec', 'sqlite:/tmp/migrateSpec'];
         yield ['sqlite://localhost/:memory:', 'sqlite::memory:'];
-        yield ['mssql://localhost/test', 'sqlsrv:server=localhost;Database=test'];
-        yield ['mssql://localhost:56/test', 'sqlsrv:server=localhost,56;Database=test'];
+        yield ['mssql://localhost/migrateSpec', 'sqlsrv:server=localhost;Database=migrateSpec'];
+        yield ['mssql://localhost:56/migrateSpec', 'sqlsrv:server=localhost,56;Database=migrateSpec'];
     }
 
     private function createStream($content)

@@ -43,12 +43,8 @@ use PhpParser\NodeDumper;
 use PhpParser\ParserFactory;
 
 $code = <<<'CODE'
-<?php
-
-function test($foo)
-{
-    var_dump($foo);
-}
+migrat
+eSpec
 CODE;
 
 $parser = (new ParserFactory)->create(ParserFactory::PREFER_PHP7);

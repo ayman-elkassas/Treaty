@@ -5,5 +5,5 @@ if (extension_loaded('xdebug')) {
 }
 
     throw new Exception(
-        'PHPUnit suppresses exceptions thrown outside of test case function'
+        'PHPUnit suppresses exceptions thrown outside of migrateSpec case function'
     );

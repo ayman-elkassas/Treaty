@@ -61,7 +61,7 @@ class AmqpHandlerTest extends TestCase
                 'channel' => 'test',
                 'extra' => array(),
             ),
-            'warn.test',
+            'warn.migrateSpec',
             0,
             array(
                 'delivery_mode' => 2,
@@ -111,7 +111,7 @@ class AmqpHandlerTest extends TestCase
                 'extra' => array(),
             ),
             'log',
-            'warn.test',
+            'warn.migrateSpec',
             false,
             false,
             null,

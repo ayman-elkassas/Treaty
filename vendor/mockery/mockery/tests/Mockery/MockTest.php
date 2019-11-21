@@ -160,7 +160,7 @@ class Mockery_MockTest extends MockeryTestCase
     }
 
 
-    /** @test */
+    /** @migrateSpec */
     public function expectation_count_will_count_expectations()
     {
         $mock = new Mock();
@@ -170,7 +170,7 @@ class Mockery_MockTest extends MockeryTestCase
         $this->assertEquals(2, $mock->mockery_getExpectationCount());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function expectation_count_will_ignore_defaults_if_overriden()
     {
         $mock = new Mock();
@@ -181,7 +181,7 @@ class Mockery_MockTest extends MockeryTestCase
         $this->assertEquals(2, $mock->mockery_getExpectationCount());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function expectation_count_will_count_defaults_if_not_overriden()
     {
         $mock = new Mock();

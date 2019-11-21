@@ -30,9 +30,9 @@ class FileTypeFilterIteratorTest extends RealIteratorTestCase
     public function getAcceptData()
     {
         $onlyFiles = [
-            'test.py',
+            'migrateSpec.py',
             'foo/bar.tmp',
-            'test.php',
+            'migrateSpec.php',
             '.bar',
             '.foo/.bar',
             '.foo/bar',

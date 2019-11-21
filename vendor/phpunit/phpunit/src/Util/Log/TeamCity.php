@@ -25,7 +25,7 @@ use ReflectionClass;
 use SebastianBergmann\Comparator\ComparisonFailure;
 
 /**
- * A TestListener that generates a logfile of the test execution using the
+ * A TestListener that generates a logfile of the migrateSpec execution using the
  * TeamCity format (for use with PhpStorm, for instance).
  */
 class TeamCity extends ResultPrinter
@@ -145,7 +145,7 @@ class TeamCity extends ResultPrinter
     }
 
     /**
-     * Incomplete test.
+     * Incomplete migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -157,7 +157,7 @@ class TeamCity extends ResultPrinter
     }
 
     /**
-     * Risky test.
+     * Risky migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -169,7 +169,7 @@ class TeamCity extends ResultPrinter
     }
 
     /**
-     * Skipped test.
+     * Skipped migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -273,7 +273,7 @@ class TeamCity extends ResultPrinter
     }
 
     /**
-     * A test started.
+     * A migrateSpec started.
      *
      * @param Test $test
      */
@@ -293,7 +293,7 @@ class TeamCity extends ResultPrinter
     }
 
     /**
-     * A test ended.
+     * A migrateSpec ended.
      *
      * @param Test  $test
      * @param float $time

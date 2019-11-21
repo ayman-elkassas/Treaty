@@ -53,7 +53,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldWork()
     {
@@ -61,7 +61,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldGrabClassMagicMethods()
     {
@@ -75,7 +75,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldGrabInterfaceMagicMethods()
     {
@@ -89,7 +89,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldAddStringTypeHintOnMagicMethod()
     {
@@ -109,7 +109,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldAddStringTypeHintOnAllMagicMethods()
     {
@@ -130,7 +130,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldAddBooleanReturnOnMagicMethod()
     {
@@ -150,7 +150,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldAddTypeHintsOnToStringMethod()
     {
@@ -170,7 +170,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldAddTypeHintsOnCallMethod()
     {
@@ -190,7 +190,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldAddTypeHintsOnCallStaticMethod()
     {
@@ -210,7 +210,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldNotAddReturnTypeHintIfOneIsNotFound()
     {
@@ -230,7 +230,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldReturnEmptyArrayIfClassDoesNotHaveMagicMethods()
     {
@@ -243,7 +243,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function itShouldReturnEmptyArrayIfClassTypeIsNotExpected()
     {
@@ -259,7 +259,7 @@ class MagicMethodTypeHintsPassTest extends MockeryTestCase
      * conflicts withing Mock's magic methods
      * implementations.
      *
-     * @test
+     * @migrateSpec
      */
     public function itShouldGrabAndReplaceAllParametersWithTheCodeStringMatches()
     {

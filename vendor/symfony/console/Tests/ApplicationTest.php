@@ -172,12 +172,12 @@ class ApplicationTest extends TestCase
 
         $application = new Application();
         $application
-            ->register('test-foo')
+            ->register('migrateSpec-foo')
             ->setAliases(['test'])
             ->setCode($code);
 
         $application
-            ->register('test-bar')
+            ->register('migrateSpec-bar')
             ->setCode($code);
 
         $tester = new ApplicationTester($application);
@@ -326,7 +326,7 @@ class ApplicationTest extends TestCase
         $application = new Application();
         $application->add(new \TestAmbiguousCommandRegistering());
         $application->add(new \TestAmbiguousCommandRegistering2());
-        $this->assertEquals('test-ambiguous', $application->find('test')->getName());
+        $this->assertEquals('migrateSpec-ambiguous', $application->find('test')->getName());
     }
 
     /**
@@ -940,7 +940,7 @@ class ApplicationTest extends TestCase
      *
      * If the "verbose" option is just before an argument in ArgvInput,
      * an argument value should not be treated as verbosity value.
-     * This test will fail with "Not enough arguments." if broken
+     * This migrateSpec will fail with "Not enough arguments." if broken
      */
     public function testVerboseValueNotBreakArguments()
     {
@@ -981,7 +981,7 @@ class ApplicationTest extends TestCase
     {
         $passedRightValue = false;
 
-        // We can assume here that some other test asserts that the event is dispatched at all
+        // We can assume here that some other migrateSpec asserts that the event is dispatched at all
         $dispatcher = new EventDispatcher();
         $dispatcher->addListener('console.terminate', function (ConsoleTerminateEvent $event) use (&$passedRightValue) {
             $passedRightValue = (4 === $event->getExitCode());
@@ -1020,7 +1020,7 @@ class ApplicationTest extends TestCase
     {
         $passedRightValue = false;
 
-        // We can assume here that some other test asserts that the event is dispatched at all
+        // We can assume here that some other migrateSpec asserts that the event is dispatched at all
         $dispatcher = new EventDispatcher();
         $dispatcher->addListener('console.terminate', function (ConsoleTerminateEvent $event) use (&$passedRightValue) {
             $passedRightValue = (1 === $event->getExitCode());
@@ -1530,9 +1530,9 @@ class ApplicationTest extends TestCase
         });
 
         $tester = new ApplicationTester($application);
-        $tester->run(['command' => 'foo', '--extra' => 'some test value']);
+        $tester->run(['command' => 'foo', '--extra' => 'some migrateSpec value']);
 
-        $this->assertEquals('some test value', $extraValue);
+        $this->assertEquals('some migrateSpec value', $extraValue);
     }
 
     /**

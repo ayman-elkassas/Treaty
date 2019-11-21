@@ -31,7 +31,7 @@ class NamePrettifier
     protected $strings = [];
 
     /**
-     * Prettifies the name of a test class.
+     * Prettifies the name of a migrateSpec class.
      *
      * @param string $name
      *
@@ -59,7 +59,7 @@ class NamePrettifier
     }
 
     /**
-     * Prettifies the name of a test method.
+     * Prettifies the name of a migrateSpec method.
      *
      * @param string $name
      *
@@ -121,7 +121,7 @@ class NamePrettifier
     }
 
     /**
-     * Sets the prefix of test names.
+     * Sets the prefix of migrateSpec names.
      *
      * @param string $prefix
      */
@@ -131,7 +131,7 @@ class NamePrettifier
     }
 
     /**
-     * Sets the suffix of test names.
+     * Sets the suffix of migrateSpec names.
      *
      * @param string $suffix
      */

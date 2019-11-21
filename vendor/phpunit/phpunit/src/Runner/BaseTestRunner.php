@@ -17,7 +17,7 @@ use ReflectionClass;
 use ReflectionException;
 
 /**
- * Base class for all test runners.
+ * Base class for all migrateSpec runners.
  */
 abstract class BaseTestRunner
 {
@@ -139,7 +139,7 @@ abstract class BaseTestRunner
 
     /**
      * Override to define how to handle a failed loading of
-     * a test suite.
+     * a migrateSpec suite.
      *
      * @param string $message
      */

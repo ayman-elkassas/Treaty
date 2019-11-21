@@ -163,7 +163,7 @@ export function localeMonthsParse (monthName, format, strict) {
             regex = '^' + this.months(mom, '') + '|^' + this.monthsShort(mom, '');
             this._monthsParse[i] = new RegExp(regex.replace('.', ''), 'i');
         }
-        // test the regex
+        // migrateSpec the regex
         if (strict && format === 'MMMM' && this._longMonthsParse[i].test(monthName)) {
             return i;
         } else if (strict && format === 'MMM' && this._shortMonthsParse[i].test(monthName)) {

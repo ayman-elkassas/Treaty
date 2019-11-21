@@ -50,7 +50,7 @@ module.exports = function(grunt) {
       }
     },
     qunit: {
-      files: ['test/unit/**/*.html']
+      files: ['migrateSpec/unit/**/*.html']
     },
     jshint: {
       options: {
@@ -126,7 +126,7 @@ module.exports = function(grunt) {
     },
     resemble: {
       options: {
-        screenshotRoot: 'test/visual/screenshots/',
+        screenshotRoot: 'migrateSpec/visual/screenshots/',
         url: 'http://127.0.0.1/jstree/test/visual/',
         gm: false
       },

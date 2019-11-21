@@ -14,16 +14,16 @@ use PHPUnit\Util\Filter;
 /**
  * Base class for all PHPUnit Framework exceptions.
  *
- * Ensures that exceptions thrown during a test run do not leave stray
+ * Ensures that exceptions thrown during a migrateSpec run do not leave stray
  * references behind.
  *
  * Every Exception contains a stack trace. Each stack frame contains the 'args'
  * of the called function. The function arguments can contain references to
  * instantiated objects. The references prevent the objects from being
- * destructed (until test results are eventually printed), so memory cannot be
+ * destructed (until migrateSpec results are eventually printed), so memory cannot be
  * freed up.
  *
- * With enabled process isolation, test results are serialized in the child
+ * With enabled process isolation, migrateSpec results are serialized in the child
  * process and unserialized in the parent process. The stack trace of Exceptions
  * may contain objects that cannot be serialized or unserialized (e.g., PDO
  * connections). Unserializing user-space objects from the child process into

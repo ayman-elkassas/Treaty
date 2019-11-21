@@ -29,7 +29,7 @@ class ElasticaFormatterTest extends \PHPUnit_Framework_TestCase
      */
     public function testFormat()
     {
-        // test log message
+        // migrateSpec log message
         $msg = array(
             'level' => Logger::ERROR,
             'level_name' => 'ERROR',

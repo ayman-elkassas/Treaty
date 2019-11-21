@@ -7,7 +7,7 @@ use Illuminate\Contracts\Console\Kernel;
 trait DatabaseMigrations
 {
     /**
-     * Define hooks to migrate the database before and after each test.
+     * Define hooks to migrate the database before and after each migrateSpec.
      *
      * @return void
      */

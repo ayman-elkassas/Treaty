@@ -68,7 +68,7 @@ test('dropdown is positioned down with static margins', function (assert) {
         marginLeft: '10px'
     });
 
-    var $container = $('<span>test</span>');
+    var $container = $('<span>migrateSpec</span>');
     var container = new MockContainer();
 
     $('#qunit-fixture').empty();
@@ -128,7 +128,7 @@ test('dropdown is positioned down with absolute offsets', function (assert) {
         left: '5px'
     });
 
-    var $container = $('<span>test</span>');
+    var $container = $('<span>migrateSpec</span>');
     var container = new MockContainer();
 
     $parent.appendTo($('#qunit-fixture'));

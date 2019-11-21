@@ -131,7 +131,7 @@ module.exports = function (grunt) {
           tags: ['tests', 'qunit'],
           urls: testUrls,
           testTimeout: 8000,
-          testname: 'QUnit test for Select2',
+          testname: 'QUnit migrateSpec for Select2',
           browsers: [
             {
               browserName: 'internet explorer',

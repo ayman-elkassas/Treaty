@@ -101,7 +101,7 @@ EOT;
     }
 
     /**
-     * Handler for 'on test' event.
+     * Handler for 'on migrateSpec' event.
      *
      * @param string $name
      * @param bool   $success

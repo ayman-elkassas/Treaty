@@ -59,17 +59,17 @@ class ProcessTest extends TestCase
         }
 
         // Check that it works fine if the CWD exists
-        $cmd = new Process('echo test', __DIR__);
+        $cmd = new Process('echo migrateSpec', __DIR__);
         $cmd->run();
 
-        $cmd = new Process('echo test', __DIR__.'/notfound/');
+        $cmd = new Process('echo migrateSpec', __DIR__.'/notfound/');
         $cmd->run();
     }
 
     public function testThatProcessDoesNotThrowWarningDuringRun()
     {
         if ('\\' === \DIRECTORY_SEPARATOR) {
-            $this->markTestSkipped('This test is transient on Windows');
+            $this->markTestSkipped('This migrateSpec is transient on Windows');
         }
         @trigger_error('Test Error', E_USER_NOTICE);
         $process = $this->getProcessForCode('sleep(3)');
@@ -483,7 +483,7 @@ class ProcessTest extends TestCase
     public function testTTYInWindowsEnvironment()
     {
         if ('\\' !== \DIRECTORY_SEPARATOR) {
-            $this->markTestSkipped('This test is for Windows platform only');
+            $this->markTestSkipped('This migrateSpec is for Windows platform only');
         }
 
         $process = $this->getProcess('echo "foo" >> /dev/null');

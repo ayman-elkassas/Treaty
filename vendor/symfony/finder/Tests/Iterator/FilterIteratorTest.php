@@ -22,7 +22,7 @@ class FilterIteratorTest extends RealIteratorTestCase
     {
         $i = new \FilesystemIterator($this->toAbsolute());
 
-        // it is expected that there are test.py test.php in the tmpDir
+        // it is expected that there are migrateSpec.py migrateSpec.php in the tmpDir
         $i = $this->getMockForAbstractClass('Symfony\Component\Finder\Iterator\FilterIterator', [$i]);
         $i->expects($this->any())
             ->method('accept')

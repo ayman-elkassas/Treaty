@@ -35,7 +35,7 @@ class SizesDataTable extends DataTable
      */
     public function query()
     {
-        return Size::query();
+        return Size::query()->with('dept_id')->select('sizes.*');
     }
 
     //lang
@@ -163,12 +163,12 @@ class SizesDataTable extends DataTable
 	        [
 		        'name'=>'name_en',
 		        'data'=>'name_en',
-		        'title'=>'Color name En'
+		        'title'=>'Size name En'
 	        ],
 	        [
 		        'name'=>'name_ar',
 		        'data'=>'name_ar',
-		        'title'=>'Color name En'
+		        'title'=>'Size name En'
 	        ],
             [
                 'name'=>'is_public',
@@ -176,8 +176,8 @@ class SizesDataTable extends DataTable
                 'title'=>'Is public'
             ],
             [
-                'name'=>'dept_id',
-                'data'=>'dept_id',
+                'name'=>'dept_id.dep_name_en',
+                'data'=>'dept_id.dep_name_en',
                 'title'=>'department'
             ],
 	        [
@@ -218,6 +218,6 @@ class SizesDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'malls_' . date('YmdHis');
+        return 'sizes_' . date('YmdHis');
     }
 }

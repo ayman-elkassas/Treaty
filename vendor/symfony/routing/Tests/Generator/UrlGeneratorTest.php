@@ -300,30 +300,30 @@ class UrlGeneratorTest extends TestCase
 
     public function testNullForOptionalParameterIsIgnored()
     {
-        $routes = $this->getRoutes('test', new Route('/test/{default}', ['default' => 0]));
+        $routes = $this->getRoutes('test', new Route('/migrateSpec/{default}', ['default' => 0]));
 
-        $this->assertEquals('/app.php/test', $this->getGenerator($routes)->generate('test', ['default' => null]));
+        $this->assertEquals('/app.php/migrateSpec', $this->getGenerator($routes)->generate('test', ['default' => null]));
     }
 
     public function testQueryParamSameAsDefault()
     {
-        $routes = $this->getRoutes('test', new Route('/test', ['page' => 1]));
+        $routes = $this->getRoutes('test', new Route('/migrateSpec', ['page' => 1]));
 
-        $this->assertSame('/app.php/test?page=2', $this->getGenerator($routes)->generate('test', ['page' => 2]));
-        $this->assertSame('/app.php/test', $this->getGenerator($routes)->generate('test', ['page' => 1]));
-        $this->assertSame('/app.php/test', $this->getGenerator($routes)->generate('test', ['page' => '1']));
-        $this->assertSame('/app.php/test', $this->getGenerator($routes)->generate('test'));
+        $this->assertSame('/app.php/migrateSpec?page=2', $this->getGenerator($routes)->generate('test', ['page' => 2]));
+        $this->assertSame('/app.php/migrateSpec', $this->getGenerator($routes)->generate('test', ['page' => 1]));
+        $this->assertSame('/app.php/migrateSpec', $this->getGenerator($routes)->generate('test', ['page' => '1']));
+        $this->assertSame('/app.php/migrateSpec', $this->getGenerator($routes)->generate('test'));
     }
 
     public function testArrayQueryParamSameAsDefault()
     {
-        $routes = $this->getRoutes('test', new Route('/test', ['array' => ['foo', 'bar']]));
+        $routes = $this->getRoutes('test', new Route('/migrateSpec', ['array' => ['foo', 'bar']]));
 
-        $this->assertSame('/app.php/test?array%5B0%5D=bar&array%5B1%5D=foo', $this->getGenerator($routes)->generate('test', ['array' => ['bar', 'foo']]));
-        $this->assertSame('/app.php/test?array%5Ba%5D=foo&array%5Bb%5D=bar', $this->getGenerator($routes)->generate('test', ['array' => ['a' => 'foo', 'b' => 'bar']]));
-        $this->assertSame('/app.php/test', $this->getGenerator($routes)->generate('test', ['array' => ['foo', 'bar']]));
-        $this->assertSame('/app.php/test', $this->getGenerator($routes)->generate('test', ['array' => [1 => 'bar', 0 => 'foo']]));
-        $this->assertSame('/app.php/test', $this->getGenerator($routes)->generate('test'));
+        $this->assertSame('/app.php/migrateSpec?array%5B0%5D=bar&array%5B1%5D=foo', $this->getGenerator($routes)->generate('test', ['array' => ['bar', 'foo']]));
+        $this->assertSame('/app.php/migrateSpec?array%5Ba%5D=foo&array%5Bb%5D=bar', $this->getGenerator($routes)->generate('test', ['array' => ['a' => 'foo', 'b' => 'bar']]));
+        $this->assertSame('/app.php/migrateSpec', $this->getGenerator($routes)->generate('test', ['array' => ['foo', 'bar']]));
+        $this->assertSame('/app.php/migrateSpec', $this->getGenerator($routes)->generate('test', ['array' => [1 => 'bar', 0 => 'foo']]));
+        $this->assertSame('/app.php/migrateSpec', $this->getGenerator($routes)->generate('test'));
     }
 
     public function testGenerateWithSpecialRouteName()

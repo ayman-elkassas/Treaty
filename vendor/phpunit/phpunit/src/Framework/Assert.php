@@ -2706,7 +2706,7 @@ abstract class Assert
     }
 
     /**
-     * Fails a test with the given message.
+     * Fails a migrateSpec with the given message.
      *
      * @param string $message
      *
@@ -2877,7 +2877,7 @@ abstract class Assert
     }
 
     /**
-     * Mark the test as incomplete.
+     * Mark the migrateSpec as incomplete.
      *
      * @param string $message
      *
@@ -2889,7 +2889,7 @@ abstract class Assert
     }
 
     /**
-     * Mark the test as skipped.
+     * Mark the migrateSpec as skipped.
      *
      * @param string $message
      *

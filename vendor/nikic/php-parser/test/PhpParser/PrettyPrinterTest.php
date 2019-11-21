@@ -73,7 +73,7 @@ class PrettyPrinterTest extends CodeTestAbstract
     }
 
     public function provideTestPrettyPrintFile() {
-        return $this->getTests(__DIR__ . '/../code/prettyPrinter', 'file-test');
+        return $this->getTests(__DIR__ . '/../code/prettyPrinter', 'file-migrateSpec');
     }
 
     public function testPrettyPrintExpr() {
@@ -260,7 +260,7 @@ CODE
      */
     public function testRoundTripPrint($name, $code, $expected, $modeLine) {
         /**
-         * This test makes sure that the format-preserving pretty printer round-trips for all
+         * This migrateSpec makes sure that the format-preserving pretty printer round-trips for all
          * the pretty printer tests (i.e. returns the input if no changes occurred).
          */
 

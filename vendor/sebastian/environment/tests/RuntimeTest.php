@@ -31,7 +31,7 @@ final class RuntimeTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testAbilityToCollectCodeCoverageCanBeAssessed()/*: void*/
     {
@@ -40,7 +40,7 @@ final class RuntimeTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testBinaryCanBeRetrieved()/*: void*/
     {
@@ -49,7 +49,7 @@ final class RuntimeTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testCanBeDetected()/*: void*/
     {
@@ -58,7 +58,7 @@ final class RuntimeTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testCanBeDetected2()/*: void*/
     {
@@ -67,7 +67,7 @@ final class RuntimeTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testXdebugCanBeDetected()/*: void*/
     {
@@ -76,7 +76,7 @@ final class RuntimeTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testNameAndVersionCanBeRetrieved()/*: void*/
     {
@@ -85,7 +85,7 @@ final class RuntimeTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testNameCanBeRetrieved()/*: void*/
     {
@@ -94,7 +94,7 @@ final class RuntimeTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testVersionCanBeRetrieved()/*: void*/
     {
@@ -103,7 +103,7 @@ final class RuntimeTest extends TestCase
 
     /**
      * @todo Now that this component is PHP 7-only and uses return type declarations
-     * this test makes even less sense than before
+     * this migrateSpec makes even less sense than before
      */
     public function testVendorUrlCanBeRetrieved()/*: void*/
     {

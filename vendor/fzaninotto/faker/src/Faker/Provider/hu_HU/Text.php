@@ -2965,7 +2965,7 @@ Lelkesültnek alig nevezhető "igen" hangzott el. Azért a herceg elismeréssel 
 - És te Anna Alvarez, akarod férjedül Bob Warinst?
 - Igen...
 Ekkor a pap összetette a kezüket, és úgy fogta, miközben a házastársi kötelességekre figyelmeztette őket. Majd így szólt.
-- Bob Warins! Anna Alvarez! Isten és ember előtt házastársak vagytok, immár egy test, egy lélek!
+- Bob Warins! Anna Alvarez! Isten és ember előtt házastársak vagytok, immár egy migrateSpec, egy lélek!
 Valamennyi rabló fedetlen fővel állt, és nagyon komolyak voltak. A misszionárius elővette az imakönyvét... Vöröskarom valami egészen furcsát érzett. Dacára, hogy aki mellette áll, az egy torz képű, piszkos alvilági szörny... De Anna Alvarez mégiscsak polgárnő volt, aki életében először esküdött meg arra, hogy holtáig szeretni fog egy embert...
 - Az isten áldása kísérjen utatokon, gyermekeim - mondta végül a misszionárius, és elment.
 Senki sem sietett szerencsekívánatait kifejezni az ifjú párnak.

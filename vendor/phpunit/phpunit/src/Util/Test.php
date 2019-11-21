@@ -175,7 +175,7 @@ class Test
     }
 
     /**
-     * Returns the requirements for a test.
+     * Returns the requirements for a migrateSpec.
      *
      * @param string $className
      * @param string $methodName
@@ -247,7 +247,7 @@ class Test
     }
 
     /**
-     * Returns the missing requirements for a test.
+     * Returns the missing requirements for a migrateSpec.
      *
      * @param string $className
      * @param string $methodName
@@ -350,7 +350,7 @@ class Test
     }
 
     /**
-     * Returns the expected exception for a test.
+     * Returns the expected exception for a migrateSpec.
      *
      * @param string $className
      * @param string $methodName
@@ -696,7 +696,7 @@ class Test
     }
 
     /**
-     * Returns the backup settings for a test.
+     * Returns the backup settings for a migrateSpec.
      *
      * @param string $className
      * @param string $methodName
@@ -720,7 +720,7 @@ class Test
     }
 
     /**
-     * Returns the dependencies for a test class or method.
+     * Returns the dependencies for a migrateSpec class or method.
      *
      * @param string $className
      * @param string $methodName
@@ -751,7 +751,7 @@ class Test
     }
 
     /**
-     * Returns the error handler settings for a test.
+     * Returns the error handler settings for a migrateSpec.
      *
      * @param string $className
      * @param string $methodName
@@ -768,7 +768,7 @@ class Test
     }
 
     /**
-     * Returns the groups for a test class or method.
+     * Returns the groups for a migrateSpec class or method.
      *
      * @param string $className
      * @param string $methodName
@@ -820,7 +820,7 @@ class Test
     }
 
     /**
-     * Returns the size of the test.
+     * Returns the size of the migrateSpec.
      *
      * @param string $className
      * @param string $methodName
@@ -849,7 +849,7 @@ class Test
     }
 
     /**
-     * Returns the process isolation settings for a test.
+     * Returns the process isolation settings for a migrateSpec.
      *
      * @param string $className
      * @param string $methodName
@@ -877,7 +877,7 @@ class Test
     }
 
     /**
-     * Returns the preserve global state settings for a test.
+     * Returns the preserve global state settings for a migrateSpec.
      *
      * @param string $className
      * @param string $methodName

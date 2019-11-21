@@ -105,7 +105,7 @@ class XmlResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Incomplete test.
+     * Incomplete migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -116,7 +116,7 @@ class XmlResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Risky test.
+     * Risky migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -127,7 +127,7 @@ class XmlResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Skipped test.
+     * Skipped migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -138,7 +138,7 @@ class XmlResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * A test suite started.
+     * A migrateSpec suite started.
      *
      * @param TestSuite $suite
      */
@@ -147,7 +147,7 @@ class XmlResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * A test suite ended.
+     * A migrateSpec suite ended.
      *
      * @param TestSuite $suite
      */
@@ -156,7 +156,7 @@ class XmlResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * A test started.
+     * A migrateSpec started.
      *
      * @param Test $test
      */
@@ -166,7 +166,7 @@ class XmlResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * A test ended.
+     * A migrateSpec ended.
      *
      * @param Test  $test
      * @param float $time

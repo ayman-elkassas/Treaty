@@ -171,7 +171,7 @@ class Swift_KeyCache_ArrayKeyCacheTest extends \PHPUnit\Framework\TestCase
 
     public function testDataCanBeExportedToByteStream()
     {
-        //See acceptance test for more detail
+        //See acceptance migrateSpec for more detail
         $is = $this->createInputStream();
         $is->expects($this->atLeastOnce())
            ->method('write');

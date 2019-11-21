@@ -7,7 +7,7 @@ use Mockery\Exception;
 
 class ProxyMockingTest extends MockeryTestCase
 {
-    /** @test */
+    /** @migrateSpec */
     public function finalClassCannotBeMocked()
     {
         $this->expectException(Exception::class);
@@ -15,7 +15,7 @@ class ProxyMockingTest extends MockeryTestCase
         mock(UnmockableClass::class);
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function passesThruAnyMethod()
     {
         $mock = mock(new UnmockableClass());
@@ -23,7 +23,7 @@ class ProxyMockingTest extends MockeryTestCase
         $this->assertSame(1, $mock->anyMethod());
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function passesThruVirtualMethods()
     {
         $mock = mock(new UnmockableClass());

@@ -117,7 +117,7 @@ class KernelTest extends TestCase
 
     public function testBootSetsTheBootedFlagToTrue()
     {
-        // use test kernel to access isBooted()
+        // use migrateSpec kernel to access isBooted()
         $kernel = $this->getKernelForTest(['initializeBundles', 'initializeContainer']);
         $kernel->boot();
 
@@ -633,7 +633,7 @@ EOF;
         $parent = $this->getBundle(null, null, 'ParentABundle');
         $child = $this->getBundle(null, 'ParentABundle', 'ChildABundle');
 
-        // use test kernel so we can access getBundleMap()
+        // use migrateSpec kernel so we can access getBundleMap()
         $kernel = $this->getKernelForTest(['registerBundles']);
         $kernel
             ->expects($this->once())
@@ -655,7 +655,7 @@ EOF;
         $parent = $this->getBundle(null, 'GrandParentBBundle', 'ParentBBundle');
         $child = $this->getBundle(null, 'ParentBBundle', 'ChildBBundle');
 
-        // use test kernel so we can access getBundleMap()
+        // use migrateSpec kernel so we can access getBundleMap()
         $kernel = $this->getKernelForTest(['registerBundles']);
         $kernel
             ->expects($this->once())
@@ -691,7 +691,7 @@ EOF;
         $parent = $this->getBundle(null, 'GrandParentCBundle', 'ParentCBundle');
         $child = $this->getBundle(null, 'ParentCBundle', 'ChildCBundle');
 
-        // use test kernel so we can access getBundleMap()
+        // use migrateSpec kernel so we can access getBundleMap()
         $kernel = $this->getKernelForTest(['registerBundles']);
         $kernel
             ->expects($this->once())
@@ -866,7 +866,7 @@ EOF;
         $kernel = new PassKernel();
         $kernel->boot();
 
-        $this->assertTrue($kernel->getContainer()->getParameter('test.processed'));
+        $this->assertTrue($kernel->getContainer()->getParameter('migrateSpec.processed'));
     }
 
     public function testServicesResetter()
@@ -1070,6 +1070,6 @@ class PassKernel extends CustomProjectDirKernel implements CompilerPassInterface
 
     public function process(ContainerBuilder $container)
     {
-        $container->setParameter('test.processed', true);
+        $container->setParameter('migrateSpec.processed', true);
     }
 }

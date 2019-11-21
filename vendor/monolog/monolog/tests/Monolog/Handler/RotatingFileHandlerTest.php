@@ -32,7 +32,7 @@ class RotatingFileHandlerTest extends TestCase
         $dir = __DIR__.'/Fixtures';
         chmod($dir, 0777);
         if (!is_writable($dir)) {
-            $this->markTestSkipped($dir.' must be writable to test the RotatingFileHandler.');
+            $this->markTestSkipped($dir.' must be writable to migrateSpec the RotatingFileHandler.');
         }
         $this->lastError = null;
         $self = $this;

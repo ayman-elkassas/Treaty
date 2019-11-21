@@ -26,7 +26,7 @@ class InternetTest extends TestCase
     }
 
     /**
-     * @test
+     * @migrateSpec
      */
     public function emailIsValid()
     {

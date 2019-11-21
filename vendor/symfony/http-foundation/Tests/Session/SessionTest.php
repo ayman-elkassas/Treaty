@@ -95,9 +95,9 @@ class SessionTest extends TestCase
     public function testSetName()
     {
         $this->assertEquals('MOCKSESSID', $this->session->getName());
-        $this->session->setName('session.test.com');
+        $this->session->setName('session.migrateSpec.com');
         $this->session->start();
-        $this->assertEquals('session.test.com', $this->session->getName());
+        $this->assertEquals('session.migrateSpec.com', $this->session->getName());
     }
 
     public function testGet()

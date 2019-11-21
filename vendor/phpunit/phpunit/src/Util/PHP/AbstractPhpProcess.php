@@ -184,7 +184,7 @@ abstract class AbstractPhpProcess
     }
 
     /**
-     * Runs a single test in a separate PHP process.
+     * Runs a single migrateSpec in a separate PHP process.
      *
      * @param string     $job
      * @param Test       $test

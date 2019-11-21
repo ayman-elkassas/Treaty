@@ -187,7 +187,7 @@ class NativeSessionStorageTest extends TestCase
     public function testSessionOptions()
     {
         if (\defined('HHVM_VERSION')) {
-            $this->markTestSkipped('HHVM is not handled in this test case.');
+            $this->markTestSkipped('HHVM is not handled in this migrateSpec case.');
         }
 
         $options = [

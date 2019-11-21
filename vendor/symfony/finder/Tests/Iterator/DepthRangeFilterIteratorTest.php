@@ -34,9 +34,9 @@ class DepthRangeFilterIteratorTest extends RealIteratorTestCase
     {
         $lessThan1 = [
             '.git',
-            'test.py',
+            'migrateSpec.py',
             'foo',
-            'test.php',
+            'migrateSpec.php',
             'toto',
             '.foo',
             '.bar',
@@ -45,10 +45,10 @@ class DepthRangeFilterIteratorTest extends RealIteratorTestCase
 
         $lessThanOrEqualTo1 = [
             '.git',
-            'test.py',
+            'migrateSpec.py',
             'foo',
             'foo/bar.tmp',
-            'test.php',
+            'migrateSpec.php',
             'toto',
             'toto/.git',
             '.foo',

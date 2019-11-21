@@ -17,7 +17,7 @@ use Prophecy\Prophecy\MethodProphecy;
 
 /**
  * Prediction interface.
- * Predictions are logical test blocks, tied to `should...` keyword.
+ * Predictions are logical migrateSpec blocks, tied to `should...` keyword.
  *
  * @author Konstantin Kudryashov <ever.zet@gmail.com>
  */

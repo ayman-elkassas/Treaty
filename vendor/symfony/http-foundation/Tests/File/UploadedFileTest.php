@@ -94,7 +94,7 @@ class UploadedFileTest extends TestCase
     {
         $file = new UploadedFile(
             __DIR__.'/Fixtures/case-sensitive-mime-type.xlsm',
-            'test.xlsm',
+            'migrateSpec.xlsm',
             'application/vnd.ms-excel.sheet.macroEnabled.12',
             filesize(__DIR__.'/Fixtures/case-sensitive-mime-type.xlsm'),
             null
@@ -160,9 +160,9 @@ class UploadedFileTest extends TestCase
 
     public function testMoveLocalFileIsAllowedInTestMode()
     {
-        $path = __DIR__.'/Fixtures/test.copy.gif';
+        $path = __DIR__.'/Fixtures/migrateSpec.copy.gif';
         $targetDir = __DIR__.'/Fixtures/directory';
-        $targetPath = $targetDir.'/test.copy.gif';
+        $targetPath = $targetDir.'/migrateSpec.copy.gif';
         @unlink($path);
         @unlink($targetPath);
         copy(__DIR__.'/Fixtures/test.gif', $path);

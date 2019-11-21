@@ -28,7 +28,7 @@ var defined = {
 	document: window && window.document !== undefined,
 	setTimeout: setTimeout !== undefined,
 	sessionStorage: ( function() {
-		var x = "qunit-test-string";
+		var x = "qunit-migrateSpec-string";
 		try {
 			sessionStorage.setItem( x, x );
 			sessionStorage.removeItem( x );
@@ -232,7 +232,7 @@ var config = {
 	// By default, modify document.title when suite is done
 	altertitle: true,
 
-	// HTML Reporter: collapse every test except the first failing test
+	// HTML Reporter: collapse every migrateSpec except the first failing migrateSpec
 	// If false, all failing tests will be expanded
 	collapse: true,
 
@@ -388,7 +388,7 @@ QUnit.version = "1.23.1";
 
 extend( QUnit, {
 
-	// Call on start of module test to prepend name to all tests
+	// Call on start of module migrateSpec to prepend name to all tests
 	module: function( name, testEnvironment, executeNow ) {
 		var module, moduleFns;
 		var currentModule = config.currentModule;
@@ -477,11 +477,11 @@ extend( QUnit, {
 			globalStartCalled = true;
 
 			if ( runStarted ) {
-				throw new Error( "Called start() outside of a test context while already started" );
+				throw new Error( "Called start() outside of a migrateSpec context while already started" );
 			} else if ( globalStartAlreadyCalled || count > 1 ) {
-				throw new Error( "Called start() outside of a test context too many times" );
+				throw new Error( "Called start() outside of a migrateSpec context too many times" );
 			} else if ( config.autostart ) {
-				throw new Error( "Called start() outside of a test context when " +
+				throw new Error( "Called start() outside of a migrateSpec context when " +
 					"QUnit.config.autostart was true" );
 			} else if ( !config.pageLoaded ) {
 
@@ -491,7 +491,7 @@ extend( QUnit, {
 			}
 		} else {
 
-			// If a test is running, adjust its semaphore
+			// If a migrateSpec is running, adjust its semaphore
 			config.current.semaphore -= count || 1;
 
 			// If semaphore is non-numeric, throw error
@@ -515,7 +515,7 @@ extend( QUnit, {
 				config.current.semaphore = 0;
 
 				QUnit.pushFailure(
-					"Called start() while already started (test's semaphore was 0 already)",
+					"Called start() while already started (migrateSpec's semaphore was 0 already)",
 					sourceFromStacktrace( 2 )
 				);
 				return;
@@ -528,12 +528,12 @@ extend( QUnit, {
 	// DEPRECATED: QUnit.stop() will be removed in QUnit 2.0.
 	stop: function( count ) {
 
-		// If there isn't a test running, don't allow QUnit.stop() to be called
+		// If there isn't a migrateSpec running, don't allow QUnit.stop() to be called
 		if ( !config.current ) {
-			throw new Error( "Called stop() outside of a test context" );
+			throw new Error( "Called stop() outside of a migrateSpec context" );
 		}
 
-		// If a test is running, adjust its semaphore
+		// If a migrateSpec is running, adjust its semaphore
 		config.current.semaphore += count || 1;
 
 		pauseProcessing();
@@ -579,10 +579,10 @@ function begin() {
 	var i, l,
 		modulesLog = [];
 
-	// If the test run hasn't officially begun yet
+	// If the migrateSpec run hasn't officially begun yet
 	if ( !config.started ) {
 
-		// Record the time of the test run's beginning
+		// Record the time of the migrateSpec run's beginning
 		config.started = now();
 
 		verifyLoggingCallbacks();
@@ -592,7 +592,7 @@ function begin() {
 			config.modules.shift();
 		}
 
-		// Avoid unnecessary information by not logging modules' test environments
+		// Avoid unnecessary information by not logging modules' migrateSpec environments
 		for ( i = 0, l = config.modules.length; i < l; i++ ) {
 			modulesLog.push( {
 				name: config.modules[ i ].name,
@@ -600,7 +600,7 @@ function begin() {
 			} );
 		}
 
-		// The test run is officially beginning now
+		// The migrateSpec run is officially beginning now
 		runLoggingCallbacks( "begin", {
 			totalTests: Test.count,
 			modules: modulesLog
@@ -765,7 +765,7 @@ Test.prototype = {
 			this.module !== config.previousModule ||
 
 				// They could be equal (both undefined) but if the previousModule property doesn't
-				// yet exist it means this is the first test in a suite that isn't wrapped in a
+				// yet exist it means this is the first migrateSpec in a suite that isn't wrapped in a
 				// module, in which case we'll just emit a moduleStart event for 'undefined'.
 				// Without this, reporters can get testStart before moduleStart  which is a problem.
 				!hasOwn.call( config, "previousModule" )
@@ -827,10 +827,10 @@ Test.prototype = {
 		try {
 			runTest( this );
 		} catch ( e ) {
-			this.pushFailure( "Died on test #" + ( this.assertions.length + 1 ) + " " +
+			this.pushFailure( "Died on migrateSpec #" + ( this.assertions.length + 1 ) + " " +
 				this.stack + ": " + ( e.message || e ), extractStacktrace( e, 0 ) );
 
-			// Else next test will carry the responsibility
+			// Else next migrateSpec will carry the responsibility
 			saveGlobal();
 
 			// Restart the tests if they're blocking
@@ -983,7 +983,7 @@ Test.prototype = {
 
 		// Prioritize previously failed tests, detected from sessionStorage
 		priority = QUnit.config.reorder && defined.sessionStorage &&
-				+sessionStorage.getItem( "qunit-test-" + this.module.name + "-" + this.testName );
+				+sessionStorage.getItem( "qunit-migrateSpec-" + this.module.name + "-" + this.testName );
 
 		return synchronize( run, priority, config.seed );
 	},
@@ -1022,7 +1022,7 @@ Test.prototype = {
 
 	pushFailure: function( message, source, actual ) {
 		if ( !( this instanceof Test ) ) {
-			throw new Error( "pushFailure() assertion outside test context, was " +
+			throw new Error( "pushFailure() assertion outside migrateSpec context, was " +
 				sourceFromStacktrace( 2 ) );
 		}
 
@@ -1064,7 +1064,7 @@ Test.prototype = {
 							" " + test.testName + ": " + ( error.message || error );
 						test.pushFailure( message, extractStacktrace( error, 0 ) );
 
-						// Else next test will carry the responsibility
+						// Else next migrateSpec will carry the responsibility
 						saveGlobal();
 
 						// Unblock
@@ -1153,9 +1153,9 @@ Test.prototype = {
 	}
 };
 
-// Resets the test setup. Useful for tests that modify the DOM.
+// Resets the migrateSpec setup. Useful for tests that modify the DOM.
 /*
-DEPRECATED: Use multiple tests instead of resetting inside a test.
+DEPRECATED: Use multiple tests instead of resetting inside a migrateSpec.
 Use testStart or testDone for custom cleanup.
 This method will throw an error in 2.0, and will be removed in 2.1
 */
@@ -1177,11 +1177,11 @@ QUnit.reset = function() {
 
 QUnit.pushFailure = function() {
 	if ( !QUnit.config.current ) {
-		throw new Error( "pushFailure() assertion outside test context, in " +
+		throw new Error( "pushFailure() assertion outside migrateSpec context, in " +
 			sourceFromStacktrace( 2 ) );
 	}
 
-	// Gets current test obj
+	// Gets current migrateSpec obj
 	var currentTest = QUnit.config.current;
 
 	return currentTest.pushFailure.apply( currentTest, arguments );
@@ -1305,7 +1305,7 @@ function asyncTest( testName, expected, callback ) {
 	QUnit.test( testName, expected, callback, true );
 }
 
-// Will be exposed as QUnit.test
+// Will be exposed as QUnit.migrateSpec
 function test( testName, expected, callback, async ) {
 	if ( focused )  { return; }
 
@@ -1369,7 +1369,7 @@ function Assert( testContext ) {
 // Assert helpers
 QUnit.assert = Assert.prototype = {
 
-	// Specify the number of expected assertions to guarantee that failed test
+	// Specify the number of expected assertions to guarantee that failed migrateSpec
 	// (no assertions are run at all) don't slip through.
 	expect: function( asserts ) {
 		if ( arguments.length === 1 ) {
@@ -1412,7 +1412,7 @@ QUnit.assert = Assert.prototype = {
 		};
 	},
 
-	// Exports test.push() to the user API
+	// Exports migrateSpec.push() to the user API
 	// Alias of pushResult.
 	push: function( result, actual, expected, message, negative ) {
 		var currentAssert = this instanceof Assert ? this : QUnit.config.current.assert;
@@ -1434,10 +1434,10 @@ QUnit.assert = Assert.prototype = {
 		// Backwards compatibility fix.
 		// Allows the direct use of global exported assertions and QUnit.assert.*
 		// Although, it's use is not recommended as it can leak assertions
-		// to other tests from async tests, because we only get a reference to the current test,
-		// not exactly the test where assertion were intended to be called.
+		// to other tests from async tests, because we only get a reference to the current migrateSpec,
+		// not exactly the migrateSpec where assertion were intended to be called.
 		if ( !currentTest ) {
-			throw new Error( "assertion outside test context, in " + sourceFromStacktrace( 2 ) );
+			throw new Error( "assertion outside migrateSpec context, in " + sourceFromStacktrace( 2 ) );
 		}
 
 		if ( currentTest.usedAsync === true && currentTest.semaphore === 0 ) {
@@ -2271,7 +2271,7 @@ var urlParams = getUrlParams();
 
 QUnit.urlParams = urlParams;
 
-// Match module/test by inclusion in an array
+// Match module/migrateSpec by inclusion in an array
 QUnit.config.moduleId = [].concat( urlParams.moduleId || [] );
 QUnit.config.testId = [].concat( urlParams.testId || [] );
 
@@ -2300,7 +2300,7 @@ QUnit.config.urlConfig.push(
 	{
 		id: "noglobals",
 		label: "Check for Globals",
-		tooltip: "Enabling this will test if any test introduces new properties on the " +
+		tooltip: "Enabling this will migrateSpec if any migrateSpec introduces new properties on the " +
 			"global object (`window` in Browsers). Stored as query-strings."
 	},
 	{
@@ -2340,7 +2340,7 @@ function getUrlParams() {
 			param = params[ i ].split( "=" );
 			name = decodeURIComponent( param[ 0 ] );
 
-			// Allow just a key to turn on a flag, e.g., test.html?noglobals
+			// Allow just a key to turn on a flag, e.g., migrateSpec.html?noglobals
 			value = param.length === 1 ||
 				decodeURIComponent( param.slice( 1 ).join( "=" ) ) ;
 			if ( urlParams[ name ] ) {
@@ -2385,7 +2385,7 @@ var config = QUnit.config,
 		moduleId: undefined, testId: undefined } ),
 	defined = {
 		sessionStorage: ( function() {
-			var x = "qunit-test-string";
+			var x = "qunit-migrateSpec-string";
 			try {
 				sessionStorage.setItem( x, x );
 				sessionStorage.removeItem( x );
@@ -2853,7 +2853,7 @@ function appendTest( name, testId, moduleName ) {
 	testBlock = document.createElement( "li" );
 	testBlock.appendChild( title );
 	testBlock.appendChild( rerunTrigger );
-	testBlock.id = "qunit-test-output-" + testId;
+	testBlock.id = "qunit-migrateSpec-output-" + testId;
 
 	assertList = document.createElement( "ol" );
 	assertList.className = "qunit-assert-list";
@@ -2929,7 +2929,7 @@ QUnit.done( function( details ) {
 	if ( config.reorder && defined.sessionStorage && details.failed === 0 ) {
 		for ( i = 0; i < sessionStorage.length; i++ ) {
 			key = sessionStorage.key( i++ );
-			if ( key.indexOf( "qunit-test-" ) === 0 ) {
+			if ( key.indexOf( "qunit-migrateSpec-" ) === 0 ) {
 				sessionStorage.removeItem( key );
 			}
 		}
@@ -2948,7 +2948,7 @@ function getNameHtml( name, module ) {
 		nameHtml = "<span class='module-name'>" + escapeText( module ) + "</span>: ";
 	}
 
-	nameHtml += "<span class='test-name'>" + escapeText( name ) + "</span>";
+	nameHtml += "<span class='migrateSpec-name'>" + escapeText( name ) + "</span>";
 
 	return nameHtml;
 }
@@ -2956,7 +2956,7 @@ function getNameHtml( name, module ) {
 QUnit.testStart( function( details ) {
 	var running, testBlock, bad;
 
-	testBlock = id( "qunit-test-output-" + details.testId );
+	testBlock = id( "qunit-migrateSpec-output-" + details.testId );
 	if ( testBlock ) {
 		testBlock.className = "running";
 	} else {
@@ -2968,10 +2968,10 @@ QUnit.testStart( function( details ) {
 	running = id( "qunit-testresult" );
 	if ( running ) {
 		bad = QUnit.config.reorder && defined.sessionStorage &&
-			+sessionStorage.getItem( "qunit-test-" + details.module + "-" + details.name );
+			+sessionStorage.getItem( "qunit-migrateSpec-" + details.module + "-" + details.name );
 
 		running.innerHTML = ( bad ?
-			"Rerunning previously failed test: <br />" :
+			"Rerunning previously failed migrateSpec: <br />" :
 			"Running: <br />" ) +
 			getNameHtml( details.name, details.module );
 	}
@@ -2988,14 +2988,14 @@ QUnit.log( function( details ) {
 	var assertList, assertLi,
 		message, expected, actual, diff,
 		showDiff = false,
-		testItem = id( "qunit-test-output-" + details.testId );
+		testItem = id( "qunit-migrateSpec-output-" + details.testId );
 
 	if ( !testItem ) {
 		return;
 	}
 
 	message = escapeText( details.message ) || ( details.result ? "okay" : "failed" );
-	message = "<span class='test-message'>" + message + "</span>";
+	message = "<span class='migrateSpec-message'>" + message + "</span>";
 	message += "<span class='runtime'>@ " + details.runtime + " ms</span>";
 
 	// The pushFailure doesn't provide details.expected
@@ -3009,13 +3009,13 @@ QUnit.log( function( details ) {
 		}
 
 		actual = QUnit.dump.parse( details.actual );
-		message += "<table><tr class='test-expected'><th>Expected: </th><td><pre>" +
+		message += "<table><tr class='migrateSpec-expected'><th>Expected: </th><td><pre>" +
 			escapeText( expected ) +
 			"</pre></td></tr>";
 
 		if ( actual !== expected ) {
 
-			message += "<tr class='test-actual'><th>Result: </th><td><pre>" +
+			message += "<tr class='migrateSpec-actual'><th>Result: </th><td><pre>" +
 				escapeText( actual ) + "</pre></td></tr>";
 
 			// Don't show diff if actual or expected are booleans
@@ -3029,25 +3029,25 @@ QUnit.log( function( details ) {
 
 			// Don't show diff if expected and actual are totally different
 			if ( showDiff ) {
-				message += "<tr class='test-diff'><th>Diff: </th><td><pre>" +
+				message += "<tr class='migrateSpec-diff'><th>Diff: </th><td><pre>" +
 					diff + "</pre></td></tr>";
 			}
 		} else if ( expected.indexOf( "[object Array]" ) !== -1 ||
 				expected.indexOf( "[object Object]" ) !== -1 ) {
-			message += "<tr class='test-message'><th>Message: </th><td>" +
+			message += "<tr class='migrateSpec-message'><th>Message: </th><td>" +
 				"Diff suppressed as the depth of object is more than current max depth (" +
 				QUnit.config.maxDepth + ").<p>Hint: Use <code>QUnit.dump.maxDepth</code> to " +
 				" run with a higher max depth or <a href='" +
 				escapeText( setUrl( { maxDepth: -1 } ) ) + "'>" +
 				"Rerun</a> without max depth.</p></td></tr>";
 		} else {
-			message += "<tr class='test-message'><th>Message: </th><td>" +
+			message += "<tr class='migrateSpec-message'><th>Message: </th><td>" +
 				"Diff suppressed as the expected and actual results have an equivalent" +
 				" serialization</td></tr>";
 		}
 
 		if ( details.source ) {
-			message += "<tr class='test-source'><th>Source: </th><td><pre>" +
+			message += "<tr class='migrateSpec-source'><th>Source: </th><td><pre>" +
 				escapeText( details.source ) + "</pre></td></tr>";
 		}
 
@@ -3056,7 +3056,7 @@ QUnit.log( function( details ) {
 	// This occurs when pushFailure is set and we have an extracted stack trace
 	} else if ( !details.result && details.source ) {
 		message += "<table>" +
-			"<tr class='test-source'><th>Source: </th><td><pre>" +
+			"<tr class='migrateSpec-source'><th>Source: </th><td><pre>" +
 			escapeText( details.source ) + "</pre></td></tr>" +
 			"</table>";
 	}
@@ -3078,7 +3078,7 @@ QUnit.testDone( function( details ) {
 		return;
 	}
 
-	testItem = id( "qunit-test-output-" + details.testId );
+	testItem = id( "qunit-migrateSpec-output-" + details.testId );
 
 	assertList = testItem.getElementsByTagName( "ol" )[ 0 ];
 
@@ -3088,9 +3088,9 @@ QUnit.testDone( function( details ) {
 	// Store result when possible
 	if ( config.reorder && defined.sessionStorage ) {
 		if ( bad ) {
-			sessionStorage.setItem( "qunit-test-" + details.module + "-" + details.name, bad );
+			sessionStorage.setItem( "qunit-migrateSpec-" + details.module + "-" + details.name, bad );
 		} else {
-			sessionStorage.removeItem( "qunit-test-" + details.module + "-" + details.name );
+			sessionStorage.removeItem( "qunit-migrateSpec-" + details.module + "-" + details.name );
 		}
 	}
 
@@ -3100,7 +3100,7 @@ QUnit.testDone( function( details ) {
 		addClass( assertList, "qunit-collapsed" );
 	} else if ( bad && config.collapse && !collapseNext ) {
 
-		// Skip collapsing the first failing test
+		// Skip collapsing the first failing migrateSpec
 		collapseNext = true;
 	} else {
 
@@ -3108,7 +3108,7 @@ QUnit.testDone( function( details ) {
 		addClass( assertList, "qunit-collapsed" );
 	}
 
-	// The testItem.firstChild is the test name
+	// The testItem.firstChild is the migrateSpec name
 	testTitle = testItem.firstChild;
 
 	testCounts = bad ?
@@ -3137,7 +3137,7 @@ QUnit.testDone( function( details ) {
 		testItem.insertBefore( time, assertList );
 	}
 
-	// Show the source of the test when showing assertions
+	// Show the source of the migrateSpec when showing assertions
 	if ( details.source ) {
 		sourceName = document.createElement( "p" );
 		sourceName.innerHTML = "<strong>Source: </strong>" + details.source;

@@ -468,7 +468,7 @@ class LoggerTest extends \PHPUnit_Framework_TestCase
         $logger = new Logger('foo');
         $handler = new TestHandler;
         $logger->pushHandler($handler);
-        $logger->{$method}('test');
+        $logger->{$method}('migrateSpec');
         list($record) = $handler->getRecords();
         $this->assertEquals($expectedLevel, $record['level']);
     }

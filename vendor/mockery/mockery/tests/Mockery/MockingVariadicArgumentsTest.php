@@ -25,10 +25,10 @@ use Mockery\Adapter\Phpunit\MockeryTestCase;
 
 class MockingVariadicArgumentsTest extends MockeryTestCase
 {
-    /** @test */
+    /** @migrateSpec */
     public function shouldAllowMockingVariadicArguments()
     {
-        $mock = mock("test\Mockery\TestWithVariadicArguments");
+        $mock = mock("migrateSpec\Mockery\TestWithVariadicArguments");
 
         $mock->shouldReceive("foo")->andReturn("notbar");
         $this->assertEquals("notbar", $mock->foo());

@@ -93,7 +93,7 @@ test('backspace will set the search text', function (assert) {
 test('updating selection does not shift the focus', function (assert) {
   // Check for IE 8, which triggers a false negative during testing
   if (window.attachEvent && !window.addEventListener) {
-    // We must expect 0 assertions or the test will fail
+    // We must expect 0 assertions or the migrateSpec will fail
     assert.expect(0);
     return;
   }
@@ -141,7 +141,7 @@ test('updating selection does not shift the focus', function (assert) {
 test('the focus event shifts the focus', function (assert) {
   // Check for IE 8, which triggers a false negative during testing
   if (window.attachEvent && !window.addEventListener) {
-    // We must expect 0 assertions or the test will fail
+    // We must expect 0 assertions or the migrateSpec will fail
     assert.expect(0);
     return;
   }

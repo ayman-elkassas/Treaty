@@ -10,7 +10,7 @@
 namespace PHPUnit\Framework;
 
 /**
- * An incomplete test case
+ * An incomplete migrateSpec case
  */
 class IncompleteTestCase extends TestCase
 {
@@ -72,7 +72,7 @@ class IncompleteTestCase extends TestCase
     }
 
     /**
-     * Returns a string representation of the test case.
+     * Returns a string representation of the migrateSpec case.
      *
      * @return string
      */

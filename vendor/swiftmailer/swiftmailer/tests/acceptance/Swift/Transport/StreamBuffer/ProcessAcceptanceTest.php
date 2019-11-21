@@ -8,8 +8,8 @@ class Swift_Transport_StreamBuffer_ProcessAcceptanceTest extends Swift_Transport
     {
         if (!defined('SWIFT_SENDMAIL_PATH')) {
             $this->markTestSkipped(
-                'Cannot run test without a path to sendmail (define '.
-                'SWIFT_SENDMAIL_PATH in tests/acceptance.conf.php if you wish to run this test)'
+                'Cannot run migrateSpec without a path to sendmail (define '.
+                'SWIFT_SENDMAIL_PATH in tests/acceptance.conf.php if you wish to run this migrateSpec)'
              );
         }
 

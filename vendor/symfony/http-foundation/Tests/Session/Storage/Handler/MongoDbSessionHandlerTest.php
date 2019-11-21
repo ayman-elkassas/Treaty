@@ -55,8 +55,8 @@ class MongoDbSessionHandlerTest extends TestCase
             'data_field' => 'data',
             'time_field' => 'time',
             'expiry_field' => 'expires_at',
-            'database' => 'sf2-test',
-            'collection' => 'session-test',
+            'database' => 'sf2-migrateSpec',
+            'collection' => 'session-migrateSpec',
         ];
 
         $this->storage = new MongoDbSessionHandler($this->mongo, $this->options);
@@ -98,7 +98,7 @@ class MongoDbSessionHandlerTest extends TestCase
             ->willReturn($collection);
 
         // defining the timeout before the actual method call
-        // allows to test for "greater than" values in the $criteria
+        // allows to migrateSpec for "greater than" values in the $criteria
         $testTimeout = time() + 1;
 
         $collection->expects($this->once())
@@ -185,8 +185,8 @@ class MongoDbSessionHandlerTest extends TestCase
             'id_field' => '_id',
             'data_field' => 'data',
             'time_field' => 'time',
-            'database' => 'sf2-test',
-            'collection' => 'session-test',
+            'database' => 'sf2-migrateSpec',
+            'collection' => 'session-migrateSpec',
             'expiry_field' => 'expiresAt',
         ];
 

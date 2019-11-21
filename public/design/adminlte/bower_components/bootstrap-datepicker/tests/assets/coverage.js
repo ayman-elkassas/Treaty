@@ -39,9 +39,9 @@
 
             var result = document.getElementById('qunit-testresult');
             if (result != null) {
-                result.innerHTML = result.innerHTML + ' ' + coverage + ' test coverage of ' + cvgInfo.key;
+                result.innerHTML = result.innerHTML + ' ' + coverage + ' migrateSpec coverage of ' + cvgInfo.key;
             } else {
-                console.log('can\'t find test-result element to update');
+                console.log('can\'t find migrateSpec-result element to update');
             }
         }
     };

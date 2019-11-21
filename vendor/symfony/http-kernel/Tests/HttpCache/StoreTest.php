@@ -108,16 +108,16 @@ class StoreTest extends TestCase
 
     public function testDoesNotFindAnEntryWithLookupWhenNoneExists()
     {
-        $request = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
+        $request = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
 
         $this->assertNull($this->store->lookup($request));
     }
 
     public function testCanonizesUrlsForCacheKeys()
     {
-        $this->storeSimpleEntry($path = '/test?x=y&p=q');
+        $this->storeSimpleEntry($path = '/migrateSpec?x=y&p=q');
         $hitsReq = Request::create($path);
-        $missReq = Request::create('/test?p=x');
+        $missReq = Request::create('/migrateSpec?p=x');
 
         $this->assertNotNull($this->store->lookup($hitsReq));
         $this->assertNull($this->store->lookup($missReq));
@@ -158,15 +158,15 @@ class StoreTest extends TestCase
 
     public function testSucceedsQuietlyWhenInvalidateCalledWithNoMatchingEntries()
     {
-        $req = Request::create('/test');
+        $req = Request::create('/migrateSpec');
         $this->store->invalidate($req);
         $this->assertNull($this->store->lookup($this->request));
     }
 
     public function testDoesNotReturnEntriesThatVaryWithLookup()
     {
-        $req1 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
-        $req2 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Bling', 'HTTP_BAR' => 'Bam']);
+        $req1 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
+        $req2 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Bling', 'HTTP_BAR' => 'Bam']);
         $res = new Response('test', 200, ['Vary' => 'Foo Bar']);
         $this->store->write($req1, $res);
 
@@ -175,8 +175,8 @@ class StoreTest extends TestCase
 
     public function testDoesNotReturnEntriesThatSlightlyVaryWithLookup()
     {
-        $req1 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
-        $req2 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bam']);
+        $req1 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
+        $req2 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bam']);
         $res = new Response('test', 200, ['Vary' => ['Foo', 'Bar']]);
         $this->store->write($req1, $res);
 
@@ -185,48 +185,48 @@ class StoreTest extends TestCase
 
     public function testStoresMultipleResponsesForEachVaryCombination()
     {
-        $req1 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
-        $res1 = new Response('test 1', 200, ['Vary' => 'Foo Bar']);
+        $req1 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
+        $res1 = new Response('migrateSpec 1', 200, ['Vary' => 'Foo Bar']);
         $key = $this->store->write($req1, $res1);
 
-        $req2 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Bling', 'HTTP_BAR' => 'Bam']);
-        $res2 = new Response('test 2', 200, ['Vary' => 'Foo Bar']);
+        $req2 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Bling', 'HTTP_BAR' => 'Bam']);
+        $res2 = new Response('migrateSpec 2', 200, ['Vary' => 'Foo Bar']);
         $this->store->write($req2, $res2);
 
-        $req3 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Baz', 'HTTP_BAR' => 'Boom']);
-        $res3 = new Response('test 3', 200, ['Vary' => 'Foo Bar']);
+        $req3 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Baz', 'HTTP_BAR' => 'Boom']);
+        $res3 = new Response('migrateSpec 3', 200, ['Vary' => 'Foo Bar']);
         $this->store->write($req3, $res3);
 
-        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'test 3')), $this->store->lookup($req3)->getContent());
-        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'test 2')), $this->store->lookup($req2)->getContent());
-        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'test 1')), $this->store->lookup($req1)->getContent());
+        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'migrateSpec 3')), $this->store->lookup($req3)->getContent());
+        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'migrateSpec 2')), $this->store->lookup($req2)->getContent());
+        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'migrateSpec 1')), $this->store->lookup($req1)->getContent());
 
         $this->assertCount(3, $this->getStoreMetadata($key));
     }
 
     public function testOverwritesNonVaryingResponseWithStore()
     {
-        $req1 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
-        $res1 = new Response('test 1', 200, ['Vary' => 'Foo Bar']);
+        $req1 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
+        $res1 = new Response('migrateSpec 1', 200, ['Vary' => 'Foo Bar']);
         $key = $this->store->write($req1, $res1);
-        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'test 1')), $this->store->lookup($req1)->getContent());
+        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'migrateSpec 1')), $this->store->lookup($req1)->getContent());
 
-        $req2 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Bling', 'HTTP_BAR' => 'Bam']);
-        $res2 = new Response('test 2', 200, ['Vary' => 'Foo Bar']);
+        $req2 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Bling', 'HTTP_BAR' => 'Bam']);
+        $res2 = new Response('migrateSpec 2', 200, ['Vary' => 'Foo Bar']);
         $this->store->write($req2, $res2);
-        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'test 2')), $this->store->lookup($req2)->getContent());
+        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'migrateSpec 2')), $this->store->lookup($req2)->getContent());
 
-        $req3 = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
-        $res3 = new Response('test 3', 200, ['Vary' => 'Foo Bar']);
+        $req3 = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
+        $res3 = new Response('migrateSpec 3', 200, ['Vary' => 'Foo Bar']);
         $key = $this->store->write($req3, $res3);
-        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'test 3')), $this->store->lookup($req3)->getContent());
+        $this->assertEquals($this->getStorePath('en'.hash('sha256', 'migrateSpec 3')), $this->store->lookup($req3)->getContent());
 
         $this->assertCount(2, $this->getStoreMetadata($key));
     }
 
     public function testLocking()
     {
-        $req = Request::create('/test', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
+        $req = Request::create('/migrateSpec', 'get', [], [], [], ['HTTP_FOO' => 'Foo', 'HTTP_BAR' => 'Bar']);
         $this->assertTrue($this->store->lock($req));
 
         $path = $this->store->lock($req);
@@ -266,7 +266,7 @@ class StoreTest extends TestCase
     protected function storeSimpleEntry($path = null, $headers = [])
     {
         if (null === $path) {
-            $path = '/test';
+            $path = '/migrateSpec';
         }
 
         $this->request = Request::create($path, 'get', [], [], [], $headers);

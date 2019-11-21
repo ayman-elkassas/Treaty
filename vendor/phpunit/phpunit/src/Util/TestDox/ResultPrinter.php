@@ -173,7 +173,7 @@ abstract class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Incomplete test.
+     * Incomplete migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -190,7 +190,7 @@ abstract class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Risky test.
+     * Risky migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -207,7 +207,7 @@ abstract class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Skipped test.
+     * Skipped migrateSpec.
      *
      * @param Test       $test
      * @param \Exception $e
@@ -242,7 +242,7 @@ abstract class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * A test started.
+     * A migrateSpec started.
      *
      * @param Test $test
      */
@@ -290,7 +290,7 @@ abstract class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * A test ended.
+     * A migrateSpec ended.
      *
      * @param Test  $test
      * @param float $time
@@ -347,7 +347,7 @@ abstract class ResultPrinter extends Printer implements TestListener
     }
 
     /**
-     * Handler for 'on test' event.
+     * Handler for 'on migrateSpec' event.
      *
      * @param string $name
      * @param bool   $success

@@ -213,6 +213,19 @@
                 </ul>
             </li>
 
+            <li class="treeview {{active_menu('sizes')[0]}}">
+                <a href="#">
+                    <i style="color: #00e0e9;" class="fa fa-sign-language"></i> <span>Sizes</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('sizes')[1]}}">
+                    <li class=""><a href="{{aurl('sizes')}}"><i style="color: #009ee9;" class="fa fa-gamepad"></i> Size</a></li>
+                    <li class=""><a href="{{aurl('sizes/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
+                </ul>
+            </li>
+
 
 
             <li class="header">LABELS</li>

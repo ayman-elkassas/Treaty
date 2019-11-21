@@ -6,10 +6,10 @@ use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
 /**
- * Provides a base test class for ensuring compliance with the LoggerInterface.
+ * Provides a base migrateSpec class for ensuring compliance with the LoggerInterface.
  *
  * Implementors can extend the class and implement abstract methods to run this
- * as part of their test suite.
+ * as part of their migrateSpec suite.
  */
 abstract class LoggerInterfaceTest extends \PHPUnit_Framework_TestCase
 {

@@ -280,7 +280,7 @@ class Command
                 if (\PHP_VERSION_ID < 70000) {
                     // Bug in PHP5: https://bugs.php.net/bug.php?id=64761
                     // This means that we cannot bind static closures and therefore we must
-                    // ignore any errors here.  There is no way to test if the closure is
+                    // ignore any errors here.  There is no way to migrateSpec if the closure is
                     // bindable.
                     $code = @\Closure::bind($code, $this);
                 } else {

@@ -35,7 +35,7 @@ class WithFormatterExpectationTest extends TestCase
     }
 
     /**
-     * Note that without the patch checked in with this test, rather than throwing
+     * Note that without the patch checked in with this migrateSpec, rather than throwing
      * an exception, the program will go into an infinite recursive loop
      */
     public function testFormatObjectsWithMockCalledInGetterDoesNotLeadToRecursion()
@@ -61,7 +61,7 @@ class WithFormatterExpectationTest extends TestCase
         );
     }
 
-    /** @test */
+    /** @migrateSpec */
     public function format_objects_should_not_call_getters_with_params()
     {
         $obj = new ClassWithGetterWithParam();

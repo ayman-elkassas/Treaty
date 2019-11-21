@@ -74,7 +74,7 @@ class LineFormatterTest extends \PHPUnit_Framework_TestCase
             'extra' => array('ip' => '127.0.0.1', 'file' => 'test'),
             'message' => 'log',
         ));
-        $this->assertEquals('['.date('Y-m-d').'] meh.ERROR: log [] test {"ip":"127.0.0.1"}'."\n", $message);
+        $this->assertEquals('['.date('Y-m-d').'] meh.ERROR: log [] migrateSpec {"ip":"127.0.0.1"}'."\n", $message);
     }
 
     public function testContextAndExtraOptionallyNotShownIfEmpty()
@@ -176,7 +176,7 @@ class LineFormatterTest extends \PHPUnit_Framework_TestCase
                 'extra' => array(),
             ),
         ));
-        $this->assertEquals('['.date('Y-m-d').'] test.CRITICAL: bar [] []'."\n".'['.date('Y-m-d').'] log.WARNING: foo [] []'."\n", $message);
+        $this->assertEquals('['.date('Y-m-d').'] migrateSpec.CRITICAL: bar [] []'."\n".'['.date('Y-m-d').'] log.WARNING: foo [] []'."\n", $message);
     }
 
     public function testFormatShouldStripInlineLineBreaks()

@@ -360,7 +360,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Determine if all items in the collection pass the given test.
+     * Determine if all items in the collection pass the given migrateSpec.
      *
      * @param  string|callable  $key
      * @param  mixed  $operator
@@ -1229,7 +1229,7 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
     }
 
     /**
-     * Create a collection of all elements that do not pass a given truth test.
+     * Create a collection of all elements that do not pass a given truth migrateSpec.
      *
      * @param  callable|mixed  $callback
      * @return static

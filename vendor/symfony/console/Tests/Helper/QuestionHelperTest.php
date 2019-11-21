@@ -168,7 +168,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testAskWithAutocomplete()
     {
         if (!$this->hasSttyAvailable()) {
-            $this->markTestSkipped('`stty` is required to test autocomplete functionality');
+            $this->markTestSkipped('`stty` is required to migrateSpec autocomplete functionality');
         }
 
         // Acm<NEWLINE>
@@ -201,7 +201,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testAskWithAutocompleteWithNonSequentialKeys()
     {
         if (!$this->hasSttyAvailable()) {
-            $this->markTestSkipped('`stty` is required to test autocomplete functionality');
+            $this->markTestSkipped('`stty` is required to migrateSpec autocomplete functionality');
         }
 
         // <UP ARROW><UP ARROW><NEWLINE><DOWN ARROW><DOWN ARROW><NEWLINE>
@@ -220,7 +220,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testAskWithAutocompleteWithExactMatch()
     {
         if (!$this->hasSttyAvailable()) {
-            $this->markTestSkipped('`stty` is required to test autocomplete functionality');
+            $this->markTestSkipped('`stty` is required to migrateSpec autocomplete functionality');
         }
 
         $inputStream = $this->getInputStream("b\n");
@@ -256,7 +256,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testAskWithAutocompleteWithMultiByteCharacter($character)
     {
         if (!$this->hasSttyAvailable()) {
-            $this->markTestSkipped('`stty` is required to test autocomplete functionality');
+            $this->markTestSkipped('`stty` is required to migrateSpec autocomplete functionality');
         }
 
         $inputStream = $this->getInputStream("$character\n");
@@ -280,7 +280,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testAutocompleteWithTrailingBackslash()
     {
         if (!$this->hasSttyAvailable()) {
-            $this->markTestSkipped('`stty` is required to test autocomplete functionality');
+            $this->markTestSkipped('`stty` is required to migrateSpec autocomplete functionality');
         }
 
         $inputStream = $this->getInputStream('E');
@@ -319,7 +319,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testAskHiddenResponse()
     {
         if ('\\' === \DIRECTORY_SEPARATOR) {
-            $this->markTestSkipped('This test is not supported on Windows');
+            $this->markTestSkipped('This migrateSpec is not supported on Windows');
         }
 
         $dialog = new QuestionHelper();
@@ -675,7 +675,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testLegacyAskWithAutocomplete()
     {
         if (!$this->hasSttyAvailable()) {
-            $this->markTestSkipped('`stty` is required to test autocomplete functionality');
+            $this->markTestSkipped('`stty` is required to migrateSpec autocomplete functionality');
         }
 
         // Acm<NEWLINE>
@@ -712,7 +712,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testLegacyAskWithAutocompleteWithNonSequentialKeys()
     {
         if (!$this->hasSttyAvailable()) {
-            $this->markTestSkipped('`stty` is required to test autocomplete functionality');
+            $this->markTestSkipped('`stty` is required to migrateSpec autocomplete functionality');
         }
 
         // <UP ARROW><UP ARROW><NEWLINE><DOWN ARROW><DOWN ARROW><NEWLINE>
@@ -735,7 +735,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testLegacyAskHiddenResponse()
     {
         if ('\\' === \DIRECTORY_SEPARATOR) {
-            $this->markTestSkipped('This test is not supported on Windows');
+            $this->markTestSkipped('This migrateSpec is not supported on Windows');
         }
 
         $dialog = new QuestionHelper();
@@ -988,7 +988,7 @@ class QuestionHelperTest extends AbstractQuestionHelperTest
     public function testTraversableAutocomplete()
     {
         if (!$this->hasSttyAvailable()) {
-            $this->markTestSkipped('`stty` is required to test autocomplete functionality');
+            $this->markTestSkipped('`stty` is required to migrateSpec autocomplete functionality');
         }
 
         // Acm<NEWLINE>

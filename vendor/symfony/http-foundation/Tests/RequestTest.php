@@ -52,7 +52,7 @@ class RequestTest extends TestCase
 
     public function testGetUser()
     {
-        $request = Request::create('http://user:password@test.com');
+        $request = Request::create('http://user:password@migrateSpec.com');
         $user = $request->getUser();
 
         $this->assertEquals('user', $user);
@@ -60,7 +60,7 @@ class RequestTest extends TestCase
 
     public function testGetPassword()
     {
-        $request = Request::create('http://user:password@test.com');
+        $request = Request::create('http://user:password@migrateSpec.com');
         $password = $request->getPassword();
 
         $this->assertEquals('password', $password);
@@ -93,51 +93,51 @@ class RequestTest extends TestCase
 
     public function testCreate()
     {
-        $request = Request::create('http://test.com/foo?bar=baz');
-        $this->assertEquals('http://test.com/foo?bar=baz', $request->getUri());
+        $request = Request::create('http://migrateSpec.com/foo?bar=baz');
+        $this->assertEquals('http://migrateSpec.com/foo?bar=baz', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
         $this->assertEquals('bar=baz', $request->getQueryString());
         $this->assertEquals(80, $request->getPort());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://test.com/foo', 'GET', ['bar' => 'baz']);
-        $this->assertEquals('http://test.com/foo?bar=baz', $request->getUri());
+        $request = Request::create('http://migrateSpec.com/foo', 'GET', ['bar' => 'baz']);
+        $this->assertEquals('http://migrateSpec.com/foo?bar=baz', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
         $this->assertEquals('bar=baz', $request->getQueryString());
         $this->assertEquals(80, $request->getPort());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://test.com/foo?bar=foo', 'GET', ['bar' => 'baz']);
-        $this->assertEquals('http://test.com/foo?bar=baz', $request->getUri());
+        $request = Request::create('http://migrateSpec.com/foo?bar=foo', 'GET', ['bar' => 'baz']);
+        $this->assertEquals('http://migrateSpec.com/foo?bar=baz', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
         $this->assertEquals('bar=baz', $request->getQueryString());
         $this->assertEquals(80, $request->getPort());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('https://test.com/foo?bar=baz');
-        $this->assertEquals('https://test.com/foo?bar=baz', $request->getUri());
+        $request = Request::create('https://migrateSpec.com/foo?bar=baz');
+        $this->assertEquals('https://migrateSpec.com/foo?bar=baz', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
         $this->assertEquals('bar=baz', $request->getQueryString());
         $this->assertEquals(443, $request->getPort());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertTrue($request->isSecure());
 
-        $request = Request::create('test.com:90/foo');
-        $this->assertEquals('http://test.com:90/foo', $request->getUri());
+        $request = Request::create('migrateSpec.com:90/foo');
+        $this->assertEquals('http://migrateSpec.com:90/foo', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
-        $this->assertEquals('test.com', $request->getHost());
-        $this->assertEquals('test.com:90', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHost());
+        $this->assertEquals('migrateSpec.com:90', $request->getHttpHost());
         $this->assertEquals(90, $request->getPort());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('https://test.com:90/foo');
-        $this->assertEquals('https://test.com:90/foo', $request->getUri());
+        $request = Request::create('https://migrateSpec.com:90/foo');
+        $this->assertEquals('https://migrateSpec.com:90/foo', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
-        $this->assertEquals('test.com', $request->getHost());
-        $this->assertEquals('test.com:90', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHost());
+        $this->assertEquals('migrateSpec.com:90', $request->getHttpHost());
         $this->assertEquals(90, $request->getPort());
         $this->assertTrue($request->isSecure());
 
@@ -170,117 +170,117 @@ class RequestTest extends TestCase
         $this->assertEquals($json, $request->getContent());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://test.com');
-        $this->assertEquals('http://test.com/', $request->getUri());
+        $request = Request::create('http://migrateSpec.com');
+        $this->assertEquals('http://migrateSpec.com/', $request->getUri());
         $this->assertEquals('/', $request->getPathInfo());
         $this->assertEquals('', $request->getQueryString());
         $this->assertEquals(80, $request->getPort());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://test.com?test=1');
-        $this->assertEquals('http://test.com/?test=1', $request->getUri());
+        $request = Request::create('http://migrateSpec.com?migrateSpec=1');
+        $this->assertEquals('http://migrateSpec.com/?migrateSpec=1', $request->getUri());
         $this->assertEquals('/', $request->getPathInfo());
-        $this->assertEquals('test=1', $request->getQueryString());
+        $this->assertEquals('migrateSpec=1', $request->getQueryString());
         $this->assertEquals(80, $request->getPort());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://test.com:90/?test=1');
-        $this->assertEquals('http://test.com:90/?test=1', $request->getUri());
+        $request = Request::create('http://migrateSpec.com:90/?migrateSpec=1');
+        $this->assertEquals('http://migrateSpec.com:90/?migrateSpec=1', $request->getUri());
         $this->assertEquals('/', $request->getPathInfo());
-        $this->assertEquals('test=1', $request->getQueryString());
+        $this->assertEquals('migrateSpec=1', $request->getQueryString());
         $this->assertEquals(90, $request->getPort());
-        $this->assertEquals('test.com:90', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com:90', $request->getHttpHost());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://username:password@test.com');
-        $this->assertEquals('http://test.com/', $request->getUri());
+        $request = Request::create('http://username:password@migrateSpec.com');
+        $this->assertEquals('http://migrateSpec.com/', $request->getUri());
         $this->assertEquals('/', $request->getPathInfo());
         $this->assertEquals('', $request->getQueryString());
         $this->assertEquals(80, $request->getPort());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertEquals('username', $request->getUser());
         $this->assertEquals('password', $request->getPassword());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://username@test.com');
-        $this->assertEquals('http://test.com/', $request->getUri());
+        $request = Request::create('http://username@migrateSpec.com');
+        $this->assertEquals('http://migrateSpec.com/', $request->getUri());
         $this->assertEquals('/', $request->getPathInfo());
         $this->assertEquals('', $request->getQueryString());
         $this->assertEquals(80, $request->getPort());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertEquals('username', $request->getUser());
         $this->assertSame('', $request->getPassword());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://test.com/?foo');
+        $request = Request::create('http://migrateSpec.com/?foo');
         $this->assertEquals('/?foo', $request->getRequestUri());
         $this->assertEquals(['foo' => ''], $request->query->all());
 
         // assume rewrite rule: (.*) --> app/app.php; app/ is a symlink to a symfony web/ directory
-        $request = Request::create('http://test.com/apparthotel-1234', 'GET', [], [], [],
+        $request = Request::create('http://migrateSpec.com/apparthotel-1234', 'GET', [], [], [],
             [
-                'DOCUMENT_ROOT' => '/var/www/www.test.com',
-                'SCRIPT_FILENAME' => '/var/www/www.test.com/app/app.php',
+                'DOCUMENT_ROOT' => '/var/www/www.migrateSpec.com',
+                'SCRIPT_FILENAME' => '/var/www/www.migrateSpec.com/app/app.php',
                 'SCRIPT_NAME' => '/app/app.php',
                 'PHP_SELF' => '/app/app.php/apparthotel-1234',
             ]);
-        $this->assertEquals('http://test.com/apparthotel-1234', $request->getUri());
+        $this->assertEquals('http://migrateSpec.com/apparthotel-1234', $request->getUri());
         $this->assertEquals('/apparthotel-1234', $request->getPathInfo());
         $this->assertEquals('', $request->getQueryString());
         $this->assertEquals(80, $request->getPort());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertFalse($request->isSecure());
 
         // Fragment should not be included in the URI
-        $request = Request::create('http://test.com/foo#bar');
-        $this->assertEquals('http://test.com/foo', $request->getUri());
+        $request = Request::create('http://migrateSpec.com/foo#bar');
+        $this->assertEquals('http://migrateSpec.com/foo', $request->getUri());
     }
 
     public function testCreateWithRequestUri()
     {
-        $request = Request::create('http://test.com:80/foo');
-        $request->server->set('REQUEST_URI', 'http://test.com:80/foo');
-        $this->assertEquals('http://test.com/foo', $request->getUri());
+        $request = Request::create('http://migrateSpec.com:80/foo');
+        $request->server->set('REQUEST_URI', 'http://migrateSpec.com:80/foo');
+        $this->assertEquals('http://migrateSpec.com/foo', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
-        $this->assertEquals('test.com', $request->getHost());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertEquals(80, $request->getPort());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://test.com:8080/foo');
-        $request->server->set('REQUEST_URI', 'http://test.com:8080/foo');
-        $this->assertEquals('http://test.com:8080/foo', $request->getUri());
+        $request = Request::create('http://migrateSpec.com:8080/foo');
+        $request->server->set('REQUEST_URI', 'http://migrateSpec.com:8080/foo');
+        $this->assertEquals('http://migrateSpec.com:8080/foo', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
-        $this->assertEquals('test.com', $request->getHost());
-        $this->assertEquals('test.com:8080', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHost());
+        $this->assertEquals('migrateSpec.com:8080', $request->getHttpHost());
         $this->assertEquals(8080, $request->getPort());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('http://test.com/foo?bar=foo', 'GET', ['bar' => 'baz']);
-        $request->server->set('REQUEST_URI', 'http://test.com/foo?bar=foo');
-        $this->assertEquals('http://test.com/foo?bar=baz', $request->getUri());
+        $request = Request::create('http://migrateSpec.com/foo?bar=foo', 'GET', ['bar' => 'baz']);
+        $request->server->set('REQUEST_URI', 'http://migrateSpec.com/foo?bar=foo');
+        $this->assertEquals('http://migrateSpec.com/foo?bar=baz', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
         $this->assertEquals('bar=baz', $request->getQueryString());
-        $this->assertEquals('test.com', $request->getHost());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertEquals(80, $request->getPort());
         $this->assertFalse($request->isSecure());
 
-        $request = Request::create('https://test.com:443/foo');
-        $request->server->set('REQUEST_URI', 'https://test.com:443/foo');
-        $this->assertEquals('https://test.com/foo', $request->getUri());
+        $request = Request::create('https://migrateSpec.com:443/foo');
+        $request->server->set('REQUEST_URI', 'https://migrateSpec.com:443/foo');
+        $this->assertEquals('https://migrateSpec.com/foo', $request->getUri());
         $this->assertEquals('/foo', $request->getPathInfo());
-        $this->assertEquals('test.com', $request->getHost());
-        $this->assertEquals('test.com', $request->getHttpHost());
+        $this->assertEquals('migrateSpec.com', $request->getHost());
+        $this->assertEquals('migrateSpec.com', $request->getHttpHost());
         $this->assertEquals(443, $request->getPort());
         $this->assertTrue($request->isSecure());
 
         // Fragment should not be included in the URI
-        $request = Request::create('http://test.com/foo#bar');
-        $request->server->set('REQUEST_URI', 'http://test.com/foo#bar');
-        $this->assertEquals('http://test.com/foo', $request->getUri());
+        $request = Request::create('http://migrateSpec.com/foo#bar');
+        $request->server->set('REQUEST_URI', 'http://migrateSpec.com/foo#bar');
+        $this->assertEquals('http://migrateSpec.com/foo', $request->getUri());
     }
 
     /**
@@ -293,7 +293,7 @@ class RequestTest extends TestCase
             'REQUEST_URI' => $serverRequestUri,
 
             // For having http://test.com
-            'SERVER_NAME' => 'test.com',
+            'SERVER_NAME' => 'migrateSpec.com',
             'SERVER_PORT' => 80,
         ]);
 
@@ -309,15 +309,15 @@ class RequestTest extends TestCase
         yield ['///bar/foo', '///bar/foo', $message];
 
         $message = 'Handle when the scheme, host are on REQUEST_URI.';
-        yield ['http://test.com/foo?bar=baz', '/foo?bar=baz', $message];
+        yield ['http://migrateSpec.com/foo?bar=baz', '/foo?bar=baz', $message];
 
         $message = 'Handle when the scheme, host and port are on REQUEST_URI.';
-        yield ['http://test.com:80/foo', '/foo', $message];
-        yield ['https://test.com:8080/foo', '/foo', $message];
-        yield ['https://test.com:443/foo', '/foo', $message];
+        yield ['http://migrateSpec.com:80/foo', '/foo', $message];
+        yield ['https://migrateSpec.com:8080/foo', '/foo', $message];
+        yield ['https://migrateSpec.com:443/foo', '/foo', $message];
 
         $message = 'Fragment should not be included in the URI';
-        yield ['http://test.com/foo#bar', '/foo', $message];
+        yield ['http://migrateSpec.com/foo#bar', '/foo', $message];
         yield ['/foo#bar', '/foo', $message];
     }
 
@@ -536,7 +536,7 @@ class RequestTest extends TestCase
         $server['REDIRECT_URL'] = '/path/info';
         $server['SCRIPT_NAME'] = '/index.php';
         $server['QUERY_STRING'] = 'query=string';
-        $server['REQUEST_URI'] = '/path/info?toto=test&1=1';
+        $server['REQUEST_URI'] = '/path/info?toto=migrateSpec&1=1';
         $server['SCRIPT_NAME'] = '/index.php';
         $server['PHP_SELF'] = '/index.php';
         $server['SCRIPT_FILENAME'] = '/some/where/index.php';
@@ -597,17 +597,17 @@ class RequestTest extends TestCase
 
     public function testGetUriForPath()
     {
-        $request = Request::create('http://test.com/foo?bar=baz');
-        $this->assertEquals('http://test.com/some/path', $request->getUriForPath('/some/path'));
+        $request = Request::create('http://migrateSpec.com/foo?bar=baz');
+        $this->assertEquals('http://migrateSpec.com/some/path', $request->getUriForPath('/some/path'));
 
-        $request = Request::create('http://test.com:90/foo?bar=baz');
-        $this->assertEquals('http://test.com:90/some/path', $request->getUriForPath('/some/path'));
+        $request = Request::create('http://migrateSpec.com:90/foo?bar=baz');
+        $this->assertEquals('http://migrateSpec.com:90/some/path', $request->getUriForPath('/some/path'));
 
-        $request = Request::create('https://test.com/foo?bar=baz');
-        $this->assertEquals('https://test.com/some/path', $request->getUriForPath('/some/path'));
+        $request = Request::create('https://migrateSpec.com/foo?bar=baz');
+        $this->assertEquals('https://migrateSpec.com/some/path', $request->getUriForPath('/some/path'));
 
-        $request = Request::create('https://test.com:90/foo?bar=baz');
-        $this->assertEquals('https://test.com:90/some/path', $request->getUriForPath('/some/path'));
+        $request = Request::create('https://migrateSpec.com:90/foo?bar=baz');
+        $this->assertEquals('https://migrateSpec.com:90/some/path', $request->getUriForPath('/some/path'));
 
         $server = [];
 
@@ -663,7 +663,7 @@ class RequestTest extends TestCase
         $server['REDIRECT_URL'] = '/path/info';
         $server['SCRIPT_NAME'] = '/index.php';
         $server['QUERY_STRING'] = 'query=string';
-        $server['REQUEST_URI'] = '/path/info?toto=test&1=1';
+        $server['REQUEST_URI'] = '/path/info?toto=migrateSpec&1=1';
         $server['SCRIPT_NAME'] = '/index.php';
         $server['PHP_SELF'] = '/index.php';
         $server['SCRIPT_FILENAME'] = '/some/where/index.php';
@@ -787,11 +787,11 @@ class RequestTest extends TestCase
 
             ['foo[]=1&foo[]=2', 'foo%5B%5D=1&foo%5B%5D=2', 'allows array notation'],
             ['foo=1&foo=2', 'foo=1&foo=2', 'allows repeated parameters'],
-            ['pa%3Dram=foo%26bar%3Dbaz&test=test', 'pa%3Dram=foo%26bar%3Dbaz&test=test', 'works with encoded delimiters'],
+            ['pa%3Dram=foo%26bar%3Dbaz&migrateSpec=migrateSpec', 'pa%3Dram=foo%26bar%3Dbaz&migrateSpec=migrateSpec', 'works with encoded delimiters'],
             ['0', '0', 'allows "0"'],
             ['Foo Bar&Foo%20Baz', 'Foo%20Bar&Foo%20Baz', 'normalizes encoding in keys'],
             ['bar=Foo Bar&baz=Foo%20Baz', 'bar=Foo%20Bar&baz=Foo%20Baz', 'normalizes encoding in values'],
-            ['foo=bar&&&test&&', 'foo=bar&test', 'removes unneeded delimiters'],
+            ['foo=bar&&&migrateSpec&&', 'foo=bar&migrateSpec', 'removes unneeded delimiters'],
             ['formula=e=m*c^2', 'formula=e%3Dm%2Ac%5E2', 'correctly treats only the first "=" as delimiter and the next as value'],
 
             // Ignore pairs with empty key, even if there was a value, e.g. "=value", as such nameless values cannot be retrieved anyway.
@@ -2434,7 +2434,7 @@ class RequestTest extends TestCase
 
         $request = Request::create('/');
         $request->server->set('REMOTE_ADDR', '1.1.1.1');
-        $request->headers->set('X-Forwarded-Host', 'test.example.com');
+        $request->headers->set('X-Forwarded-Host', 'migrateSpec.example.com');
         $request->headers->set('X-Forwarded-Port', '');
 
         $this->assertSame(80, $request->getPort());

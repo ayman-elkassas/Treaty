@@ -25,7 +25,7 @@ $coverage = new CodeCoverage;
 
 $coverage->filter()->addDirectoryToWhitelist('/path/to/src');
 
-$coverage->start('<name of test>');
+$coverage->start('migrateSpec');
 
 // ...
 

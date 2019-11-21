@@ -18,7 +18,7 @@ class TextTestListRenderer
 {
     public function render(TestSuite $suite): string
     {
-        $buffer = 'Available test(s):' . PHP_EOL;
+        $buffer = 'Available migrateSpec(s):' . PHP_EOL;
 
         foreach (new \RecursiveIteratorIterator($suite->getIterator()) as $test) {
             if ($test instanceof TestCase) {

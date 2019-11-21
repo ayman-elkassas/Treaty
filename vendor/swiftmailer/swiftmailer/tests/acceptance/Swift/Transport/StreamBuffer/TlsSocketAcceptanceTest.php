@@ -9,13 +9,13 @@ class Swift_Transport_StreamBuffer_TlsSocketAcceptanceTest extends Swift_Transpo
         $streams = stream_get_transports();
         if (!in_array('tls', $streams)) {
             $this->markTestSkipped(
-                'TLS is not configured for your system.  It is not possible to run this test'
+                'TLS is not configured for your system.  It is not possible to run this migrateSpec'
              );
         }
         if (!defined('SWIFT_TLS_HOST')) {
             $this->markTestSkipped(
-                'Cannot run test without a TLS enabled SMTP host to connect to (define '.
-                'SWIFT_TLS_HOST in tests/acceptance.conf.php if you wish to run this test)'
+                'Cannot run migrateSpec without a TLS enabled SMTP host to connect to (define '.
+                'SWIFT_TLS_HOST in tests/acceptance.conf.php if you wish to run this migrateSpec)'
              );
         }
         parent::setUp();

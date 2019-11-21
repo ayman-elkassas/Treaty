@@ -157,7 +157,7 @@ class File extends AbstractNode
     }
 
     /**
-     * Returns the test data of this node.
+     * Returns the migrateSpec data of this node.
      *
      * @return array
      */

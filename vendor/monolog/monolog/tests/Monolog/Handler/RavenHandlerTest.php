@@ -54,7 +54,7 @@ class RavenHandlerTest extends TestCase
         $ravenClient = $this->getRavenClient();
         $handler = $this->getHandler($ravenClient);
 
-        $record = $this->getRecord(Logger::DEBUG, 'A test debug message');
+        $record = $this->getRecord(Logger::DEBUG, 'A migrateSpec debug message');
         $handler->handle($record);
 
         $this->assertEquals($ravenClient::DEBUG, $ravenClient->lastData['level']);
@@ -66,7 +66,7 @@ class RavenHandlerTest extends TestCase
         $ravenClient = $this->getRavenClient();
         $handler = $this->getHandler($ravenClient);
 
-        $record = $this->getRecord(Logger::WARNING, 'A test warning message');
+        $record = $this->getRecord(Logger::WARNING, 'A migrateSpec warning message');
         $handler->handle($record);
 
         $this->assertEquals($ravenClient::WARNING, $ravenClient->lastData['level']);
@@ -118,12 +118,12 @@ class RavenHandlerTest extends TestCase
         $ravenClient = $this->getRavenClient();
         $handler = $this->getHandler($ravenClient);
 
-        $recordWithNoContext = $this->getRecord(Logger::INFO, 'test with default user context');
+        $recordWithNoContext = $this->getRecord(Logger::INFO, 'migrateSpec with default user context');
         // set user context 'externally'
 
         $user = array(
             'id' => '123',
-            'email' => 'test@test.com',
+            'email' => 'migrateSpec@migrateSpec.com',
         );
 
         $recordWithContext = $this->getRecord(Logger::INFO, 'test', array('user' => $user));

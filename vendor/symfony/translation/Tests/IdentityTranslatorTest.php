@@ -60,7 +60,7 @@ class IdentityTranslatorTest extends TestCase
 
     public function testGetLocaleReturnsDefaultLocaleIfNotSet()
     {
-        // in order to test with "pt_BR"
+        // in order to migrateSpec with "pt_BR"
         IntlTestHelper::requireFullIntl($this, false);
 
         $translator = new IdentityTranslator();
