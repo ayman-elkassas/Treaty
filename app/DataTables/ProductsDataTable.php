@@ -3,12 +3,11 @@
 namespace App\DataTables;
 
 use App\Admin;
-use App\model\City;
 use App\model\Country;
 use Illuminate\Support\Facades\URL;
 use Yajra\DataTables\Services\DataTable;
 
-class CitiesDataTable extends DataTable
+class ProductsDataTable extends DataTable
 {
     /**
      * Build DataTable class.
@@ -19,13 +18,15 @@ class CitiesDataTable extends DataTable
     public function dataTable($query)
     {
         return datatables($query)
-            ->addColumn('edit', 'admin.cities.btn.edit')
-            ->addColumn('delete', 'admin.cities.btn.delete')
-	        ->addColumn('checkbox', 'admin.cities.btn.checkbox')
+            ->addColumn('edit', 'admin.countries.btn.edit')
+            ->addColumn('delete', 'admin.countries.btn.delete')
+	        ->addColumn('checkbox', 'admin.countries.btn.checkbox')
+	        ->addColumn('logo', 'admin.countries.btn.logo')
 	        ->rawColumns([
 	        	'edit',
 		        'delete',
 		        'checkbox',
+		        'logo'
 	        ]);
     }
 
@@ -37,7 +38,7 @@ class CitiesDataTable extends DataTable
      */
     public function query()
     {
-        return City::query()->with('country_id')->select('cities.*');
+        return Country::query();
     }
 
     //lang
@@ -89,7 +90,7 @@ class CitiesDataTable extends DataTable
 		                'lengthMenu'=>[[10,25,50,100,-1],[10,25,50,'All Record']],
 		                'buttons'=>[
 			                [
-				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New City',
+				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Country',
 				                'className'=>'btn btn-info',
 				                'action'=>'function(){
 				                    window.location.href="'.URL::current().'/create";
@@ -126,7 +127,7 @@ class CitiesDataTable extends DataTable
 			                ],
 		                ],
 		                'initComplete'=>"function () {
-				            this.api().columns([2,3,4]).every(function () {
+				            this.api().columns([2,3,5,6]).every(function () {
 				                var column = this;
 				                var input = document.createElement(\"input\");
 				                $(input).appendTo($(column.footer()).empty())
@@ -163,24 +164,33 @@ class CitiesDataTable extends DataTable
 	            'title'=>'#'
             ],
 	        [
-		        'name'=>'city_name_en',
-		        'data'=>'city_name_en',
-		        'title'=>'City En'
+		        'name'=>'country_name_en',
+		        'data'=>'country_name_en',
+		        'title'=>'Country En'
 	        ],
 	        [
-		        'name'=>'city_name_ar',
-		        'data'=>'city_name_ar',
-		        'title'=>'City Ar'
+		        'name'=>'country_name_ar',
+		        'data'=>'country_name_ar',
+		        'title'=>'Country Ar'
 	        ],
 	        [
-		        'name'=>'currency',
-		        'data'=>'currency',
-		        'title'=>'currency'
+		        'name'=>'logo',
+		        'data'=>'logo',
+		        'title'=>'Logo',
+		        'exportable'=>false,
+                'printable'=>false,
+                'orderable'=>false,
+                'searchable'=>false
 	        ],
 	        [
-		        'name'=>'country_id.country_name_en',
-		        'data'=>'country_id.country_name_en',
-		        'title'=>'Country Name'
+		        'name'=>'code',
+		        'data'=>'code',
+		        'title'=>'Code'
+	        ],
+	        [
+		        'name'=>'mob',
+		        'data'=>'mob',
+		        'title'=>'Mob'
 	        ],
 	        [
 		        'name'=>'created_at',
@@ -220,6 +230,6 @@ class CitiesDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'cities' . date('YmdHis');
+        return 'countries_' . date('YmdHis');
     }
 }

@@ -2,6 +2,7 @@
 
 @section('content')
 
+
     <div class="box">
         <div class="box-header">
             <h3 class="box-title">{{$title}}</h3>
@@ -14,28 +15,18 @@
 
 {{--            should determine method because there are many url with--}}
 {{--            the same format difer in method --}}
-            {!! Form::open(['url'=>aurl('cities/'.$city->id),'method'=>'put'])!!}
+            {!! Form::open(['url'=>aurl('weights/'.$weight->id),'files'=>true,'method'=>'put'])!!}
 
-                <div class="form-group">
-                    {!! Form::label('city_name_en','city En') !!}
-                    {!! Form::text('city_name_en',$city->city_name_en,['class'=>'form-control']) !!}
-                </div>
 
-                <div class="form-group">
-                    {!! Form::label('city_name_ar','city Ar') !!}
-                    {!! Form::text('city_name_ar',$city->city_name_ar,['class'=>'form-control']) !!}
-                </div>
+            <div class="form-group">
+                {!! Form::label('name_en','Colors name En') !!}
+                {!! Form::text('name_en',$weight->name_en,['class'=>'form-control']) !!}
+            </div>
 
-                <div class="form-group">
-                    {!! Form::label('currency','currency') !!}
-                    {!! Form::text('currency',$city->currency,['class'=>'form-control']) !!}
-                </div>
-
-                <div class="form-group">
-                    {!! Form::label('country_id','Country Name') !!}
-                    {!! Form::select('country_id',App\model\Country::pluck('country_name_en','id')
-                    ,$city->country_id,['class'=>'form-control','placeholder'=>'.....']) !!}
-                </div>
+            <div class="form-group">
+                {!! Form::label('name_ar','Colors name Ar') !!}
+                {!! Form::text('name_ar',$weight->name_ar,['class'=>'form-control']) !!}
+            </div>
 
             {!! Form::submit('Edit',['class'=>'btn btn-primary']) !!}
 

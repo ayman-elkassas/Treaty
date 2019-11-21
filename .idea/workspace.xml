@@ -2,465 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a826355f-f913-4eef-95fd-c6d36d98a3ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/DataTables/ProductsDataTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/DataTables/WeightsDataTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/WeightsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/weights/btn/checkbox.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/weights/btn/delete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/weights/btn/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/weights/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/weights/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/weights/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/SizesDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/SizesDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SizesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SizesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/Size.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/Size.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_20_102546_create_settings_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/Flot/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/Flot/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-colorpicker/serve.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-colorpicker/serve.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-colorpicker/src/js/colorpicker-color.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-colorpicker/src/js/colorpicker-color.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/assets/coverage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/assets/coverage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/assets/jquery-1.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/assets/jquery-1.7.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/assets/qunit.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/assets/qunit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/suites/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/suites/component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/suites/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/suites/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/suites/mouse_navigation/2012.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/suites/mouse_navigation/2012.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/timezone.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap-datepicker/tests/timezone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/bootstrap/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/chart.js/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/chart.js/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/ckeditor/samples/old/divreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/ckeditor/samples/old/divreplace.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/datatables.net/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/datatables.net/js/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/fastclick/lib/fastclick.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/fastclick/lib/fastclick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/fullcalendar/dist/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/fullcalendar/dist/fullcalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/effect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/i18n/datepicker-fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/i18n/datepicker-fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/position.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery-ui/ui/position.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery/dist/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery/src/css/addGetHookIf.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jquery/src/css/addGetHookIf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jvectormap/tests/assets/jquery-1.8.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/jvectormap/tests/assets/jquery-1.8.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/mocha/mocha.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/mocha/mocha.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/min/moment-with-locales.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/min/moment-with-locales.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/moment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/src/lib/units/day-of-week.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/src/lib/units/day-of-week.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/src/lib/units/month.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/moment/src/lib/units/month.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/morris.js/spec/lib/hover_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/morris.js/spec/lib/hover_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/morris.js/spec/support/placeholder.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/morris.js/spec/support/placeholder.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/morris.js/spec/viz/examples.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/morris.js/spec/viz/examples.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/raphael/dev/raphael.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/raphael/dev/raphael.core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/raphael/raphael.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/raphael/raphael.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/raphael/raphael.no-deps.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/raphael/raphael.no-deps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/data/inputData-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/data/inputData-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/dropdown/dropdownCss-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/dropdown/dropdownCss-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/dropdown/positioning-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/dropdown/positioning-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/options/data-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/options/data-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/options/deprecated-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/options/deprecated-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/selection/containerCss-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/selection/containerCss-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/selection/search-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/selection/search-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/utils/escapeMarkup-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/utils/escapeMarkup-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/vendor/jquery-1.7.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/vendor/jquery-1.7.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/vendor/qunit-1.23.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/tests/vendor/qunit-1.23.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/vendor/jquery-2.1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/bower_components/select2/vendor/jquery-2.1.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/input-mask/jquery.inputmask.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/input-mask/jquery.inputmask.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/jQueryUI/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/adminlte/plugins/jQueryUI/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/vakata-jstree-c9d7c14/gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/vakata-jstree-c9d7c14/gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/vakata-jstree-c9d7c14/test/unit/libs/qunit.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/vakata-jstree-c9d7c14/test/unit/libs/qunit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backupStaticDesign/vakata-jstree-c9d7c14/test/unit/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backupStaticDesign/vakata-jstree-c9d7c14/test/unit/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/Flot/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/Flot/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-colorpicker/serve.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-colorpicker/serve.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-colorpicker/src/js/colorpicker-color.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-colorpicker/src/js/colorpicker-color.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/assets/coverage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/assets/coverage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/assets/jquery-1.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/assets/jquery-1.7.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/assets/qunit.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/assets/qunit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/suites/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/suites/component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/suites/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/suites/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/suites/mouse_navigation/2012.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/suites/mouse_navigation/2012.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/timezone.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap-datepicker/tests/timezone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/bootstrap/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/chart.js/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/chart.js/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/ckeditor/samples/old/divreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/ckeditor/samples/old/divreplace.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/datatables.net/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/datatables.net/js/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/fastclick/lib/fastclick.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/fastclick/lib/fastclick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/fullcalendar/dist/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/fullcalendar/dist/fullcalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/effect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/i18n/datepicker-fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/i18n/datepicker-fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/position.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery-ui/ui/position.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery/dist/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery/src/css/addGetHookIf.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jquery/src/css/addGetHookIf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/jvectormap/tests/assets/jquery-1.8.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/jvectormap/tests/assets/jquery-1.8.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/mocha/mocha.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/mocha/mocha.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/min/moment-with-locales.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/min/moment-with-locales.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/moment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/src/lib/units/day-of-week.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/src/lib/units/day-of-week.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/src/lib/units/month.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/moment/src/lib/units/month.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/morris.js/spec/lib/hover_spec.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/morris.js/spec/lib/hover_spec.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/morris.js/spec/support/placeholder.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/morris.js/spec/support/placeholder.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/morris.js/spec/viz/examples.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/morris.js/spec/viz/examples.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/raphael/dev/raphael.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/raphael/dev/raphael.core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/raphael/raphael.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/raphael/raphael.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/raphael/raphael.no-deps.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/raphael/raphael.no-deps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/data/inputData-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/data/inputData-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/dropdown/dropdownCss-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/dropdown/dropdownCss-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/dropdown/positioning-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/dropdown/positioning-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/options/data-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/options/data-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/options/deprecated-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/options/deprecated-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/selection/containerCss-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/selection/containerCss-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/selection/search-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/selection/search-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/utils/escapeMarkup-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/utils/escapeMarkup-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/vendor/jquery-1.7.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/vendor/jquery-1.7.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/vendor/qunit-1.23.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/tests/vendor/qunit-1.23.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/vendor/jquery-2.1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/bower_components/select2/vendor/jquery-2.1.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/plugins/input-mask/jquery.inputmask.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/plugins/input-mask/jquery.inputmask.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/design/adminlte/plugins/jQueryUI/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/design/adminlte/plugins/jQueryUI/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/CitiesDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/CitiesDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/CountriesDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/CountriesDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/Country.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_28_134527_create_countries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_28_134527_create_countries_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/cities/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/cities/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/cities/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/cities/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/countries/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/countries/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/countries/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/countries/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/malls/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/malls/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/manufacts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/manufacts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sizes/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sizes/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sizes/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sizes/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/sizes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sizes/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/04-schema.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/04-schema.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/AutoloadGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/AutoloadGenerator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/ClassMapGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/ClassMapGenerator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/DiagnoseCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/DiagnoseCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/SelfUpdateCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/SelfUpdateCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelReader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelReader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Filesystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Filesystem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/InvalidArgumentExceptionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/InvalidArgumentExceptionTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SerializableArrayObjectAsset.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SerializableArrayObjectAsset.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleSerializableAsset.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleSerializableAsset.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/hu_HU/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/hu_HU/Text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/LoremTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/LoremTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/PaymentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/PaymentTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ProviderOverrideTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ProviderOverrideTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/de_CH/AddressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/de_CH/AddressTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/de_CH/InternetTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/de_CH/InternetTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/el_GR/TextTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/el_GR/TextTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/en_UG/AddressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/en_UG/AddressTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/fr_CH/AddressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/fr_CH/AddressTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/fr_CH/InternetTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/fr_CH/InternetTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/fr_FR/AddressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/fr_FR/AddressTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/fr_FR/TextTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/fr_FR/TextTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/it_CH/AddressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/it_CH/AddressTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/it_CH/InternetTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/it_CH/InternetTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ka_GE/TextTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ka_GE/TextTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/kk_KZ/TextTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/kk_KZ/TextTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ko_KR/TextTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ko_KR/TextTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ru_RU/TextTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ru_RU/TextTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/zh_TW/TextTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/zh_TW/TextTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TestMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/TestMakeCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Providers/ArtisanServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithExceptionHandling.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithExceptionHandling.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithRedis.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithRedis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseMigrations.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/DatabaseMigrations.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabaseState.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabaseState.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/WithoutMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/WithoutMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Arr.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Arr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BusFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/BusFake.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/EventFake.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/MailFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/MailFake.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/NotificationFake.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/QueueFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/QueueFake.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/ValidatesAttributes.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/ValidatesAttributes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/library/Mockery/Configuration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegrationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegrationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Adapter/Phpunit/TestListenerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Adapter/Phpunit/TestListenerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/AllowsExpectsSyntaxTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/AllowsExpectsSyntaxTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/CallableSpyTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/CallableSpyTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ContainerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ContainerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ExpectationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ExpectationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/DefinedTargetClassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/DefinedTargetClassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/MockConfigurationBuilderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/MockConfigurationBuilderTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/MockConfigurationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/MockConfigurationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/CallTypeHintPassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/CallTypeHintPassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/ClassNamePassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/ClassNamePassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/ClassPassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/ClassPassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/ConstantsPassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/ConstantsPassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/InstanceMockPassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/InstanceMockPassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/InterfacePassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Generator/StringManipulation/Pass/InterfacePassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/GlobalHelpersTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/GlobalHelpersTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Loader/LoaderTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Loader/LoaderTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Matcher/SubsetTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/Matcher/SubsetTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockClassWithFinalWakeupTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockClassWithFinalWakeupTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockClassWithUnknownTypeHintTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockClassWithUnknownTypeHintTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockeryCanMockClassesWithSemiReservedWordsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockeryCanMockClassesWithSemiReservedWordsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockeryCanMockMultipleInterfacesWhichOverlapTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockeryCanMockMultipleInterfacesWhichOverlapTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingAllLowerCasedMethodsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingAllLowerCasedMethodsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingClassConstantsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingClassConstantsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingHHVMMethodsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingHHVMMethodsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingMethodsWithIterableTypeHintsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingMethodsWithIterableTypeHintsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingMethodsWithNullableParametersTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingMethodsWithNullableParametersTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingNullableMethodsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingNullableMethodsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingProtectedMethodsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingProtectedMethodsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingVariadicArgumentsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingVariadicArgumentsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingVoidMethodsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/MockingVoidMethodsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/NamedMockTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/NamedMockTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ProxyMockingTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/ProxyMockingTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/SpyTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/SpyTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/TraitsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/TraitsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/WithFormatterExpectationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/Mockery/WithFormatterExpectationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/PHP70/Generator/StringManipulation/Pass/MagicMethodTypeHintsPassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/PHP70/Generator/StringManipulation/Pass/MagicMethodTypeHintsPassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/PHP70/MockingParameterAndReturnTypesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/PHP70/MockingParameterAndReturnTypesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mockery/mockery/tests/PHP72/Php72LanguageFeaturesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mockery/mockery/tests/PHP72/Php72LanguageFeaturesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/ChromePHPFormatterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/ChromePHPFormatterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/ElasticaFormatterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/ElasticaFormatterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/FlowdockFormatterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/FlowdockFormatterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/FluentdFormatterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/FluentdFormatterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/LineFormatterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/LineFormatterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/WildfireFormatterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/WildfireFormatterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/AmqpHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/AmqpHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/DeduplicationHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/DeduplicationHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/ElasticSearchHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/ElasticSearchHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/ErrorLogHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/ErrorLogHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FleepHookHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FleepHookHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FlowdockHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/FlowdockHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/GelfHandlerLegacyTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/GelfHandlerLegacyTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/GelfHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/GelfHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/InsightOpsHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/InsightOpsHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/LogEntriesHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/LogEntriesHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/MailHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/MailHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/NativeMailerHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/NativeMailerHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RavenHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RavenHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RotatingFileHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/RotatingFileHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/Slack/SlackRecordTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/Slack/SlackRecordTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/SlackHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/SlackHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/SlackWebhookHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/SlackWebhookHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/SlackbotHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/SlackbotHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/SwiftMailerHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/SwiftMailerHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/TestHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/TestHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/LoggerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/LoggerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/SignalHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/SignalHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/AbstractField.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/AbstractField.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/CronExpression.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/CronExpression.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/FieldInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/mtdowling/cron-expression/src/Cron/FieldInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/src/Carbon/Carbon.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/src/Carbon/Carbon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/BuilderFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/BuilderFactoryTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NodeVisitor/NameResolverTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/NodeVisitor/NameResolverTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ParserFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ParserFactoryTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ParserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/ParserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/PrettyPrinterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test/PhpParser/PrettyPrinterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/test_old/run.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/test_old/run.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallTimesPrediction.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prediction/CallTimesPrediction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prediction/PredictionInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpspec/prophecy/src/Prophecy/Prediction/PredictionInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Node/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Node/File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/respond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/respond.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects/src/Builder/InvocationMocker.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects/src/Builder/InvocationMocker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/ArraySubset.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/Attribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/Attribute.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/Composite.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/Composite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/Constraint.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/Constraint.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/IsAnything.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/IsAnything.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/IsEqual.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/IsEqual.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/IsIdentical.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/IsIdentical.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/JsonMatches.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LogicalAnd.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LogicalAnd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LogicalNot.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LogicalNot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LogicalOr.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LogicalOr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LogicalXor.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/LogicalXor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContainsOnly.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Constraint/TraversableContainsOnly.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Exception.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Exception.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/ExceptionWrapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/IncompleteTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/IncompleteTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/IncompleteTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/IncompleteTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/SkippedTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/SkippedTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestFailure.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestFailure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestResult.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestResult.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestSuite.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestSuite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestSuiteIterator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestSuiteIterator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/UnintentionallyCoveredCodeError.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/WarningTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/WarningTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/PhptTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/PhptTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/StandardTestSuiteLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/StandardTestSuiteLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/TestSuiteLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/ResultPrinter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/ResultPrinter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Configuration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Log/JUnit.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Log/JUnit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Log/TeamCity.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Log/TeamCity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/PHP/AbstractPhpProcess.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/PHP/AbstractPhpProcess.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/HtmlResultPrinter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/HtmlResultPrinter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/NamePrettifier.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/NamePrettifier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/ResultPrinter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/TextResultPrinter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/TextResultPrinter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/XmlResultPrinter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TestDox/XmlResultPrinter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TextTestListRenderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/TextTestListRenderer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/BeforeClassWithOnlyDataProviderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/BeforeClassWithOnlyDataProviderTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/DataProviderDependencyTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/DataProviderDependencyTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/DataProviderFilterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/DataProviderFilterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/IniTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/IniTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/TestIncomplete.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/TestIncomplete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/TestSkipped.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/TestSkipped.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/end-to-end/regression/GitHub/1348/Issue1348Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/end-to-end/regression/GitHub/1348/Issue1348Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/end-to-end/regression/GitHub/1468/Issue1468Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/end-to-end/regression/GitHub/1468/Issue1468Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/end-to-end/regression/GitHub/498/Issue498Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/end-to-end/regression/GitHub/498/Issue498Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/end-to-end/regression/GitHub/873/Issue873Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/end-to-end/regression/GitHub/873/Issue873Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Framework/Constraint/CountTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Framework/Constraint/CountTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Framework/TestCaseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Framework/TestCaseTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Runner/PhptTestCaseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Runner/PhptTestCaseTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Util/TestDox/NamePrettifierTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Util/TestDox/NamePrettifierTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Util/TestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/unit/Util/TestTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleaner/ValidClassNamePassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleaner/ValidClassNamePassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleaner/ValidFunctionNamePassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleaner/ValidFunctionNamePassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/Input/ShellInputTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/Input/ShellInputTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/ShellTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/ShellTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/ramsey/uuid/src/Uuid.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/ramsey/uuid/src/Uuid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/diff/tests/DifferTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/sebastian/diff/tests/DifferTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/environment/tests/ConsoleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/sebastian/environment/tests/ConsoleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/environment/tests/RuntimeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/sebastian/environment/tests/RuntimeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/exporter/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/sebastian/exporter/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/sebastian/global-state/tests/RestorerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/sebastian/global-state/tests/RestorerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/PopBeforeSmtpPlugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/PopBeforeSmtpPlugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/SwiftMailerSmokeTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/SwiftMailerSmokeTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/SwiftMailerTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/SwiftMailerTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/ByteStream/FileByteStreamAcceptanceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/ByteStream/FileByteStreamAcceptanceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/DependencyContainerAcceptanceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/DependencyContainerAcceptanceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/MessageAcceptanceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/MessageAcceptanceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime/MimePartAcceptanceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime/MimePartAcceptanceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime/SimpleMessageAcceptanceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Mime/SimpleMessageAcceptanceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/BasicSocketAcceptanceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/BasicSocketAcceptanceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/ProcessAcceptanceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/ProcessAcceptanceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/SocketTimeoutTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/SocketTimeoutTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/SslSocketAcceptanceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/SslSocketAcceptanceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/TlsSocketAcceptanceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/acceptance/Swift/Transport/StreamBuffer/TlsSocketAcceptanceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug34Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug34Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug35Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug35Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug38Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug38Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug650Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/Bug650Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/BugFileByteStreamConsecutiveReadCallsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/bug/Swift/BugFileByteStreamConsecutiveReadCallsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/AttachmentSmokeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/AttachmentSmokeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/BasicSmokeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/BasicSmokeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/HtmlWithAttachmentSmokeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/HtmlWithAttachmentSmokeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/InternationalSmokeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/smoke/Swift/Smoke/InternationalSmokeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/KeyCache/ArrayKeyCacheTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/KeyCache/ArrayKeyCacheTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mailer/ArrayRecipientIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mailer/ArrayRecipientIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/MessageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/MessageTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/AbstractMimeEntityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/AbstractMimeEntityTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/ReporterPluginTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Plugins/ReporterPluginTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Signers/DKIMSignerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Signers/DKIMSignerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/AbstractSmtpTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Transport/AbstractSmtpTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Command/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Command/Command.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Command/ListCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Command/ListCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/ArgvInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/ArgvInput.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/EventListener/ErrorListenerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/EventListener/ErrorListenerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestAmbiguousCommandRegistering.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestAmbiguousCommandRegistering.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestAmbiguousCommandRegistering2.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Fixtures/TestAmbiguousCommandRegistering2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Formatter/OutputFormatterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/FormatterHelperTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/FormatterHelperTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/QuestionHelperTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Helper/QuestionHelperTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/ArgvInputTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Input/ArgvInputTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/Logger/ConsoleLoggerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/Logger/ConsoleLoggerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Shortcut/ClassParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/Parser/Shortcut/HashParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/DebugClassLoaderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/DebugClassLoaderTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/ErrorHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/ErrorHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/FatalErrorHandler/ClassNotFoundFatalErrorHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/FatalErrorHandler/ClassNotFoundFatalErrorHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/FatalErrorHandler/UndefinedMethodFatalErrorHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/FatalErrorHandler/UndefinedMethodFatalErrorHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Fixtures/DeprecatedClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Fixtures/DeprecatedClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Fixtures/DeprecatedInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/Fixtures/DeprecatedInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/EventTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/EventTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/GenericEventTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/GenericEventTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Comparator/Comparator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Comparator/Comparator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Comparator/DateComparator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Comparator/DateComparator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Comparator/NumberComparator.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Comparator/NumberComparator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Finder.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Finder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Comparator/ComparatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Comparator/ComparatorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Comparator/DateComparatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Comparator/DateComparatorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Comparator/NumberComparatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Comparator/NumberComparatorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/FinderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/FinderTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/CustomFilterIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/CustomFilterIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/DateRangeFilterIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/DateRangeFilterIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/DepthRangeFilterIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/DepthRangeFilterIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/ExcludeDirectoryFilterIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/ExcludeDirectoryFilterIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FileTypeFilterIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FileTypeFilterIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FilecontentFilterIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FilecontentFilterIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FilenameFilterIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FilenameFilterIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FilterIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/FilterIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/RealIteratorTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/RealIteratorTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/SizeRangeFilterIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/SizeRangeFilterIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/SortableIteratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/finder/Tests/Iterator/SortableIteratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/UploadedFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/File/UploadedFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/FileTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/FileTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/MimeType/MimeTypeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/MimeType/MimeTypeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/UploadedFileTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/File/UploadedFileTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ParameterBagTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ParameterBagTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/RequestTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/ResponseTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/SessionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/SessionTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/MongoDbSessionHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/MongoDbSessionHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/NativeSessionStorageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/Session/Storage/NativeSessionStorageTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/AbstractTestSessionListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/AbstractTestSessionListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/DataCollector/DumpDataCollectorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/DataCollector/DumpDataCollectorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/DataCollector/RequestDataCollectorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/DataCollector/RequestDataCollectorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/HttpCache/StoreTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/HttpCache/StoreTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/KernelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/KernelTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/Tests/ExecutableFinderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ExecutableFinderTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessBuilderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessBuilderTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher1.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher2.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher3.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/dumper/url_matcher3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/nonesense_resource_plus_path.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Fixtures/nonesense_resource_plus_path.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Generator/Dumper/PhpGeneratorDumperTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Generator/Dumper/PhpGeneratorDumperTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Generator/UrlGeneratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Generator/UrlGeneratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/Dumper/PhpMatcherDumperTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/Dumper/PhpMatcherDumperTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/UrlMatcherTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Matcher/UrlMatcherTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/RequestContextTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/RequestContextTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/DependencyInjection/TranslationPassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/DependencyInjection/TranslationPassTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Dumper/FileDumperTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Dumper/FileDumperTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Extractor/PhpExtractorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Extractor/PhpExtractorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/IdentityTranslatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/IdentityTranslatorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Loader/XliffFileLoaderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Loader/XliffFileLoaderTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/PluralizationRulesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/PluralizationRulesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/TranslatorCacheTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/TranslatorCacheTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Util/ArrayConverterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/Util/ArrayConverterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/Tests/fixtures/extractor/translation.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/Tests/fixtures/extractor/translation.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/HtmlDumper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/HtmlDumper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theseer/tokenizer/tests/TokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/theseer/tokenizer/tests/TokenTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -512,12 +77,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/malls">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-              <filtering>
-                <filter text="" />
-              </filtering>
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/DataTables/CountriesDataTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2072">
+              <caret line="197" column="34" selection-start-line="197" selection-start-column="34" selection-end-line="197" selection-end-column="34" />
+              <folding>
+                <element signature="e#26#32#0" expanded="true" />
+                <element signature="e#32#38#0" expanded="true" />
+                <element signature="e#26#32#0" expanded="true" />
+                <element signature="e#32#38#0" expanded="true" />
+                <element signature="e#26#32#0" expanded="true" />
+                <element signature="e#32#38#0" expanded="true" />
+                <element signature="e#26#32#0" expanded="true" />
+                <element signature="e#32#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -534,31 +116,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_21_194434_create_settings_table.php">
+        <entry file="file://$PROJECT_DIR$/app/DataTables/CitiesDataTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="420">
+              <caret line="91" column="87" selection-start-line="91" selection-start-column="87" selection-end-line="91" selection-end-column="87" />
+              <folding>
+                <element signature="e#26#32#0" expanded="true" />
+                <element signature="e#32#38#0" expanded="true" />
+                <element signature="e#26#32#0" expanded="true" />
+                <element signature="e#32#38#0" expanded="true" />
+                <element signature="e#26#32#0" expanded="true" />
+                <element signature="e#32#38#0" expanded="true" />
+                <element signature="e#26#32#0" expanded="true" />
+                <element signature="e#32#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/storage/pages/page1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/storage/malls/sz4CXQFeoC7Adt2s4wr1n4dFWihjrm1KdhD2ZSQn.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/storage/departments/ClxAYrF2psOrJqRzd4WBAv1RjjUXVzB3GflEGd1x.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+              <folding>
+                <element signature="e#46#60#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/settings">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_21_202122_create_products_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/cities">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
               <filtering>
@@ -569,24 +167,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/helper.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+            <state relative-caret-position="367">
+              <caret line="38" column="22" selection-start-line="35" selection-start-column="16" selection-end-line="38" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/Shipping.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="28" column="22" selection-start-line="25" selection-start-column="16" selection-end-line="28" selection-end-column="22" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/Setting.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="336">
+              <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -629,6 +231,9 @@
       <find>City</find>
       <find>dept</find>
       <find>malls</find>
+      <find>colors</find>
+      <find>Color</find>
+      <find>photo</find>
     </findStrings>
     <replaceStrings>
       <replace>{{url('/')}}/design/adminlte/plugins</replace>
@@ -643,6 +248,8 @@
       <replace>Department</replace>
       <replace>dep</replace>
       <replace>colors</replace>
+      <replace>weights</replace>
+      <replace>Weight</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -667,8 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_04_074008_create_colors_table.php" />
-        <option value="$PROJECT_DIR$/app/model/Color.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_10_04_094853_create_departments_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/colors/btn/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/colors/btn/delete.blade.php" />
@@ -685,18 +290,41 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_09_20_102546_create_settings_table.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/routes/admin.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/admin.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/manufacts/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/malls/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/sizes/create.blade.php" />
         <option value="$PROJECT_DIR$/app/model/Department.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SizesController.php" />
         <option value="$PROJECT_DIR$/app/model/settings.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_21_194434_create_settings_table.php" />
         <option value="$PROJECT_DIR$/app/Http/helper.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/ProductsDataTable.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_21_204452_create_weights_table.php" />
+        <option value="$PROJECT_DIR$/app/model/Weight.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/weights/btn/delete.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/weights/btn/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/weights/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/weights/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/weights/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/WeightsDataTable.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/WeighsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/routes/admin.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/WeightsController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_09_28_134527_create_countries_table.php" />
+        <option value="$PROJECT_DIR$/app/model/Country.php" />
+        <option value="$PROJECT_DIR$/database/migrations/migrateSpec/2019_09_28_134527_create_countries_table.php" />
+        <option value="$PROJECT_DIR$/app/model/Product.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/countries/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/countries/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/CountriesDataTable.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/resources/views/admin/cities/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/cities/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/DataTables/CitiesDataTable.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_21_202122_create_products_table.php" />
       </list>
     </option>
   </component>
@@ -867,6 +495,13 @@
               <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
               <item name="Treaty" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="DataTables" type="462c0819:PsiDirectoryNode" />
+              <item name="WeightsDataTable.php" type="88303cf5:PhpFileNode" />
+            </path>
+            <path>
+              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -888,21 +523,7 @@
               <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
               <item name="Treaty" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
@@ -918,43 +539,6 @@
             <path>
               <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
               <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="hooks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="departments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="malls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -976,7 +560,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="departments" type="462c0819:PsiDirectoryNode" />
+              <item name="cities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
@@ -984,64 +568,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="emails" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="malls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="manufacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="shippings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="sizes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="sizes" type="462c0819:PsiDirectoryNode" />
-              <item name="btn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Treaty" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
+              <item name="countries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Treaty" type="b2602c69:ProjectViewProjectNode" />
@@ -1070,18 +597,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Treaty\app\model" />
       <recent name="E:\xampp\htdocs\Treaty\app\model" />
+      <recent name="C:\xampp\htdocs\Treaty\app\model" />
       <recent name="E:\xampp\htdocs\Treaty\storage\app\public" />
       <recent name="E:\xampp\htdocs\Treaty\storage\app\public\settings" />
       <recent name="E:\xampp\htdocs\Treaty\app\Http\Controllers\Admin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\xampp\htdocs\Treaty\database\migrations\migrateSpec" />
-      <recent name="E:\xampp\htdocs\Treaty\resources\views\admin\layouts" />
+      <recent name="E:\xampp\htdocs\Treaty\app\Http\Controllers\Admin" />
+      <recent name="E:\xampp\htdocs\Treaty\app\DataTables" />
       <recent name="E:\xampp\htdocs\Treaty\resources\views\admin" />
-      <recent name="E:\xampp\htdocs\Treaty\routes" />
-      <recent name="E:\xampp\htdocs\Treaty\app\model" />
+      <recent name="E:\xampp\htdocs\Treaty\resources\views\admin\layouts" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -1154,7 +681,7 @@
       <workItem from="1573820169324" duration="1134000" />
       <workItem from="1573918892474" duration="10997000" />
       <workItem from="1573942108176" duration="797000" />
-      <workItem from="1574360895322" duration="5216000" />
+      <workItem from="1574360895322" duration="12260000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1566580426161</created>
@@ -1195,7 +722,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34457000" />
+    <option name="totallyTimeSpent" value="41501000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1208,9 +735,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49868765" visible="true" weight="0.25945538" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868765" visible="true" weight="0.25945538" />
       <window_info id="Structure" order="1" sideWeight="0.5013123" side_tool="true" weight="0.25567323" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1223,7 +749,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32922536" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3274648" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993573" weight="0.5633803" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4993573" visible="true" weight="0.5633803" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50064266" side_tool="true" weight="0.32729805" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32922536" />
       <window_info anchor="bottom" id="SQL Generator" order="13" weight="0.32922536" />
@@ -1280,303 +806,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/sizes/btn/delete.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/sizes/btn/checkbox.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/StatesController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/sizes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/menus">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/states/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/shippings/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/malls/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/manufacts/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/sizes/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/sizes/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Size.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/StatesDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/ShippingsDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Settings.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Department.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/SizesDataTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2548">
-          <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
-          <folding>
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-            <element signature="e#26#32#0" expanded="true" />
-            <element signature="e#32#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_05_214034_create_sizes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_04_094853_create_departments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="51" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/departments/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="141" column="77" selection-start-line="141" selection-start-column="77" selection-end-line="141" selection-end-column="77" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#8;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#li#8;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DepartmentsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SizesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-896">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#46#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/admins">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/categories">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/cities">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/colors">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/data_rows">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/data_types">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/departments">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/files">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/manufacts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/malls">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_20_102546_create_settings_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/migrateSpec/2019_09_20_102546_create_settings_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1588,15 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/countries">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
-          <filtering>
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
@@ -1639,6 +859,504 @@
           <filtering>
             <filter text="" />
           </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CountriesController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/ProductsDataTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_04_074008_create_colors_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Color.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/weights/btn/checkbox.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/weights/btn/delete.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/weights/btn/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/weights/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/weights/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/weights/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/ColorsDataTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/WeightsDataTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1753">
+          <caret line="210" column="17" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
+          <folding>
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ColorsController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="237" column="57" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#15;n#ul#0;n#section#0;n#aside#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="73" column="52" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/WeightsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-503">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="e#46#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/migrateSpec/2019_11_21_204452_create_weights_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_21_204452_create_weights_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.SCHEMA:treaty">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.SCHEMA:treaty</OriginalElement>
+          <nodes>
+            <node x="419.9999999999999" y="289.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.manufacts</node>
+            <node x="1730.6721611721612" y="290.5">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permission_role</node>
+            <node x="1471.6721611721612" y="191.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.users</node>
+            <node x="477.0" y="1537.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.posts</node>
+            <node x="789.9999999999999" y="377.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.colors</node>
+            <node x="1268.0" y="1537.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.files</node>
+            <node x="394.8067765567765" y="698.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.products</node>
+            <node x="616.9999999999999" y="377.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.trade_marks</node>
+            <node x="1107.4221611721612" y="797.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.malls</node>
+            <node x="1984.5" y="1537.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.categories</node>
+            <node x="1474.0" y="1537.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.translations</node>
+            <node x="1377.4221611721614" y="591.5">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.user_roles</node>
+            <node x="242.0" y="2310.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.migrations</node>
+            <node x="1027.0" y="1537.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.pages</node>
+            <node x="272.0" y="1537.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.menus</node>
+            <node x="1571.4221611721612" y="514.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.shippings</node>
+            <node x="980.2836411071704" y="358.99841017488075">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries</node>
+            <node x="1808.1721611721612" y="0.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permissions</node>
+            <node x="909.4221611721612" y="896.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.cities</node>
+            <node x="779.0" y="1537.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.settings</node>
+            <node x="0.0" y="1537.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.data_types</node>
+            <node x="246.9999999999999" y="388.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.weights</node>
+            <node x="54.5" y="0.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.departments</node>
+            <node x="440.0" y="2310.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.password_resets</node>
+            <node x="0.0" y="2310.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.admins</node>
+            <node x="1016.4070512820512" y="1307.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.states</node>
+            <node x="265.0" y="1706.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.menu_items</node>
+            <node x="58.0" y="366.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.sizes</node>
+            <node x="1505.1721611721612" y="0.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.roles</node>
+            <node x="1705.0" y="1537.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.settingsvoyager</node>
+            <node x="15.5" y="1948.0">8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.data_rows</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.products" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries">
+              <point x="107.14285714285711" y="-279.5" />
+              <point x="626.9496336996336" y="668.0" />
+              <point x="1008.9070512820512" y="668.0" />
+              <point x="-73.875" y="103.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.malls" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries">
+              <point x="0.0" y="-180.5" />
+              <point x="1196.4221611721612" y="678.0" />
+              <point x="1107.4070512820513" y="678.0" />
+              <point x="24.625" y="103.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.data_rows" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.data_types">
+              <point x="0.0" y="-158.5" />
+              <point x="0.0" y="180.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.states" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries">
+              <point x="45.5" y="-92.5" />
+              <point x="1152.9070512820513" y="1282.0" />
+              <point x="1295.9221611721612" y="1282.0" />
+              <point x="1295.9221611721612" y="668.0" />
+              <point x="1156.6570512820513" y="668.0" />
+              <point x="73.875" y="103.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.products" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.departments">
+              <point x="-71.42857142857144" y="-279.5" />
+              <point x="448.3782051282051" y="668.0" />
+              <point x="236.4999999999999" y="668.0" />
+              <point x="236.4999999999999" y="269.0" />
+              <point x="200.33333333333326" y="269.0" />
+              <point x="58.33333333333326" y="114.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.products" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.weights">
+              <point x="-35.71428571428578" y="-279.5" />
+              <point x="484.09249084249075" y="658.0" />
+              <point x="323.4999999999999" y="658.0" />
+              <point x="0.0" y="70.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.states" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.cities">
+              <point x="-45.5" y="-92.5" />
+              <point x="1061.9070512820513" y="1282.0" />
+              <point x="998.4221611721612" y="1282.0" />
+              <point x="0.0" y="81.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.user_roles" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.users">
+              <point x="43.5" y="-37.0" />
+              <point x="1507.9221611721614" y="489.0" />
+              <point x="1531.4221611721612" y="489.0" />
+              <point x="-59.75" y="136.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permission_role" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permissions">
+              <point x="53.0" y="-37.0" />
+              <point x="0.0" y="70.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.products" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.sizes">
+              <point x="-107.14285714285711" y="-279.5" />
+              <point x="412.6639194139194" y="678.0" />
+              <point x="142.0" y="678.0" />
+              <point x="0.0" y="92.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.products" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.trade_marks">
+              <point x="35.714285714285666" y="-279.5" />
+              <point x="555.5210622710622" y="648.0" />
+              <point x="693.4999999999999" y="648.0" />
+              <point x="0.0" y="81.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.departments" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.departments">
+              <point x="-58.33333333333337" y="114.5" />
+              <point x="83.66666666666663" y="249.0" />
+              <point x="34.5" y="249.0" />
+              <point x="34.5" y="114.5" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.cities" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries">
+              <point x="0.0" y="-81.5" />
+              <point x="998.4221611721612" y="678.0" />
+              <point x="1058.1570512820513" y="678.0" />
+              <point x="-24.625" y="103.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.permission_role" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.roles">
+              <point x="-53.0" y="-37.0" />
+              <point x="1783.6721611721612" y="166.0" />
+              <point x="1648.5054945054944" y="166.0" />
+              <point x="57.33333333333326" y="70.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.products" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.colors">
+              <point x="71.42857142857144" y="-279.5" />
+              <point x="591.235347985348" y="658.0" />
+              <point x="866.4999999999999" y="658.0" />
+              <point x="0.0" y="81.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.users" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.roles">
+              <point x="0.0" y="-136.5" />
+              <point x="0.0" y="70.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.sizes" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.departments">
+              <point x="0.0" y="-92.5" />
+              <point x="0.0" y="114.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.categories" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.categories">
+              <point x="0.0" y="92.5" />
+              <point x="2070.5" y="1742.0" />
+              <point x="1964.5" y="1742.0" />
+              <point x="1964.5" y="1629.5" />
+              <point x="-86.0" y="-0.0" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.menu_items" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.menus">
+              <point x="0.0" y="-158.5" />
+              <point x="0.0" y="59.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.shippings" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.users">
+              <point x="0.0" y="-114.5" />
+              <point x="59.75" y="136.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.products" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.manufacts">
+              <point x="0.0" y="-279.5" />
+              <point x="519.8067765567765" y="678.0" />
+              <point x="508.4999999999999" y="678.0" />
+              <point x="0.0" y="169.5" />
+            </edge>
+            <edge source="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.user_roles" target="8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.roles">
+              <point x="-43.5" y="-37.0" />
+              <point x="1420.9221611721612" y="166.0" />
+              <point x="1533.838827838828" y="166.0" />
+              <point x="-57.33333333333326" y="70.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0003976143141153" x="473.36217479653385" y="1265.9046104928457" />
+          <SelectedNodes>
+            <node>8a2e6e12-49f7-47e6-b00c-4e4eb2417e23.TABLE:treaty.countries</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/migrateSpec/2019_09_28_134527_create_countries_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_28_134527_create_countries_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="21" selection-start-line="21" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/TradeMark.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Weight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Country.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/cities/index/cities_country_id_foreign">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/products/index/products_color_id_foreign">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/products/index/products_currency_id_foreign">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/countries">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8a2e6e12-49f7-47e6-b00c-4e4eb2417e23/schema/treaty/table/cities">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="60acfefb-efb3-4505-b09c-19daa93b66c3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/countries/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="38" column="22" selection-start-line="35" selection-start-column="16" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="28" column="22" selection-start-line="25" selection-start-column="16" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/cities/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/CountriesDataTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2072">
+          <caret line="197" column="34" selection-start-line="197" selection-start-column="34" selection-end-line="197" selection-end-column="34" />
+          <folding>
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DataTables/CitiesDataTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="91" column="87" selection-start-line="91" selection-start-column="87" selection-end-line="91" selection-end-column="87" />
+          <folding>
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#32#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+          <folding>
+            <element signature="e#46#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_21_202122_create_products_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>

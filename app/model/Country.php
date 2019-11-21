@@ -13,6 +13,7 @@ class Country extends Model
 		'country_name_ar',
 		'mob',
 		'code',
+		'currency',
 		'logo'
 	];
 }

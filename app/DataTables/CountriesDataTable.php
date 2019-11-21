@@ -193,6 +193,11 @@ class CountriesDataTable extends DataTable
 		        'title'=>'Mob'
 	        ],
 	        [
+		        'name'=>'currency',
+		        'data'=>'currency',
+		        'title'=>'currency'
+	        ],
+	        [
 		        'name'=>'created_at',
 		        'data'=>'created_at',
 		        'title'=>'Created At'

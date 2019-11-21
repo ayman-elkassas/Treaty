@@ -34,6 +34,11 @@
                 </div>
 
                 <div class="form-group">
+                    {!! Form::label('currency','currency') !!}
+                    {!! Form::text('currency',old('currency'),['class'=>'form-control']) !!}
+                </div>
+
+                <div class="form-group">
                     {!! Form::label('logo','Logo') !!}
                     {!! Form::file('logo',old('logo'),['class'=>'form-control']) !!}
                 </div>

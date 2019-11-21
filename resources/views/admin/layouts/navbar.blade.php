@@ -226,6 +226,32 @@
                 </ul>
             </li>
 
+            <li class="treeview {{active_menu('weights')[0]}}">
+                <a href="#">
+                    <i style="color: #e9c407;" class="fa fa-empire"></i> <span>Weights</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('products')[1]}}">
+                    <li class=""><a href="{{aurl('weights')}}"><i style="color: #009ee9;" class="fa fa-empire"></i> Weights</a></li>
+                    <li class=""><a href="{{aurl('weights/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview {{active_menu('products')[0]}}">
+                <a href="#">
+                    <i style="color: #47e92f;" class="fa fa-tag"></i> <span>Products</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu" style="{{active_menu('products')[1]}}">
+                    <li class=""><a href="{{aurl('products')}}"><i style="color: #009ee9;" class="fa fa-tag"></i> Products</a></li>
+                    <li class=""><a href="{{aurl('products/create')}}"><i style="color: #e9e800;" class="fa fa-plus"></i> Add</a></li>
+                </ul>
+            </li>
+
 
 
             <li class="header">LABELS</li>

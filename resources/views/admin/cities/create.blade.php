@@ -24,6 +24,11 @@
                 </div>
 
                 <div class="form-group">
+                    {!! Form::label('currency','currency') !!}
+                    {!! Form::text('currency',old('currency'),['class'=>'form-control']) !!}
+                </div>
+
+                <div class="form-group">
                     {!! Form::label('country_id','Country Name') !!}
                     {!! Form::select('country_id',App\model\Country::pluck('country_name_en','id')
                     ,old('country_id'),['class'=>'form-control','placeholder'=>'.....']) !!}

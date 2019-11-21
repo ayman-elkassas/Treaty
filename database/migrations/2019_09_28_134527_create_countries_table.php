@@ -19,6 +19,7 @@ class CreateCountriesTable extends Migration
 			$table->string('country_name_ar');
 			$table->string('mob');
 			$table->string('code');
+			$table->string('currency');
 			$table->string('logo')->nullable();
 
 			$table->timestamps();

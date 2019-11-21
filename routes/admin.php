@@ -70,6 +70,11 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
         //Route sizes destroy all
         Route::delete('sizes/destroy/all','SizesController@multi_delete');
 
+		//Route sizes datatable
+		Route::resource('weights','WeightsController');
+		//Route sizes destroy all
+		Route::delete('weights/destroy/all','WeightsController@multi_delete');
+
 		//Settings
 		Route::get('settings','Settings@setting');
 		Route::post('settings','Settings@settings_save');
