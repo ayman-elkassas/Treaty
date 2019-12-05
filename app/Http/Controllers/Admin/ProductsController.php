@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Admin;
 use App\model\Country;
+use App\model\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -32,7 +33,11 @@ class ProductsController extends Controller
     public function create()
     {
         //
-	    return view('admin.products.create',['title'=>'Add Product']);
+	    $product=Product::create(['title'=>'']);
+	    if(!empty($product))
+	    {
+		    return redirect(aurl('products/'.$product->id.'/edit'));
+	    }
     }
 
     /**
@@ -93,10 +98,10 @@ class ProductsController extends Controller
     public function edit($id)
     {
         //
-	    $country=Country::find($id);
+	    $product=Product::find($id);
 	    $title=trans('admin.edit');
 
-	    return view('admin.countries.edit',compact('country','title'));
+	    return view('admin.products.product',compact('product','title'));
     }
 
     /**

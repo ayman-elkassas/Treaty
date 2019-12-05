@@ -31,24 +31,13 @@
             </ul>
 
             <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                    <h3>Product Info</h3>
-                </div>
-                <div id="menu0" class="tab-pane fade in active">
-                    <h3>Department</h3>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                    <h3>Product settings</h3>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                    <h3>Product content</h3>
-                </div>
-                <div id="menu3" class="tab-pane fade">
-                    <h3>Weight and size</h3>
-                </div>
-                <div id="menu4" class="tab-pane fade">
-                    <h3>Addition info</h3>
-                </div>
+
+                @include('admin.products.tabs.product_info')
+                @include('admin.products.tabs.department')
+                @include('admin.products.tabs.product_settings')
+                @include('admin.products.tabs.weight_size')
+                @include('admin.products.tabs.additional_info')
+
             </div>
 
             <a href="#" class="btn btn-primary">Save <i class="fa fa-floppy-o"></i></a>
@@ -58,7 +47,6 @@
             <br>
 
             <hr>
-
 
                 <div class="form-group">
                     {!! Form::label('name_en','Colors name En') !!}
