@@ -4,6 +4,7 @@ namespace App\DataTables;
 
 use App\Admin;
 use App\model\Country;
+use App\model\Product;
 use Illuminate\Support\Facades\URL;
 use Yajra\DataTables\Services\DataTable;
 
@@ -18,15 +19,13 @@ class ProductsDataTable extends DataTable
     public function dataTable($query)
     {
         return datatables($query)
-            ->addColumn('edit', 'admin.countries.btn.edit')
-            ->addColumn('delete', 'admin.countries.btn.delete')
-	        ->addColumn('checkbox', 'admin.countries.btn.checkbox')
-	        ->addColumn('logo', 'admin.countries.btn.logo')
+            ->addColumn('edit', 'admin.products.btn.edit')
+            ->addColumn('delete', 'admin.products.btn.delete')
+	        ->addColumn('checkbox', 'admin.products.btn.checkbox')
 	        ->rawColumns([
 	        	'edit',
 		        'delete',
 		        'checkbox',
-		        'logo'
 	        ]);
     }
 
@@ -38,7 +37,7 @@ class ProductsDataTable extends DataTable
      */
     public function query()
     {
-        return Country::query();
+        return Product::query();
     }
 
     //lang
@@ -90,7 +89,7 @@ class ProductsDataTable extends DataTable
 		                'lengthMenu'=>[[10,25,50,100,-1],[10,25,50,'All Record']],
 		                'buttons'=>[
 			                [
-				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Country',
+				                'text'=>'<i class="fa fa-plus"></i>&nbsp;&nbsp;New Product',
 				                'className'=>'btn btn-info',
 				                'action'=>'function(){
 				                    window.location.href="'.URL::current().'/create";
@@ -164,33 +163,9 @@ class ProductsDataTable extends DataTable
 	            'title'=>'#'
             ],
 	        [
-		        'name'=>'country_name_en',
-		        'data'=>'country_name_en',
-		        'title'=>'Country En'
-	        ],
-	        [
-		        'name'=>'country_name_ar',
-		        'data'=>'country_name_ar',
-		        'title'=>'Country Ar'
-	        ],
-	        [
-		        'name'=>'logo',
-		        'data'=>'logo',
-		        'title'=>'Logo',
-		        'exportable'=>false,
-                'printable'=>false,
-                'orderable'=>false,
-                'searchable'=>false
-	        ],
-	        [
-		        'name'=>'code',
-		        'data'=>'code',
-		        'title'=>'Code'
-	        ],
-	        [
-		        'name'=>'mob',
-		        'data'=>'mob',
-		        'title'=>'Mob'
+		        'name'=>'title',
+		        'data'=>'title',
+		        'title'=>'title'
 	        ],
 	        [
 		        'name'=>'created_at',
@@ -230,6 +205,6 @@ class ProductsDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'countries_' . date('YmdHis');
+        return 'products_' . date('YmdHis');
     }
 }

@@ -210,6 +210,8 @@
 <script>
     $.widget.bridge('uibutton', $.ui.button);
 </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 {{--jquery--}}
 <script src="{{url('design/adminlte/bower_components/jquery/dist/jquery.min.js"')}}"></script>
 <!-- Bootstrap 3.3.7 -->
