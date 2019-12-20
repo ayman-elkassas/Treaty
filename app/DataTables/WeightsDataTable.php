@@ -17,9 +17,9 @@ class WeightsDataTable extends DataTable
     public function dataTable($query)
     {
         return datatables($query)
-            ->addColumn('edit', 'admin.wights.btn.edit')
-            ->addColumn('delete', 'admin.wights.btn.delete')
-	        ->addColumn('checkbox', 'admin.wights.btn.checkbox')
+            ->addColumn('edit', 'admin.weights.btn.edit')
+            ->addColumn('delete', 'admin.weights.btn.delete')
+	        ->addColumn('checkbox', 'admin.weights.btn.checkbox')
 	        ->rawColumns([
 	        	'edit',
 		        'delete',

@@ -14,33 +14,33 @@ class CreateProductsTable extends Migration
     public function up()
     {
         Schema::create('products', function (Blueprint $table) {
-		        $table->increments('id');
-		        $table->string('title');
-		        $table->string('photo');
-		        $table->longText('content');
+            $table->increments('id');
+            $table->string('title');
+            $table->string('photo');
+            $table->longText('content');
 
-		        $table->integer('dept_id')->unsigned()->nullable();
-		        $table->integer('trade_id')->unsigned()->nullable();
-		        $table->integer('manu_id')->unsigned()->nullable();
-		        $table->integer('currency_id')->unsigned()->nullable();
-		        $table->integer('color_id')->unsigned()->nullable();
-		        $table->integer('size_id')->unsigned()->nullable();
-		        $table->integer('weight_id')->unsigned()->nullable();
+            $table->integer('dept_id')->unsigned()->nullable();
+            $table->integer('trade_id')->unsigned()->nullable();
+            $table->integer('manu_id')->unsigned()->nullable();
+            $table->integer('currency_id')->unsigned()->nullable();
+            $table->integer('color_id')->unsigned()->nullable();
+            $table->integer('size_id')->unsigned()->nullable();
+            $table->integer('weight_id')->unsigned()->nullable();
 
-		        $table->longText('other_data');
-		        $table->string('weight')->nullable();;
-		        $table->integer('stock')->default(0);
-		        $table->decimal('price',5,2)->default(0);
+            $table->longText('other_data');
+            $table->string('weight')->nullable();;
+            $table->integer('stock')->default(0);
+            $table->decimal('price',5,2)->default(0);
 
-		        $table->enum('status',['pending','refused','active'])->default('pending');
-		        $table->longText('reason')->nullable();
+            $table->enum('status',['pending','refused','active'])->default('pending');
+            $table->longText('reason')->nullable();
 
-		        $table->date('start_at')->nullable();
-		        $table->date('end_at')->nullable();
+            $table->date('start_at')->nullable();
+            $table->date('end_at')->nullable();
 
-		        $table->date('start_offer_at')->nullable();
-		        $table->date('end_offer_at')->nullable();
-		        $table->decimal('price_offer',5,2)->default(0);
+            $table->date('start_offer_at')->nullable();
+            $table->date('end_offer_at')->nullable();
+            $table->decimal('price_offer',5,2)->default(0);
 
 
 	        $table->timestamps();

@@ -49,12 +49,14 @@ class CountriesController extends Controller
 	    	'country_name_ar'=>'required',
 	    	'mob'=>'required',
 	    	'code'=>'required',
+	    	'currency'=>'required',
 	    	'logo'=>'required|'.v_image(),
 	    ],[],[
 	    	'country_name_en'=>'Country name Arabic',
 	    	'country_name_ar'=>'Country name Arabic',
 	    	'mob'=>'Mob',
 	    	'code'=>'Code',
+	    	'currency'=>'Currency',
 	    	'logo'=>'Logo',
 	    ]);
 
@@ -64,6 +66,7 @@ class CountriesController extends Controller
 			    'file'=>'logo',
 			    'path'=>'settings',
 			    'upload_type'=>'single',
+                'delete_file'=>''
 		    ]);
 	    }
 

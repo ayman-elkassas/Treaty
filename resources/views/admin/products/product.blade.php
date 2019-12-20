@@ -2,6 +2,19 @@
 
 @section('content')
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet">
+
+    @push('js')
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                $('.js-example-basic-single').select2()
+            })
+
+        </script>
+    @endpush
+
     <div class="box">
         <div class="box-header">
             <h3 class="box-title">{{$title}}</h3>
@@ -11,7 +24,7 @@
 
 {{--            {!! Form::open(['route'=>'admin.store'])!!}--}}
 {{--            ORRRRRRRRRRRR--}}
-            {!! Form::open(['url'=>aurl('products')])!!}
+            {!! Form::open(['url'=>aurl('products'),'files'=>true])!!}
 
             <a href="#" class="btn btn-primary">Save <i class="fa fa-floppy-o"></i></a>
             <a href="#" class="btn btn-success">Save and continue <i class="fa fa-floppy-o"></i></a>
@@ -48,14 +61,6 @@
 
             <hr>
 
-                <div class="form-group">
-                    {!! Form::label('name_en','Colors name En') !!}
-                    {!! Form::text('name_en',old('name_en'),['class'=>'form-control']) !!}
-                </div>
-
-                {!! Form::submit('Save',['class'=>'btn btn-primary']) !!}
-
-            {!! Form::close() !!}
         </div>
         <!-- /.box-body -->
     </div>

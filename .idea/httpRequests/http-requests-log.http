@@ -1,0 +1,38 @@
+GET http://localhost:80/treaty/public/admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T024442.404.html
+
+###
+
+GET http://localhost:80/treaty/public/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T024428.200.html
+
+###
+
+GET http://localhost:80/treaty/public/admin
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T024414.404.html
+
+###
+
+GET http://localhost:80/resources
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T024144.404.html
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+

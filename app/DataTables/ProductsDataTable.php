@@ -2,8 +2,6 @@
 
 namespace App\DataTables;
 
-use App\Admin;
-use App\model\Country;
 use App\model\Product;
 use Illuminate\Support\Facades\URL;
 use Yajra\DataTables\Services\DataTable;

@@ -68,4 +68,7 @@
 
 {{--    jstree--}}
     <link rel="stylesheet" href="{{url('design/jstree')}}/dist/themes/default/style.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+
 </head>

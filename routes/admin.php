@@ -80,6 +80,12 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function()
 		//Route sizes destroy all
 		Route::delete('products/destroy/all','ProductsController@multi_delete');
 
+		Route::post('upload/image/{pid}','ProductsController@upload_file');
+		Route::post('delete/image','ProductsController@delete_file');
+
+		Route::post('update/image/{pid}','ProductsController@update_product_image');
+		Route::post('delete/product/image/{pid}','ProductsController@delete_main_image');
+
 		//Settings
 		Route::get('settings','Settings@setting');
 		Route::post('settings','Settings@settings_save');

@@ -39,6 +39,7 @@ class Product extends Model
 
 	protected $table='products';
 	protected $fillable=[
+		'title',
 		'photo',
 		'content',
 		'dept_id',
@@ -60,6 +61,12 @@ class Product extends Model
 		'end_offer_at',
 		'price_offer',
 	];
+
+	public function files()
+    {
+        return $this->hasMany('App\File','relation_id','id')
+            ->where('file_type','product');
+    }
 
 
 }

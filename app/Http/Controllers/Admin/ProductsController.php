@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Admin;
 use App\model\Country;
 use App\model\Product;
 use Illuminate\Http\Request;
@@ -183,5 +182,57 @@ class ProductsController extends Controller
 
     	session()->flash('success',trans('admin.deleted_record'));
     	return redirect(aurl('countries'));
+    }
+
+    //for upload files
+    public function upload_file($id)
+    {
+        if(\request()->hasFile('file'))
+        {
+            $fid= up()->upload([
+                'file'=>'file',
+                'path'=>'products/'.$id,
+                'upload_type'=>'files',
+                'file_type'=>'product',
+                'relation_id'=>$id
+            ]);
+
+            return response(['status'=>true,'id'=>$fid],200);
+        }
+    }
+
+    //for delete files
+    public function delete_file()
+    {
+        if(\request()->has('id'))
+        {
+            up()->delete(\request('id'));
+        }
+    }
+
+    public function update_product_image($id)
+    {
+        $product= Product::where('id',$id)->update([
+            'photo'=>up()->upload([
+                'file'=>'file',
+                'path'=>'products/'.$id,
+                'upload_type'=>'files',
+                'delete_file'=>''
+            ])
+        ]);
+
+        //'photo'=>$product->photo
+        return response(['status'=>true],200);
+    }
+
+    public function delete_main_image($id)
+    {
+        $product= Product::find($id);
+        Storage::delete('products/'.$product->photo);
+        $product->photo=null;
+        $product->save();
+
+        //'photo'=>$product->photo
+        return response(['status'=>true],200);
     }
 }

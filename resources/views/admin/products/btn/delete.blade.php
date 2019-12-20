@@ -16,7 +16,7 @@
 
             {!! Form::open(['url'=>aurl('products/'.$id),'method'=>'delete']) !!}
             <div class="modal-body">
-                <p>{{trans('admin.delete_this',['admin'=>session('lang')=='ar'?$name_ar:$name_en])}}</p>
+                <p>Sure Delete ?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-info cancel_delete" data-dismiss="modal">Close</button>
